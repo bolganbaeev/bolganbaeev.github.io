@@ -1,26 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="kk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Snake Game</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini AI</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+        textarea { width: 80%; height: 100px; margin-bottom: 10px; }
+        button { padding: 10px 20px; }
+        #response { margin-top: 20px; white-space: pre-wrap; }
+    </style>
 </head>
 <body>
-	<div id="game-container">
-		<canvas id="gc" class="game-canvas" width="400" height="400"></canvas>
-	</div>
-	<div class="keys">
-	  <a class="up arr" onclick="Snake.action('up')">
-	    <i class="chevron up"></i></a>
-	  <br />
-	  <a class="left arr" onclick="Snake.action('left')">
-	    <i class="chevron left"></i></a>
-	  <a class="down arr" onclick="Snake.action('down')">
-	    <i class="chevron down"></i></a>
-	  <a class="right arr" onclick="Snake.action('right')">
-	    <i class="chevron right"></i></a>
-	</div>
-	<script type="text/javascript" src="game.js"></script>
+
+    <h2>Gemini 2 Flash API</h2>
+    <textarea id="prompt" placeholder="Сұрақты осында енгіз..."></textarea><br>
+    <button onclick="askGemini()">Жіберу</button>
+    <p><strong>Жауап:</strong></p>
+    <div id="response"></div>
+
+    <script>
+        const API_KEY = "AIzaSyA7dwhzcLOj6veU9vZcJSYj_peJLcKQxe4"; // API кілтіңді қой
+        const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+
+        async function askGemini() {
+            const promptText = document.getElementById("prompt").value;
+            const responseDiv = document.getElementById("response");
+            responseDiv.innerHTML = "Жүктелуде...";
+
+            const response = await fetch(API_URL, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    contents: [{ role: "user", parts: [{ text: promptText }] }]
+                })
+            });
+
+            const data = await response.json();
+            
+            if (data && data.candidates) {
+                responseDiv.innerHTML = data.candidates[0].content.parts[0].text;
+            } else {
+                responseDiv.innerHTML = "Қате немесе жауап жоқ.";
+            }
+        }
+    </script>
+
 </body>
 </html>
