@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <h2>Gemini 2 Flash API</h2>
+    <h2>Hello I'm AI</h2>
     <textarea id="prompt" placeholder="Сұрақты осында енгіз..."></textarea><br>
     <button onclick="askGemini()">Жіберу</button>
     <p><strong>Жауап:</strong></p>
@@ -21,7 +21,7 @@
 
     <script>
         const API_KEY = "AIzaSyA7dwhzcLOj6veU9vZcJSYj_peJLcKQxe4"; // API кілтіңді қой
-        const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+        const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemma-3-27b-it:generateContent?key=${API_KEY}`;
 
         async function askGemini() {
             const promptText = document.getElementById("prompt").value;
