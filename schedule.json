@@ -1,0 +1,52 @@
+{
+    "31": {
+        "subjects": ["Math", "Science", "English", "History", "PE"],
+        "homework": [
+            "Solve 10 math problems",
+            "Read chapter 3 of Science",
+            "Write an essay on your favorite book",
+            "Prepare a history presentation",
+            "Practice basketball drills"
+        ]
+    },
+    "1": {
+        "subjects": ["Biology", "Chemistry", "Physics", "Geography", "Art"],
+        "homework": [
+            "Complete lab report",
+            "Prepare for Chemistry quiz",
+            "Solve physics problems",
+            "Draw a map of Europe",
+            "Create an abstract painting"
+        ]
+    },
+    "2": {
+        "subjects": ["Math", "Computer Science", "English", "History", "PE"],
+        "homework": [
+            "Practice coding exercises",
+            "Read a historical article",
+            "Prepare for PE test",
+            "Review history notes",
+            "Complete PE drills"
+        ]
+    },
+    "3": {
+        "subjects": ["Math", "Science", "English", "History", "PE"],
+        "homework": [
+            "Solve geometry problems",
+            "Review Science notes",
+            "Write a poem",
+            "Prepare a history timeline",
+            "Practice basketball drills"
+        ]
+    },
+    "4": {
+        "subjects": ["Math", "Science", "English", "History", "PE"],
+        "homework": [
+            "Complete math worksheet",
+            "Study for Science test",
+            "Read a novel",
+            "Write a history essay",
+            "Practice running drills"
+        ]
+    }
+}
