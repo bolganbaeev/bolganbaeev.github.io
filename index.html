@@ -187,7 +187,7 @@
         async function populateDays() {
             const sidebar = document.getElementById('sidebar');
             const scheduleData = await fetchScheduleData();
-            const monthOrder = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            const monthOrder = ["Qańtar", "Aqpan", "Nauryz", "Sàýir", "Mamyr", "Mausym", "Shilde", "Tamyz", "Qyrkùıek", "Qazan", "Qarasha", "Jeltoqsan"];
 
             // Sort days by month and day
             const sortedDays = Object.keys(scheduleData).sort((a, b) => {
