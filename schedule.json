@@ -12,7 +12,7 @@
     },
     "1": {
         "month": "April",
-        "subjects": ["Biology", "Chemistry", "Physics", "Geography", "Art"],
+        "subjects": ["Aǵylshyn", "Qazaq tili", "Dene shynyqtyrý", "Qazaqstan tarih", "Algebra", "Biologıa", "Geografıa"],
         "homework": [
             "Complete lab report",
             "Prepare for Chemistry quiz",
@@ -23,7 +23,7 @@
     },
     "2": {
         "month": "April",
-        "subjects": ["Math", "Computer Science", "English", "History", "PE"],
+        "subjects": ["Qùqyq negizderi", "Qazaq tili", "Informatıka", "Hımıa", "Algebra", "Biologıa", "Fızıka],
         "homework": [
             "Practice coding exercises",
             "Read a historical article",
@@ -34,7 +34,7 @@
     },
     "3": {
         "month": "April",
-        "subjects": ["Math", "Science", "English", "History", "PE"],
+        "subjects": ["Aģylshyn", "Qazaq àdebıeti", "Geometrıa", "Dene shynyqtyrý", "Orys tili", "Dúnıejùzi tarıhy", "Jahandyq màseleler"],
         "homework": [
             "Solve geometry problems",
             "Review Science notes",
@@ -45,7 +45,7 @@
     },
     "4": {
         "month": "April",
-        "subjects": ["Math", "Science", "English", "History", "PE"],
+        "subjects": ["Aģylshyn", "Kòrkem eńbek", "Qazaq àdebıeti", "Orys tili", "Hımıa", "Bıologıa", "Abaı taný"],
         "homework": [
             "Complete math worksheet",
             "Study for Science test",
@@ -56,13 +56,9 @@
     },
     "5": {
         "month": "April",
-        "subjects": ["Math", "Science", "English", "History", "PE"],
+        "subjects": [],
         "homework": [
-            "Solve algebra problems",
-            "Review Science notes",
-            "Write a short story",
-            "Prepare a history presentation",
-            "Practice basketball drills"
+            
         ]
     }
 }
