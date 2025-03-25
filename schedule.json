@@ -3,55 +3,35 @@
         "month": "March",
         "subjects": ["Tárbıe saǵat", "Geografıa", "Orys tili", "Qazaqstan tarıh", "Algebra", "Dene shynyqtyrý", "Fızıka"],
         "homework": [
-            "Solve 10 math problems",
-            "Read chapter 3 of Science",
-            "Write an essay on your favorite book",
-            "Prepare a history presentation",
-            "Practice basketball drills"
+
         ]
     },
     "1": {
         "month": "April",
         "subjects": ["Aǵylshyn", "Qazaq tili", "Dene shynyqtyrý", "Qazaqstan tarih", "Algebra", "Biologıa", "Geografıa"],
         "homework": [
-            "Complete lab report",
-            "Prepare for Chemistry quiz",
-            "Solve physics problems",
-            "Draw a map of Europe",
-            "Create an abstract painting"
+            
         ]
     },
     "2": {
         "month": "April",
         "subjects": ["Qùqyq negizderi", "Qazaq tili", "Informatıka", "Hımıa", "Algebra", "Biologıa", "Fızıka],
         "homework": [
-            "Practice coding exercises",
-            "Read a historical article",
-            "Prepare for PE test",
-            "Review history notes",
-            "Complete PE drills"
+
         ]
     },
     "3": {
         "month": "April",
         "subjects": ["Aģylshyn", "Qazaq àdebıeti", "Geometrıa", "Dene shynyqtyrý", "Orys tili", "Dúnıejùzi tarıhy", "Jahandyq màseleler"],
         "homework": [
-            "Solve geometry problems",
-            "Review Science notes",
-            "Write a poem",
-            "Prepare a history timeline",
-            "Practice basketball drills"
+
         ]
     },
     "4": {
         "month": "April",
         "subjects": ["Aģylshyn", "Kòrkem eńbek", "Qazaq àdebıeti", "Orys tili", "Hımıa", "Bıologıa", "Abaı taný"],
         "homework": [
-            "Complete math worksheet",
-            "Study for Science test",
-            "Read a novel",
-            "Write a history essay",
-            "Practice running drills"
+
         ]
     },
     "5": {
