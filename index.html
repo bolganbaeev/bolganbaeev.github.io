@@ -153,11 +153,7 @@
         <span class="menu-toggle" onclick="toggleSidebar()">☰</span>
     </div>
     <div class="sidebar hidden" id="sidebar">
-        <div class="day" onclick="showSchedule(31)">Day 31</div>
-        <div class="day" onclick="showSchedule(1)">Day 1</div>
-        <div class="day" onclick="showSchedule(2)">Day 2</div>
-        <div class="day" onclick="showSchedule(3)">Day 3</div>
-        <div class="day" onclick="showSchedule(4)">Day 4</div>
+        <!-- Days will be dynamically inserted here -->
     </div>
     <div class="main-content">
         <h1 id="main-title">Welcome to 9b Class Portal</h1>
@@ -176,6 +172,7 @@
     </div>
 
     <script>
+        // Fetch schedule data with error handling
         async function fetchScheduleData() {
             try {
                 const response = await fetch('schedule.json');
@@ -186,11 +183,33 @@
             }
         }
 
+        // Populate the sidebar with sorted days
+        async function populateDays() {
+            const sidebar = document.getElementById('sidebar');
+            const scheduleData = await fetchScheduleData();
+            const monthOrder = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+            // Sort days by month and day
+            const sortedDays = Object.keys(scheduleData).sort((a, b) => {
+                const monthA = monthOrder.indexOf(scheduleData[a].month || "");
+                const monthB = monthOrder.indexOf(scheduleData[b].month || "");
+                return monthA === monthB ? Number(a) - Number(b) : monthA - monthB;
+            });
+
+            // Create day buttons dynamically
+            sidebar.innerHTML = sortedDays.map(day => {
+                const month = scheduleData[day].month || '';
+                return `<div class="day" onclick="showSchedule(${day})">${month} ${day}</div>`;
+            }).join('');
+        }
+
+        // Display schedule and homework for a selected day
         async function showSchedule(day) {
             const scheduleData = await fetchScheduleData();
             const schedule = scheduleData[day];
             const scheduleList = document.getElementById('schedule-list');
             const homeworkList = document.getElementById('homework-list');
+            const mainTitle = document.getElementById('main-title');
 
             // Clear previous content
             scheduleList.innerHTML = '';
@@ -199,25 +218,22 @@
             if (schedule) {
                 // Populate schedule and homework
                 schedule.subjects.forEach((subject, index) => {
-                    const subjectItem = document.createElement('li');
-                    subjectItem.textContent = subject;
-                    scheduleList.appendChild(subjectItem);
-
-                    const homeworkItem = document.createElement('li');
-                    homeworkItem.innerHTML = `<span>${subject}:</span> ${schedule.homework[index]}`;
-                    homeworkList.appendChild(homeworkItem);
+                    scheduleList.innerHTML += `<li>${subject}</li>`;
+                    homeworkList.innerHTML += `<li><span>${subject}:</span> ${schedule.homework[index]}</li>`;
                 });
-
-                document.getElementById('main-title').textContent = `Day ${day} Schedule and Homework`;
+                mainTitle.textContent = `${schedule.month} ${day} Schedule and Homework`;
             } else {
-                document.getElementById('main-title').textContent = `No data available for Day ${day}`;
+                mainTitle.textContent = `No data available for ${day}`;
             }
         }
 
+        // Toggle sidebar visibility
         function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('hidden');
+            document.getElementById('sidebar').classList.toggle('hidden');
         }
+
+        // Initialize the page
+        populateDays();
     </script>
 </body>
 </html>

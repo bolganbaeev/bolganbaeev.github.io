@@ -1,5 +1,6 @@
 {
     "31": {
+        "month": "March",
         "subjects": ["Math", "Science", "English", "History", "PE"],
         "homework": [
             "Solve 10 math problems",
@@ -10,6 +11,7 @@
         ]
     },
     "1": {
+        "month": "April",
         "subjects": ["Biology", "Chemistry", "Physics", "Geography", "Art"],
         "homework": [
             "Complete lab report",
@@ -20,6 +22,7 @@
         ]
     },
     "2": {
+        "month": "April",
         "subjects": ["Math", "Computer Science", "English", "History", "PE"],
         "homework": [
             "Practice coding exercises",
@@ -30,6 +33,7 @@
         ]
     },
     "3": {
+        "month": "April",
         "subjects": ["Math", "Science", "English", "History", "PE"],
         "homework": [
             "Solve geometry problems",
@@ -40,6 +44,7 @@
         ]
     },
     "4": {
+        "month": "April",
         "subjects": ["Math", "Science", "English", "History", "PE"],
         "homework": [
             "Complete math worksheet",
@@ -50,7 +55,8 @@
         ]
     },
     "5": {
-        "subjects":["Math", "Science", "English", "History", "PE"],
+        "month": "April",
+        "subjects": ["Math", "Science", "English", "History", "PE"],
         "homework": [
             "Solve algebra problems",
             "Review Science notes",
