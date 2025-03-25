@@ -48,5 +48,15 @@
             "Write a history essay",
             "Practice running drills"
         ]
+    },
+    "5": {
+        "subjects":["Math", "Science", "English", "History", "PE"],
+        "homework": [
+            "Solve algebra problems",
+            "Review Science notes",
+            "Write a short story",
+            "Prepare a history presentation",
+            "Practice basketball drills"
+        ]
     }
 }
