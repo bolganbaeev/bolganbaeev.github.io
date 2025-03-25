@@ -39,7 +39,7 @@
             const data = await response.json();
             
             if (data && data.candidates) {
-                responseDiv.innerHTML = data.candidates[0].content.parts[0].text;
+                responseDiv.innerHTML = data; //.candidates[0].content.parts[0].text;
             } else {
                 responseDiv.innerHTML = "Қате немесе жауап жоқ.";
             }
