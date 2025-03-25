@@ -156,15 +156,15 @@
         <!-- Days will be dynamically inserted here -->
     </div>
     <div class="main-content">
-        <h1 id="main-title">Welcome to 9b Class Portal</h1>
+        <h1 id="main-title">9b class portalyna qosh keldińiz</h1>
         <div class="content-section" id="schedule-section">
-            <h2>Schedule</h2>
+            <h2>Keste</h2>
             <ul id="schedule-list">
                 <!-- Schedule items will be dynamically inserted here -->
             </ul>
         </div>
         <div class="content-section" id="homework-section">
-            <h2>Homework</h2>
+            <h2>Úı tapsyrmasy</h2>
             <ul id="homework-list">
                 <!-- Homework items will be dynamically inserted here -->
             </ul>
@@ -221,7 +221,7 @@
                     scheduleList.innerHTML += `<li>${subject}</li>`;
                     homeworkList.innerHTML += `<li><span>${subject}:</span> ${schedule.homework[index]}</li>`;
                 });
-                mainTitle.textContent = `${schedule.month} ${day} Schedule and Homework`;
+                mainTitle.textContent = `${schedule.month} ${day} Keste jàne Ùi tapsyrmasy`;
             } else {
                 mainTitle.textContent = `No data available for ${day}`;
             }
