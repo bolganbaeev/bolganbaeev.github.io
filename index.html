@@ -269,7 +269,7 @@
 
             if (scheduleData && scheduleData[day]) {
                 const { month, subjects, homework } = scheduleData[day];
-                mainTitle.textContent = `${month} ${day} Кесте және Үй тапсырмасы`;
+                mainTitle.textContent = `${month} ${day} Keste jáne Úı tapsyrmasy`;
 
                 detailsList.innerHTML = subjects.map((subject, index) => {
                     const homeworkText = homework[index] ? `: ${homework[index]}` : '';
@@ -283,7 +283,10 @@
             document.getElementById('sidebar').classList.remove('active');
         }
 
-        document.addEventListener('DOMContentLoaded', populateSidebar);
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.add('dark-mode'); // Set default theme to dark mode
+            populateSidebar();
+        });
     </script>
 </body>
 </html>
