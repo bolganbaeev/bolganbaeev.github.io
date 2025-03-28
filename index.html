@@ -236,24 +236,21 @@
             const scheduleData = await fetchSchedule();
 
             if (scheduleData) {
-                // Include all months in the correct order
                 const monthOrder = [
                     "Qańtar", "Aqpan", "Nauryz", "Sàýir", "Mamyr", "Mausym",
                     "Shilde", "Tamyz", "Qyrkùıek", "Qazan", "Qarasha", "Jeltoqsan"
                 ];
 
-                // Sort days by month and day
                 const sortedDays = Object.keys(scheduleData).sort((a, b) => {
                     const monthA = monthOrder.indexOf(scheduleData[a].month.trim());
                     const monthB = monthOrder.indexOf(scheduleData[b].month.trim());
 
                     if (monthA === monthB) {
-                        return parseInt(a) - parseInt(b); // Sort by day if months are the same
+                        return parseInt(a) - parseInt(b);
                     }
-                    return monthA - monthB; // Sort by month
+                    return monthA - monthB;
                 });
 
-                // Generate sidebar content
                 sidebar.innerHTML = sortedDays
                     .map(day => {
                         const { month } = scheduleData[day];
@@ -272,22 +269,21 @@
 
             if (scheduleData && scheduleData[day]) {
                 const { month, subjects, homework } = scheduleData[day];
-                mainTitle.textContent = `Details for ${month} ${day}`;
-                detailsList.innerHTML = `
-                    <li><strong>Subjects:</strong> ${subjects.length > 0 ? subjects.join(', ') : 'No subjects'}</li>
-                    <li><strong>Homework:</strong> ${homework.length > 0 ? homework.join(', ') : 'No homework'}</li>
-                `;
+                mainTitle.textContent = `${month} ${day} Кесте және Үй тапсырмасы`;
+
+                detailsList.innerHTML = subjects.map((subject, index) => {
+                    const homeworkText = homework[index] ? `: ${homework[index]}` : '';
+                    return `<li><strong>${subject}</strong>${homeworkText}</li>`;
+                }).join('');
             } else {
                 mainTitle.textContent = `Details for Day ${day}`;
                 detailsList.innerHTML = '<li>No data available for this day.</li>';
             }
 
-            document.getElementById('sidebar').classList.remove('active'); // Close sidebar
+            document.getElementById('sidebar').classList.remove('active');
         }
 
-        // Populate the sidebar on page load
         document.addEventListener('DOMContentLoaded', populateSidebar);
-        toggleDarkMode();
     </script>
 </body>
 </html>
