@@ -1,17 +1,4 @@
 {
-    "31": {
-        "month": "Nauryz",
-        "subjects": ["Tárbıe saǵat", "Geografıa", "Orys tili", "Qazaqstan tarıh", "Algebra", "Dene shynyqtyrý", "Fızıka"],
-        "homework": [
-            "Tárbıe saǵatında 1-2 bet oqý",
-            "Geografıada 1-2 bet oqý",
-            "Orys tilinde 1-2 bet oqý",
-            "Qazaqstan tarıhında 1-2 bet oqý",
-            "Algebrada 1-2 bet oqý",
-            "",
-            "Fızıka 1-2 bet oqý"
-        ]
-    },
     "1": {
         "month": "Sàýir",
         "subjects": ["Aǵylshyn", "Qazaq tili", "Dene shynyqtyrý", "Qazaqstan tarih", "Algebra", "Biologıa", "Geografıa"],
