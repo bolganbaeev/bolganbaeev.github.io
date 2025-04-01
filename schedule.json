@@ -10,7 +10,8 @@
         "month": "Sàýir",
         "subjects": ["Qùqyq negizderi", "Qazaq tili", "Informatıka", "Hımıa", "Algebra", "Biologıa", "Fızıka"],
         "homework": [
-
+          "",
+          "7-tapsyrma 168-bet"
         ]
     },
     "3": {
@@ -45,7 +46,10 @@
         "month": "Sàýir",
         "subjects": ["Tárbıe saǵat", "Geografıa", "Orys tili", "Qazaqstan tarıh", "Algebra", "Dene shynyqtyrý", "Fızıka"],
         "homework": [
-
+          "",
+          "",
+          "",
+          "§47 paragraphtan 4 suraq jazý"
         ]
     }
 }
