@@ -55,5 +55,13 @@
           "",
           "§47 paragraphtan 4 suraq jazý"
         ]
-    }
+    },
+  "8": {
+        "month": "Sàýir",
+        "subjects": ["Aǵylshyn", "Qazaq tili", "Dene shynyqtyrý", "Qazaqstan tarih", "Algebra", "Biologıa", "Geografıa"],
+        "homework": [
+            "",
+            "6-тапсырма 71-бет"
+        ]
+    },
 }
