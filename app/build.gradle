@@ -1,0 +1,90 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.plugin.compose'
+}
+
+
+
+android {
+
+    namespace 'com.example'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.aistudio.ubtprep.xzltp'
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
+
+    buildFeatures {
+        compose true
+    }
+    packaging {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+}
+
+dependencies {
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.lifecycle.runtime.ktx
+    implementation libs.androidx.activity.compose
+    implementation platform(libs.androidx.compose.bom)
+    implementation libs.androidx.compose.ui
+    implementation libs.androidx.compose.ui.graphics
+    implementation libs.androidx.compose.ui.tooling.preview
+    implementation libs.androidx.compose.material3
+    implementation libs.androidx.compose.material.icons.extended
+    implementation libs.androidx.navigation.compose
+    implementation libs.kotlinx.serialization.json
+    
+    // Image loading
+    implementation 'io.coil-kt:coil-compose:2.6.0'
+}
+
+tasks.register('copyAssets', Copy) {
+    from("${rootDir}/users") {
+        into("users")
+    }
+    from("${rootDir}/blocks-data") {
+        into("blocks-data")
+    }
+    from("${rootDir}/test/data") {
+        into("test/data")
+    }
+    from("${rootDir}/1/images") {
+        into("1/images")
+    }
+    from("${rootDir}/123/images") {
+        into("123/images")
+    }
+    from("${rootDir}/2/images") {
+        into("2/images")
+    }
+    from("${rootDir}/test/assets") {
+        into("test/assets")
+    }
+    into("${projectDir}/src/main/assets")
+}
+
+tasks.named("preBuild") {
+    dependsOn("copyAssets")
+}

@@ -1,0 +1,33 @@
+{
+  "name": "ҰБТ дайындық",
+  "short_name": "ҰБТ",
+  "description": "ҰБТ-ға дайындалуға арналған оқу және тест платформасы.",
+  "lang": "kk",
+  "dir": "ltr",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f7faf9",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "/1.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/4.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

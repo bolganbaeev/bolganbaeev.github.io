@@ -1,0 +1,6 @@
+{
+  "items": [
+    { "question": "LAN деген не?", "answer": "Жергілікті желі (Local Area Network)." },
+    { "question": "WAN деген не?", "answer": "Ауқымды желі (Wide Area Network)." }
+  ]
+}

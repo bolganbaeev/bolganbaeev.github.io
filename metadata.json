@@ -1,0 +1,8 @@
+{
+  "name": "ҰБТ дайындық",
+  "description": "ҰБТ-ға (Ұлттық бірыңғай тестілеу) дайындалуға арналған мобильді қосымша. Тесттер, Anki карточкалары, оқу материалдары мен рейтинг.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

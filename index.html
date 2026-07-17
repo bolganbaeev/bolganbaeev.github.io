@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>ҰБТ дайындық</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0f766e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="ҰБТ дайындық">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="1.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="1.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="1.png">
+    <link rel="apple-touch-icon" href="1.png">
+    <script defer src="test/app.js"></script>
+<script src="chart.js"></script>
+    <script src="libs/mammoth.browser.min.js"></script>
+    <script src="libs/jszip.min.js"></script>
+    <script src="libs/docx-preview.min.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js').catch((error) => {
+                    console.error('Service Worker тіркелмеді:', error);
+                });
+            });
+        }
+    </script>
+
+</head>
+<body>
+    <div id="login-screen">
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    
+    <div class="login-card">
+        <h3>Қош келдіңіз!</h3>
+        <p>Кіру кодын енгізіңіз:</p>
+        <div class="login-secret-wrap">
+            <input type="password" class="login-secret-input" id="login-secret" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" inputmode="text" placeholder="Кіру коды">
+            <button type="button" id="login-submit-btn" onclick="checkPin()">Кіру</button>
+        </div>
+        <p id="error-message" style="color: #ff4d4d; display: none; margin-top: 15px; font-weight: bold;">
+            Қате кіру коды. Қайтадан көріңіз.
+        </p>
+    </div>
+</div>
+
+<style>
+    #question sub,
+    #options .option-btn sub,
+    .mistakes-container .m-val sub {
+        font-size: 0.72em;
+        line-height: 0;
+        vertical-align: sub;
+    }
+
+    /* Дизайн стильдері */
+    #login-screen {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100vh;
+        background-color: #080710;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .background {
+        width: 430px; height: 520px;
+        position: absolute;
+    }
+
+    .background .shape {
+        height: 200px; width: 200px;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .shape:first-child {
+        background: linear-gradient(#1845ad, #23a2f6);
+        left: -80px; top: -80px;
+    }
+
+    .shape:last-child {
+        background: linear-gradient(to right, #ff512f, #f09819);
+        right: -80px; bottom: -80px;
+    }
+
+    .login-card {
+        width: 380px;
+        background-color: rgba(255, 255, 255, 0.13);
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        padding: 50px 30px;
+        text-align: center;
+        color: white;
+    }
+
+    .login-secret-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin: 30px 0 10px;
+    }
+
+    .login-secret-input {
+        width: 100%;
+        height: 58px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding: 0 18px;
+        transition: 0.3s;
+    }
+
+    .login-secret-input::placeholder {
+        color: rgba(255, 255, 255, 0.55);
+    }
+
+    .login-secret-input:focus {
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 10px #23a2f6;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px 0;
+        background-color: white;
+        color: #080710;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        border: none;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background-color: #23a2f6;
+    }
+
+    @media (max-width: 768px) {
+        #login-screen {
+            padding: 18px;
+            box-sizing: border-box;
+        }
+
+        .background {
+            width: 100%;
+            max-width: 360px;
+            height: 460px;
+        }
+
+        .login-card {
+            width: 100%;
+            max-width: 360px;
+            padding: 36px 20px;
+        }
+
+        .login-secret-input {
+            font-size: 18px;
+            height: 54px;
+        }
+    }
+</style>
+
+    <div class="containers" id="homemenu" style="display: none;">
+        <aside class="sidebar">
+            <div class="user-info">
+                <img src="avatar.jpg" alt="" class="avatar">
+                <p class="username">Abdilla Sayan</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li onclick="openPage('home')" id="nav-home" data-nav-target="home" class="active">Басты бет</li>
+                <li onclick="openPage('profile')" id="nav-profile" data-nav-target="profile">Профиль</li>
+                <li onclick="openPage('test')" id="nav-test" data-nav-target="test">Тест</li>
+                <li onclick="openPage('anki')" id="nav-anki" data-nav-target="anki">Anki</li>
+                <li onclick="openPage('settings')" id="nav-settings" data-nav-target="settings">Баптаулар</li>
+                <li onclick="openPage('ranking')" id="nav-ranking" data-nav-target="ranking">Рейтинг</li>
+                <li onclick="openPage('blocks')" id="nav-blocks" data-nav-target="blocks">Блоктар</li>
+                <li onclick="openPage('math-formulas')" id="nav-math-formulas" data-nav-target="math-formulas">Математика формулалар</li>
+                <li onclick="logoutUser()" id="nav-logout">Шығу</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section id="home" class="content-page active">
+                <h1>Қош келдіңіз!</h1>
+
+                <div class="schedule-grid">
+                    <div class="day-card">
+                        <h3>Дүйсенбі</h3>
+                        <ul><li>Таңғы сап</li><li>Тұлғалық даму</li><li>Қазақстан тарихы</li><li>Математика</li><li>Информатика</li><li>Матем. сауаттылық</li></ul>
+                    </div>
+                    <div class="day-card">
+                        <h3>Сейсенбі</h3>
+                        <ul><li>Кітап оқу</li><li>Матем. сауаттылық</li><li>Тапсырма орындау</li><li>Дене шынықтыру</li><li>Ағылшын</li><li>Орыс тілі</li></ul>
+                    </div>
+                    <div class="day-card">
+                        <h3>Сәрсенбі</h3>
+                        <ul><li>Тәрбие сағат</li><li>АӘД</li><li>Орыс тілі</li><li>Қазақстан тарихы</li><li>Информатика</li><li>Математика</li></ul>
+                    </div>
+                    <div class="day-card">
+                        <h3>Бейсенбі</h3>
+                        <ul><li>Кітап оқу</li><li>Дене шынықтыру</li><li>Матем.сауаттылық</li><li>Қазақстан тарихы</li><li>Ағылшын</li><li>Тапсырма орындау</li><li>Алаштану</li></ul>
+                    </div>
+                    <div class="day-card">
+                        <h3>Жұма</h3>
+                        <ul><li>Кітап оқу</li><li>Қазақ тілі</li><li>Психология</li><li>Тапсырма орындау</li><li>Информатика</li><li>Тапсырма орындау</li><li>Математика</li></ul>
+                    </div>
+                </div>
+
+                <div class="feature-link-card">
+                    <div>
+                        <h3>Тестте hotkeys қосылды</h3>
+                        <p>Енді тест ішінде <b>A S D F</b> арқылы жауаптарға фокус қойып, <b>Space</b> немесе <b>Enter</b> арқылы таңдауға болады. <b>Z</b> және <b>X</b> сұрақтар арасында жүруге көмектеседі.</p>
+                    </div>
+                    <button type="button" class="download-btn feature-link-btn" onclick="openPage('test')">Тестті ашу</button>
+                </div>
+            </section>
+
+            <section id="profile" class="content-page">
+                <h1 class="text-center">Профиль</h1>
+                <h2 id="welcomename">Қош келдіңіз, </h2>
+                <div class="motivation-box">
+                    <p>"Кодтағы қате (bug) — бұл жай ғана тәжірибе. ҰБТ-дағы қате де солай. Әр қате сені дұрыс шешімге жақындатады."</p>
+                    <p>Әр дұрыс жауап — сіздің күшіңізді арттырады, әр қате — "жаудың" (ҰБТ-ның) сізге жасаған соққысы. Егер оқушы қатесімен жұмыс істесе, ол "жауды жеңген" болып есептеледі.</p>
+                </div>
+                <div class="green-blue-line"></div>
+                <div class="chart-section">
+    <div class="chart-switcher">
+        <button onclick="prevChart()">&#10094;</button>
+        <h3 id="chartTitle">ҰБТ нәтижелері</h3>
+        <button onclick="nextChart()">&#10095;</button>
+    </div>
+    
+<div class="chart-container" style="height: 300px;">
+        <canvas id="scoreChart"></canvas>
+    </div>
+</div>
+                <div class="history-section">
+                    <h3>Соңғы нәтижелер</h3>
+                    <div id="test-history-list" class="history-list">
+                        <p class="history-empty">Әзірге нәтиже жоқ.</p>
+                    </div>
+                </div>
+                
+                
+            </section>
+            <section id="test" class="content-page">
+            <h1>Тапсыру</h1>
+            <ul class="topics-list">
+                <li onclick="testgo(-1);">Тарих бойынша тапсыру</li>
+                <li onclick="testgo(-2);">Инфо бойынша тапсыру</li>
+                <li onclick="testgo(0);">Барлығын бірге 🔥</li>
+            </ul>
+            <h1>Қазақстан тарихы</h1>
+            <ul class="topics-list" id="test-history-topics"></ul>
+            <h1>Информатика</h1>
+            <ul class="topics-list" id="test-informatics-topics"></ul>
+            </section>
+            <section id="anki" class="content-page">
+            <header class="materials-head">
+                <h1>Anki</h1>
+                <p>Тест бөліміндегідей тақырыпты таңдаңыз. Ішінде қарапайым карточка режимі ашылады.</p>
+            </header>
+            <div id="anki-topic-groups" class="blocks-topic-groups">
+                <h1>Қазақстан тарихы</h1>
+                <ul class="topics-list blocks-topics-list" id="anki-history-topics"></ul>
+            </div>
+            </section>
+            <section id="settings" class="content-page settings-page">
+            <h1>Баптаулар</h1>
+            <div class="settings-panel">
+                <div class="settings-hero">
+                    <h2>Тест ұзындығы</h2>
+                    <p>Бір тестте қанша сұрақ шығатынын орнатыңыз. Бұл параметр барлық тестке қолданылады.</p>
+                </div>
+                <div class="test-settings">
+                    <div class="test-settings-title">Сұрақ саны</div>
+                    <label for="question-count-input">Бір тесттегі сұрақ саны:</label>
+                    <div class="test-settings-row">
+                        <input id="question-count-input" type="number" min="1" step="1" />
+                        <button id="question-count-save" type="button">Сақтау</button>
+                    </div>
+                    <div class="quick-counts">
+                        <button class="quick-count-btn" type="button" onclick="document.getElementById('question-count-input').value='20';document.getElementById('question-count-save').click();">20</button>
+                        <button class="quick-count-btn" type="button" onclick="document.getElementById('question-count-input').value='40';document.getElementById('question-count-save').click();">40</button>
+                        <button class="quick-count-btn" type="button" onclick="document.getElementById('question-count-input').value='60';document.getElementById('question-count-save').click();">60</button>
+                        <button class="quick-count-btn" type="button" onclick="document.getElementById('question-count-input').value='80';document.getElementById('question-count-save').click();">80</button>
+                    </div>
+                    <small id="question-count-hint">Ағымдағысы: 60 сұрақ (әдепкі 60)</small>
+                </div>
+                <div class="test-settings">
+                    <div class="test-settings-title">Тест режимі</div>
+                    <label for="test-mode-select">Тест тапсыру форматы:</label>
+                    <div class="test-settings-row">
+                        <select id="test-mode-select">
+                            <option value="instant">Қазіргі режим (әр сұрақтан кейін бірден тексеру)</option>
+                            <option value="exam">Еркін режим (артқа/алға өтіп, соңында аяқтайсыз)</option>
+                            <option value="self-check">Түртіп оқу режимі (жауапты ашып, өзіңіз бағалайсыз)</option>
+                        </select>
+                        <button id="test-mode-save" type="button">Сақтау</button>
+                    </div>
+                    <small id="test-mode-hint">Ағымдағы режим: Қазіргі режим (әр сұрақтан кейін бірден тексеру)</small>
+                </div>
+                <div class="test-settings danger-settings">
+                    <div class="test-settings-title">Толық тазалау</div>
+                    <p>Барлық сақталған дерек өшеді: қолданушы, тест баптаулары, виджет күйі және жергілікті кэш.</p>
+                    <div class="test-settings-row">
+                        <button id="reset-local-data-btn" type="button">Reset</button>
+                    </div>
+                    <small id="reset-local-data-hint">Қажет болса ғана қолданыңыз.</small>
+                </div>
+            </div>
+            </section>
+            <section id="ranking" class="content-page">
+    <h1>🏆 Сынып рейтингі</h1>
+    <div class="ranking-panel">
+        <div class="chart-switcher ranking-switcher">
+            <button type="button" id="rankingPrevBtn" onclick="prevRankingMode()">&#10094;</button>
+            <h3 id="rankingModeTitle">Мамыр</h3>
+            <button type="button" id="rankingNextBtn" onclick="nextRankingMode()">&#10095;</button>
+        </div>
+        <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr style="text-align: left; border-bottom: 2px solid #eee;">
+                    <th style="padding: 10px;">Орын</th>
+                    <th style="padding: 10px;">Аты-жөні</th>
+                    <th style="padding: 10px;">Ұпай</th>
+                    <th style="padding: 10px;">Түрі</th>
+                </tr>
+            </thead>
+            <tbody id="rankingBody">
+                </tbody>
+        </table>
+    </div>
+</section>
+            
+         
+            
+          
+            
+            <section id="blocks" class="content-page">
+    <header class="materials-head">
+        <h1>Блоктар</h1>
+        <p>Тест бөліміндегідей пәндер бойынша блоктарды таңдаңыз. Тақырыпты басқанда құжат төменде ашылады.</p>
+    </header>
+
+    <div id="blocks-topic-groups" class="blocks-topic-groups"></div>
+    <small id="blocks-status">Блок тақырыбын таңдаңыз.</small>
+
+    <section class="materials-viewer blocks-viewer" id="blocks-viewer" hidden>
+        <div class="materials-viewer-head">
+            <h3 id="blocks-viewer-title">Блок құжаты</h3>
+            <button type="button" class="download-btn" onclick="closeBlockViewer()">Жабу</button>
+        </div>
+        <div id="blocks-qa-list" class="blocks-qa-list" hidden></div>
+        <div id="blocks-docx-loading" class="blocks-docx-loading" hidden>Құжат жүктеліп жатыр...</div>
+        <div id="blocks-docx-errors" class="blocks-docx-errors" hidden></div>
+        <article id="blocks-docx-content" class="blocks-docx-content"></article>
+    </section>
+    <button type="button" id="blocks-quick-back" class="blocks-quick-back" onclick="quickBackToBlocksTopics()" title="Жоғары / Тізімге қайту" aria-label="Жоғары / Тізімге қайту" hidden>↑</button>
+</section>
+
+            <section id="math-formulas" class="content-page formulas-page">
+                <h1 class="formulas-title">Математика формулалар</h1>
+
+                <section class="formulas-section" id="formulas-algebra">
+                    <div class="formulas-section-head">
+                        <h2>Алгебра</h2>
+                    </div>
+                    <div class="formula-grid">
+                        <article class="formula-card">
+                            <h3>Қысқаша көбейту</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Квадрат қосындысы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></math></p></div>
+                                <div class="formula-item"><span class="label">Квадрат айырмасы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow><mo>(</mo><mi>a</mi><mo>-</mo><mi>b</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></math></p></div>
+                                <div class="formula-item"><span class="label">Айырма көбейтіндісі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>a</mi><mo>-</mo><mi>b</mi><mo>)</mo></mrow><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>-</mo><msup><mi>b</mi><mn>2</mn></msup></math></p></div>
+                                <div class="formula-item"><span class="label">Куб қосындысы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo></mrow><mn>3</mn></msup><mo>=</mo><msup><mi>a</mi><mn>3</mn></msup><mo>+</mo><mn>3</mn><msup><mi>a</mi><mn>2</mn></msup><mi>b</mi><mo>+</mo><mn>3</mn><mi>a</mi><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>3</mn></msup></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Қосымша түрлендірулер</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Куб айырмасы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>a</mi><mn>3</mn></msup><mo>-</mo><msup><mi>b</mi><mn>3</mn></msup><mo>=</mo><mrow><mo>(</mo><mi>a</mi><mo>-</mo><mi>b</mi><mo>)</mo></mrow><mrow><mo>(</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>)</mo></mrow></math></p></div>
+                                <div class="formula-item"><span class="label">Куб қосындысын жіктеу</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>a</mi><mn>3</mn></msup><mo>+</mo><msup><mi>b</mi><mn>3</mn></msup><mo>=</mo><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo></mrow><mrow><mo>(</mo><msup><mi>a</mi><mn>2</mn></msup><mo>-</mo><mi>a</mi><mi>b</mi><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>)</mo></mrow></math></p></div>
+                                <div class="formula-item"><span class="label">Екі еселі айырма</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>a</mi><mn>2</mn></msup><mo>-</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><mrow><mo>(</mo><mi>a</mi><mo>-</mo><mi>b</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo></mrow></math></p></div>
+                                <div class="formula-item"><span class="label">Квадраттар қосындысы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><mi>a</mi><mo>-</mo><mi>b</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>2</mn><mrow><mo>(</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>)</mo></mrow></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Дәреже және түбір</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Көбейту</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>a</mi><mi>m</mi></msup><mo>·</mo><msup><mi>a</mi><mi>n</mi></msup><mo>=</mo><msup><mi>a</mi><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup></math></p></div>
+                                <div class="formula-item"><span class="label">Бөлу</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><msup><mi>a</mi><mi>m</mi></msup><msup><mi>a</mi><mi>n</mi></msup></mfrac><mo>=</mo><msup><mi>a</mi><mrow><mi>m</mi><mo>-</mo><mi>n</mi></mrow></msup></math></p></div>
+                                <div class="formula-item"><span class="label">Дәреженің дәрежесі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow><mo>(</mo><msup><mi>a</mi><mi>m</mi></msup><mo>)</mo></mrow><mi>n</mi></msup><mo>=</mo><msup><mi>a</mi><mrow><mi>m</mi><mi>n</mi></mrow></msup></math></p></div>
+                                <div class="formula-item"><span class="label">Теріс дәреже</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>a</mi><mrow><mo>-</mo><mi>n</mi></mrow></msup><mo>=</mo><mfrac><mn>1</mn><msup><mi>a</mi><mi>n</mi></msup></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Көбейтіндінің түбірі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mrow><mi>a</mi><mi>b</mi></mrow></msqrt><mo>=</mo><msqrt><mi>a</mi></msqrt><msqrt><mi>b</mi></msqrt></math></p></div>
+                                <div class="formula-item"><span class="label">Бөліндінің түбірі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mfrac><mi>a</mi><mi>b</mi></mfrac></msqrt><mo>=</mo><mfrac><msqrt><mi>a</mi></msqrt><msqrt><mi>b</mi></msqrt></mfrac></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Логарифм</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Негізгі мәндер</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>log</mi><mi>a</mi></msub><mn>1</mn><mo>=</mo><mn>0</mn><mo>,</mo><msub><mi>log</mi><mi>a</mi></msub><mi>a</mi><mo>=</mo><mn>1</mn></math></p></div>
+                                <div class="formula-item"><span class="label">Көбейтінді</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>log</mi><mi>a</mi></msub><mrow><mo>(</mo><mi>b</mi><mi>c</mi><mo>)</mo></mrow><mo>=</mo><msub><mi>log</mi><mi>a</mi></msub><mi>b</mi><mo>+</mo><msub><mi>log</mi><mi>a</mi></msub><mi>c</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Бөлінді</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>log</mi><mi>a</mi></msub><mrow><mo>(</mo><mfrac><mi>b</mi><mi>c</mi></mfrac><mo>)</mo></mrow><mo>=</mo><msub><mi>log</mi><mi>a</mi></msub><mi>b</mi><mo>-</mo><msub><mi>log</mi><mi>a</mi></msub><mi>c</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Негізді ауыстыру</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>log</mi><mi>a</mi></msub><mi>b</mi><mo>=</mo><mfrac><mrow><msub><mi>log</mi><mi>c</mi></msub><mi>b</mi></mrow><mrow><msub><mi>log</mi><mi>c</mi></msub><mi>a</mi></mrow></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Дәреже</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>log</mi><mi>a</mi></msub><msup><mi>b</mi><mi>n</mi></msup><mo>=</mo><mi>n</mi><msub><mi>log</mi><mi>a</mi></msub><mi>b</mi></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Модуль</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Анықтама</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>|</mo><mi>x</mi><mo>|</mo><mo>=</mo><mrow><mo>{</mo><mtable><mtr><mtd><mi>x</mi><mo>,</mo><mtext>&nbsp;x ≥ 0</mtext></mtd></mtr><mtr><mtd><mo>-</mo><mi>x</mi><mo>,</mo><mtext>&nbsp;x &lt; 0</mtext></mtd></mtr></mtable></mrow></math></p></div>
+                                <div class="formula-item"><span class="label">Қасиет</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>|</mo><mi>a</mi><mi>b</mi><mo>|</mo><mo>=</mo><mo>|</mo><mi>a</mi><mo>|</mo><mo>|</mo><mi>b</mi><mo>|</mo></math></p></div>
+                                <div class="formula-item"><span class="label">Қасиет</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>|</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>|</mo><mo>=</mo><mfrac><mrow><mo>|</mo><mi>a</mi><mo>|</mo></mrow><mrow><mo>|</mo><mi>b</mi><mo>|</mo></mrow></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Теңдеу түрі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>|</mo><mi>x</mi><mo>|</mo><mo>=</mo><mi>a</mi><mo>⇒</mo><mi>x</mi><mo>=</mo><mo>±</mo><mi>a</mi></math></p></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="formulas-section" id="formulas-equations">
+                    <div class="formulas-section-head">
+                        <h2>Теңдеулер</h2>
+                    </div>
+                    <div class="formula-grid">
+                        <article class="formula-card">
+                            <h3>Квадрат теңдеу</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Жалпы түрі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn><mo>,</mo><mi>a</mi><mo>≠</mo><mn>0</mn></math></p></div>
+                                <div class="formula-item"><span class="label">Дискриминант</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>D</mi><mo>=</mo><msup><mi>b</mi><mn>2</mn></msup><mo>-</mo><mn>4</mn><mi>a</mi><mi>c</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Түбірлер</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mo>-</mo><mi>b</mi><mo>±</mo><msqrt><mi>D</mi></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Виет теоремасы</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Түбірлер қосындысы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mo>-</mo><mi>b</mi></mrow><mi>a</mi></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Түбірлер көбейтіндісі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mn>1</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mfrac><mi>c</mi><mi>a</mi></mfrac></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Қажетті формулалар</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Түзу сызық</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mi>k</mi><mi>x</mi><mo>+</mo><mi>b</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Парабола төбесі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mfrac><mrow><mo>-</mo><mi>b</mi></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo>=</mo><mfrac><mrow><mo>-</mo><mi>D</mi></mrow><mrow><mn>4</mn><mi>a</mi></mrow></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Қашықтық</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>d</mi><mo>=</mo><msqrt><mrow><msup><mrow><mo>(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>-</mo><msub><mi>x</mi><mn>1</mn></msub><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><msub><mi>y</mi><mn>2</mn></msub><mo>-</mo><msub><mi>y</mi><mn>1</mn></msub><mo>)</mo></mrow><mn>2</mn></msup></mrow></msqrt></math></p></div>
+                                <div class="formula-item"><span class="label">Симметрия осі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mfrac><mrow><mo>-</mo><mi>b</mi></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Координаталық геометрия</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Орта нүкте</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mfrac><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo>,</mo><mfrac><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><msub><mi>y</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo>)</mo></mrow></math></p></div>
+                                <div class="formula-item"><span class="label">Түзу еңістігі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi><mo>=</mo><mfrac><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>-</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>-</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Шеңбер теңдеуі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mrow><mo>(</mo><mi>x</mi><mo>-</mo><mi>a</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><mi>y</mi><mo>-</mo><mi>b</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></math></p></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="formulas-section" id="formulas-trigonometry">
+                    <div class="formulas-section-head">
+                        <h2>Тригонометрия</h2>
+                    </div>
+                    <div class="formula-grid">
+                        <article class="formula-card">
+                            <h3>Негізгі теңдіктер</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Пифагорлық теңдік</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>sin</mi><mn>2</mn></msup><mi>x</mi><mo>+</mo><msup><mi>cos</mi><mn>2</mn></msup><mi>x</mi><mo>=</mo><mn>1</mn></math></p></div>
+                                <div class="formula-item"><span class="label">Тангенс</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>tg</mi><mi>x</mi><mo>=</mo><mfrac><mrow><mi>sin</mi><mi>x</mi></mrow><mrow><mi>cos</mi><mi>x</mi></mrow></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Котангенс</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>ctg</mi><mi>x</mi><mo>=</mo><mfrac><mrow><mi>cos</mi><mi>x</mi></mrow><mrow><mi>sin</mi><mi>x</mi></mrow></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Негізгі теңдік</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><msup><mi>tg</mi><mn>2</mn></msup><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mrow><msup><mi>cos</mi><mn>2</mn></msup><mi>x</mi></mrow></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Негізгі теңдік</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><msup><mi>ctg</mi><mn>2</mn></msup><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mrow><msup><mi>sin</mi><mn>2</mn></msup><mi>x</mi></mrow></mfrac></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Қосу және айыру</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Синус</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>sin</mi><mrow><mo>(</mo><mi>α</mi><mo>±</mo><mi>β</mi><mo>)</mo></mrow><mo>=</mo><mi>sin</mi><mi>α</mi><mi>cos</mi><mi>β</mi><mo>±</mo><mi>cos</mi><mi>α</mi><mi>sin</mi><mi>β</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Косинус</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>cos</mi><mrow><mo>(</mo><mi>α</mi><mo>±</mo><mi>β</mi><mo>)</mo></mrow><mo>=</mo><mi>cos</mi><mi>α</mi><mi>cos</mi><mi>β</mi><mo>∓</mo><mi>sin</mi><mi>α</mi><mi>sin</mi><mi>β</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Тангенс</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>tg</mi><mrow><mo>(</mo><mi>α</mi><mo>±</mo><mi>β</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mi>tg</mi><mi>α</mi><mo>±</mo><mi>tg</mi><mi>β</mi></mrow><mrow><mn>1</mn><mo>∓</mo><mi>tg</mi><mi>α</mi><mi>tg</mi><mi>β</mi></mrow></mfrac></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Келтіру және қосымша</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Қосымша бұрыштар</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>sin</mi><mrow><mo>(</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>-</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>cos</mi><mi>x</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Қосымша бұрыштар</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>cos</mi><mrow><mo>(</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>-</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>sin</mi><mi>x</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Тақ функция</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>sin</mi><mrow><mo>(</mo><mo>-</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mo>-</mo><mi>sin</mi><mi>x</mi><mo>,</mo><mi>tg</mi><mrow><mo>(</mo><mo>-</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mo>-</mo><mi>tg</mi><mi>x</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Жұп функция</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>cos</mi><mrow><mo>(</mo><mo>-</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>cos</mi><mi>x</mi></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Қос бұрыш және мәндер</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Синус</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>sin</mi><mn>2</mn><mi>x</mi><mo>=</mo><mn>2</mn><mi>sin</mi><mi>x</mi><mi>cos</mi><mi>x</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Косинус</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>cos</mi><mn>2</mn><mi>x</mi><mo>=</mo><mn>1</mn><mo>-</mo><mn>2</mn><msup><mi>sin</mi><mn>2</mn></msup><mi>x</mi><mo>=</mo><mn>2</mn><msup><mi>cos</mi><mn>2</mn></msup><mi>x</mi><mo>-</mo><mn>1</mn></math></p></div>
+                                <div class="formula-item"><span class="label">30°, 45°, 60°</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>sin</mi><mn>30</mn><mo>°</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mi>sin</mi><mn>45</mn><mo>°</mo><mo>=</mo><mfrac><msqrt><mn>2</mn></msqrt><mn>2</mn></mfrac><mo>,</mo><mi>sin</mi><mn>60</mn><mo>°</mo><mo>=</mo><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Негізгі мәндер</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>cos</mi><mn>30</mn><mo>°</mo><mo>=</mo><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac><mo>,</mo><mi>cos</mi><mn>60</mn><mo>°</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mi>tg</mi><mn>45</mn><mo>°</mo><mo>=</mo><mn>1</mn></math></p></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="formulas-section" id="formulas-geometry">
+                    <div class="formulas-section-head">
+                        <h2>Жазықтық геометриясы</h2>
+                    </div>
+                    <div class="formula-grid">
+                        <article class="formula-card">
+                            <h3>Үшбұрыш</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Периметр</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Жарты периметр</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>=</mo><mfrac><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi></mrow><mn>2</mn></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Аудан</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo>=</mo><mfrac><mrow><mi>a</mi><mi>h</mi></mrow><mn>2</mn></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Герон</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo>=</mo><msqrt><mrow><mi>p</mi><mrow><mo>(</mo><mi>p</mi><mo>-</mo><mi>a</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>p</mi><mo>-</mo><mi>b</mi><mo>)</mo></mrow><mrow><mo>(</mo><mi>p</mi><mo>-</mo><mi>c</mi><mo>)</mo></mrow></mrow></msqrt></math></p></div>
+                                <div class="formula-item"><span class="label">Пифагор</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>c</mi><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Теоремалар</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Синустар теоремасы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>a</mi><mrow><mi>sin</mi><mi>A</mi></mrow></mfrac><mo>=</mo><mfrac><mi>b</mi><mrow><mi>sin</mi><mi>B</mi></mrow></mfrac><mo>=</mo><mfrac><mi>c</mi><mrow><mi>sin</mi><mi>C</mi></mrow></mfrac><mo>=</mo><mn>2</mn><mi>R</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Косинустар теоремасы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>c</mi><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>a</mi><mi>b</mi><mi>cos</mi><mi>C</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Екі қабырға және бұрыш</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo>=</mo><mfrac><mrow><mi>a</mi><mi>b</mi><mi>sin</mi><mi>C</mi></mrow><mn>2</mn></mfrac></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Төртбұрыштар және шеңбер</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Шаршы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>,</mo><mi>P</mi><mo>=</mo><mn>4</mn><mi>a</mi><mo>,</mo><mi>d</mi><mo>=</mo><mi>a</mi><msqrt><mn>2</mn></msqrt></math></p></div>
+                                <div class="formula-item"><span class="label">Трапеция</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo>=</mo><mfrac><mrow><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo><mi>h</mi></mrow><mn>2</mn></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Шеңбер ұзындығы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>L</mi><mo>=</mo><mn>2</mn><mi>π</mi><mi>r</mi><mo>=</mo><mi>π</mi><mi>d</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Шеңбер ауданы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Көпбұрыштар</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Ішкі бұрыштар қосындысы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo>=</mo><mrow><mo>(</mo><mi>n</mi><mo>-</mo><mn>2</mn><mo>)</mo></mrow><mo>·</mo><mn>180</mn><mo>°</mo></math></p></div>
+                                <div class="formula-item"><span class="label">Дұрыс көпбұрыш бұрышы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>α</mi><mo>=</mo><mfrac><mrow><mrow><mo>(</mo><mi>n</mi><mo>-</mo><mn>2</mn><mo>)</mo></mrow><mo>·</mo><mn>180</mn><mo>°</mo></mrow><mi>n</mi></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Сыртқы бұрыштар қосындысы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo>=</mo><mn>360</mn><mo>°</mo></math></p></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="formulas-section" id="formulas-stereometry">
+                    <div class="formulas-section-head">
+                        <h2>Стереометрия</h2>
+                    </div>
+                    <div class="formula-grid">
+                        <article class="formula-card">
+                            <h3>Призма және параллелепипед</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Призма көлемі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>V</mi><mo>=</mo><msub><mi>S</mi><mtext>табан</mtext></msub><mi>h</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Тікбұрышты параллелепипед</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>V</mi><mo>=</mo><mi>a</mi><mi>b</mi><mi>c</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Толық бет</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo>=</mo><mn>2</mn><mrow><mo>(</mo><mi>a</mi><mi>b</mi><mo>+</mo><mi>b</mi><mi>c</mi><mo>+</mo><mi>a</mi><mi>c</mi><mo>)</mo></mrow></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Цилиндр және конус</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Цилиндр көлемі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>V</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Цилиндр толық беті</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo>=</mo><mn>2</mn><mi>π</mi><mi>r</mi><mrow><mo>(</mo><mi>r</mi><mo>+</mo><mi>h</mi><mo>)</mo></mrow></math></p></div>
+                                <div class="formula-item"><span class="label">Конус көлемі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>V</mi><mo>=</mo><mfrac><mrow><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></mrow><mn>3</mn></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Конус толық беті</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo>=</mo><mi>π</mi><mi>r</mi><mrow><mo>(</mo><mi>r</mi><mo>+</mo><mi>l</mi><mo>)</mo></mrow></math></p></div>
+                                <div class="formula-item"><span class="label">Шар</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>V</mi><mo>=</mo><mfrac><mrow><mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup></mrow><mn>3</mn></mfrac><mo>,</mo><mi>S</mi><mo>=</mo><mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Пирамида</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Көлемі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>V</mi><mo>=</mo><mfrac><mrow><msub><mi>S</mi><mtext>табан</mtext></msub><mi>h</mi></mrow><mn>3</mn></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Бүйір беті</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>S</mi><mtext>бүйір</mtext></msub><mo>=</mo><mfrac><mrow><msub><mi>P</mi><mtext>табан</mtext></msub><mi>l</mi></mrow><mn>2</mn></mfrac></math></p></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="formulas-section" id="formulas-progressions">
+                    <div class="formulas-section-head">
+                        <h2>Прогрессиялар</h2>
+                    </div>
+                    <div class="formula-grid">
+                        <article class="formula-card">
+                            <h3>Арифметикалық прогрессия</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">n-ші мүшесі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mrow><mo>(</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>)</mo></mrow><mi>d</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Қосындысы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><mrow><mo>(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub><mo>)</mo></mrow><mi>n</mi></mrow><mn>2</mn></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Балама түрі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><mrow><mo>(</mo><mn>2</mn><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mrow><mo>(</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>)</mo></mrow><mi>d</mi><mo>)</mo></mrow><mi>n</mi></mrow><mn>2</mn></mfrac></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Геометриялық прогрессия</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">n-ші мүшесі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>b</mi><mi>n</mi></msub><mo>=</mo><msub><mi>b</mi><mn>1</mn></msub><msup><mi>q</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></math></p></div>
+                                <div class="formula-item"><span class="label">Қосындысы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>b</mi><mn>1</mn></msub><mrow><mo>(</mo><msup><mi>q</mi><mi>n</mi></msup><mo>-</mo><mn>1</mn><mo>)</mo></mrow></mrow><mrow><mi>q</mi><mo>-</mo><mn>1</mn></mrow></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Шексіз кемімелі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>S</mi><mo>=</mo><mfrac><msub><mi>b</mi><mn>1</mn></msub><mrow><mn>1</mn><mo>-</mo><mi>q</mi></mrow></mfrac><mo>,</mo><mo>|</mo><mi>q</mi><mo>|</mo><mo>&lt;</mo><mn>1</mn></math></p></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="formulas-section" id="formulas-probability">
+                    <div class="formulas-section-head">
+                        <h2>Комбинаторика және ықтималдық</h2>
+                    </div>
+                    <div class="formula-grid">
+                        <article class="formula-card">
+                            <h3>Комбинаторика</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Факториал</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>!</mo><mo>=</mo><mn>1</mn><mo>·</mo><mn>2</mn><mo>·</mo><mn>3</mn><mo>·</mo><mo>...</mo><mo>·</mo><mi>n</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Орналастыру</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msubsup><mi>A</mi><mi>n</mi><mi>k</mi></msubsup><mo>=</mo><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mo>(</mo><mi>n</mi><mo>-</mo><mi>k</mi><mo>)</mo><mo>!</mo></mrow></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Теріп алу</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msubsup><mi>C</mi><mi>n</mi><mi>k</mi></msubsup><mo>=</mo><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mi>k</mi><mo>!</mo><mrow><mo>(</mo><mi>n</mi><mo>-</mo><mi>k</mi><mo>)</mo></mrow><mo>!</mo></mrow></mfrac></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Ықтималдық</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Классикалық формула</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mi>m</mi><mi>n</mi></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Қарама-қарсы оқиға</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mrow><mo>(</mo><mover><mi>A</mi><mo>¯</mo></mover><mo>)</mo></mrow><mo>=</mo><mn>1</mn><mo>-</mo><mi>P</mi><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></math></p></div>
+                                <div class="formula-item"><span class="label">Қосу формуласы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mrow><mo>(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow><mo>+</mo><mi>P</mi><mrow><mo>(</mo><mi>B</mi><mo>)</mo></mrow><mo>-</mo><mi>P</mi><mrow><mo>(</mo><mi>A</mi><mi>B</mi><mo>)</mo></mrow></math></p></div>
+                                <div class="formula-item"><span class="label">Көбейту формуласы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mrow><mo>(</mo><mi>A</mi><mi>B</mi><mo>)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow><mo>·</mo><mi>P</mi><mrow><mo>(</mo><mi>B</mi><mo>)</mo></mrow></math></p></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="formulas-section" id="formulas-calculus">
+                    <div class="formulas-section-head">
+                        <h2>Туынды және алғашқы функция</h2>
+                    </div>
+                    <div class="formula-grid">
+                        <article class="formula-card">
+                            <h3>Туынды</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Тұрақты</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow><mo>'</mo><mo>=</mo><mn>0</mn></math></p></div>
+                                <div class="formula-item"><span class="label">Дәреже</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>x</mi><mi>n</mi></msup><mo>'</mo><mo>=</mo><mi>n</mi><msup><mi>x</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></math></p></div>
+                                <div class="formula-item"><span class="label">Тұрақты көбейткіш</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>C</mi><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo></mrow><mo>'</mo><mo>=</mo><mi>C</mi><mi>f</mi><mo>'</mo><mo>(</mo><mi>x</mi><mo>)</mo></math></p></div>
+                                <div class="formula-item"><span class="label">Қосынды</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>u</mi><mo>±</mo><mi>v</mi><mo>)</mo></mrow><mo>'</mo><mo>=</mo><mi>u</mi><mo>'</mo><mo>±</mo><mi>v</mi><mo>'</mo></math></p></div>
+                                <div class="formula-item"><span class="label">Көбейтінді</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>u</mi><mi>v</mi><mo>)</mo></mrow><mo>'</mo><mo>=</mo><mi>u</mi><mo>'</mo><mi>v</mi><mo>+</mo><mi>u</mi><mi>v</mi><mo>'</mo></math></p></div>
+                                <div class="formula-item"><span class="label">Бөлінді</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mfrac><mi>u</mi><mi>v</mi></mfrac><mo>)</mo></mrow><mo>'</mo><mo>=</mo><mfrac><mrow><mi>u</mi><mo>'</mo><mi>v</mi><mo>-</mo><mi>u</mi><mi>v</mi><mo>'</mo></mrow><msup><mi>v</mi><mn>2</mn></msup></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Күрделі функция</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>f</mi><mo>(</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo><mo>)</mo></mrow><mo>'</mo><mo>=</mo><mi>f</mi><mo>'</mo><mo>(</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo><mi>g</mi><mo>'</mo><mo>(</mo><mi>x</mi><mo>)</mo></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Негізгі туындылар</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Көрсеткіштік</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><msup><mi>a</mi><mi>x</mi></msup><mo>)</mo></mrow><mo>'</mo><mo>=</mo><msup><mi>a</mi><mi>x</mi></msup><mi>ln</mi><mi>a</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Көрсеткіштік</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><msup><mi>e</mi><mi>x</mi></msup><mo>)</mo></mrow><mo>'</mo><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup></math></p></div>
+                                <div class="formula-item"><span class="label">Логарифмдік</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>ln</mi><mi>x</mi><mo>)</mo></mrow><mo>'</mo><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>,</mo><mrow><mo>(</mo><msub><mi>log</mi><mi>a</mi></msub><mi>x</mi><mo>)</mo></mrow><mo>'</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>x</mi><mi>ln</mi><mi>a</mi></mrow></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Тригонометриялық</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>sin</mi><mi>x</mi><mo>)</mo></mrow><mo>'</mo><mo>=</mo><mi>cos</mi><mi>x</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Тригонометриялық</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>cos</mi><mi>x</mi><mo>)</mo></mrow><mo>'</mo><mo>=</mo><mo>-</mo><mi>sin</mi><mi>x</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Тригонометриялық</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>tg</mi><mi>x</mi><mo>)</mo></mrow><mo>'</mo><mo>=</mo><mfrac><mn>1</mn><mrow><msup><mi>cos</mi><mn>2</mn></msup><mi>x</mi></mrow></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Тригонометриялық</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><mi>ctg</mi><mi>x</mi><mo>)</mo></mrow><mo>'</mo><mo>=</mo><mo>-</mo><mfrac><mn>1</mn><mrow><msup><mi>sin</mi><mn>2</mn></msup><mi>x</mi></mrow></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Кері функция</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><msup><mi>x</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>)</mo></mrow><mo>'</mo><mo>=</mo><mo>-</mo><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Түбір</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>(</mo><msqrt><mi>x</mi></msqrt><mo>)</mo></mrow><mo>'</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><msqrt><mi>x</mi></msqrt></mrow></mfrac></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Алғашқы функция</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Дәреже</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>∫</mo><msup><mi>x</mi><mi>n</mi></msup><mi>d</mi><mi>x</mi><mo>=</mo><mfrac><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>+</mo><mi>C</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Тұрақты</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>∫</mo><mi>C</mi><mi>d</mi><mi>x</mi><mo>=</mo><mi>C</mi><mi>x</mi><mo>+</mo><mi>C</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Тригонометриялық</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>∫</mo><mi>cos</mi><mi>x</mi><mi>d</mi><mi>x</mi><mo>=</mo><mi>sin</mi><mi>x</mi><mo>+</mo><mi>C</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Тригонометриялық</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>∫</mo><mi>sin</mi><mi>x</mi><mi>d</mi><mi>x</mi><mo>=</mo><mo>-</mo><mi>cos</mi><mi>x</mi><mo>+</mo><mi>C</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Тригонометриялық</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>∫</mo><mfrac><mn>1</mn><mrow><msup><mi>cos</mi><mn>2</mn></msup><mi>x</mi></mrow></mfrac><mi>d</mi><mi>x</mi><mo>=</mo><mi>tg</mi><mi>x</mi><mo>+</mo><mi>C</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Тригонометриялық</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>∫</mo><mfrac><mn>1</mn><mrow><msup><mi>sin</mi><mn>2</mn></msup><mi>x</mi></mrow></mfrac><mi>d</mi><mi>x</mi><mo>=</mo><mo>-</mo><mi>ctg</mi><mi>x</mi><mo>+</mo><mi>C</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Логарифм және көрсеткіш</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>∫</mo><mfrac><mn>1</mn><mi>x</mi></mfrac><mi>d</mi><mi>x</mi><mo>=</mo><mi>ln</mi><mo>|</mo><mi>x</mi><mo>|</mo><mo>+</mo><mi>C</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Логарифм және көрсеткіш</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>∫</mo><msup><mi>e</mi><mi>x</mi></msup><mi>d</mi><mi>x</mi><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mi>C</mi><mo>,</mo><mo>∫</mo><msup><mi>a</mi><mi>x</mi></msup><mi>d</mi><mi>x</mi><mo>=</mo><mfrac><msup><mi>a</mi><mi>x</mi></msup><mi>ln</mi><mi>a</mi></mfrac><mo>+</mo><mi>C</mi></math></p></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="formulas-section" id="formulas-vectors">
+                    <div class="formulas-section-head">
+                        <h2>Вектор және координата</h2>
+                    </div>
+                    <div class="formula-grid">
+                        <article class="formula-card">
+                            <h3>Вектор ұзындығы</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Жазықтықта</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>|</mo><mi>a</mi><mo>|</mo></mrow><mo>=</mo><msqrt><mrow><msup><msub><mi>a</mi><mi>x</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>a</mi><mi>y</mi></msub><mn>2</mn></msup></mrow></msqrt></math></p></div>
+                                <div class="formula-item"><span class="label">Кеңістікте</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>|</mo><mi>a</mi><mo>|</mo></mrow><mo>=</mo><msqrt><mrow><msup><msub><mi>a</mi><mi>x</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>a</mi><mi>y</mi></msub><mn>2</mn></msup><mo>+</mo><msup><msub><mi>a</mi><mi>z</mi></msub><mn>2</mn></msup></mrow></msqrt></math></p></div>
+                                <div class="formula-item"><span class="label">Скаляр көбейтінді</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>·</mo><mi>b</mi><mo>=</mo><mrow><mo>|</mo><mi>a</mi><mo>|</mo></mrow><mrow><mo>|</mo><mi>b</mi><mo>|</mo></mrow><mi>cos</mi><mi>φ</mi></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Координаталық формулалар</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Вектор координатасы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>AB</mi><mo>→</mo></mover><mo>=</mo><mrow><mo>(</mo><msub><mi>x</mi><mi>B</mi></msub><mo>-</mo><msub><mi>x</mi><mi>A</mi></msub><mo>;</mo><msub><mi>y</mi><mi>B</mi></msub><mo>-</mo><msub><mi>y</mi><mi>A</mi></msub><mo>)</mo></mrow></math></p></div>
+                                <div class="formula-item"><span class="label">Скаляр көбейтінді</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>·</mo><mi>b</mi><mo>=</mo><msub><mi>a</mi><mi>x</mi></msub><msub><mi>b</mi><mi>x</mi></msub><mo>+</mo><msub><mi>a</mi><mi>y</mi></msub><msub><mi>b</mi><mi>y</mi></msub></math></p></div>
+                                <div class="formula-item"><span class="label">Перпендикулярлық</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>⊥</mo><mi>b</mi><mo>⇔</mo><mi>a</mi><mo>·</mo><mi>b</mi><mo>=</mo><mn>0</mn></math></p></div>
+                                <div class="formula-item"><span class="label">Коллинеарлық</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>∥</mo><mi>b</mi><mo>⇔</mo><mfrac><msub><mi>a</mi><mi>x</mi></msub><msub><mi>b</mi><mi>x</mi></msub></mfrac><mo>=</mo><mfrac><msub><mi>a</mi><mi>y</mi></msub><msub><mi>b</mi><mi>y</mi></msub></mfrac></math></p></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="formulas-section" id="formulas-practical">
+                    <div class="formulas-section-head">
+                        <h2>Математикалық сауаттылық</h2>
+                    </div>
+                    <div class="formula-grid">
+                        <article class="formula-card">
+                            <h3>Пайыз</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Пайызды санға айналдыру</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>%</mo><mo>=</mo><mfrac><mi>p</mi><mn>100</mn></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Пайызын табу</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>%</mo><mtext>&nbsp;of&nbsp;</mtext><mi>a</mi><mo>=</mo><mfrac><mi>x</mi><mn>100</mn></mfrac><mi>a</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Пайыздық өсім</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>(</mo><mn>1</mn><mo>+</mo><mfrac><mi>p</mi><mn>100</mn></mfrac><mo>)</mo></math></p></div>
+                                <div class="formula-item"><span class="label">Пайыздық кему</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>(</mo><mn>1</mn><mo>-</mo><mfrac><mi>p</mi><mn>100</mn></mfrac><mo>)</mo></math></p></div>
+                                <div class="formula-item"><span class="label">Пайыз өзгерісі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>жаңа</mi><mo>-</mo><mi>ескі</mi></mrow><mi>ескі</mi></mfrac><mo>·</mo><mn>100</mn><mo>%</mo></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Қозғалыс, жұмыс, қоспа</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Қозғалыс</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi><mo>=</mo><mi>v</mi><mi>t</mi><mo>,</mo><mi>v</mi><mo>=</mo><mfrac><mi>s</mi><mi>t</mi></mfrac><mo>,</mo><mi>t</mi><mo>=</mo><mfrac><mi>s</mi><mi>v</mi></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Орташа жылдамдық</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>v</mi><mtext>орт</mtext></msub><mo>=</mo><mfrac><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>+</mo><msub><mi>s</mi><mn>2</mn></msub><mo>+</mo><mo>...</mo></mrow><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>+</mo><msub><mi>t</mi><mn>2</mn></msub><mo>+</mo><mo>...</mo></mrow></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Жұмыс</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi><mo>=</mo><mi>p</mi><mi>t</mi><mo>,</mo><mi>p</mi><mo>=</mo><mfrac><mi>A</mi><mi>t</mi></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Өнімділік қосындысы</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>p</mi><mn>1</mn></msub><mo>+</mo><msub><mi>p</mi><mn>2</mn></msub><mo>=</mo><msub><mi>p</mi><mtext>жалпы</mtext></msub></math></p></div>
+                                <div class="formula-item"><span class="label">Қоспа</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi><mo>=</mo><mi>c</mi><mi>V</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Концентрация</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>=</mo><mfrac><mi>m</mi><mi>V</mi></mfrac></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Пропорция және орташа</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Пропорция</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>=</mo><mfrac><mi>c</mi><mi>d</mi></mfrac><mo>⇔</mo><mi>a</mi><mi>d</mi><mo>=</mo><mi>b</mi><mi>c</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Арифметикалық орта</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>x</mi><mo>¯</mo></mover><mo>=</mo><mfrac><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><mo>...</mo><mo>+</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mi>n</mi></mfrac></math></p></div>
+                                <div class="formula-item"><span class="label">Баға, сан, құн</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>құн</mi><mo>=</mo><mi>баға</mi><mo>·</mo><mi>сан</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Масштаб</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>масштаб</mi><mo>=</mo><mfrac><mi>картадағы</mi><mi>нақты</mi></mfrac></math></p></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="formulas-section" id="formulas-inequalities">
+                    <div class="formulas-section-head">
+                        <h2>Теңсіздіктер және облыс</h2>
+                    </div>
+                    <div class="formula-grid">
+                        <article class="formula-card">
+                            <h3>Теңсіздіктер</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Квадрат үшмүше</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>&gt;</mo><mn>0</mn></math></p></div>
+                                <div class="formula-item"><span class="label">Интервал әдісі</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>түбірлер бойынша аралықтарға бөлу</mtext></math></p></div>
+                                <div class="formula-item"><span class="label">Көбейтуге бөлу</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>теріс санға бөлгенде таңба өзгереді</mtext></math></p></div>
+                                <div class="formula-item"><span class="label">Квадрат үшмүше белгісі</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>D</mi><mo>&gt;</mo><mn>0</mn><mo>,</mo><mi>a</mi><mo>&gt;</mo><mn>0</mn><mtext>&nbsp;болса сыртында&nbsp;+,&nbsp;ішінде&nbsp;-</mtext></math></p></div>
+                                <div class="formula-item"><span class="label">Квадрат үшмүше белгісі</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>D</mi><mo>&gt;</mo><mn>0</mn><mo>,</mo><mi>a</mi><mo>&lt;</mo><mn>0</mn><mtext>&nbsp;болса сыртында&nbsp;-,&nbsp;ішінде&nbsp;+</mtext></math></p></div>
+                                <div class="formula-item"><span class="label">Сызықтық теңсіздік</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mo>&gt;</mo><mn>0</mn><mo>⇒</mo><mi>x</mi><mo>&gt;</mo><mo>-</mo><mfrac><mi>b</mi><mi>a</mi></mfrac><mo>,</mo><mi>a</mi><mo>&gt;</mo><mn>0</mn></math></p></div>
+                                <div class="formula-item"><span class="label">Сызықтық теңсіздік</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mo>&gt;</mo><mn>0</mn><mo>⇒</mo><mi>x</mi><mo>&lt;</mo><mo>-</mo><mfrac><mi>b</mi><mi>a</mi></mfrac><mo>,</mo><mi>a</mi><mo>&lt;</mo><mn>0</mn></math></p></div>
+                                <div class="formula-item"><span class="label">Модуль теңсіздігі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>|</mo><mi>x</mi><mo>|</mo><mo>&lt;</mo><mi>a</mi><mo>⇒</mo><mo>-</mo><mi>a</mi><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mi>a</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Модуль теңсіздігі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>|</mo><mi>x</mi><mo>|</mo><mo>&gt;</mo><mi>a</mi><mo>⇒</mo><mi>x</mi><mo>&lt;</mo><mo>-</mo><mi>a</mi><mtext>&nbsp;немесе&nbsp;</mtext><mi>x</mi><mo>&gt;</mo><mi>a</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Қос теңсіздік</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mi>b</mi><mtext>&nbsp;⇔&nbsp;x ∈ (a; b)</mtext></math></p></div>
+                                <div class="formula-item"><span class="label">Логарифмдік теңсіздік</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>log</mi><mi>a</mi></msub><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>&gt;</mo><msub><mi>log</mi><mi>a</mi></msub><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>⇒</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>&gt;</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>,</mo><mi>a</mi><mo>&gt;</mo><mn>1</mn></math></p></div>
+                                <div class="formula-item"><span class="label">Логарифмдік теңсіздік</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>log</mi><mi>a</mi></msub><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>&gt;</mo><msub><mi>log</mi><mi>a</mi></msub><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>⇒</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>&lt;</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>,</mo><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mn>1</mn></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Анықталу облысы</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Бөлшек</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>1</mi><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></mfrac><mtext>&nbsp;үшін&nbsp;</mtext><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>≠</mo><mn>0</mn></math></p></div>
+                                <div class="formula-item"><span class="label">Түбір</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></msqrt><mtext>&nbsp;үшін&nbsp;</mtext><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>≥</mo><mn>0</mn></math></p></div>
+                                <div class="formula-item"><span class="label">Логарифм</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>log</mi><mi>a</mi></msub><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow><mtext>&nbsp;үшін&nbsp;</mtext><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>&gt;</mo><mn>0</mn><mo>,</mo><mi>a</mi><mo>&gt;</mo><mn>0</mn><mo>,</mo><mi>a</mi><mo>≠</mo><mn>1</mn></math></p></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="formulas-section" id="formulas-equation-types">
+                    <div class="formulas-section-head">
+                        <h2>Арнайы теңдеулер</h2>
+                    </div>
+                    <div class="formula-grid">
+                        <article class="formula-card">
+                            <h3>Тригонометриялық теңдеулер</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Синус</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>sin</mi><mi>x</mi><mo>=</mo><mi>a</mi><mo>⇒</mo><mi>x</mi><mo>=</mo><msup><mrow><mo>(</mo><mo>-</mo><mn>1</mn><mo>)</mo></mrow><mi>n</mi></msup><mi>arcsin</mi><mi>a</mi><mo>+</mo><mi>π</mi><mi>n</mi><mo>,</mo><mi>n</mi><mo>∈</mo><mi>Z</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Косинус</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>cos</mi><mi>x</mi><mo>=</mo><mi>a</mi><mo>⇒</mo><mi>x</mi><mo>=</mo><mo>±</mo><mi>arccos</mi><mi>a</mi><mo>+</mo><mn>2</mn><mi>π</mi><mi>n</mi><mo>,</mo><mi>n</mi><mo>∈</mo><mi>Z</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Тангенс</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>tg</mi><mi>x</mi><mo>=</mo><mi>a</mi><mo>⇒</mo><mi>x</mi><mo>=</mo><mi>arctg</mi><mi>a</mi><mo>+</mo><mi>π</mi><mi>n</mi><mo>,</mo><mi>n</mi><mo>∈</mo><mi>Z</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Котангенс</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>ctg</mi><mi>x</mi><mo>=</mo><mi>a</mi><mo>⇒</mo><mi>x</mi><mo>=</mo><mi>arcctg</mi><mi>a</mi><mo>+</mo><mi>π</mi><mi>n</mi><mo>,</mo><mi>n</mi><mo>∈</mo><mi>Z</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Арнайы мәндер</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>sin</mi><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇒</mo><mi>x</mi><mo>=</mo><mi>π</mi><mi>n</mi><mo>;</mo><mi>cos</mi><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇒</mo><mi>x</mi><mo>=</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>π</mi><mi>n</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Арнайы мәндер</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>tg</mi><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇒</mo><mi>x</mi><mo>=</mo><mi>π</mi><mi>n</mi><mo>;</mo><mi>ctg</mi><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇒</mo><mi>x</mi><mo>=</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>π</mi><mi>n</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Бірлік мәндер</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>sin</mi><mi>x</mi><mo>=</mo><mn>1</mn><mo>⇒</mo><mi>x</mi><mo>=</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mn>2</mn><mi>π</mi><mi>n</mi><mo>;</mo><mi>sin</mi><mi>x</mi><mo>=</mo><mo>-</mo><mn>1</mn><mo>⇒</mo><mi>x</mi><mo>=</mo><mfrac><mrow><mn>3</mn><mi>π</mi></mrow><mn>2</mn></mfrac><mo>+</mo><mn>2</mn><mi>π</mi><mi>n</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Бірлік мәндер</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>cos</mi><mi>x</mi><mo>=</mo><mn>1</mn><mo>⇒</mo><mi>x</mi><mo>=</mo><mn>2</mn><mi>π</mi><mi>n</mi><mo>;</mo><mi>cos</mi><mi>x</mi><mo>=</mo><mo>-</mo><mn>1</mn><mo>⇒</mo><mi>x</mi><mo>=</mo><mi>π</mi><mo>+</mo><mn>2</mn><mi>π</mi><mi>n</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Негізгі бұрыштар</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>tg</mi><mi>x</mi><mo>=</mo><mn>1</mn><mo>⇒</mo><mi>x</mi><mo>=</mo><mfrac><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>π</mi><mi>n</mi><mo>;</mo><mi>tg</mi><mi>x</mi><mo>=</mo><mo>-</mo><mn>1</mn><mo>⇒</mo><mi>x</mi><mo>=</mo><mo>-</mo><mfrac><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>π</mi><mi>n</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Негізгі бұрыштар</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>ctg</mi><mi>x</mi><mo>=</mo><mn>1</mn><mo>⇒</mo><mi>x</mi><mo>=</mo><mfrac><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>π</mi><mi>n</mi><mo>;</mo><mi>ctg</mi><mi>x</mi><mo>=</mo><mo>-</mo><mn>1</mn><mo>⇒</mo><mi>x</mi><mo>=</mo><mfrac><mrow><mn>3</mn><mi>π</mi></mrow><mn>4</mn></mfrac><mo>+</mo><mi>π</mi><mi>n</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Тең синустар</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>sin</mi><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>sin</mi><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>⇒</mo><mfenced open="[" close="]"><mtable><mtr><mtd><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mn>2</mn><mi>π</mi><mi>n</mi></mtd></mtr><mtr><mtd><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>π</mi><mo>-</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mn>2</mn><mi>π</mi><mi>n</mi></mtd></mtr></mtable></mfenced></math></p></div>
+                                <div class="formula-item"><span class="label">Тең косинустар</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>cos</mi><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>cos</mi><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>⇒</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>±</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mn>2</mn><mi>π</mi><mi>n</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Тең тангенстер</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>tg</mi><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>tg</mi><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>⇒</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mi>π</mi><mi>n</mi></math></p></div>
+                                <div class="formula-item"><span class="label">Тең котангенстер</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>ctg</mi><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>ctg</mi><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>⇒</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mi>π</mi><mi>n</mi></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Көрсеткіштік және логарифмдік</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Бірдей негіз</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>a</mi><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></msup><mo>=</mo><msup><mi>a</mi><mrow><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></msup><mo>⇒</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></p></div>
+                                <div class="formula-item"><span class="label">Логарифмдер теңдігі</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>log</mi><mi>a</mi></msub><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msub><mi>log</mi><mi>a</mi></msub><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>⇒</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></p></div>
+                                <div class="formula-item"><span class="label">Логарифмді ашу</span><p class="expr"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>log</mi><mi>a</mi></msub><mi>b</mi><mo>=</mo><mi>c</mi><mo>⇔</mo><msup><mi>a</mi><mi>c</mi></msup><mo>=</mo><mi>b</mi></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Иррационал теңдеулер</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Негізгі қадам</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></msqrt><mo>=</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></p></div>
+                                <div class="formula-item"><span class="label">Шарт</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>≥</mo><mn>0</mn><mo>,</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>≥</mo><mn>0</mn></math></p></div>
+                                <div class="formula-item"><span class="label">Квадраттау</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mrow><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup></math></p></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="formulas-section" id="formulas-templates">
+                    <div class="formulas-section-head">
+                        <h2>Қысқа ережелер және шаблондар</h2>
+                    </div>
+                    <div class="formula-grid">
+                        <article class="formula-card">
+                            <h3>Қысқа ережелер</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Қосынды квадраты</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>ортаңғы мүше: 2ab</mtext></math></p></div>
+                                <div class="formula-item"><span class="label">Дискриминант</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>D</mi><mo>&gt;</mo><mn>0</mn><mtext>&nbsp;екі түбір, </mtext><mi>D</mi><mo>=</mo><mn>0</mn><mtext>&nbsp;бір түбір, </mtext><mi>D</mi><mo>&lt;</mo><mn>0</mn><mtext>&nbsp;түбір жоқ</mtext></math></p></div>
+                            </div>
+                        </article>
+                        <article class="formula-card">
+                            <h3>Мәтіндік есептер</h3>
+                            <div class="formula-list">
+                                <div class="formula-item"><span class="label">Екі сан</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>x + y = S, xy = P</mtext></math></p></div>
+                                <div class="formula-item"><span class="label">Қоспа</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>таза зат массасы өзгермейді</mtext></math></p></div>
+                                <div class="formula-item"><span class="label">Жұмыс</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>1/t - өнімділік</mtext></math></p></div>
+                                <div class="formula-item"><span class="label">Қозғалыс</span><p class="expr expr-small"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>қарама-қарсы: v = v1 + v2, бір бағытта: v = v1 - v2</mtext></math></p></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </section>
+            </div>
+        </main>
+
+        <nav class="mobile-bottom-nav" aria-label="Мобильді навигация">
+            <button type="button" class="mobile-nav-btn active" data-nav-target="home" onclick="openPage('home')">
+                <span class="mobile-nav-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/></svg>
+                </span>
+                <span>Басты</span>
+            </button>
+            <button type="button" class="mobile-nav-btn" data-nav-target="test" onclick="openPage('test')">
+                <span class="mobile-nav-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M7 4h10l3 3v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7l3-3Z"/><path d="M8 11h8M8 15h5"/></svg>
+                </span>
+                <span>Тест</span>
+            </button>
+            <button type="button" class="mobile-nav-btn" data-nav-target="ranking" onclick="openPage('ranking')">
+                <span class="mobile-nav-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M6 20V10M12 20V4M18 20v-7M4 20h16"/></svg>
+                </span>
+                <span>Рейтинг</span>
+            </button>
+            <button type="button" class="mobile-nav-btn" data-nav-target="blocks" onclick="openPage('blocks')">
+                <span class="mobile-nav-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4H20v13.5A2.5 2.5 0 0 0 17.5 15H4z"/><path d="M4 6.5V20h13.5A2.5 2.5 0 0 1 20 22"/></svg>
+                </span>
+                <span>Блок</span>
+            </button>
+            <button type="button" class="mobile-nav-btn" id="mobile-more-btn" onclick="toggleMobileMoreMenu()">
+                <span class="mobile-nav-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M5 12h.01M12 12h.01M19 12h.01"/><path d="M5 12a1 1 0 1 0 0 .01M12 12a1 1 0 1 0 0 .01M19 12a1 1 0 1 0 0 .01"/></svg>
+                </span>
+                <span>Көбірек</span>
+            </button>
+        </nav>
+
+        <div class="mobile-more-sheet" id="mobile-more-sheet" hidden onclick="closeMobileMoreMenu(event)">
+            <div class="mobile-more-panel" onclick="event.stopPropagation()">
+                <button type="button" class="mobile-more-item" data-nav-target="profile" onclick="openPage('profile')">Профиль</button>
+                <button type="button" class="mobile-more-item" data-nav-target="anki" onclick="openPage('anki')">Anki</button>
+                <button type="button" class="mobile-more-item" data-nav-target="settings" onclick="openPage('settings')">Баптаулар</button>
+                <button type="button" class="mobile-more-item" data-nav-target="math-formulas" onclick="openPage('math-formulas')">Формулалар</button>
+                <button type="button" class="mobile-more-item danger" onclick="logoutUser()">Шығу</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Беттерді ауыстыру логикасы
+        const BLOCKS_CATALOG_URL = 'blocks-data/catalog.json';
+        const blocksState = {
+            catalog: null,
+            catalogLoaded: false,
+            catalogError: '',
+            activeTopicKey: '',
+            openBlockMeta: null,
+            quickBackBound: false
+        };
+
+        function escapeHtml(value) {
+            return String(value || '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function normalizeText(value) {
+            return String(value || '').trim().toLowerCase();
+        }
+
+        function normalizeBlockQuestions(rawQuestions) {
+            if (!Array.isArray(rawQuestions)) return [];
+            return rawQuestions
+                .map((item) => {
+                    const question = String(item && item.question ? item.question : '').trim();
+                    const answer = String(item && item.answer ? item.answer : '').trim();
+                    if (!question || !answer) return null;
+                    return { question, answer };
+                })
+                .filter(Boolean);
+        }
+
+        function sanitizeBlocksCatalog(payload) {
+            const subjects = Array.isArray(payload && payload.subjects) ? payload.subjects : [];
+            return {
+                subjects: subjects
+                    .map((subject) => {
+                        const subjectId = String(subject && subject.id ? subject.id : '').trim();
+                        if (!subjectId) return null;
+
+                        const topics = Array.isArray(subject && subject.topics) ? subject.topics : [];
+                        const safeTopics = topics
+                            .map((topic) => {
+                                const topicId = String(topic && topic.id ? topic.id : '').trim();
+                                if (!topicId) return null;
+                                return {
+                                    id: topicId,
+                                    code: String(topic && topic.code ? topic.code : '').trim(),
+                                    title: String(topic && topic.title ? topic.title : '').trim(),
+                                    summary: String(topic && topic.summary ? topic.summary : '').trim(),
+                                    file: String(topic && topic.file ? topic.file : '').trim(),
+                                    questions: normalizeBlockQuestions(topic && topic.questions)
+                                };
+                            })
+                            .filter(Boolean);
+
+                        return {
+                            id: subjectId,
+                            title: String(subject && subject.title ? subject.title : subjectId).trim(),
+                            topics: safeTopics
+                        };
+                    })
+                    .filter(Boolean)
+            };
+        }
+
+        function isSafeBlockFilePath(filePath) {
+            if (!filePath) return false;
+            const normalized = String(filePath).trim();
+            if (!normalized) return false;
+            if (/^[a-z]+:/i.test(normalized) || normalized.startsWith('//')) return false;
+            if (normalized.includes('..')) return false;
+            if (!normalized.startsWith('blocks-data/docs/')) return false;
+            return /\.docx?$/i.test(normalized);
+        }
+
+        function setBlocksStatus(message, isError = false) {
+            const status = document.getElementById('blocks-status');
+            if (!status) return;
+            status.textContent = message;
+            status.style.color = isError ? '#b42318' : '#4b5f73';
+        }
+
+        async function ensureBlocksCatalog() {
+            if (blocksState.catalogLoaded) return;
+
+            try {
+                const response = await fetch(BLOCKS_CATALOG_URL, { cache: 'no-store' });
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const payload = await response.json();
+                blocksState.catalog = sanitizeBlocksCatalog(payload);
+                blocksState.catalogLoaded = true;
+                blocksState.catalogError = '';
+                setBlocksStatus('Блоктар каталогы жүктелді.');
+            } catch (error) {
+                blocksState.catalogLoaded = true;
+                blocksState.catalog = { subjects: [] };
+                blocksState.catalogError = 'Блоктар каталогын жүктеу сәтсіз болды.';
+                setBlocksStatus('Блоктар каталогын жүктеу сәтсіз болды. JSON жолын тексеріңіз.', true);
+            }
+        }
+
+        function getAllBlockSubjects() {
+            return (blocksState.catalog && Array.isArray(blocksState.catalog.subjects))
+                ? blocksState.catalog.subjects
+                : [];
+        }
+
+        function findBlockMeta(subjectId, topicId) {
+            const subjects = getAllBlockSubjects();
+            const subject = subjects.find((item) => item.id === subjectId);
+            if (!subject) return null;
+            const topics = Array.isArray(subject.topics) ? subject.topics : [];
+            const topic = topics.find((item) => item.id === topicId);
+            if (!topic) return null;
+            return {
+                subjectId: subject.id,
+                subjectTitle: subject.title || subject.id,
+                topicId: topic.id,
+                topicCode: topic.code || '',
+                topicTitle: topic.title || 'Блок',
+                summary: topic.summary || '',
+                file: topic.file || '',
+                questions: Array.isArray(topic.questions) ? topic.questions : []
+            };
+        }
+
+        function renderBlocksList() {
+            const root = document.getElementById('blocks-topic-groups');
+            if (!root) return;
+
+            if (blocksState.catalogError) {
+                root.innerHTML = `<p class="materials-empty">Каталог ашылмады: <code>${escapeHtml(BLOCKS_CATALOG_URL)}</code></p>`;
+                return;
+            }
+
+            const subjects = getAllBlockSubjects();
+            if (!subjects.length) {
+                root.innerHTML = '<p class="materials-empty">Пәндер табылмады.</p>';
+                return;
+            }
+
+            root.innerHTML = '';
+            subjects.forEach((subject) => {
+                const topics = Array.isArray(subject.topics) ? subject.topics : [];
+                const heading = document.createElement('h1');
+                heading.textContent = subject.title || subject.id;
+                root.appendChild(heading);
+
+                if (!topics.length) {
+                    const empty = document.createElement('p');
+                    empty.className = 'materials-empty';
+                    empty.textContent = 'Бұл пәнде блок жоқ.';
+                    root.appendChild(empty);
+                    return;
+                }
+
+                const list = document.createElement('ul');
+                list.className = 'topics-list blocks-topics-list';
+                topics.forEach((topic) => {
+                    const key = `${subject.id}::${topic.id}`;
+                    const activeClass = blocksState.activeTopicKey === key ? 'active' : '';
+                    const item = document.createElement('li');
+                    item.className = activeClass;
+                    item.textContent = `${topic.code ? `${topic.code} ` : ''}${topic.title || 'Блок'}`;
+                    item.addEventListener('click', () => openBlockTopic(subject.id, topic.id));
+                    list.appendChild(item);
+                });
+                root.appendChild(list);
+            });
+        }
+
+        function setBlockViewerLoading(isLoading, message = 'Құжат жүктеліп жатыр...') {
+            const loading = document.getElementById('blocks-docx-loading');
+            if (!loading) return;
+            loading.hidden = !isLoading;
+            loading.textContent = message;
+        }
+
+        function renderBlockViewerMessages(messages) {
+            const box = document.getElementById('blocks-docx-errors');
+            if (!box) return;
+
+            const items = Array.isArray(messages) ? messages.filter(Boolean) : [];
+            if (!items.length) {
+                box.hidden = true;
+                box.innerHTML = '';
+                return;
+            }
+
+            box.hidden = false;
+            box.innerHTML = items.map((item) => {
+                const text = typeof item === 'string'
+                    ? item
+                    : `${item.type || 'info'}: ${item.message || ''}`.trim();
+                return `<p>${escapeHtml(text)}</p>`;
+            }).join('');
+        }
+
+        function renderBlockQuestions(questions) {
+            const list = document.getElementById('blocks-qa-list');
+            if (!list) return;
+            const items = Array.isArray(questions) ? questions : [];
+
+            list.innerHTML = '';
+            if (!items.length) {
+                list.hidden = true;
+                return;
+            }
+
+            items.forEach((item, index) => {
+                const card = document.createElement('details');
+                card.className = 'blocks-qa-item';
+                if (index === 0) card.open = true;
+
+                const summary = document.createElement('summary');
+                summary.textContent = item.question;
+
+                const answer = document.createElement('p');
+                answer.className = 'blocks-qa-answer';
+                answer.textContent = item.answer;
+
+                card.appendChild(summary);
+                card.appendChild(answer);
+                list.appendChild(card);
+            });
+            list.hidden = false;
+        }
+
+        function sanitizeDocxHtml(rawHtml) {
+            const template = document.createElement('template');
+            template.innerHTML = String(rawHtml || '');
+
+            const blockedTags = ['script', 'iframe', 'object', 'embed', 'link', 'meta', 'style', 'form'];
+            blockedTags.forEach((tag) => {
+                template.content.querySelectorAll(tag).forEach((node) => node.remove());
+            });
+
+            template.content.querySelectorAll('*').forEach((element) => {
+                [...element.attributes].forEach((attr) => {
+                    const name = attr.name.toLowerCase();
+                    const value = String(attr.value || '').trim().toLowerCase();
+                    if (name.startsWith('on')) {
+                        element.removeAttribute(attr.name);
+                        return;
+                    }
+                    if ((name === 'href' || name === 'src') && value.startsWith('javascript:')) {
+                        element.removeAttribute(attr.name);
+                    }
+                });
+            });
+
+            return template.innerHTML;
+        }
+
+        function decorateDocxContent(container) {
+            if (!container) return;
+
+            container.querySelectorAll('p').forEach((paragraph) => {
+                if (!paragraph.textContent || !paragraph.textContent.trim()) return;
+                paragraph.classList.add('docx-paragraph');
+            });
+
+            container.querySelectorAll('table').forEach((table) => {
+                if (table.parentElement && table.parentElement.classList.contains('docx-table-wrap')) return;
+                const wrap = document.createElement('div');
+                wrap.className = 'docx-table-wrap';
+                table.parentNode.insertBefore(wrap, table);
+                wrap.appendChild(table);
+            });
+
+            container.querySelectorAll('a[href]').forEach((anchor) => {
+                const href = String(anchor.getAttribute('href') || '').trim();
+                if (!href || /^javascript:/i.test(href)) {
+                    anchor.removeAttribute('href');
+                    return;
+                }
+                anchor.setAttribute('target', '_blank');
+                anchor.setAttribute('rel', 'noopener noreferrer');
+            });
+
+            if (container.textContent && container.textContent.trim()) {
+                container.classList.add('is-rendered');
+            } else {
+                container.classList.remove('is-rendered');
+            }
+        }
+
+        function normalizeNativeDocxLayout(container) {
+            if (!container) return;
+            const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+            // docx-preview sometimes injects hardcoded page paddings (e.g. 72pt)
+            // and fixed image widths; force mobile-friendly layout.
+            container.querySelectorAll('section.docx').forEach((section) => {
+                section.style.setProperty('padding', isMobile ? '0' : '12px 16px', 'important');
+                section.style.setProperty('margin', isMobile ? '0 0 8px 0' : '0 auto 14px auto', 'important');
+                section.style.setProperty('width', '100%', 'important');
+                section.style.setProperty('max-width', isMobile ? '100%' : '1100px', 'important');
+                section.style.setProperty('min-width', '0', 'important');
+                section.style.setProperty('box-sizing', 'border-box', 'important');
+                section.style.setProperty('box-shadow', 'none', 'important');
+            });
+
+            container.querySelectorAll('section.docx > article').forEach((article) => {
+                article.style.setProperty('width', '100%', 'important');
+                article.style.setProperty('max-width', '100%', 'important');
+                article.style.setProperty('min-width', '0', 'important');
+                article.style.setProperty('padding', isMobile ? '0' : '8px 0', 'important');
+                article.style.setProperty('margin', '0', 'important');
+                article.style.setProperty('box-sizing', 'border-box', 'important');
+            });
+
+            if (isMobile) {
+                container.querySelectorAll('section.docx article div').forEach((div) => {
+                    div.style.setProperty('width', '100%', 'important');
+                    div.style.setProperty('max-width', '100%', 'important');
+                    div.style.setProperty('height', 'auto', 'important');
+                    div.style.setProperty('left', '0', 'important');
+                    div.style.setProperty('top', '0', 'important');
+                    div.style.setProperty('text-indent', '0', 'important');
+                    div.style.setProperty('box-sizing', 'border-box', 'important');
+                });
+            }
+
+            container.querySelectorAll('img').forEach((image) => {
+                image.style.setProperty('position', 'static', 'important');
+                image.style.setProperty('display', 'block', 'important');
+                image.style.setProperty('margin', isMobile ? '4px auto' : '10px auto', 'important');
+                image.style.setProperty('width', 'auto', 'important');
+                image.style.setProperty('max-width', '100%', 'important');
+                image.style.setProperty('height', 'auto', 'important');
+                image.style.setProperty('object-fit', 'contain', 'important');
+                image.style.setProperty('left', '0', 'important');
+                image.style.setProperty('right', '0', 'important');
+                image.style.setProperty('top', '0', 'important');
+            });
+        }
+
+        async function renderDocxInViewer(filePath) {
+            const content = document.getElementById('blocks-docx-content');
+            if (!content) return false;
+
+            setBlockViewerLoading(true);
+            renderBlockViewerMessages([]);
+            content.innerHTML = '';
+
+            try {
+                const response = await fetch(filePath, { cache: 'no-store' });
+                if (!response.ok) throw new Error(`Файл ашылмады: HTTP ${response.status}`);
+                const arrayBuffer = await response.arrayBuffer();
+
+                const canUseNativeDocxViewer =
+                    window.docx &&
+                    typeof window.docx.renderAsync === 'function' &&
+                    window.JSZip;
+
+                if (canUseNativeDocxViewer) {
+                    try {
+                        content.innerHTML = '';
+                        content.classList.add('docx-native-view');
+                        await window.docx.renderAsync(arrayBuffer, content, null, {
+                            inWrapper: false,
+                            ignoreWidth: false,
+                            ignoreHeight: false,
+                            ignoreFonts: false,
+                            breakPages: true,
+                            useBase64URL: true
+                        });
+                        normalizeNativeDocxLayout(content);
+                        renderBlockViewerMessages([]);
+                    } catch (nativeError) {
+                        content.classList.remove('docx-native-view');
+                    }
+                }
+
+                if (!content.classList.contains('docx-native-view') || !content.innerHTML.trim()) {
+                    if (!window.mammoth || typeof window.mammoth.convertToHtml !== 'function') {
+                        throw new Error('DOCX viewer кітапханасы жүктелмеді.');
+                    }
+
+                    content.classList.remove('docx-native-view');
+                    const result = await window.mammoth.convertToHtml(
+                        { arrayBuffer },
+                        {
+                            includeDefaultStyleMap: true,
+                            styleMap: [
+                                "p[style-name='Heading 1'] => h1:fresh",
+                                "p[style-name='Heading 2'] => h2:fresh",
+                                "p[style-name='Heading 3'] => h3:fresh",
+                                "p[style-name='Title'] => h1:fresh",
+                                "p[style-name='Subtitle'] => h3:fresh"
+                            ]
+                        }
+                    );
+
+                    content.innerHTML = sanitizeDocxHtml(result.value || '<p>Құжат бос.</p>');
+                    decorateDocxContent(content);
+                    renderBlockViewerMessages(result.messages || []);
+                }
+                setBlockViewerLoading(false);
+                return true;
+            } catch (error) {
+                content.innerHTML = '';
+                renderBlockViewerMessages([error.message || 'Құжатты ашу сәтсіз болды.']);
+                setBlockViewerLoading(false);
+                return false;
+            }
+        }
+
+        async function openBlockTopic(subjectId, topicId) {
+            const meta = findBlockMeta(subjectId, topicId);
+            if (!meta || !meta.file || !isSafeBlockFilePath(meta.file)) {
+                setBlocksStatus('Блок файлы табылмады.', true);
+                return;
+            }
+
+            const viewer = document.getElementById('blocks-viewer');
+            const title = document.getElementById('blocks-viewer-title');
+
+            if (title) {
+                title.textContent = `${meta.subjectTitle} - ${meta.topicCode} ${meta.topicTitle}`.trim();
+            }
+            renderBlockQuestions(meta.questions);
+
+            blocksState.activeTopicKey = `${subjectId}::${topicId}`;
+            blocksState.openBlockMeta = meta;
+            renderBlocksList();
+            if (viewer) {
+                viewer.hidden = false;
+                viewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+            updateBlocksQuickBackVisibility();
+            const rendered = await renderDocxInViewer(meta.file);
+            setBlocksStatus(
+                rendered
+                    ? `Блок ашылды: ${meta.topicCode} ${meta.topicTitle}`
+                    : `Блок ашылмады, жүктеу сілтемесін пайдаланыңыз.`,
+                !rendered
+            );
+        }
+
+        function closeBlockViewer() {
+            const viewer = document.getElementById('blocks-viewer');
+            const content = document.getElementById('blocks-docx-content');
+            if (viewer) viewer.hidden = true;
+            if (content) content.innerHTML = '';
+            renderBlockQuestions([]);
+            renderBlockViewerMessages([]);
+            setBlockViewerLoading(false);
+            blocksState.activeTopicKey = '';
+            blocksState.openBlockMeta = null;
+            renderBlocksList();
+            updateBlocksQuickBackVisibility();
+        }
+
+        function updateBlocksQuickBackVisibility() {
+            const quickBackButton = document.getElementById('blocks-quick-back');
+            const viewer = document.getElementById('blocks-viewer');
+            if (!quickBackButton || !viewer || viewer.hidden || !blocksState.openBlockMeta) {
+                if (quickBackButton) quickBackButton.hidden = true;
+                return;
+            }
+
+            const viewerTop = viewer.getBoundingClientRect().top + window.scrollY;
+            quickBackButton.hidden = window.scrollY < viewerTop + 260;
+        }
+
+        function quickBackToBlocksTopics() {
+            closeBlockViewer();
+            const target = document.getElementById('blocks-topic-groups');
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        async function initBlocksSection() {
+            await ensureBlocksCatalog();
+            renderBlocksList();
+            setBlocksStatus('Блок тақырыбын таңдаңыз.');
+            if (!blocksState.quickBackBound) {
+                window.addEventListener('scroll', updateBlocksQuickBackVisibility, { passive: true });
+                window.addEventListener('resize', updateBlocksQuickBackVisibility);
+                blocksState.quickBackBound = true;
+            }
+            updateBlocksQuickBackVisibility();
+        }
+
+        function openPage(pageId) {
+            closeMobileMoreMenu();
+            // Барлық беттерді жабу
+            document.querySelectorAll('.content-page').forEach(page => {
+                page.classList.remove('active');
+            });
+            // Барлық мәзірлерден 'active' алып тастау
+            document.querySelectorAll('[data-nav-target]').forEach((navItem) => {
+                navItem.classList.remove('active');
+            });
+
+            // Керекті бетті ашу
+            document.getElementById(pageId).classList.add('active');
+            document.querySelectorAll(`[data-nav-target="${pageId}"]`).forEach((navItem) => {
+                navItem.classList.add('active');
+            });
+            if (pageId === 'ranking') {
+        updateRanking();
+    }
+            if(pageId === 'profile') {
+                updateChartDisplay();
+            }
+            if (pageId === 'blocks') {
+                initBlocksSection();
+            }
+        }
+
+        function logoutUser() {
+            localStorage.removeItem('currentUser');
+            closeMobileMoreMenu();
+            document.querySelectorAll('.content-page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.querySelectorAll('[data-nav-target]').forEach((navItem) => {
+                navItem.classList.remove('active');
+            });
+            const homeMenu = document.getElementById('homemenu');
+            const loginScreen = document.getElementById('login-screen');
+            const secretInput = document.getElementById('login-secret');
+            const errorMessage = document.getElementById('error-message');
+
+            if (homeMenu) homeMenu.style.display = 'none';
+            if (loginScreen) loginScreen.style.display = 'flex';
+            if (errorMessage) errorMessage.style.display = 'none';
+            if (secretInput) {
+                secretInput.value = '';
+                secretInput.focus();
+            }
+        }
+
+        function toggleMobileMoreMenu() {
+            const sheet = document.getElementById('mobile-more-sheet');
+            const moreButton = document.getElementById('mobile-more-btn');
+            if (!sheet) return;
+            const willOpen = sheet.hidden;
+            sheet.hidden = !sheet.hidden;
+            if (moreButton) moreButton.classList.toggle('active', willOpen);
+        }
+
+        function closeMobileMoreMenu(event) {
+            if (event && event.target !== event.currentTarget) return;
+            const sheet = document.getElementById('mobile-more-sheet');
+            const moreButton = document.getElementById('mobile-more-btn');
+            if (sheet) sheet.hidden = true;
+            if (moreButton) moreButton.classList.remove('active');
+        }
+
+        // Графикті баптау
+        
+    </script>
+
+
+
+<style>
+
+
+.app-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.avatar-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #c4c4bc;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.user-name {
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+.nav-menu li {
+    padding: 12px 0;
+    cursor: pointer;
+    color: #666;
+    transition: 0.2s;
+}
+
+.nav-menu li:hover {
+    color: #000;
+}
+
+.nav-menu li.active {
+    font-weight: bold;
+    color: #000;
+}
+
+/* НЕГІЗГІ МАЗМҰН СТИЛЬДЕРІ */
+
+.content-page {
+    display: none; /* Әдепкіде барлық бет жабық */
+}
+
+.content-page.active {
+    display: block; /* Тек активті бет көрінеді */
+}
+
+h1 { font-size: 32px; margin-bottom: 30px; }
+.text-center { text-align: center; }
+
+/* SCHEDULE (HOME) */
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.day-card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.day-card ul {
+    list-style: none;
+    padding: 0; /* Ішкі шегіністі алып тастау */
+    margin: 0;  /* Сыртқы шегіністі алып тастау */
+}
+
+.day-card li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+/* PROFILE */
+.motivation-box {
+    margin: 30px 0;
+    line-height: 1.6;
+    color: #444;
+}
+
+.green-blue-line {
+    height: 4px;
+    background: linear-gradient(90deg, #4CAF50 50%, #2196F3 50%);
+    margin: 30px 0;
+}
+
+.chart-container {
+    height: 300px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* RANKING (PHOTO PLACEHOLDER) */
+.ranking-panel {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.ranking-switcher {
+    margin-bottom: 16px;
+}
+
+.photo-placeholder {
+    width: 100%;
+    height: 400px;
+    border: 3px solid #ff7675; /* Суреттегі қызыл жиек */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #fffaf0;
+}
+
+.photo-placeholder span {
+    font-size: 40px;
+    color: #ff7675;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+</style>
+    <div class="container" id="app" style="display: none;">
+    <div class="progress" id="progress"></div>
+    <div class="runner-main">
+      <div class="runner-stage">
+        <div class="question" id="question">Жүктелуде...</div>
+        <div class="options" id="options"></div>
+      </div>
+    </div>
+  </div>
+  <div id="anki-app" class="anki-app" style="display: none;">
+    <div class="anki-shell">
+      <div class="anki-topbar">
+        <button type="button" class="anki-topbar-btn" onclick="closeAnkiViewer()">Артқа</button>
+        <div class="anki-topbar-center">
+          <div id="anki-runner-title" class="anki-topbar-title">Anki</div>
+          <div id="anki-runner-meta" class="anki-topbar-meta">0 / 0</div>
+        </div>
+        <div class="anki-topbar-actions">
+          <button type="button" id="anki-order-btn" class="anki-topbar-btn" onclick="toggleAnkiOrderMode()">Ретімен</button>
+          <button type="button" class="anki-topbar-btn" onclick="resetAnkiProgress()">Reset</button>
+        </div>
+      </div>
+
+      <div class="anki-stage">
+        <div id="anki-runner-card" class="anki-runner-card">
+          <div id="anki-runner-stack" class="anki-runner-stack">
+            <div class="anki-runner-face anki-runner-front">
+              <div id="anki-runner-front-text" class="anki-runner-text">Тақырыпты таңдаңыз</div>
+            </div>
+            <div class="anki-runner-divider" aria-hidden="true"></div>
+            <div class="anki-runner-face anki-runner-back" hidden>
+              <div id="anki-runner-back-text" class="anki-runner-text anki-runner-answer">Жауап осында шығады</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="anki-bottom-actions" class="anki-bottom-actions">
+        <button type="button" id="anki-show-answer-btn" class="anki-show-answer-btn" onclick="handleAnkiPrimaryAction()">Show answer</button>
+        <div id="anki-rating-row" class="anki-rating-row" hidden>
+          <button type="button" class="anki-rate-option anki-rate-wrong" data-anki-rating="again" aria-label="Білмеймін">
+            <span class="anki-rate-label">Білмеймін</span>
+          </button>
+          <button type="button" class="anki-rate-option anki-rate-good" data-anki-rating="easy" aria-label="Білемін">
+            <span class="anki-rate-label">Білемін</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
