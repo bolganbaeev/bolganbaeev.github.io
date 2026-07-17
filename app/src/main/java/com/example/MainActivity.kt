@@ -12,6 +12,7 @@ import androidx.compose.animation.core.*
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.grid.*
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
@@ -71,7 +72,12 @@ data class UserProfile(
     val completedTestsCount: Int = 12,
     val averageScore: Double = 84.5,
     val streakDays: Int = 5,
-    val totalHistory: List<Int> = listOf(75, 82, 80, 88, 91, 84, 95, 101, 98, 105, 112, 104)
+    val totalHistory: List<Int> = listOf(75, 82, 80, 88, 91, 84, 95, 101, 98, 105, 112, 104),
+    val histHistory: List<Int> = emptyList(),
+    val mathHistory: List<Int> = emptyList(),
+    val readHistory: List<Int> = emptyList(),
+    val sub1History: List<Int> = emptyList(),
+    val sub2History: List<Int> = emptyList()
 )
 
 data class RankingEntry(
@@ -173,10 +179,12 @@ object AppCrypto {
         val decryptedRoot = JSONObject(plainText)
         val name = decryptedRoot.optString("name", "Оқушы")
         val avatar = decryptedRoot.optString("avatar", "")
-        val score = decryptedRoot.optInt("score", 0)
         
         val totalHistoryList = mutableListOf<Int>()
-        val historyArr = decryptedRoot.optJSONArray("totalHistory")
+        var historyArr = decryptedRoot.optJSONArray("totalHistory")
+        if (historyArr == null) {
+            historyArr = decryptedRoot.optJSONArray("total")
+        }
         if (historyArr != null) {
             for (i in 0 until historyArr.length()) {
                 totalHistoryList.add(historyArr.getInt(i))
@@ -185,6 +193,48 @@ object AppCrypto {
             totalHistoryList.addAll(listOf(80, 85, 90, 88, 92, 95))
         }
 
+        val histHistoryList = mutableListOf<Int>()
+        val histArr = decryptedRoot.optJSONArray("hist")
+        if (histArr != null) {
+            for (i in 0 until histArr.length()) {
+                histHistoryList.add(histArr.getInt(i))
+            }
+        }
+
+        val mathHistoryList = mutableListOf<Int>()
+        val mathArr = decryptedRoot.optJSONArray("math_s")
+        if (mathArr != null) {
+            for (i in 0 until mathArr.length()) {
+                mathHistoryList.add(mathArr.getInt(i))
+            }
+        }
+
+        val readHistoryList = mutableListOf<Int>()
+        val readArr = decryptedRoot.optJSONArray("read_s")
+        if (readArr != null) {
+            for (i in 0 until readArr.length()) {
+                readHistoryList.add(readArr.getInt(i))
+            }
+        }
+
+        val sub1HistoryList = mutableListOf<Int>()
+        val sub1Arr = decryptedRoot.optJSONArray("sub1")
+        if (sub1Arr != null) {
+            for (i in 0 until sub1Arr.length()) {
+                sub1HistoryList.add(sub1Arr.getInt(i))
+            }
+        }
+
+        val sub2HistoryList = mutableListOf<Int>()
+        val sub2Arr = decryptedRoot.optJSONArray("sub2")
+        if (sub2Arr != null) {
+            for (i in 0 until sub2Arr.length()) {
+                sub2HistoryList.add(sub2Arr.getInt(i))
+            }
+        }
+
+        val score = decryptedRoot.optInt("score", totalHistoryList.lastOrNull() ?: 0)
+
         return UserProfile(
             id = sha256Hex(secret),
             name = name,
@@ -192,8 +242,13 @@ object AppCrypto {
             score = score,
             completedTestsCount = decryptedRoot.optInt("completedTests", totalHistoryList.size),
             averageScore = decryptedRoot.optDouble("averageScore", totalHistoryList.average()),
-            streakDays = decryptedRoot.optInt("streakDays", 3),
-            totalHistory = totalHistoryList
+            streakDays = decryptedRoot.optInt("streakDays", 5),
+            totalHistory = totalHistoryList,
+            histHistory = histHistoryList,
+            mathHistory = mathHistoryList,
+            readHistory = readHistoryList,
+            sub1History = sub1HistoryList,
+            sub2History = sub2HistoryList
         )
     }
 }
@@ -328,6 +383,27 @@ val AccentOrange = Color(0xFFF09819)
 val AccentRed = Color(0xFFFF512F)
 val SoftGray = Color(0xFFF4F7FB)
 
+@Composable
+fun isDark(): Boolean = MaterialTheme.colorScheme.background != Color.White
+
+@Composable
+fun bgCol() = if (isDark()) DarkBackground else SoftGray
+
+@Composable
+fun cardCol() = if (isDark()) Color(0xFF151426) else Color.White
+
+@Composable
+fun textCol() = if (isDark()) Color.White else Color.Black
+
+@Composable
+fun textSecCol() = if (isDark()) Color.LightGray else Color.Gray
+
+@Composable
+fun borderCol() = if (isDark()) Color(0xFF2E2D4A) else Color(0xFFD8E0EC)
+
+@Composable
+fun tealBgCol() = if (isDark()) Color(0xFF0F3A37) else LightTealBg
+
 // ==========================================
 // MAIN ACTIVITY
 // ==========================================
@@ -337,14 +413,29 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MaterialTheme(
-                colorScheme = lightColorScheme(
+            var isDarkMode by remember { mutableStateOf(false) }
+            val colorScheme = if (isDarkMode) {
+                darkColorScheme(
+                    primary = CosmicTeal,
+                    background = DarkBackground,
+                    surface = Color(0xFF151426),
+                    onBackground = Color.White,
+                    onSurface = Color.White
+                )
+            } else {
+                lightColorScheme(
                     primary = CosmicTeal,
                     background = Color.White,
-                    surface = SoftGray
+                    surface = SoftGray,
+                    onBackground = Color.Black,
+                    onSurface = Color.Black
                 )
-            ) {
-                MainApp()
+            }
+            MaterialTheme(colorScheme = colorScheme) {
+                MainApp(
+                    isDarkMode = isDarkMode,
+                    onToggleDarkMode = { isDarkMode = it }
+                )
             }
         }
     }
@@ -359,7 +450,10 @@ enum class TabItem {
 // ==========================================
 
 @Composable
-fun MainApp() {
+fun MainApp(
+    isDarkMode: Boolean,
+    onToggleDarkMode: (Boolean) -> Unit
+) {
     val context = LocalContext.current
     val coroutineScope = rememberCoroutineScope()
     
@@ -375,12 +469,16 @@ fun MainApp() {
     var activeTestTopic by remember { mutableStateOf<TestTopic?>(null) }
     var testModeSetting by remember { mutableStateOf("exam") } // instant, exam, self-check
     var testQuestionCountSetting by remember { mutableStateOf(60) }
+    var testShuffleOptionsSetting by remember { mutableStateOf(false) }
     
     // Anki Deck States
     var activeAnkiDeck by remember { mutableStateOf<AnkiDeck?>(null) }
     
     // Study Block States
     var activeBlockTopic by remember { mutableStateOf<BlockTopic?>(null) }
+    
+    // Global simulated offline mode state (Service Worker status)
+    var isOfflineSimulated by remember { mutableStateOf(false) }
 
     if (currentUser == null) {
         LoginScreen(
@@ -417,7 +515,12 @@ fun MainApp() {
                     completedTestsCount = 18,
                     averageScore = 92.0,
                     streakDays = 7,
-                    totalHistory = listOf(82, 85, 91, 88, 95, 102, 98, 106, 114)
+                    totalHistory = listOf(82, 85, 91, 88, 95, 102, 98, 106, 114),
+                    histHistory = listOf(11, 13, 12, 14, 15, 14, 16, 15, 17),
+                    mathHistory = listOf(7, 8, 7, 9, 8, 9, 10, 9, 10),
+                    readHistory = listOf(8, 7, 9, 8, 9, 9, 10, 9, 10),
+                    sub1History = listOf(30, 32, 35, 33, 36, 38, 37, 41, 40),
+                    sub2History = listOf(34, 35, 38, 37, 41, 43, 42, 45, 44)
                 )
             }
         )
@@ -425,7 +528,7 @@ fun MainApp() {
         Scaffold(
             bottomBar = {
                 NavigationBar(
-                    containerColor = Color.White,
+                    containerColor = cardCol(),
                     tonalElevation = 8.dp
                 ) {
                     val tabs = listOf(
@@ -445,25 +548,58 @@ fun MainApp() {
                             colors = NavigationBarItemDefaults.colors(
                                 selectedIconColor = CosmicTeal,
                                 selectedTextColor = CosmicTeal,
-                                indicatorColor = LightTealBg
+                                indicatorColor = tealBgCol(),
+                                unselectedIconColor = textSecCol(),
+                                unselectedTextColor = textSecCol()
                             )
                         )
                     }
                 }
             }
         ) { paddingValues ->
-            Box(
+            Column(
                 modifier = Modifier
                     .fillMaxSize()
                     .padding(paddingValues)
-                    .background(SoftGray)
+                    .background(bgCol())
             ) {
+                if (isOfflineSimulated) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .background(AccentRed)
+                            .padding(vertical = 6.dp, horizontal = 12.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.Center
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.WifiOff,
+                            contentDescription = null,
+                            tint = Color.White,
+                            modifier = Modifier.size(14.dp)
+                        )
+                        Spacer(modifier = Modifier.width(6.dp))
+                        Text(
+                            text = "Оффлайн режим белсенді — Кэштелген деректер пайдаланылуда",
+                            color = Color.White,
+                            fontSize = 11.sp,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                }
+                
+                Box(
+                    modifier = Modifier
+                        .weight(1f)
+                        .fillMaxWidth()
+                ) {
                 // If active test is selected, overlay test runner full screen
                 activeTestTopic?.let { topic ->
                     TestRunnerView(
                         topic = topic,
                         mode = testModeSetting,
                         maxQuestions = testQuestionCountSetting,
+                        shuffleOptions = testShuffleOptionsSetting,
                         onClose = { activeTestTopic = null }
                     )
                 } ?: activeAnkiDeck?.let { deck ->
@@ -503,10 +639,17 @@ fun MainApp() {
                             onSetTestMode = { testModeSetting = it },
                             questionCount = testQuestionCountSetting,
                             onSetQuestionCount = { testQuestionCountSetting = it },
+                            isDarkMode = isDarkMode,
+                            onToggleDarkMode = onToggleDarkMode,
+                            shuffleOptions = testShuffleOptionsSetting,
+                            onToggleShuffleOptions = { testShuffleOptionsSetting = it },
+                            isOfflineSimulated = isOfflineSimulated,
+                            onToggleOfflineSimulated = { isOfflineSimulated = it },
                             onLogout = { currentUser = null }
                         )
                     }
                 }
+            }
             }
         }
     }
@@ -523,7 +666,7 @@ fun LoginScreen(
     onLogin: (String) -> Unit,
     onGuestLogin: () -> Unit
 ) {
-    var pinText by remember { mutableStateOf("") }
+    var pinText by remember { mutableStateOf("rrr") }
     
     Box(
         modifier = Modifier
@@ -739,7 +882,7 @@ fun HomeScreen(
         // Custom Visual Chart Card (Scores over Time)
         item {
             ElevatedCard(
-                colors = CardDefaults.elevatedCardColors(containerColor = Color.White),
+                colors = CardDefaults.elevatedCardColors(containerColor = cardCol()),
                 shape = RoundedCornerShape(16.dp),
                 modifier = Modifier.fillMaxWidth()
             ) {
@@ -763,7 +906,7 @@ fun HomeScreen(
                     Spacer(modifier = Modifier.height(10.dp))
                     Text(
                         text = "Соңғы орындалған ${user.totalHistory.size} тестіңіздің өсу бағыты.",
-                        color = Color.Gray,
+                        color = textSecCol(),
                         fontSize = 11.sp,
                         textAlign = TextAlign.Center,
                         modifier = Modifier.fillMaxWidth()
@@ -775,7 +918,7 @@ fun HomeScreen(
         // Daily Progress Calendar Matrix
         item {
             ElevatedCard(
-                colors = CardDefaults.elevatedCardColors(containerColor = Color.White),
+                colors = CardDefaults.elevatedCardColors(containerColor = cardCol()),
                 shape = RoundedCornerShape(16.dp),
                 modifier = Modifier.fillMaxWidth()
             ) {
@@ -799,7 +942,7 @@ fun HomeScreen(
                                 modifier = Modifier
                                     .size(18.dp)
                                     .clip(RoundedCornerShape(3.dp))
-                                    .background(if (active) CosmicTeal.copy(alpha = 0.15f + (i % 3) * 0.3f) else Color(0xFFE2E8F0))
+                                    .background(if (active) CosmicTeal.copy(alpha = 0.15f + (i % 3) * 0.3f) else if (isDark()) Color(0xFF1E293B) else Color(0xFFE2E8F0))
                             )
                         }
                     }
@@ -810,8 +953,8 @@ fun HomeScreen(
                         horizontalArrangement = Arrangement.SpaceBetween,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
-                        Text("Төмен белсенділік", fontSize = 11.sp, color = Color.Gray)
-                        Text("Жоғары белсенділік", fontSize = 11.sp, color = Color.Gray)
+                        Text("Төмен белсенділік", fontSize = 11.sp, color = textSecCol())
+                        Text("Жоғары белсенділік", fontSize = 11.sp, color = textSecCol())
                     }
                 }
             }
@@ -830,9 +973,9 @@ fun StatCard(
     color: Color
 ) {
     Card(
-        colors = CardDefaults.cardColors(containerColor = Color.White),
+        colors = CardDefaults.cardColors(containerColor = cardCol()),
         shape = RoundedCornerShape(14.dp),
-        modifier = modifier.border(1.dp, Color(0xFFE2E8F0), RoundedCornerShape(14.dp))
+        modifier = modifier.border(1.dp, borderCol(), RoundedCornerShape(14.dp))
     ) {
         Column(
             modifier = Modifier.padding(12.dp)
@@ -848,13 +991,13 @@ fun StatCard(
                 text = value,
                 fontSize = 18.sp,
                 fontWeight = FontWeight.Bold,
-                color = CosmicTeal
+                color = textCol()
             )
             Spacer(modifier = Modifier.height(2.dp))
             Text(
                 text = title,
                 fontSize = 11.sp,
-                color = Color.Gray,
+                color = textSecCol(),
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis
             )
@@ -863,70 +1006,102 @@ fun StatCard(
 }
 
 @Composable
-fun ScoresChart(history: List<Int>) {
+fun ScoresChart(history: List<Int>, maxVal: Float = 140f, isDarkMode: Boolean = isDark()) {
+    if (history.isEmpty()) {
+        Box(
+            modifier = Modifier.fillMaxSize(),
+            contentAlignment = Alignment.Center
+        ) {
+            Text(
+                "Тест нәтижелері әлі жоқ. Алғашқы тестті тапсырыңыз!",
+                color = if (isDarkMode) Color.LightGray else Color.Gray,
+                fontSize = 13.sp,
+                fontWeight = FontWeight.Medium,
+                textAlign = TextAlign.Center
+            )
+        }
+        return
+    }
+    
     Canvas(modifier = Modifier.fillMaxSize()) {
-        if (history.isEmpty()) return@Canvas
-        
-        val maxScore = history.maxOrNull()?.toFloat() ?: 140f
+        val maxScore = maxVal.coerceAtLeast(1f)
         val minScore = 0f
         val scoreRange = maxScore - minScore
         
         val width = size.width
         val height = size.height
-        val stepX = width / (history.size - 1).coerceAtLeast(1)
+        
+        val paddingLeft = 32.dp.toPx()
+        val paddingRight = 32.dp.toPx()
+        val paddingTop = 28.dp.toPx()
+        val paddingBottom = 20.dp.toPx()
+        
+        val usableWidth = width - paddingLeft - paddingRight
+        val usableHeight = height - paddingTop - paddingBottom
+        
+        val stepX = if (history.size > 1) usableWidth / (history.size - 1) else usableWidth
         
         // Draw grid lines
-        for (i in 1..4) {
-            val gridY = height * (i / 5f)
+        for (i in 0..4) {
+            val gridY = paddingTop + usableHeight * (i / 4f)
             drawLine(
-                color = Color.LightGray.copy(alpha = 0.3f),
-                start = Offset(0f, gridY),
-                end = Offset(width, gridY),
+                color = if (isDarkMode) Color(0xFF2E2D4A) else Color.LightGray.copy(alpha = 0.3f),
+                start = Offset(paddingLeft, gridY),
+                end = Offset(width - paddingRight, gridY),
                 strokeWidth = 1.dp.toPx()
             )
         }
 
         val points = history.mapIndexed { index, score ->
             val fraction = (score - minScore) / scoreRange.coerceAtLeast(1f)
-            val pointY = height - (fraction * height * 0.8f) - (height * 0.1f)
-            Offset(index * stepX, pointY)
+            val pointX = paddingLeft + index * stepX
+            val pointY = paddingTop + usableHeight - (fraction * usableHeight)
+            Offset(pointX, pointY)
         }
         
-        // Draw gradient area below the line
-        val path = Path().apply {
-            moveTo(0f, height)
-            points.forEachIndexed { idx, pt ->
-                if (idx == 0) lineTo(pt.x, pt.y)
-                else lineTo(pt.x, pt.y)
+        if (history.size > 1) {
+            // Draw gradient area below the line
+            val path = Path().apply {
+                moveTo(paddingLeft, paddingTop + usableHeight)
+                points.forEach { pt ->
+                    lineTo(pt.x, pt.y)
+                }
+                lineTo(width - paddingRight, paddingTop + usableHeight)
+                close()
             }
-            lineTo(width, height)
-            close()
-        }
-        
-        drawPath(
-            path = path,
-            brush = Brush.verticalGradient(
-                colors = listOf(CosmicTeal.copy(alpha = 0.3f), Color.Transparent),
-                startY = points.map { it.y }.minOrNull() ?: 0f,
-                endY = height
-            )
-        )
-        
-        // Draw connection line
-        points.forEachIndexed { idx, pt ->
-            if (idx > 0) {
-                drawLine(
-                    color = CosmicTeal,
-                    start = points[idx - 1],
-                    end = pt,
-                    strokeWidth = 3.dp.toPx(),
-                    cap = StrokeCap.Round
+            
+            drawPath(
+                path = path,
+                brush = Brush.verticalGradient(
+                    colors = listOf(CosmicTeal.copy(alpha = 0.35f), Color.Transparent),
+                    startY = points.map { it.y }.minOrNull() ?: paddingTop,
+                    endY = paddingTop + usableHeight
                 )
+            )
+            
+            // Draw connection line
+            points.forEachIndexed { idx, pt ->
+                if (idx > 0) {
+                    drawLine(
+                        color = CosmicTeal,
+                        start = points[idx - 1],
+                        end = pt,
+                        strokeWidth = 3.dp.toPx(),
+                        cap = StrokeCap.Round
+                    )
+                }
             }
         }
         
-        // Draw point dots
-        points.forEach { pt ->
+        // Draw point dots and score texts
+        val paint = android.graphics.Paint().apply {
+            color = if (isDarkMode) android.graphics.Color.WHITE else android.graphics.Color.parseColor("#151426")
+            textSize = 10.dp.toPx()
+            textAlign = android.graphics.Paint.Align.CENTER
+            typeface = android.graphics.Typeface.create(android.graphics.Typeface.DEFAULT, android.graphics.Typeface.BOLD)
+        }
+        
+        points.forEachIndexed { idx, pt ->
             drawCircle(
                 color = Color.White,
                 radius = 5.dp.toPx(),
@@ -936,6 +1111,15 @@ fun ScoresChart(history: List<Int>) {
                 color = CosmicTeal,
                 radius = 3.dp.toPx(),
                 center = pt
+            )
+            
+            // Draw score text above the dot
+            val scoreText = history[idx].toString()
+            drawContext.canvas.nativeCanvas.drawText(
+                scoreText,
+                pt.x,
+                pt.y - 8.dp.toPx(),
+                paint
             )
         }
     }
@@ -1037,7 +1221,7 @@ fun TestsTab(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(Color.White)
+                .background(cardCol())
                 .padding(top = 16.dp, bottom = 8.dp)
         ) {
             Row(
@@ -1069,10 +1253,16 @@ fun TestsTab(
             OutlinedTextField(
                 value = searchQuery,
                 onValueChange = { searchQuery = it },
-                placeholder = { Text("Тақырып бойынша іздеу...", color = Color.Gray) },
-                leadingIcon = { Icon(Icons.Default.Search, contentDescription = "Search", tint = Color.Gray) },
+                placeholder = { Text("Тақырып бойынша іздеу...", color = textSecCol()) },
+                leadingIcon = { Icon(Icons.Default.Search, contentDescription = "Search", tint = textSecCol()) },
                 singleLine = true,
                 shape = RoundedCornerShape(12.dp),
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedTextColor = textCol(),
+                    unfocusedTextColor = textCol(),
+                    focusedBorderColor = CosmicTeal,
+                    unfocusedBorderColor = borderCol()
+                ),
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 16.dp)
@@ -1126,13 +1316,13 @@ fun TestsTab(
                             .padding(vertical = 48.dp),
                         contentAlignment = Alignment.Center
                     ) {
-                        Text("Тақырыптар табылмады.", color = Color.Gray, fontSize = 14.sp)
+                        Text("Тақырыптар табылмады.", color = textSecCol(), fontSize = 14.sp)
                     }
                 }
             } else {
                 items(filteredTopics) { topic ->
                     ElevatedCard(
-                        colors = CardDefaults.elevatedCardColors(containerColor = Color.White),
+                        colors = CardDefaults.elevatedCardColors(containerColor = cardCol()),
                         shape = RoundedCornerShape(12.dp),
                         modifier = Modifier
                             .fillMaxWidth()
@@ -1148,7 +1338,7 @@ fun TestsTab(
                                 modifier = Modifier
                                     .size(46.dp)
                                     .clip(RoundedCornerShape(8.dp))
-                                    .background(LightTealBg),
+                                    .background(tealBgCol()),
                                 contentAlignment = Alignment.Center
                             ) {
                                 Icon(
@@ -1163,7 +1353,7 @@ fun TestsTab(
                                 Text(
                                     text = topic.title,
                                     fontWeight = FontWeight.Bold,
-                                    color = Color.Black,
+                                    color = textCol(),
                                     fontSize = 14.sp,
                                     maxLines = 2,
                                     overflow = TextOverflow.Ellipsis
@@ -1180,7 +1370,7 @@ fun TestsTab(
                                     Text(
                                         text = "• ${topic.questionCount} сұрақ",
                                         fontSize = 11.sp,
-                                        color = Color.Gray
+                                        color = textSecCol()
                                     )
                                 }
                             }
@@ -1210,6 +1400,7 @@ fun TestRunnerView(
     topic: TestTopic,
     mode: String, // instant, exam, self-check
     maxQuestions: Int,
+    shuffleOptions: Boolean = false,
     onClose: () -> Unit
 ) {
     val context = LocalContext.current
@@ -1247,7 +1438,20 @@ fun TestRunnerView(
                     val correct = obj.optString("correct", null)
                     val answer = obj.optString("answer", null)
                     val img = obj.optString("imageUrl", null)
-                    list.add(QuizQuestion(qText, opts, correct, answer, img))
+                    
+                    // Resolve correct answer before shuffling options
+                    val finalCorrect = if (!correct.isNullOrEmpty()) {
+                        correct
+                    } else if (!answer.isNullOrEmpty()) {
+                        answer
+                    } else if (opts.isNotEmpty()) {
+                        opts[0]
+                    } else {
+                        ""
+                    }
+                    
+                    val finalOpts = if (shuffleOptions) opts.shuffled() else opts
+                    list.add(QuizQuestion(qText, finalOpts, finalCorrect, finalCorrect, img))
                 }
                 
                 // Shuffle and truncate questions based on user's preference
@@ -1292,12 +1496,13 @@ fun TestRunnerView(
                         fontSize = 16.sp,
                         fontWeight = FontWeight.Bold,
                         maxLines = 1,
-                        overflow = TextOverflow.Ellipsis
+                        overflow = TextOverflow.Ellipsis,
+                        color = textCol()
                     )
                 },
                 navigationIcon = {
                     IconButton(onClick = onClose) {
-                        Icon(Icons.Default.Close, contentDescription = "Close")
+                        Icon(Icons.Default.Close, contentDescription = "Close", tint = textCol())
                     }
                 },
                 actions = {
@@ -1309,7 +1514,7 @@ fun TestRunnerView(
                         modifier = Modifier.padding(end = 16.dp)
                     )
                 },
-                colors = TopAppBarDefaults.topAppBarColors(containerColor = Color.White)
+                colors = TopAppBarDefaults.topAppBarColors(containerColor = cardCol())
             )
         }
     ) { padding ->
@@ -1317,7 +1522,7 @@ fun TestRunnerView(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding)
-                .background(SoftGray)
+                .background(bgCol())
         ) {
             if (loading) {
                 Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
@@ -1325,7 +1530,7 @@ fun TestRunnerView(
                 }
             } else if (questionsList.isEmpty()) {
                 Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                    Text("Тест мазмұны табылмады.", color = Color.Gray)
+                    Text("Тест мазмұны табылмады.", color = textSecCol())
                 }
             } else if (!finished) {
                 val currentQuestion = questionsList[currentIdx]
@@ -1352,7 +1557,7 @@ fun TestRunnerView(
                         )
                         Text(
                             text = "${((currentIdx + 1).toFloat() / questionsList.size * 100).toInt()}%",
-                            color = Color.Gray,
+                            color = textSecCol(),
                             fontSize = 12.sp
                         )
                     }
@@ -1362,7 +1567,7 @@ fun TestRunnerView(
                     LinearProgressIndicator(
                         progress = { (currentIdx + 1).toFloat() / questionsList.size },
                         color = CosmicTeal,
-                        trackColor = Color(0xFFE2E8F0),
+                        trackColor = if (isDark()) Color(0xFF1E293B) else Color(0xFFE2E8F0),
                         modifier = Modifier
                             .fillMaxWidth()
                             .height(6.dp)
@@ -1373,7 +1578,7 @@ fun TestRunnerView(
 
                     // Question Card View
                     ElevatedCard(
-                        colors = CardDefaults.elevatedCardColors(containerColor = Color.White),
+                        colors = CardDefaults.elevatedCardColors(containerColor = cardCol()),
                         shape = RoundedCornerShape(16.dp),
                         modifier = Modifier.fillMaxWidth()
                     ) {
@@ -1383,7 +1588,7 @@ fun TestRunnerView(
                                 text = parseHtmlToAnnotatedString(currentQuestion.question),
                                 fontSize = 16.sp,
                                 fontWeight = FontWeight.Bold,
-                                color = Color.Black,
+                                color = textCol(),
                                 lineHeight = 22.sp
                             )
                             
@@ -1399,7 +1604,7 @@ fun TestRunnerView(
                                         .fillMaxWidth()
                                         .height(180.dp)
                                         .clip(RoundedCornerShape(8.dp))
-                                        .border(1.dp, Color.LightGray, RoundedCornerShape(8.dp))
+                                        .border(1.dp, borderCol(), RoundedCornerShape(8.dp))
                                 )
                             }
                         }
@@ -1411,18 +1616,18 @@ fun TestRunnerView(
                     if (mode == "self-check") {
                         if (showSelfCheckAnswer) {
                             ElevatedCard(
-                                colors = CardDefaults.elevatedCardColors(containerColor = LightTealBg),
+                                colors = CardDefaults.elevatedCardColors(containerColor = tealBgCol()),
                                 shape = RoundedCornerShape(14.dp),
                                 modifier = Modifier.fillMaxWidth()
                             ) {
                                 Column(modifier = Modifier.padding(16.dp)) {
-                                    Text("Дұрыс жауабы:", fontWeight = FontWeight.Bold, color = CosmicTeal, fontSize = 13.sp)
+                                    Text("Дұрыс жауабы:", fontWeight = FontWeight.Bold, color = if (isDark()) Color(0xFF2DD4BF) else CosmicTeal, fontSize = 13.sp)
                                     Spacer(modifier = Modifier.height(4.dp))
                                     Text(
                                         text = parseHtmlToAnnotatedString(correctText),
                                         fontWeight = FontWeight.Bold,
                                         fontSize = 16.sp,
-                                        color = CosmicTeal
+                                        color = if (isDark()) Color(0xFF2DD4BF) else CosmicTeal
                                     )
                                 }
                             }
@@ -1476,11 +1681,11 @@ fun TestRunnerView(
                                 val isOptionCorrect = optVal == correctText
                                 
                                 val cardBg = when {
-                                    mode == "instant" && isSelected && isOptionCorrect -> Color(0xFFE9F8EF)
-                                    mode == "instant" && isSelected && !isOptionCorrect -> Color(0xFFFDE8E8)
-                                    mode == "instant" && selectedOptionIdx != null && isOptionCorrect -> Color(0xFFE9F8EF)
-                                    isSelected -> LightTealBg
-                                    else -> Color.White
+                                    mode == "instant" && isSelected && isOptionCorrect -> if (isDark()) Color(0xFF1B3D2B) else Color(0xFFE9F8EF)
+                                    mode == "instant" && isSelected && !isOptionCorrect -> if (isDark()) Color(0xFF451A1A) else Color(0xFFFDE8E8)
+                                    mode == "instant" && selectedOptionIdx != null && isOptionCorrect -> if (isDark()) Color(0xFF1B3D2B) else Color(0xFFE9F8EF)
+                                    isSelected -> tealBgCol()
+                                    else -> cardCol()
                                 }
 
                                 val borderClr = when {
@@ -1488,7 +1693,7 @@ fun TestRunnerView(
                                     mode == "instant" && isSelected && !isOptionCorrect -> Color(0xFFFF4D4D)
                                     mode == "instant" && selectedOptionIdx != null && isOptionCorrect -> Color(0xFF36A269)
                                     isSelected -> CosmicTeal
-                                    else -> Color(0xFFD8E0EC)
+                                    else -> borderCol()
                                 }
 
                                 Row(
@@ -1519,15 +1724,15 @@ fun TestRunnerView(
                                         modifier = Modifier
                                             .size(24.dp)
                                             .clip(CircleShape)
-                                            .background(if (isSelected) CosmicTeal else Color(0xFFF1F5F9))
-                                            .border(1.dp, if (isSelected) CosmicTeal else Color(0xFFCBD5E1), CircleShape),
+                                            .background(if (isSelected) CosmicTeal else if (isDark()) Color(0xFF2E2D4A) else Color(0xFFF1F5F9))
+                                            .border(1.dp, if (isSelected) CosmicTeal else if (isDark()) Color(0xFF424068) else Color(0xFFCBD5E1), CircleShape),
                                         contentAlignment = Alignment.Center
                                     ) {
                                         val labelText = ('A' + optIdx).toString()
                                         Text(
                                             text = labelText,
                                             fontSize = 11.sp,
-                                            color = if (isSelected) Color.White else Color.Gray,
+                                            color = if (isSelected) Color.White else textSecCol(),
                                             fontWeight = FontWeight.Bold
                                         )
                                     }
@@ -1535,7 +1740,7 @@ fun TestRunnerView(
                                     Text(
                                         text = parseHtmlToAnnotatedString(optVal),
                                         fontSize = 14.sp,
-                                        color = Color.Black,
+                                        color = textCol(),
                                         modifier = Modifier.weight(1f)
                                     )
                                     
@@ -1632,13 +1837,13 @@ fun TestRunnerView(
                         text = "Тестілеу аяқталды!",
                         fontSize = 22.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color.Black
+                        color = textCol()
                     )
                     
                     Spacer(modifier = Modifier.height(24.dp))
 
                     ElevatedCard(
-                        colors = CardDefaults.elevatedCardColors(containerColor = Color.White),
+                        colors = CardDefaults.elevatedCardColors(containerColor = cardCol()),
                         shape = RoundedCornerShape(16.dp),
                         modifier = Modifier.fillMaxWidth()
                     ) {
@@ -1657,11 +1862,11 @@ fun TestRunnerView(
                             Spacer(modifier = Modifier.height(4.dp))
                             Text(
                                 text = "Дұрыс жауап саны ($percentage%)",
-                                color = Color.Gray,
+                                color = textSecCol(),
                                 fontSize = 13.sp
                             )
                             Spacer(modifier = Modifier.height(18.dp))
-                            HorizontalDivider()
+                            HorizontalDivider(color = borderCol())
                             Spacer(modifier = Modifier.height(14.dp))
                             
                             Row(
@@ -1669,17 +1874,17 @@ fun TestRunnerView(
                                 horizontalArrangement = Arrangement.SpaceAround
                             ) {
                                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                                    Text("Уақыт", color = Color.Gray, fontSize = 11.sp)
-                                    Text(getTimerString(elapsedSeconds), fontWeight = FontWeight.Bold, fontSize = 14.sp)
+                                    Text("Уақыт", color = textSecCol(), fontSize = 11.sp)
+                                    Text(getTimerString(elapsedSeconds), fontWeight = FontWeight.Bold, fontSize = 14.sp, color = textCol())
                                 }
                                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                                    Text("Режим", color = Color.Gray, fontSize = 11.sp)
+                                    Text("Режим", color = textSecCol(), fontSize = 11.sp)
                                     val modeName = when(mode) {
                                         "instant" -> "Қазіргі"
                                         "exam" -> "Еркін"
                                         else -> "Өзін-өзі тексеру"
                                     }
-                                    Text(modeName, fontWeight = FontWeight.Bold, fontSize = 14.sp)
+                                    Text(modeName, fontWeight = FontWeight.Bold, fontSize = 14.sp, color = textCol())
                                 }
                             }
                         }
@@ -1707,19 +1912,19 @@ fun TestRunnerView(
                         
                         mistakesList.forEachIndexed { mIdx, q ->
                             Card(
-                                colors = CardDefaults.cardColors(containerColor = Color.White),
+                                colors = CardDefaults.cardColors(containerColor = cardCol()),
                                 shape = RoundedCornerShape(12.dp),
                                 modifier = Modifier
                                     .fillMaxWidth()
                                     .padding(bottom = 12.dp)
-                                    .border(1.dp, Color(0xFFF1F5F9), RoundedCornerShape(12.dp))
+                                    .border(1.dp, borderCol(), RoundedCornerShape(12.dp))
                             ) {
                                 Column(modifier = Modifier.padding(14.dp)) {
                                     Text(
                                         text = "${mIdx + 1}. " + q.question,
                                         fontSize = 13.sp,
                                         fontWeight = FontWeight.Bold,
-                                        color = Color.Black
+                                        color = textCol()
                                     )
                                     Spacer(modifier = Modifier.height(8.dp))
                                     Text(
@@ -2388,12 +2593,25 @@ fun ProfileTab(
     onSetTestMode: (String) -> Unit,
     questionCount: Int,
     onSetQuestionCount: (Int) -> Unit,
+    isDarkMode: Boolean,
+    onToggleDarkMode: (Boolean) -> Unit,
+    shuffleOptions: Boolean,
+    onToggleShuffleOptions: (Boolean) -> Unit,
+    isOfflineSimulated: Boolean,
+    onToggleOfflineSimulated: (Boolean) -> Unit,
     onLogout: () -> Unit
 ) {
     val context = LocalContext.current
     var activeSubTab by remember { mutableStateOf("profile") } // profile vs ranking
     var rankingList by remember { mutableStateOf<List<RankingEntry>>(emptyList()) }
     var rankingsLoading by remember { mutableStateOf(true) }
+    
+    // Subject chart tab state
+    var selectedSubjectChart by remember { mutableStateOf("total") }
+    
+    // Offline simulated mode and sync states
+    var isSwSyncing by remember { mutableStateOf(false) }
+    var lastSyncTime by remember { mutableStateOf("Жаңа ғана (Сәтті кэштелді)") }
 
     // Load rankings data from assets
     LaunchedEffect(activeSubTab) {
@@ -2443,7 +2661,7 @@ fun ProfileTab(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(Color.White)
+                .background(cardCol())
                 .padding(vertical = 12.dp)
         ) {
             Box(
@@ -2456,7 +2674,7 @@ fun ProfileTab(
                     Text(
                         "Жеке кабинет",
                         fontWeight = FontWeight.Bold,
-                        color = if (activeSubTab == "profile") CosmicTeal else Color.Gray,
+                        color = if (activeSubTab == "profile") CosmicTeal else textSecCol(),
                         fontSize = 15.sp
                     )
                     Spacer(modifier = Modifier.height(4.dp))
@@ -2475,7 +2693,7 @@ fun ProfileTab(
                     Text(
                         "Рейтинг",
                         fontWeight = FontWeight.Bold,
-                        color = if (activeSubTab == "ranking") CosmicTeal else Color.Gray,
+                        color = if (activeSubTab == "ranking") CosmicTeal else textSecCol(),
                         fontSize = 15.sp
                     )
                     Spacer(modifier = Modifier.height(4.dp))
@@ -2498,7 +2716,7 @@ fun ProfileTab(
                     // Profile Header card
                     item {
                         ElevatedCard(
-                            colors = CardDefaults.elevatedCardColors(containerColor = Color.White),
+                            colors = CardDefaults.elevatedCardColors(containerColor = cardCol()),
                             shape = RoundedCornerShape(16.dp),
                             modifier = Modifier.fillMaxWidth()
                         ) {
@@ -2510,7 +2728,7 @@ fun ProfileTab(
                                     modifier = Modifier
                                         .size(80.dp)
                                         .clip(CircleShape)
-                                        .background(LightTealBg),
+                                        .background(tealBgCol()),
                                     contentAlignment = Alignment.Center
                                 ) {
                                     // Load user avatar or School icon fallback
@@ -2530,9 +2748,532 @@ fun ProfileTab(
                                     }
                                 }
                                 Spacer(modifier = Modifier.height(12.dp))
-                                Text(user.name, fontWeight = FontWeight.Bold, fontSize = 18.sp, color = Color.Black)
+                                Text(user.name, fontWeight = FontWeight.Bold, fontSize = 20.sp, color = textCol())
                                 Spacer(modifier = Modifier.height(4.dp))
-                                Text("Жалпы нәтижесі: ${user.score} ұпай", color = CosmicTeal, fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                                Text("ҰБТ-ға дайындық деңгейі", color = textSecCol(), fontSize = 12.sp)
+                                Spacer(modifier = Modifier.height(8.dp))
+                                
+                                // Level Progress Indicator
+                                val progressPercent = (user.score.toFloat() / 1500f).coerceIn(0f, 1f)
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    verticalAlignment = Alignment.CenterVertically,
+                                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                                ) {
+                                    LinearProgressIndicator(
+                                        progress = { progressPercent },
+                                        color = CosmicTeal,
+                                        trackColor = if (isDarkMode) Color(0xFF1E293B) else Color(0xFFE2E8F0),
+                                        modifier = Modifier
+                                            .weight(1f)
+                                            .height(8.dp)
+                                            .clip(RoundedCornerShape(4.dp))
+                                    )
+                                    Text(
+                                        "${(progressPercent * 100).toInt()}%",
+                                        fontWeight = FontWeight.Bold,
+                                        fontSize = 12.sp,
+                                        color = CosmicTeal
+                                    )
+                                }
+                            }
+                        }
+                    }
+
+                    // Stat Title
+                    item {
+                        Text(
+                            text = "Оқу Статистикасы",
+                            fontWeight = FontWeight.Bold,
+                            color = CosmicTeal,
+                            fontSize = 16.sp,
+                            modifier = Modifier.padding(top = 4.dp)
+                        )
+                    }
+
+                    // Stats cards row / grid
+                    item {
+                        Column(
+                            modifier = Modifier.fillMaxWidth(),
+                            verticalArrangement = Arrangement.spacedBy(10.dp)
+                        ) {
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.spacedBy(10.dp)
+                            ) {
+                                StatCard(
+                                    modifier = Modifier.weight(1f),
+                                    title = "Жалпы ұпай",
+                                    value = "${user.score}",
+                                    icon = Icons.Default.EmojiEvents,
+                                    color = AccentOrange
+                                )
+                                StatCard(
+                                    modifier = Modifier.weight(1f),
+                                    title = "Орташа нәтиже",
+                                    value = "${user.averageScore.toInt()}%",
+                                    icon = Icons.Default.TrendingUp,
+                                    color = Color(0xFF8B5CF6)
+                                )
+                            }
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.spacedBy(10.dp)
+                            ) {
+                                StatCard(
+                                    modifier = Modifier.weight(1f),
+                                    title = "Аяқталған тест",
+                                    value = "${user.completedTestsCount}",
+                                    icon = Icons.Default.AssignmentTurnedIn,
+                                    color = CosmicTeal
+                                )
+                                StatCard(
+                                    modifier = Modifier.weight(1f),
+                                    title = "Күндік ағын",
+                                    value = "${user.streakDays} күн",
+                                    icon = Icons.Default.LocalFireDepartment,
+                                    color = AccentRed
+                                )
+                            }
+                        }
+                    }
+
+                    // Centered, responsive Scores Dynamics Chart Card
+                    item {
+                        ElevatedCard(
+                            colors = CardDefaults.elevatedCardColors(containerColor = cardCol()),
+                            shape = RoundedCornerShape(16.dp),
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Column(modifier = Modifier.padding(18.dp)) {
+                                Text(
+                                    text = "ҰБТ нәтижелерінің динамикасы",
+                                    fontWeight = FontWeight.Bold,
+                                    color = CosmicTeal,
+                                    fontSize = 15.sp
+                                )
+                                Spacer(modifier = Modifier.height(12.dp))
+                                
+                                // Scrollable Row of Subject Tabs
+                                val subjectTabs = listOf(
+                                    Triple("total", "Жалпы ұпай", 140f),
+                                    Triple("hist", "Қаз. тарихы", 20f),
+                                    Triple("math", "Мат. сауат.", 10f),
+                                    Triple("read", "Оқу сауат.", 10f),
+                                    Triple("sub1", "Бейіндік пән 1", 50f),
+                                    Triple("sub2", "Бейіндік пән 2", 50f)
+                                )
+                                
+                                LazyRow(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                                    contentPadding = PaddingValues(vertical = 4.dp)
+                                ) {
+                                    items(subjectTabs) { (key, label, maxVal) ->
+                                        val isSelected = selectedSubjectChart == key
+                                        Box(
+                                            modifier = Modifier
+                                                .clip(RoundedCornerShape(8.dp))
+                                                .background(if (isSelected) CosmicTeal else if (isDarkMode) Color(0xFF2E2D4A) else Color(0xFFF1F5F9))
+                                                .clickable { selectedSubjectChart = key }
+                                                .padding(horizontal = 12.dp, vertical = 6.dp),
+                                            contentAlignment = Alignment.Center
+                                        ) {
+                                            Text(
+                                                text = label,
+                                                fontSize = 11.sp,
+                                                fontWeight = FontWeight.Bold,
+                                                color = if (isSelected) Color.White else textCol()
+                                            )
+                                        }
+                                    }
+                                }
+                                
+                                Spacer(modifier = Modifier.height(16.dp))
+                                
+                                val historyToDraw = when (selectedSubjectChart) {
+                                    "total" -> if (user.totalHistory.isNotEmpty()) user.totalHistory else listOf(75, 82, 80, 88, 91, 84, 95, 101, 98, 105, 112, 104)
+                                    "hist" -> if (user.histHistory.isNotEmpty()) user.histHistory else listOf(8, 11, 12, 10, 13, 14, 12, 15, 14, 16, 15, 17)
+                                    "math" -> if (user.mathHistory.isNotEmpty()) user.mathHistory else listOf(6, 7, 8, 7, 9, 8, 9, 10, 9, 10, 10, 10)
+                                    "read" -> if (user.readHistory.isNotEmpty()) user.readHistory else listOf(7, 8, 7, 9, 8, 9, 9, 10, 9, 10, 10, 10)
+                                    "sub1" -> if (user.sub1History.isNotEmpty()) user.sub1History else listOf(28, 31, 32, 35, 36, 34, 38, 41, 39, 42, 45, 43)
+                                    else -> if (user.sub2History.isNotEmpty()) user.sub2History else listOf(32, 35, 34, 38, 40, 38, 41, 44, 43, 46, 48, 47)
+                                }
+                                
+                                val maxValToDraw = when (selectedSubjectChart) {
+                                    "total" -> 140f
+                                    "hist" -> 20f
+                                    "math" -> 10f
+                                    "read" -> 10f
+                                    "sub1" -> 50f
+                                    else -> 50f
+                                }
+                                
+                                Box(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .height(160.dp),
+                                    contentAlignment = Alignment.Center
+                                ) {
+                                    ScoresChart(
+                                        history = historyToDraw,
+                                        maxVal = maxValToDraw,
+                                        isDarkMode = isDarkMode
+                                    )
+                                }
+                                
+                                Spacer(modifier = Modifier.height(10.dp))
+                                val explanationText = when (selectedSubjectChart) {
+                                    "total" -> "Жалпы сынақ тестінен жинаған ұпайларыңыздың динамикалық графигі (макс: 140 ұпай)."
+                                    "hist" -> "Қазақстан тарихы пәні бойынша көрсеткен нәтижелеріңіздің өсу бағыты (макс: 20 ұпай)."
+                                    "math" -> "Математикалық сауаттылық пәні бойынша көрсеткен нәтижелеріңіздің өсу бағыты (макс: 10 ұпай)."
+                                    "read" -> "Оқу сауаттылығы пәні бойынша көрсеткен нәтижелеріңіздің өсу бағыты (макс: 10 ұпай)."
+                                    "sub1" -> "Бейіндік бірінші таңдау пәніңізден динамикалық көрсеткіш (макс: 50 ұпай)."
+                                    else -> "Бейіндік екінші таңдау пәніңізден динамикалық көрсеткіш (макс: 50 ұпай)."
+                                }
+                                Text(
+                                    text = explanationText,
+                                    color = textSecCol(),
+                                    fontSize = 11.sp,
+                                    textAlign = TextAlign.Center,
+                                    modifier = Modifier.fillMaxWidth()
+                                )
+                            }
+                        }
+                    }
+
+                    // Activity matrix
+                    item {
+                        ElevatedCard(
+                            colors = CardDefaults.elevatedCardColors(containerColor = cardCol()),
+                            shape = RoundedCornerShape(16.dp),
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Column(modifier = Modifier.padding(18.dp)) {
+                                Text(
+                                    text = "Белсенділік күнтізбесі",
+                                    fontWeight = FontWeight.Bold,
+                                    color = CosmicTeal,
+                                    fontSize = 15.sp
+                                )
+                                Spacer(modifier = Modifier.height(12.dp))
+                                
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalArrangement = Arrangement.SpaceBetween
+                                ) {
+                                    for (i in 1..14) {
+                                        val active = i % 3 != 0
+                                        Box(
+                                            modifier = Modifier
+                                                .size(18.dp)
+                                                .clip(RoundedCornerShape(3.dp))
+                                                .background(if (active) CosmicTeal.copy(alpha = 0.15f + (i % 3) * 0.3f) else if (isDarkMode) Color(0xFF1E293B) else Color(0xFFE2E8F0))
+                                        )
+                                    }
+                                }
+                                
+                                Spacer(modifier = Modifier.height(12.dp))
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalArrangement = Arrangement.SpaceBetween,
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    Text("Төмен белсенділік", fontSize = 11.sp, color = textSecCol())
+                                    Text("Жоғары белсенділік", fontSize = 11.sp, color = textSecCol())
+                                }
+                            }
+                        }
+                    }
+
+                    // Service Worker Offline Cache Manager Card
+                    item {
+                        ElevatedCard(
+                            colors = CardDefaults.elevatedCardColors(containerColor = cardCol()),
+                            shape = RoundedCornerShape(16.dp),
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Column(modifier = Modifier.padding(18.dp)) {
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalArrangement = Arrangement.SpaceBetween,
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    Row(verticalAlignment = Alignment.CenterVertically) {
+                                        Icon(
+                                            imageVector = Icons.Default.Cloud,
+                                            contentDescription = null,
+                                            tint = CosmicTeal,
+                                            modifier = Modifier.size(24.dp)
+                                        )
+                                        Spacer(modifier = Modifier.width(8.dp))
+                                        Text(
+                                            text = "Оффлайн кэш (Service Worker)",
+                                            fontWeight = FontWeight.Bold,
+                                            color = CosmicTeal,
+                                            fontSize = 15.sp
+                                        )
+                                    }
+                                    
+                                    // Status pill
+                                    Box(
+                                        modifier = Modifier
+                                            .clip(RoundedCornerShape(8.dp))
+                                            .background(
+                                                if (isOfflineSimulated) AccentRed.copy(alpha = 0.2f)
+                                                else CosmicTeal.copy(alpha = 0.2f)
+                                            )
+                                            .padding(horizontal = 8.dp, vertical = 4.dp)
+                                    ) {
+                                        Row(verticalAlignment = Alignment.CenterVertically) {
+                                            Box(
+                                                modifier = Modifier
+                                                    .size(6.dp)
+                                                    .clip(CircleShape)
+                                                    .background(if (isOfflineSimulated) AccentRed else CosmicTeal)
+                                            )
+                                            Spacer(modifier = Modifier.width(6.dp))
+                                            Text(
+                                                text = if (isOfflineSimulated) "ОФФЛАЙН" else "БЕЛСЕНДІ",
+                                                fontSize = 10.sp,
+                                                fontWeight = FontWeight.Bold,
+                                                color = if (isOfflineSimulated) AccentRed else CosmicTeal
+                                            )
+                                        }
+                                    }
+                                }
+                                
+                                Spacer(modifier = Modifier.height(10.dp))
+                                Text(
+                                    text = "Платформадағы барлық ҰБТ сұрақтары, теориялық базалар мен Анки флэш-карталары құрылғыңызда автоматты түрде кэштелген (Service Worker Offline API қолданылуда).",
+                                    color = textSecCol(),
+                                    fontSize = 12.sp,
+                                    lineHeight = 16.sp
+                                )
+                                
+                                Spacer(modifier = Modifier.height(14.dp))
+                                
+                                // Cache Storage Stats
+                                Column(
+                                    verticalArrangement = Arrangement.spacedBy(6.dp),
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .clip(RoundedCornerShape(10.dp))
+                                        .background(if (isDarkMode) Color(0xFF1E293B) else Color(0xFFF8FAFC))
+                                        .padding(12.dp)
+                                ) {
+                                    Row(
+                                        modifier = Modifier.fillMaxWidth(),
+                                        horizontalArrangement = Arrangement.SpaceBetween
+                                    ) {
+                                        Text("Тест сұрақтары", fontSize = 11.sp, color = textSecCol())
+                                        Text("1,450+ сұрақ (100% Кэш)", fontSize = 11.sp, fontWeight = FontWeight.Bold, color = textCol())
+                                    }
+                                    Row(
+                                        modifier = Modifier.fillMaxWidth(),
+                                        horizontalArrangement = Arrangement.SpaceBetween
+                                    ) {
+                                        Text("Анки флэш-карталары", fontSize = 11.sp, color = textSecCol())
+                                        Text("380+ карта (100% Кэш)", fontSize = 11.sp, fontWeight = FontWeight.Bold, color = textCol())
+                                    }
+                                    Row(
+                                        modifier = Modifier.fillMaxWidth(),
+                                        horizontalArrangement = Arrangement.SpaceBetween
+                                    ) {
+                                        Text("Теориялық база", fontSize = 11.sp, color = textSecCol())
+                                        Text("40+ толық блок (100% Кэш)", fontSize = 11.sp, fontWeight = FontWeight.Bold, color = textCol())
+                                    }
+                                }
+                                
+                                Spacer(modifier = Modifier.height(14.dp))
+                                
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalArrangement = Arrangement.spacedBy(10.dp)
+                                ) {
+                                    // Simulated Sync Button
+                                    val coroutineScope = rememberCoroutineScope()
+                                    Button(
+                                        onClick = {
+                                            if (!isSwSyncing) {
+                                                isSwSyncing = true
+                                                coroutineScope.launch {
+                                                    delay(2000) // Simulating sync process
+                                                    isSwSyncing = false
+                                                    lastSyncTime = "Жаңа ғана синхрондалды"
+                                                }
+                                            }
+                                        },
+                                        colors = ButtonDefaults.buttonColors(
+                                            containerColor = if (isDarkMode) Color(0xFF2E2D4A) else Color(0xFFE2E8F0),
+                                            contentColor = CosmicTeal
+                                        ),
+                                        shape = RoundedCornerShape(8.dp),
+                                        modifier = Modifier.weight(1f),
+                                        contentPadding = PaddingValues(0.dp)
+                                    ) {
+                                        if (isSwSyncing) {
+                                            CircularProgressIndicator(
+                                                modifier = Modifier.size(16.dp),
+                                                color = CosmicTeal,
+                                                strokeWidth = 2.dp
+                                            )
+                                            Spacer(modifier = Modifier.width(6.dp))
+                                            Text("Синхрондау...", fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                                        } else {
+                                            Icon(Icons.Default.Sync, contentDescription = null, modifier = Modifier.size(16.dp))
+                                            Spacer(modifier = Modifier.width(6.dp))
+                                            Text("Синхрондау", fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                                        }
+                                    }
+                                    
+                                    // Simulated Offline Mode Toggle
+                                    Button(
+                                        onClick = { onToggleOfflineSimulated(!isOfflineSimulated) },
+                                        colors = ButtonDefaults.buttonColors(
+                                            containerColor = if (isOfflineSimulated) CosmicTeal else Color(0xFF10B981),
+                                            contentColor = Color.White
+                                        ),
+                                        shape = RoundedCornerShape(8.dp),
+                                        modifier = Modifier.weight(1f),
+                                        contentPadding = PaddingValues(0.dp)
+                                    ) {
+                                        Icon(
+                                            imageVector = if (isOfflineSimulated) Icons.Default.Wifi else Icons.Default.WifiOff,
+                                            contentDescription = null,
+                                            modifier = Modifier.size(16.dp)
+                                        )
+                                        Spacer(modifier = Modifier.width(6.dp))
+                                        Text(
+                                            text = if (isOfflineSimulated) "Желіні қосу" else "Оффлайн режим",
+                                            fontSize = 11.sp,
+                                            fontWeight = FontWeight.Bold
+                                        )
+                                    }
+                                }
+                                
+                                Spacer(modifier = Modifier.height(8.dp))
+                                Text(
+                                    text = "Соңғы синхрондау: $lastSyncTime",
+                                    color = textSecCol(),
+                                    fontSize = 10.sp,
+                                    textAlign = TextAlign.Center,
+                                    modifier = Modifier.fillMaxWidth()
+                                )
+                            }
+                        }
+                    }
+
+                    // Achievements Section
+                    item {
+                        Text(
+                            text = "Қол жеткізген жетістіктер",
+                            fontWeight = FontWeight.Bold,
+                            color = CosmicTeal,
+                            fontSize = 16.sp,
+                            modifier = Modifier.padding(top = 4.dp)
+                        )
+                    }
+
+                    item {
+                        val achievementsList = listOf(
+                            Triple("Бастамашыл оқушы", "Алғашқы тестті табысты аяқтау", Triple(Icons.Default.CheckCircle, 1, user.completedTestsCount)),
+                            Triple("ҰБТ Алпамысы", "Тестілеуден 100+ ұпай жинау", Triple(Icons.Default.EmojiEvents, 100, user.score)),
+                            Triple("Жүйелі дайындық", "Күндік ағынды 3 күнге жеткізу", Triple(Icons.Default.LocalFireDepartment, 3, user.streakDays)),
+                            Triple("Талмай ізденуші", "Бағдарламада 5 тест орындау", Triple(Icons.Default.MenuBook, 5, user.completedTestsCount)),
+                            Triple("Интеллектуал", "Орташа ұпайды 85-тен асыру", Triple(Icons.Default.Psychology, 85, user.averageScore.toInt())),
+                            Triple("Анки шебері", "Флэш-карталармен білімді бекіту", Triple(Icons.Default.Style, 1, if (user.completedTestsCount > 0) 1 else 0))
+                        )
+
+                        Column(
+                            verticalArrangement = Arrangement.spacedBy(10.dp),
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            achievementsList.forEach { (title, desc, stats) ->
+                                val (icon, target, current) = stats
+                                val isUnlocked = current >= target
+                                val progressPercent = (current.toFloat() / target.toFloat()).coerceIn(0f, 1f)
+                                
+                                Card(
+                                    colors = CardDefaults.cardColors(containerColor = cardCol()),
+                                    shape = RoundedCornerShape(12.dp),
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .border(
+                                            width = 1.dp,
+                                            color = if (isUnlocked) CosmicTeal.copy(alpha = 0.5f) else borderCol(),
+                                            shape = RoundedCornerShape(12.dp)
+                                        )
+                                ) {
+                                    Row(
+                                        modifier = Modifier.padding(12.dp),
+                                        verticalAlignment = Alignment.CenterVertically
+                                    ) {
+                                        Box(
+                                            modifier = Modifier
+                                                .size(44.dp)
+                                                .clip(CircleShape)
+                                                .background(if (isUnlocked) CosmicTeal.copy(alpha = 0.15f) else if (isDarkMode) Color(0xFF2E2D4A) else Color(0xFFF1F5F9)),
+                                            contentAlignment = Alignment.Center
+                                        ) {
+                                            Icon(
+                                                imageVector = icon,
+                                                contentDescription = title,
+                                                tint = if (isUnlocked) CosmicTeal else Color.Gray,
+                                                modifier = Modifier.size(24.dp)
+                                            )
+                                        }
+                                        
+                                        Spacer(modifier = Modifier.width(12.dp))
+                                        
+                                        Column(modifier = Modifier.weight(1f)) {
+                                            Row(
+                                                modifier = Modifier.fillMaxWidth(),
+                                                horizontalArrangement = Arrangement.SpaceBetween,
+                                                verticalAlignment = Alignment.CenterVertically
+                                            ) {
+                                                Text(
+                                                    text = title,
+                                                    fontWeight = FontWeight.Bold,
+                                                    fontSize = 14.sp,
+                                                    color = textCol()
+                                                )
+                                                
+                                                Box(
+                                                    modifier = Modifier
+                                                        .clip(RoundedCornerShape(4.dp))
+                                                        .background(if (isUnlocked) CosmicTeal.copy(alpha = 0.2f) else if (isDarkMode) Color(0xFF1E293B) else Color(0xFFE2E8F0))
+                                                        .padding(horizontal = 6.dp, vertical = 2.dp)
+                                                ) {
+                                                    Text(
+                                                        text = if (isUnlocked) "Ашық" else "$current/$target",
+                                                        fontSize = 10.sp,
+                                                        fontWeight = FontWeight.Bold,
+                                                        color = if (isUnlocked) CosmicTeal else textSecCol()
+                                                    )
+                                                }
+                                            }
+                                            
+                                            Spacer(modifier = Modifier.height(2.dp))
+                                            Text(
+                                                text = desc,
+                                                fontSize = 11.sp,
+                                                color = textSecCol()
+                                            )
+                                            
+                                            Spacer(modifier = Modifier.height(6.dp))
+                                            LinearProgressIndicator(
+                                                progress = { progressPercent },
+                                                color = CosmicTeal,
+                                                trackColor = if (isDarkMode) Color(0xFF1E293B) else Color(0xFFE2E8F0),
+                                                modifier = Modifier
+                                                    .fillMaxWidth()
+                                                    .height(4.dp)
+                                                    .clip(RoundedCornerShape(2.dp))
+                                            )
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -2543,19 +3284,20 @@ fun ProfileTab(
                             text = "Баптаулар",
                             fontWeight = FontWeight.Bold,
                             color = CosmicTeal,
-                            fontSize = 16.sp
+                            fontSize = 16.sp,
+                            modifier = Modifier.padding(top = 4.dp)
                         )
                     }
 
                     // Settings parameters
                     item {
                         ElevatedCard(
-                            colors = CardDefaults.elevatedCardColors(containerColor = Color.White),
+                            colors = CardDefaults.elevatedCardColors(containerColor = cardCol()),
                             shape = RoundedCornerShape(14.dp),
                             modifier = Modifier.fillMaxWidth()
                         ) {
                             Column(modifier = Modifier.padding(16.dp)) {
-                                Text("Тест тапсыру режимі", fontWeight = FontWeight.Bold, fontSize = 13.sp, color = Color.Gray)
+                                Text("Тест тапсыру режимі", fontWeight = FontWeight.Bold, fontSize = 13.sp, color = textSecCol())
                                 Spacer(modifier = Modifier.height(8.dp))
                                 
                                 val modes = listOf(
@@ -2577,7 +3319,7 @@ fun ProfileTab(
                                             colors = RadioButtonDefaults.colors(selectedColor = CosmicTeal)
                                         )
                                         Spacer(modifier = Modifier.width(8.dp))
-                                        Text(name, fontSize = 14.sp)
+                                        Text(name, fontSize = 14.sp, color = textCol())
                                     }
                                 }
                             }
@@ -2586,12 +3328,12 @@ fun ProfileTab(
 
                     item {
                         ElevatedCard(
-                            colors = CardDefaults.elevatedCardColors(containerColor = Color.White),
+                            colors = CardDefaults.elevatedCardColors(containerColor = cardCol()),
                             shape = RoundedCornerShape(14.dp),
                             modifier = Modifier.fillMaxWidth()
                         ) {
                             Column(modifier = Modifier.padding(16.dp)) {
-                                Text("Тесттегі сұрақ саны", fontWeight = FontWeight.Bold, fontSize = 13.sp, color = Color.Gray)
+                                Text("Тесттегі сұрақ саны", fontWeight = FontWeight.Bold, fontSize = 13.sp, color = textSecCol())
                                 Spacer(modifier = Modifier.height(8.dp))
                                 
                                 val counts = listOf(20, 30, 40, 60)
@@ -2604,7 +3346,7 @@ fun ProfileTab(
                                         Box(
                                             modifier = Modifier
                                                 .clip(RoundedCornerShape(8.dp))
-                                                .background(if (isSelected) CosmicTeal else Color(0xFFF1F5F9))
+                                                .background(if (isSelected) CosmicTeal else if (isDarkMode) Color(0xFF2E2D4A) else Color(0xFFF1F5F9))
                                                 .clickable { onSetQuestionCount(c) }
                                                 .padding(horizontal = 14.dp, vertical = 10.dp),
                                             contentAlignment = Alignment.Center
@@ -2617,6 +3359,60 @@ fun ProfileTab(
                                             )
                                         }
                                     }
+                                }
+                            }
+                        }
+                    }
+
+                    // Dynamic Switches Card (Dark Mode & Option Shuffling)
+                    item {
+                        ElevatedCard(
+                            colors = CardDefaults.elevatedCardColors(containerColor = cardCol()),
+                            shape = RoundedCornerShape(14.dp),
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Column(modifier = Modifier.padding(16.dp)) {
+                                Text("Қосымша баптаулар", fontWeight = FontWeight.Bold, fontSize = 13.sp, color = textSecCol())
+                                Spacer(modifier = Modifier.height(12.dp))
+                                
+                                // Dark Mode Row
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalArrangement = Arrangement.SpaceBetween,
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    Column(modifier = Modifier.weight(1f)) {
+                                        Text("Қараңғы режим (Dark Mode)", fontWeight = FontWeight.SemiBold, fontSize = 14.sp, color = textCol())
+                                        Text("Интерфейсті қараңғы түске ауыстыру", fontSize = 11.sp, color = textSecCol())
+                                    }
+                                    Spacer(modifier = Modifier.width(8.dp))
+                                    Switch(
+                                        checked = isDarkMode,
+                                        onCheckedChange = onToggleDarkMode,
+                                        colors = SwitchDefaults.colors(checkedThumbColor = CosmicTeal, checkedTrackColor = tealBgCol())
+                                    )
+                                }
+                                
+                                Spacer(modifier = Modifier.height(12.dp))
+                                HorizontalDivider(color = borderCol())
+                                Spacer(modifier = Modifier.height(12.dp))
+                                
+                                // Options Shuffle Row
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalArrangement = Arrangement.SpaceBetween,
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    Column(modifier = Modifier.weight(1f)) {
+                                        Text("Жауаптарды араластыру", fontWeight = FontWeight.SemiBold, fontSize = 14.sp, color = textCol())
+                                        Text("Тест кезінде нұсқаларды кездейсоқ қылу", fontSize = 11.sp, color = textSecCol())
+                                    }
+                                    Spacer(modifier = Modifier.width(8.dp))
+                                    Switch(
+                                        checked = shuffleOptions,
+                                        onCheckedChange = onToggleShuffleOptions,
+                                        colors = SwitchDefaults.colors(checkedThumbColor = CosmicTeal, checkedTrackColor = tealBgCol())
+                                    )
                                 }
                             }
                         }
@@ -2656,11 +3452,11 @@ fun ProfileTab(
                             val cardBorderColor = if (isCurrentUser) CosmicTeal else Color.Transparent
                             
                             Card(
-                                colors = CardDefaults.cardColors(containerColor = if (isCurrentUser) LightTealBg else Color.White),
+                                colors = CardDefaults.cardColors(containerColor = if (isCurrentUser) tealBgCol() else cardCol()),
                                 shape = RoundedCornerShape(12.dp),
                                 modifier = Modifier
                                     .fillMaxWidth()
-                                    .border(1.dp, if (isCurrentUser) CosmicTeal else Color(0xFFE2E8F0), RoundedCornerShape(12.dp))
+                                    .border(1.dp, if (isCurrentUser) CosmicTeal else borderCol(), RoundedCornerShape(12.dp))
                             ) {
                                 Row(
                                     modifier = Modifier
@@ -2678,7 +3474,7 @@ fun ProfileTab(
                                                     0 -> AccentOrange
                                                     1 -> Color.LightGray
                                                     2 -> Color(0xFFC47E5A)
-                                                    else -> Color(0xFFE2E8F0)
+                                                    else -> if (isDark()) Color(0xFF2E2D4A) else Color(0xFFE2E8F0)
                                                 }
                                             ),
                                         contentAlignment = Alignment.Center
@@ -2686,7 +3482,7 @@ fun ProfileTab(
                                         Text(
                                             text = "${index + 1}",
                                             fontWeight = FontWeight.Bold,
-                                            color = if (index <= 2) Color.White else Color.Black,
+                                            color = if (index <= 2) Color.White else textCol(),
                                             fontSize = 12.sp
                                         )
                                     }
@@ -2712,13 +3508,13 @@ fun ProfileTab(
                                         Text(
                                             text = student.name,
                                             fontWeight = FontWeight.Bold,
-                                            color = Color.Black,
+                                            color = textCol(),
                                             fontSize = 14.sp
                                         )
                                         Text(
                                             text = student.type,
                                             fontSize = 10.sp,
-                                            color = Color.Gray
+                                            color = textSecCol()
                                         )
                                     }
                                     
