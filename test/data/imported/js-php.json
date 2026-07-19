@@ -1,0 +1,3688 @@
+[
+  {
+    "question": "<p>... – <strong>клиент</strong> <strong>тарапынан</strong> <strong>жұмыс</strong> <strong>істейтін</strong> <strong>сценарийлер</strong> <strong>жазуға</strong> <strong>арналған</strong>, <strong>браузерге</strong> <strong>түсінікті</strong> <strong>нысанаға</strong> <strong>бағытталған</strong> <strong>программалау</strong> <strong>тілі</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "PHP",
+        "html": "<p>PHP</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Javascript",
+        "html": "<p>Javascript</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Python",
+        "html": "<p>Python</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "C++",
+        "html": "<p><strong>C</strong>++</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>JavaScript</strong> <strong>программасы</strong> ... <strong>немесе</strong> ... <strong>деп</strong> <strong>аталады</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "скрипт,сценарий",
+        "html": "<p><strong>скрипт</strong>,<strong>сценарий</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "нұсқаулық, бағдарлама",
+        "html": "<p><strong>нұсқаулық</strong>, <strong>бағдарлама</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "жүйе, модуль",
+        "html": "<p><strong>жүйе</strong>, <strong>модуль</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "файл, қосымша",
+        "html": "<p><strong>файл</strong>, <strong>қосымша</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>– <strong>үнемі</strong> <strong>жазбасы</strong> <strong>өзгеріп</strong>, <strong>жаңаланып</strong> <strong>тұратын</strong> <strong>сайт</strong>. <strong>Мұндай</strong> <strong>сайттар</strong> <strong>PHP</strong>, <strong>Perl</strong>, <strong>т</strong>.<strong>б</strong>. <strong>программалау</strong> <strong>тілдерінде</strong> <strong>жазылады</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Ішкі  сайт",
+        "html": "<p>Ішкі сайт</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Статикалық  сайт",
+        "html": "<p>Статикалық сайт</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Сыртқы  сайт",
+        "html": "<p>Сыртқы сайт</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Динамикалық  сайт",
+        "html": "<p>Динамикалық сайт</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Браузер</strong> <strong>HTML</strong> <strong>құжатын</strong> <strong>ашуды</strong> <strong>аяқтайды</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnSubmit",
+        "html": "<p>OnSubmit</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnLoad",
+        "html": "<p>OnLoad</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnSelect",
+        "html": "<p>OnSelect</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnReset",
+        "html": "<p>OnReset</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төмендегі</strong> <strong>код</strong> <strong>нәтижесі</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "12",
+        "html": "<p>12</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "13",
+        "html": "<p>13</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "15",
+        "html": "<p>15</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "10",
+        "html": "<p>10</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "test/assets/quizzes/js-php/images/img-083ddf4209e1d7403c9b0cf9046bcbc8c7d19566.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Скриптер</strong> <strong>тегі</strong> ... <strong>тікелей</strong> <strong>қамтиды</strong> <strong>немесе</strong> ... <strong>арқылы</strong> <strong>сыртқы</strong> <strong>скриптік</strong> <strong>файлға</strong> <strong>сілтеме</strong> <strong>жасайды</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "src  атрибуты, скриптер  кодын",
+        "html": "<p><strong>src</strong> <strong>атрибуты</strong>, <strong>скриптер</strong> <strong>кодын</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "href  атрибуты, скриптер  кодын",
+        "html": "<p><strong>href</strong> <strong>атрибуты</strong>, <strong>скриптер</strong> <strong>кодын</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "скриптер  кодын, src  атрибуты",
+        "html": "<p><strong>скриптер</strong> <strong>кодын</strong>, <strong>src</strong> <strong>атрибуты</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "нысындар  кодын, src  атрибуты",
+        "html": "<p><strong>нысындар</strong> <strong>кодын</strong>, <strong>src</strong> <strong>атрибуты</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Web</strong>-<strong>беттердің</strong> <strong>мәтінінде</strong> <strong>Javascript</strong> <strong>сценарийін</strong> <strong>орналастыру</strong> <strong>үшін</strong> <strong>қандай</strong> <strong>дескрипторды</strong> <strong>енгізу</strong> <strong>керек</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "<link>",
+        "html": "<p>&lt;<strong>link</strong>&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "<script>",
+        "html": "<p>&lt;<strong>script</strong>&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "<src>",
+        "html": "<p>&lt;<strong>src</strong>&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "<head>",
+        "html": "<p>&lt;<strong>head</strong>&gt;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>... – <strong>пайдаланушымен</strong> <strong>өзара</strong> <strong>әрекеттесе</strong> <strong>алатын</strong> <strong>web</strong>-<strong>қосымшаларды</strong> <strong>және</strong> <strong>динамикалық</strong> <strong>сайттарды</strong> <strong>жасау</strong> <strong>үшін</strong> <strong>пайдаланылады</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Java",
+        "html": "<p>Java</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "PHP",
+        "html": "<p>PHP</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "C++",
+        "html": "<p><strong>C</strong>++</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Javascript",
+        "html": "<p>Javascript</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төменде</strong> <strong>қандай</strong> <strong>функция</strong> <strong>көрсетілген</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "confirm()",
+        "html": "<p><strong>confirm</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "prompt()",
+        "html": "<p><strong>prompt</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "document.write()",
+        "html": "<p><strong>document</strong>.<strong>write</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "alert()",
+        "html": "<p><strong>alert</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "test/assets/quizzes/js-php/images/img-9a2bd09ff71fd647d29785ec36d4f16208eeeab5.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Скриптер</strong> ... <strong>және</strong> ... <strong>болып</strong> <strong>бөлінеді</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "ішкі (js-файлдар), сыртқы (<script> элементтері)",
+        "html": "<p><strong>ішкі</strong> (<strong>js</strong>-<strong>файлдар</strong>), <strong>сыртқы</strong> (&lt;<strong>script</strong>&gt; <strong>элементтері</strong>)</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "скрипт, сценарий",
+        "html": "<p><strong>скрипт</strong>, <strong>сценарий</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "сыртқы (js-файлдар), ішкі (<script> элементтері)",
+        "html": "<p><strong>сыртқы</strong> (<strong>js</strong>-<strong>файлдар</strong>), <strong>ішкі</strong> (&lt;<strong>script</strong>&gt; <strong>элементтері</strong>)</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Динамикалық  сайт, Статикалық  сайт",
+        "html": "<p><strong>Динамикалық</strong> <strong>сайт</strong>, <strong>Статикалық</strong> <strong>сайт</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төменде</strong> <strong>бейнеленген</strong> <strong>суреттегі</strong> <strong>тегтер</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "JavaScript-тің  басы  мен  соңын  білдіреді",
+        "html": "<p><strong>JavaScript</strong>-<strong>тің</strong> <strong>басы</strong> <strong>мен</strong> <strong>соңын</strong> <strong>білдіреді</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "JavaScript-тің  түсіндірме  теттері",
+        "html": "<p><strong>JavaScript</strong>-<strong>тің</strong> <strong>түсіндірме</strong> <strong>теттері</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "JavaScript-ті  қолданбаған  жағдайда  мына  кодты  пайдалану",
+        "html": "<p><strong>JavaScript</strong>-<strong>ті</strong> <strong>қолданбаған</strong> <strong>жағдайда</strong> <strong>мына</strong> <strong>кодты</strong> <strong>пайдалану</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "JavaScript  көмегімен  батырма  жасау",
+        "html": "<p>JavaScript көмегімен батырма жасау</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/js-php/images/img-75f0299dfce6e8df83bc6f9d9d040d48cf9fac85.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>JavaScript</strong>-<strong>тің</strong> <strong>негізгі</strong> <strong>сәулеттік</strong> <strong>ерекшеліктеріне</strong> <strong>жатпайды</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "динамикалық  теру",
+        "html": "<p>динамикалық теру</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "жадыньі  автоматты  басқару",
+        "html": "<p>жадыньі автоматты басқару</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "анонимді  теру",
+        "html": "<p>анонимді теру</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "әлсіз  теру",
+        "html": "<p>әлсіз теру</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>OnMouseOver</strong> <strong>атрибутының</strong> <strong>қызметі</strong> <strong>қандай</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Пайдаланушы  тінтуірді  элементтен  алып  кетеді",
+        "html": "<p>Пайдаланушы тінтуірді элементтен алып кетеді</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Пайдаланушы  тінтуірді  элемент  бойымен  жылжытады",
+        "html": "<p>Пайдаланушы тінтуірді элемент бойымен жылжытады</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Пайдаланушы  пернені  элементтің  үстіне  алып  барады",
+        "html": "<p>Пайдаланушы пернені элементтің үстіне алып барады</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Пайдаланушы  тінтуірдің  үстіне  алып  барады",
+        "html": "<p>Пайдаланушы тінтуірдің үстіне алып барады</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>&lt;<strong>script</strong>&gt; <strong>элементінің</strong> <strong>қандай</strong> <strong>теттердің</strong> <strong>ішінде</strong> <strong>орналастыруға</strong> <strong>болады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "<header>, <body>",
+        "html": "<p>&lt;<strong>header</strong>&gt;, &lt;<strong>body</strong>&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "<title>, <body>",
+        "html": "<p>&lt;<strong>title</strong>&gt;, &lt;<strong>body</strong>&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "<html>, <header>",
+        "html": "<p>&lt;<strong>html</strong>&gt;, &lt;<strong>header</strong>&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "<head>, <body>",
+        "html": "<p>&lt;<strong>head</strong>&gt;, &lt;<strong>body</strong>&gt;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төмендегі</strong> <strong>код</strong> <strong>нәтижесі</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "11",
+        "html": "<p>11</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "20",
+        "html": "<p>20</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "30",
+        "html": "<p>30</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "13",
+        "html": "<p>13</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/js-php/images/img-3f6e3518a6132b55e867df48b368fe1e92f17dbb.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>OnSubmit</strong> <strong>атрибутының</strong> <strong>қызметі</strong> <strong>қандай</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Пішіндегі  деректер  web‑серверге  жіберіледі",
+        "html": "<p><strong>Пішіндегі</strong> <strong>деректер</strong> <strong>web</strong>‑<strong>серверге</strong> <strong>жіберіледі</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Пішін  тазартылады",
+        "html": "<p>Пішін тазартылады</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Пайдаланушы  мәтін  өрісіндегі  мәтін  жолағын  таңдайды",
+        "html": "<p>Пайдаланушы мәтін өрісіндегі мәтін жолағын таңдайды</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Элемент  енгізу  фокусын  жоғалтады",
+        "html": "<p>Элемент енгізу фокусын жоғалтады</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төменде</strong> <strong>қандай</strong> <strong>функция</strong> <strong>көрсетілген</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "confirm()",
+        "html": "<p><strong>confirm</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "prompt()",
+        "html": "<p><strong>prompt</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "document.writeln()",
+        "html": "<p><strong>document</strong>.<strong>writeln</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "alert()",
+        "html": "<p><strong>alert</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "test/assets/quizzes/js-php/images/img-0d1e4be63520da5a25826a8c622d2c96f1fb11ee.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төмендегі</strong> <strong>код</strong> <strong>нәтижесі</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Вариант 1",
+        "html": "<p><strong>Вариант</strong> 1</p>",
+        "image": "test/assets/quizzes/js-php/images/img-4ecea328ed63c04258f8e774a0ce09dec26272d2.png",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Вариант 2",
+        "html": "<p><strong>Вариант</strong> 2</p>",
+        "image": "test/assets/quizzes/js-php/images/img-9e54ec416f032e74d705ad1591ca4556a1fa3b6b.png",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Вариант 3",
+        "html": "<p><strong>Вариант</strong> 3</p>",
+        "image": "test/assets/quizzes/js-php/images/img-f9cdef848570db83b14f7736913094dbb9ca16cd.png",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "D",
+        "html": "<p>D</p>",
+        "image": "test/assets/quizzes/js-php/images/img-9043582fdd73fb140efc3c56f16d3aa1f147400d.png",
+        "useHtml": false
+      }
+    ],
+    "correct": "opt-b",
+    "image": "test/assets/quizzes/js-php/images/img-f035ae2f3e0d3552a03c2d7d4f61cc99f76e56f2.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>OnSelect</strong> <strong>атрибутының</strong> <strong>қызметі</strong> <strong>қандай</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Пішін  тазаланады.",
+        "html": "<p><strong>Пішін</strong> <strong>тазаланады</strong>.</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Пайдаланушы  тінтуірді  элементтен  алып  кетеді",
+        "html": "<p>Пайдаланушы тінтуірді элементтен алып кетеді</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Пайдаланушы  мәтін  өрісіндегі  мәтін  жолағын  таңдайды",
+        "html": "<p>Пайдаланушы мәтін өрісіндегі мәтін жолағын таңдайды</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Пішіндегі  деректер  web‑серверге  жіберіледі",
+        "html": "<p><strong>Пішіндегі</strong> <strong>деректер</strong> <strong>web</strong>‑<strong>серверге</strong> <strong>жіберіледі</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Программа</strong> <strong>немесе</strong> <strong>программа</strong> <strong>файлының</strong> <strong>сценарийі</strong> <strong>болып</strong> <strong>табылады</strong>, <strong>ол</strong> <strong>пайдаланушы</strong> <strong>программа</strong> <strong>интерфейсін</strong> <strong>қолдана</strong> <strong>отырып</strong>, <strong>кейбір</strong> <strong>тапсырмаларды</strong> <strong>орындауды</strong> <strong>автоматтандырады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "скрипт",
+        "html": "<p>скрипт</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "нысан",
+        "html": "<p>нысан</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "форма",
+        "html": "<p>форма</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "js  сценарии",
+        "html": "<p>js сценарии</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Элемент</strong> <strong>енгізу</strong> <strong>фокусын</strong> <strong>алады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnSubmit",
+        "html": "<p>OnSubmit</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnFocus",
+        "html": "<p>OnFocus</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnLoad",
+        "html": "<p>OnLoad</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnBlur",
+        "html": "<p>OnBlur</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төменде</strong> <strong>қандай</strong> <strong>функция</strong> <strong>көрсетілген</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "confirm()",
+        "html": "<p><strong>confirm</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "document.write()",
+        "html": "<p><strong>document</strong>.<strong>write</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "alert()",
+        "html": "<p><strong>alert</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "prompt()",
+        "html": "<p><strong>prompt</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/js-php/images/img-dc39eeaaf9d9f260ec21c0d6f7938f48aced2f31.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>… – <strong>бұл</strong> <strong>HTML</strong> <strong>бетті</strong> <strong>интерактивті</strong> <strong>ететін</strong> <strong>сценарий</strong> <strong>тілі</strong>, <strong>яғни</strong> <strong>пайдаланушымен</strong> <strong>байланысу</strong> <strong>қабілеті</strong> <strong>бар</strong>, <strong>интерпретацияланатын</strong> <strong>программалау</strong> <strong>тілі</strong> <strong>кіріктірілген</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "JavaScript",
+        "html": "<p>JavaScript</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Java",
+        "html": "<p>Java</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "C++",
+        "html": "<p><strong>C</strong>++</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "PHP",
+        "html": "<p>PHP</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>– <strong>HTML</strong> <strong>бетке</strong> <strong>қойылатын</strong> <strong>және</strong> <strong>клиент</strong> <strong>тарапынан</strong> <strong>қандай</strong> <strong>да</strong> <strong>бір</strong> <strong>әрекетті</strong> <strong>орындайтын</strong> <strong>код</strong> <strong>үзіндісі</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "PHP",
+        "html": "<p>PHP</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Python",
+        "html": "<p>Python</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Javascript",
+        "html": "<p>Javascript</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "CSS",
+        "html": "<p>CSS</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төмендегі</strong> <strong>код</strong> <strong>нәтижесі</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "11",
+        "html": "<p>11</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "15",
+        "html": "<p>15</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "10",
+        "html": "<p>10</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "17",
+        "html": "<p>17</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "test/assets/quizzes/js-php/images/img-d6956b929ce66dc07918ee4db3861c5d5ba08b1d.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Экран</strong> <strong>бетіне</strong> <strong>ақпаратты</strong> <strong>шығару</strong> <strong>үшін</strong> <strong>қолданылады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "alert()",
+        "html": "<p><strong>alert</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "document.writeln()",
+        "html": "<p><strong>document</strong>.<strong>writeln</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "prompt()",
+        "html": "<p><strong>prompt</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "document.write()",
+        "html": "<p><strong>document</strong>.<strong>write</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>JavaScript</strong>-<strong>тің</strong> <strong>негізгі</strong> <strong>сәулеттік</strong> <strong>ерекшеліктеріне</strong> <strong>жатпайды</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "әлсіз  теру",
+        "html": "<p>әлсіз теру</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "жадыньі  автоматты  басқару",
+        "html": "<p>жадыньі автоматты басқару</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "статикалық  теру",
+        "html": "<p>статикалық теру</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "прототипті  программалау  бірінші  санатты  нысандар  ретінде  жұмыс  істейді",
+        "html": "<p>прототипті программалау бірінші санатты нысандар ретінде жұмыс істейді</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төменде</strong> <strong>қандай</strong> <strong>функция</strong> <strong>көрсетілген</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "document.write()",
+        "html": "<p><strong>document</strong>.<strong>write</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "confirm()",
+        "html": "<p><strong>confirm</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "prompt()",
+        "html": "<p><strong>prompt</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "alert()",
+        "html": "<p><strong>alert</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/js-php/images/img-4995100ea0f3cf05ab1608db79761d444d499318.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Хабарламамен</strong> <strong>модальді</strong> (<strong>диалогтық</strong>) <strong>терезені</strong> <strong>шығарады</strong> <strong>және</strong> <strong>пайдаланушының</strong> <strong>OK</strong> <strong>батырмасын</strong> <strong>басқанын</strong> <strong>күтеді</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "confirm()",
+        "html": "<p><strong>confirm</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "alert()",
+        "html": "<p><strong>alert</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "prompt()",
+        "html": "<p><strong>prompt</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "document.write()",
+        "html": "<p><strong>document</strong>.<strong>write</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>OnMouseDown</strong> <strong>атрибутының</strong> <strong>қызметі</strong> <strong>қандай</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Пайдаланушы  тінтуірді  элемент  бойымен  жылжытады",
+        "html": "<p>Пайдаланушы тінтуірді элемент бойымен жылжытады</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Пайдаланушы  тінтуірді  элементтен  алып  кетеді",
+        "html": "<p>Пайдаланушы тінтуірді элементтен алып кетеді</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Пайдаланушы  тінтуірдің  үстіне  алып  барады",
+        "html": "<p>Пайдаланушы тінтуірдің үстіне алып барады</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Пайдаланушы  элементті  тінтуірмен  екі  шертеді",
+        "html": "<p>Пайдаланушы элементті тінтуірмен екі шертеді</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>JS</strong>‑<strong>те</strong> <strong>түсіндірме</strong> <strong>теттері</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "/‑…‑/",
+        "html": "<p>/‑…‑/</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "<!-- … -->",
+        "html": "<p>&lt;!-- … --&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "/…/",
+        "html": "<p>/…/</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "<!‑‑ және //‑‑>",
+        "html": "<p>&lt;!‑‑ <strong>және</strong> //‑‑&gt;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>On</strong> <strong>title</strong> <strong>тақырып</strong> <strong>атымен</strong>, <strong>мәтінді</strong> <strong>енгізу</strong> <strong>өрісімен</strong>, <strong>default</strong> <strong>толтырылған</strong> <strong>жолмен</strong> <strong>және</strong> <strong>OK</strong>/<strong>CANCEL</strong> <strong>батырмаларынан</strong> <strong>тұратын</strong> <strong>терезені</strong> <strong>шығарады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "prompt()",
+        "html": "<p><strong>prompt</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "document.write()",
+        "html": "<p><strong>document</strong>.<strong>write</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "alert()",
+        "html": "<p><strong>alert</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "confirm()",
+        "html": "<p><strong>confirm</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>JavaScript</strong> – <strong>нысанға</strong> <strong>бағытталған</strong> <strong>тіл</strong>, <strong>бірақ</strong> <strong>тілде</strong> <strong>қолданылатын</strong> <strong>прототиптердің</strong> <strong>дәстүрлі</strong> <strong>нысанға</strong> <strong>бағытталған</strong> <strong>тілге</strong> <strong>қарағанда</strong> <strong>төмендегідей</strong> <strong>айырмашылығына</strong> <strong>жатпайтын</strong> <strong>нұсқаны</strong> <strong>тап</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "кестеге  ұқсас  функциялар",
+        "html": "<p>кестеге ұқсас функциялар</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "анонимді  функциялар",
+        "html": "<p>анонимді функциялар</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "сілтеме  жасаушы",
+        "html": "<p>сілтеме жасаушы</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "бірінші  санатты  функциялар",
+        "html": "<p>бірінші санатты функциялар</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>… – <strong>деректер</strong> <strong>мен</strong> <strong>функциялар</strong> <strong>жиынынан</strong> <strong>тұратын</strong> <strong>бірыңғай</strong> <strong>конструкция</strong> <strong>немесе</strong> <strong>JavaScript</strong> <strong>терминологиясындағы</strong> <strong>қасиеттер</strong> <strong>мен</strong> <strong>тәсілдер</strong> <strong>жиыны</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Нысан",
+        "html": "<p>Нысан</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Скрипт",
+        "html": "<p>Скрипт</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Сценарий",
+        "html": "<p>Сценарий</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Функция",
+        "html": "<p>Функция</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төмендегі</strong> <strong>код</strong> <strong>нәтижесі</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "13",
+        "html": "<p>13</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "10",
+        "html": "<p>10</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "0",
+        "html": "<p>0</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "5",
+        "html": "<p>5</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "test/assets/quizzes/js-php/images/img-7e50c30acf9607ab68bef4cae986ba0dc84655e6.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төменде</strong> <strong>берілген</strong> <strong>суретте</strong> <strong>қандай</strong> <strong>функциялар</strong> <strong>жетіспейді</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "prompt,confirm",
+        "html": "<p><strong>prompt</strong>,<strong>confirm</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "document.writeln,confirm",
+        "html": "<p><strong>document</strong>.<strong>writeln</strong>,<strong>confirm</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "confirm,prompt",
+        "html": "<p><strong>confirm</strong>,<strong>prompt</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "alert,confirm",
+        "html": "<p><strong>alert</strong>,<strong>confirm</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/js-php/images/img-8dd72c5f14f10282c3261b61c016d36961bb5a3a.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Пайдаланушы</strong> <strong>бір</strong> <strong>нәрсе</strong> <strong>енгізіп</strong>, <strong>OK</strong> <strong>батырмасын</strong> <strong>басу</strong> <strong>керек</strong> <strong>немесе</strong> <strong>CANCEL</strong> <strong>батырмасын</strong> <strong>және</strong> <strong>пернетақтадағы</strong> <strong>esc</strong> <strong>пернесін</strong> <strong>басу</strong> <strong>арқылы</strong> <strong>енгізуді</strong> <strong>тоқтау</strong> <strong>керек</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "document.writeln()",
+        "html": "<p><strong>document</strong>.<strong>writeln</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "confirm()",
+        "html": "<p><strong>confirm</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "alert()",
+        "html": "<p><strong>alert</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "prompt()",
+        "html": "<p><strong>prompt</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>JavaScript</strong>‑<strong>тің</strong> <strong>негізгі</strong> <strong>сәулеттік</strong> <strong>ерекшеліктеріне</strong> <strong>жатпайды</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "іләкер,қаны  аз,анемия  теру",
+        "html": "<p><strong>іләкер</strong>,<strong>қаны</strong> <strong>аз</strong>,<strong>анемия</strong> <strong>теру</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "жаданы  автоматты  басқару",
+        "html": "<p>жаданы автоматты басқару</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "динамикалық  теру",
+        "html": "<p>динамикалық теру</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "прототипті  программалау  бірінші  санатты  нысандар  ретінде  жұмыс  істейді",
+        "html": "<p>прототипті программалау бірінші санатты нысандар ретінде жұмыс істейді</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>JavaScript</strong> – <strong>нысанға</strong> <strong>бағытталған</strong> <strong>тіл</strong>, <strong>бірақ</strong> <strong>тілде</strong> <strong>қолданылатын</strong> <strong>прототиптердің</strong> <strong>дәстүрлі</strong> <strong>нысанға</strong> <strong>бағытталған</strong> <strong>тілге</strong> <strong>қарағанда</strong> <strong>төмендегідей</strong> <strong>айырмашылығына</strong> <strong>жатпайтын</strong> <strong>нұсқаны</strong> <strong>тап</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "нысан  жасаушы",
+        "html": "<p>нысан жасаушы</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "бірінші  санатты  функциялар",
+        "html": "<p>бірінші санатты функциялар</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "анонимді  функциялар",
+        "html": "<p>анонимді функциялар</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "тізімге  ұқсас  функциялар",
+        "html": "<p>тізімге ұқсас функциялар</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Екі</strong> <strong>батырмадан</strong> <strong>тұратын</strong> <strong>question</strong> <strong>сұрақ</strong> <strong>қойылған</strong> <strong>терезесін</strong> <strong>шығарады</strong> : <strong>OK</strong>/<strong>CANCEL</strong>. <strong>OK</strong> <strong>батырмасын</strong> <strong>басқанда</strong> <strong>true</strong> <strong>және</strong> <strong>CANCEL</strong> (<strong>esc</strong>) <strong>басқанда</strong> <strong>false</strong> <strong>нәтижесі</strong> <strong>шығады</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "prompt()",
+        "html": "<p><strong>prompt</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "confirm()",
+        "html": "<p><strong>confirm</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "document.writeln()",
+        "html": "<p><strong>document</strong>.<strong>writeln</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "alert()",
+        "html": "<p><strong>alert</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төмендегі</strong> <strong>код</strong> <strong>қандай</strong> <strong>жағдайда</strong> <strong>қолданылады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Браузер  JavaScript-ті  қолданған  жағдайда",
+        "html": "<p><strong>Браузер</strong> <strong>JavaScript</strong>-<strong>ті</strong> <strong>қолданған</strong> <strong>жағдайда</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Скриптер  көмегімен  бейне  жасау",
+        "html": "<p>Скриптер көмегімен бейне жасау</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Браузер  JavaScript-ті  қолданбаған  жағдайда",
+        "html": "<p><strong>Браузер</strong> <strong>JavaScript</strong>-<strong>ті</strong> <strong>қолданбаған</strong> <strong>жағдайда</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Скриптер  көмегімен  батырма  жасау",
+        "html": "<p>Скриптер көмегімен батырма жасау</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "test/assets/quizzes/js-php/images/img-553026924f1f23205a2fe47ff33bf6873b99daf5.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>HTML</strong> <strong>бетіне</strong> <strong>сценарийді</strong> <strong>қосу</strong> <strong>үшін</strong> <strong>не</strong> <strong>жасау</strong> <strong>керек</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "<script  language=\"text/javascript\">...</script>",
+        "html": "<p>&lt;<strong>script</strong> <strong>language</strong>=&quot;<strong>text</strong>/<strong>javascript</strong>&quot;&gt;...&lt;/<strong>script</strong>&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "<head  type=\"text/javascript\">...</head>",
+        "html": "<p>&lt;<strong>head</strong> <strong>type</strong>=&quot;<strong>text</strong>/<strong>javascript</strong>&quot;&gt;...&lt;/<strong>head</strong>&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "<script  type=\"text/javascript\">...</script>",
+        "html": "<p>&lt;<strong>script</strong> <strong>type</strong>=&quot;<strong>text</strong>/<strong>javascript</strong>&quot;&gt;...&lt;/<strong>script</strong>&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "<text  type=\"text/javascript\">...</script>",
+        "html": "<p>&lt;<strong>text</strong> <strong>type</strong>=&quot;<strong>text</strong>/<strong>javascript</strong>&quot;&gt;...&lt;/<strong>script</strong>&gt;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Pre</strong> <strong>форматтау</strong> <strong>тегі</strong> <strong>жаңа</strong> <strong>жолға</strong> <strong>көшіру</strong> <strong>үшін</strong> <strong>қолданылады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "document.writeln()",
+        "html": "<p><strong>document</strong>.<strong>writeln</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "alert()",
+        "html": "<p><strong>alert</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "document.write()",
+        "html": "<p><strong>document</strong>.<strong>write</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "confirm()",
+        "html": "<p><strong>confirm</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>&lt;<strong>scrip</strong> <strong>t</strong>&gt; <strong>атрибуттары</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "language,type,src",
+        "html": "<p><strong>language</strong>,<strong>type</strong>,<strong>src</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "language,text,src",
+        "html": "<p><strong>language</strong>,<strong>text</strong>,<strong>src</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "language,type,href",
+        "html": "<p><strong>language</strong>,<strong>type</strong>,<strong>href</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "language,type,scr",
+        "html": "<p><strong>language</strong>,<strong>type</strong>,<strong>scr</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төмендегі</strong> <strong>код</strong> <strong>нәтижесі</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "14",
+        "html": "<p>14</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "12",
+        "html": "<p>12</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "11",
+        "html": "<p>11</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "10",
+        "html": "<p>10</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "test/assets/quizzes/js-php/images/img-11374fdcaecfe40627ba882596ee73450fb18a49.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төмендегі</strong> <strong>код</strong> <strong>қандай</strong> <strong>жағдайда</strong> <strong>қолданылады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Скриптер  көмегімен  батырма  жасау",
+        "html": "<p>Скриптер көмегімен батырма жасау</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Скриптер  көмегімен  сұрақ  терезесін  жасау",
+        "html": "<p>Скриптер көмегімен сұрақ терезесін жасау</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Скриптер  көмегімен  сценарий  жасау",
+        "html": "<p>Скриптер көмегімен сценарий жасау</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Браузер  JavaScript-ті  қолдана  алмайтын  жағдайда",
+        "html": "<p><strong>Браузер</strong> <strong>JavaScript</strong>-<strong>ті</strong> <strong>қолдана</strong> <strong>алмайтын</strong> <strong>жағдайда</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/js-php/images/img-9a57011c4bc1f35968726b0171e0e7846e12c50f.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төмендегі</strong> <strong>кодта</strong> <strong>ең</strong> <strong>бірінші</strong> <strong>болып</strong> <strong>браузерде</strong> <strong>не</strong> <strong>шығады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "IXG  SCHOOL  BY  ERKA",
+        "html": "<p>IXG SCHOOL BY ERKA</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "IXG  SCHOOL  INFO 50/50",
+        "html": "<p><strong>IXG</strong> <strong>SCHOOL</strong> <strong>INFO</strong> 50/50</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Ештеңе",
+        "html": "<p>Ештеңе</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Сіз  IXG  SCHOOL  оқушысыз  ба?",
+        "html": "<p><strong>Сіз</strong> <strong>IXG</strong> <strong>SCHOOL</strong> <strong>оқушысыз</strong> <strong>ба</strong>?</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "test/assets/quizzes/js-php/images/img-032c01655a13c08aef263a7052f518cad1507998.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>JavaScript</strong> <strong>кеңейтімі</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": ".java",
+        "html": "<p>.<strong>java</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": ".js",
+        "html": "<p>.<strong>js</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": ".javascript",
+        "html": "<p>.<strong>javascript</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": ".css",
+        "html": "<p>.<strong>css</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>… – <strong>бұл</strong> <strong>ресурста</strong> <strong>іске</strong> <strong>асырылатын</strong> <strong>және</strong> <strong>порталдың</strong> <strong>функционалдығын</strong> <strong>кеңейтетін</strong> <strong>код</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Сайт  стилі",
+        "html": "<p>Сайт стилі</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Сайт  скрипті",
+        "html": "<p>Сайт скрипті</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Сайт  құрылымы",
+        "html": "<p>Сайт құрылымы</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Сайт  терезесі",
+        "html": "<p>Сайт терезесі</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Пішін</strong> <strong>тазаланады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnSelect",
+        "html": "<p>OnSelect</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnSubmit",
+        "html": "<p>OnSubmit</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnBlur",
+        "html": "<p>OnBlur</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnReset",
+        "html": "<p>OnReset</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>… – <strong>белгілі</strong> <strong>бір</strong> <strong>тапсырманы</strong> <strong>орындау</strong> <strong>үшін</strong> <strong>веб</strong>‑<strong>сервер</strong> <strong>бетінен</strong> <strong>келетін</strong> <strong>арнайы</strong> <strong>сұрау</strong> <strong>арқылы</strong> <strong>сервер</strong> <strong>іске</strong> <strong>қосылған</strong> <strong>кезде</strong> <strong>орындалатын</strong> <strong>процесс</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "код",
+        "html": "<p>код</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "функция",
+        "html": "<p>функция</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "скрипт",
+        "html": "<p>скрипт</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "стиль",
+        "html": "<p>стиль</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төмендегі</strong> <strong>код</strong> <strong>нәтижесі</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "25",
+        "html": "<p>25</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "55",
+        "html": "<p>55</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "10",
+        "html": "<p>10</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Error",
+        "html": "<p>Error</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/js-php/images/img-7f25f4a21340a5b2a55e3fa6bdf64c0b41a5a512.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Скриптерді</strong> <strong>жасайтын</strong> <strong>бағдарламалау</strong> <strong>тілдеріне</strong> <strong>жатпайды</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Python",
+        "html": "<p>Python</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "JavaScript",
+        "html": "<p>JavaScript</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Perl",
+        "html": "<p>Perl</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "DemonScript",
+        "html": "<p>DemonScript</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Элемент</strong> <strong>енгізу</strong> <strong>фокусын</strong> <strong>жоғалтады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnBlur",
+        "html": "<p>OnBlur</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnReset",
+        "html": "<p>OnReset</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnSubmit",
+        "html": "<p>OnSubmit</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnFocus",
+        "html": "<p>OnFocus</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төмендегі</strong> <strong>код</strong> <strong>нәтижесі</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "-51",
+        "html": "<p>-51</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "6",
+        "html": "<p>6</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "51",
+        "html": "<p>51</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Error",
+        "html": "<p>Error</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "test/assets/quizzes/js-php/images/img-5834875fcb6a7da054113fd1fd8f0fef1d1a1ca3.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Скриптерді</strong> <strong>жасайтын</strong> <strong>бағдарламалау</strong> <strong>тілдеріне</strong> <strong>жатпайды</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "PHP",
+        "html": "<p>PHP</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Jscript",
+        "html": "<p>Jscript</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "JavaScript",
+        "html": "<p>JavaScript</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "C++",
+        "html": "<p><strong>C</strong>++</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>… – <strong>интерактивті</strong> <strong>тесттермен</strong> <strong>жабдықталған</strong> <strong>HTML</strong> <strong>негізіндегі</strong> <strong>электрондық</strong> <strong>оқулықтарды</strong> <strong>жасайтын</strong> <strong>бағдарламалардың</strong> <strong>бірі</strong> <strong>болып</strong> <strong>табылады</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "JavaScript",
+        "html": "<p>JavaScript</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "PHP",
+        "html": "<p>PHP</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "CSS",
+        "html": "<p>CSS</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "HTML",
+        "html": "<p>HTML</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>… – <strong>деректер</strong> <strong>базасымен</strong> <strong>жұмыс</strong> <strong>істеуге</strong> <strong>мүмкіндік</strong> <strong>беретін</strong> <strong>интерфейс</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "PHP",
+        "html": "<p>PHP</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "SQL",
+        "html": "<p>SQL</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "PhpMyAdmin",
+        "html": "<p>PhpMyAdmin</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "MYSQL",
+        "html": "<p>MYSQL</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>– <strong>Windows</strong> <strong>ОЖ</strong>‑<strong>сінде</strong> <strong>интернетке</strong> <strong>қосылмай</strong>‑<strong>ақ</strong> <strong>компьютерде</strong> <strong>сайттарды</strong> <strong>жасау</strong> <strong>және</strong> <strong>жөндеу</strong> <strong>жұмыстарына</strong> <strong>арналған</strong> <strong>программалық</strong> <strong>жабдық</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Denwer",
+        "html": "<p>Denwer</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "PhpMyAdmin",
+        "html": "<p>PhpMyAdmin</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Microsoft",
+        "html": "<p>Microsoft</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "PHP",
+        "html": "<p>PHP</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>… – <strong>шаблон</strong>, <strong>контент</strong> <strong>және</strong> <strong>скриптерден</strong> <strong>тұратын</strong> <strong>динамикалық</strong> <strong>беттерден</strong> <strong>құралған</strong>, <strong>үнемі</strong> <strong>жазбасы</strong> <strong>өзгеріп</strong>, <strong>жаңаланып</strong> <strong>отыратын</strong> <strong>сайт</strong>. <strong>Мұндай</strong> <strong>сайттардың</strong> <strong>файлдары</strong> <strong>PHP</strong>, <strong>Perl</strong>, <strong>т</strong>.<strong>б</strong>. <strong>программа</strong> <strong>тілінде</strong> <strong>жазылады</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "JavaScript",
+        "html": "<p>JavaScript</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Статикалық  сайт",
+        "html": "<p>Статикалық сайт</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Тұрақты  сайт",
+        "html": "<p>Тұрақты сайт</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Динамикалық  сайт",
+        "html": "<p>Динамикалық сайт</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>PHP</strong> <strong>атауы</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Personal  Home  Page",
+        "html": "<p>Personal Home Page</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Preprocessor  Hypertext  Pages",
+        "html": "<p>Preprocessor Hypertext Pages</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Programmable  Hypertext  Processor",
+        "html": "<p>Programmable Hypertext Processor</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Private  Hosting  Platform",
+        "html": "<p>Private Hosting Platform</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>MySQL</strong> … <strong>стандартындағы</strong> <strong>SQL</strong> <strong>сұраныстарын</strong> <strong>қолданады</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "ANSI 95",
+        "html": "<p><strong>ANSI</strong> 95</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Unicode",
+        "html": "<p>Unicode</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "ASCII",
+        "html": "<p>ASCII</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "ANSI 92",
+        "html": "<p><strong>ANSI</strong> 92</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>MySQL</strong> <strong>артықшылықтарына</strong> <strong>жатады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Go  тілінде  жазылғандықтан, МҚБЖ  процедураларының  жоғары  жылдамдықта  орындалуы",
+        "html": "<p><strong>Go</strong> <strong>тілінде</strong> <strong>жазылғандықтан</strong>, <strong>МҚБЖ</strong> <strong>процедураларының</strong> <strong>жоғары</strong> <strong>жылдамдықта</strong> <strong>орындалуы</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "C  тілінде  жазылғандықтан, МҚБЖ  процедураларының  жоғары  жылдамдықта  орындалуы",
+        "html": "<p><strong>C</strong> <strong>тілінде</strong> <strong>жазылғандықтан</strong>, <strong>МҚБЖ</strong> <strong>процедураларының</strong> <strong>жоғары</strong> <strong>жылдамдықта</strong> <strong>орындалуы</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "C++‑те  жазылғандықтан, МҚБЖ  процедураларының  жоғары  жылдамдықта  орындалуы",
+        "html": "<p><strong>C</strong>++‑<strong>те</strong> <strong>жазылғандықтан</strong>, <strong>МҚБЖ</strong> <strong>процедураларының</strong> <strong>жоғары</strong> <strong>жылдамдықта</strong> <strong>орындалуы</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "PHP‑де  жазылғандықтан, МҚБЖ  процедураларының  жоғары  жылдамдықта  орындалуы",
+        "html": "<p><strong>PHP</strong>‑<strong>де</strong> <strong>жазылғандықтан</strong>, <strong>МҚБЖ</strong> <strong>процедураларының</strong> <strong>жоғары</strong> <strong>жылдамдықта</strong> <strong>орындалуы</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>… – <strong>тек</strong> <strong>серверде</strong> <strong>ғана</strong> <strong>орындалатын</strong> <strong>скриптік</strong> <strong>тіл</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "JavaScript",
+        "html": "<p>JavaScript</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "C+",
+        "html": "<p><strong>C</strong>+</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "PHP",
+        "html": "<p>PHP</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "MySQL",
+        "html": "<p>MySQL</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>WEB</strong> <strong>серверге</strong> <strong>әрі</strong> <strong>қарай</strong> <strong>PHP</strong> <strong>коды</strong> <strong>керектігі</strong> <strong>туралы</strong> <strong>хабарлайды</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "<$",
+        "html": "<p>&lt;$</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "<php>",
+        "html": "<p>&lt;<strong>php</strong>&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "<!-- ! -->",
+        "html": "<p>&lt;!-- ! --&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "<?",
+        "html": "<p>&lt;?</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>MySQL</strong> <strong>деректер</strong> <strong>базасындағы</strong> <strong>басқару</strong> <strong>жүйесінің</strong> <strong>серверіне</strong> <strong>қосылу</strong> … <strong>сыныбын</strong> (<strong>класс</strong>) <strong>пайдалану</strong> <strong>арқылы</strong> <strong>жүзеге</strong> <strong>асырылады</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "mysql",
+        "html": "<p>mysql</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "mysqli",
+        "html": "<p>mysqli</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "query",
+        "html": "<p>query</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "connect",
+        "html": "<p>connect</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>… – <strong>шағын</strong> <strong>көпағымды</strong> <strong>деректер</strong> <strong>базасының</strong> <strong>сервері</strong>. <strong>Тұрақты</strong>, <strong>қолдануға</strong> <strong>жеңіл</strong> <strong>және</strong> <strong>өте</strong> <strong>жылдам</strong> <strong>сервер</strong>. <strong>Оны</strong> <strong>сайт</strong> <strong>жазуда</strong> <strong>PHP</strong> <strong>скриптімен</strong> <strong>бірге</strong> <strong>қолданады</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "PhpMyAdmin",
+        "html": "<p>PhpMyAdmin</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "MySQL",
+        "html": "<p>MySQL</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "MicrosoftAccess",
+        "html": "<p>MicrosoftAccess</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Denwer",
+        "html": "<p>Denwer</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>PHP</strong> <strong>айнымалылар</strong> <strong>қандай</strong> <strong>символмен</strong> <strong>басталады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "<?",
+        "html": "<p>&lt;?</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "var",
+        "html": "<p>var</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "$",
+        "html": "<p>$</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "@",
+        "html": "<p>@</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>ДҚБЖ</strong> <strong>қосылу</strong> <strong>сәтті</strong> <strong>өтті</strong>. <strong>Енді</strong> <strong>біз</strong> <strong>қажетті</strong> <strong>деректер</strong> <strong>қорын</strong> <strong>PHP</strong>‑<strong>ге</strong> <strong>көрсетуіміз</strong> <strong>керек</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "mysql_select_table(\"kaz_mus_instruments\", $conn);",
+        "html": "<p><strong>mysql</strong>_<strong>select</strong>_<strong>table</strong>(&quot;<strong>kaz</strong>_<strong>mus</strong>_<strong>instruments</strong>&quot;, $<strong>conn</strong>);</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "mysql_execute_db(\"kaz_mus_instruments\", $conn);",
+        "html": "<p><strong>mysql</strong>_<strong>execute</strong>_<strong>db</strong>(&quot;<strong>kaz</strong>_<strong>mus</strong>_<strong>instruments</strong>&quot;, $<strong>conn</strong>);</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "mysql_select_db(\"kaz_mus_instruments\", $conn);",
+        "html": "<p><strong>mysql</strong>_<strong>select</strong>_<strong>db</strong>(&quot;<strong>kaz</strong>_<strong>mus</strong>_<strong>instruments</strong>&quot;, $<strong>conn</strong>);</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "mysql_execute_table(\"kaz_mus_instruments\", $conn);",
+        "html": "<p><strong>mysql</strong>_<strong>execute</strong>_<strong>table</strong>(&quot;<strong>kaz</strong>_<strong>mus</strong>_<strong>instruments</strong>&quot;, $<strong>conn</strong>);</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>MySQL</strong> – <strong>ANSI</strong> 92 <strong>стандартындағы</strong> <strong>SQL</strong> <strong>сұраныстарын</strong> <strong>қолданады</strong>. <strong>MYSQL</strong> <strong>мүмкіндіктеріне</strong> <strong>жататын</strong> <strong>нұсқаны</strong> <strong>анықта</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "кестедегі  жолақтар  саны 5 млн‑ға  дейін  жете  алады",
+        "html": "<p><strong>кестедегі</strong> <strong>жолақтар</strong> <strong>саны</strong> 5 <strong>млн</strong>‑<strong>ға</strong> <strong>дейін</strong> <strong>жете</strong> <strong>алады</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "кестедегі  жолақтар  саны 50 млн‑ға  дейін  жете  алады",
+        "html": "<p><strong>кестедегі</strong> <strong>жолақтар</strong> <strong>саны</strong> 50 <strong>млн</strong>‑<strong>ға</strong> <strong>дейін</strong> <strong>жете</strong> <strong>алады</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "кестедегі  бағандар  саны 50 млн‑ға  дейін  жете  алады",
+        "html": "<p><strong>кестедегі</strong> <strong>бағандар</strong> <strong>саны</strong> 50 <strong>млн</strong>‑<strong>ға</strong> <strong>дейін</strong> <strong>жете</strong> <strong>алады</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "кестедегі  бағандар  саны 5 млн‑ға  дейін  жете  алады",
+        "html": "<p><strong>кестедегі</strong> <strong>бағандар</strong> <strong>саны</strong> 5 <strong>млн</strong>‑<strong>ға</strong> <strong>дейін</strong> <strong>жете</strong> <strong>алады</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>$<strong>mysqli</strong> = <strong>new</strong> <strong>mysqli</strong>(&quot;<strong>localhost</strong>&quot;, &quot;<strong>student</strong>&quot;, &quot;123&quot;, &quot;<strong>db</strong>&quot;); <strong>пайдаланушының</strong> <strong>аты</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "123",
+        "html": "<p>123</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "student",
+        "html": "<p>student</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "db",
+        "html": "<p>db</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "localhost",
+        "html": "<p>localhost</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Серверге</strong> <strong>қосылуды</strong> <strong>аяқтау</strong> <strong>үшін</strong> … <strong>командасы</strong> <strong>қолданылады</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "$mysqli->close()",
+        "html": "<p>$<strong>mysqli</strong>-&gt;<strong>close</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "$mysqli->exit()",
+        "html": "<p>$<strong>mysqli</strong>-&gt;<strong>exit</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "mysqli_connect_errno()",
+        "html": "<p><strong>mysqli</strong>_<strong>connect</strong>_<strong>errno</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "?>",
+        "html": "<p>?&gt;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>PHP</strong> <strong>сценарий</strong> <strong>аяқталды</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "?>",
+        "html": "<p>?&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "mysql_exit($conn);",
+        "html": "<p><strong>mysql</strong>_<strong>exit</strong>($<strong>conn</strong>);</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "$>",
+        "html": "<p>$&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "mysqli_close($conn);",
+        "html": "<p><strong>mysqli</strong>_<strong>close</strong>($<strong>conn</strong>);</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Айнымалы</strong> <strong>жадысын</strong> <strong>босату</strong> <strong>төмендегі</strong> <strong>қай</strong> <strong>нұсқа</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "mysqli_exit($link);",
+        "html": "<p><strong>mysqli</strong>_<strong>exit</strong>($<strong>link</strong>);</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "mysqli_free_result($result)",
+        "html": "<p><strong>mysqli</strong>_<strong>free</strong>_<strong>result</strong>($<strong>result</strong>)</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "mysqli_fetch_assoc($result)",
+        "html": "<p><strong>mysqli</strong>_<strong>fetch</strong>_<strong>assoc</strong>($<strong>result</strong>)</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "mysqli_close($link);",
+        "html": "<p><strong>mysqli</strong>_<strong>close</strong>($<strong>link</strong>);</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>$<strong>mysqli</strong> = <strong>new</strong> <strong>mysqli</strong>(&quot;<strong>localhost</strong>&quot;, &quot;<strong>student</strong>&quot;, &quot;123&quot;, &quot;<strong>db</strong>&quot;); <strong>пайдаланушының</strong> <strong>паролі</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "localhost",
+        "html": "<p>localhost</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "passwd",
+        "html": "<p>passwd</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "123",
+        "html": "<p>123</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "db",
+        "html": "<p>db</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төмендегі</strong> <strong>суреттің</strong> <strong>анықтамасы</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "ДҚБЖ  қосылу  сәтті  өтті. Енді  біз  қажетті  деректер  қорын  PHP‑ге  көрсетуіміз  керек",
+        "html": "<p><strong>ДҚБЖ</strong> <strong>қосылу</strong> <strong>сәтті</strong> <strong>өтті</strong>. <strong>Енді</strong> <strong>біз</strong> <strong>қажетті</strong> <strong>деректер</strong> <strong>қорын</strong> <strong>PHP</strong>‑<strong>ге</strong> <strong>көрсетуіміз</strong> <strong>керек</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Бұл  жол  ASCII  кодында  ұсыныла  алмайтын  символдармен  берілген  деректерді  серверге  жіберу  үшін  пайдаланылады",
+        "html": "<p>Бұл жол ASCII кодында ұсыныла алмайтын символдармен берілген деректерді серверге жіберу үшін пайдаланылады</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Деректер  қорына  қосылу  үшін  web‑серверге  оның  орналасқан  жерін, пайдаланушы  атын  және  құпиясөзін  хабарлау  қажет",
+        "html": "<p><strong>Деректер</strong> <strong>қорына</strong> <strong>қосылу</strong> <strong>үшін</strong> <strong>web</strong>‑<strong>серверге</strong> <strong>оның</strong> <strong>орналасқан</strong> <strong>жерін</strong>, <strong>пайдаланушы</strong> <strong>атын</strong> <strong>және</strong> <strong>құпиясөзін</strong> <strong>хабарлау</strong> <strong>қажет</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Егер  қосу  жүргізілмесе, PHP  себебін  сипаттай  отырып, хабарлама  жібереді, ал  PHP  кодын  өңдеу  тоқтатылады",
+        "html": "<p><strong>Егер</strong> <strong>қосу</strong> <strong>жүргізілмесе</strong>, <strong>PHP</strong> <strong>себебін</strong> <strong>сипаттай</strong> <strong>отырып</strong>, <strong>хабарлама</strong> <strong>жібереді</strong>, <strong>ал</strong> <strong>PHP</strong> <strong>кодын</strong> <strong>өңдеу</strong> <strong>тоқтатылады</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "test/assets/quizzes/js-php/images/img-4096c2df51dbe5a05a12c90dd35fb938923221b1.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Форманың</strong> <strong>екі</strong> <strong>параметрін</strong> (<strong>атрибутын</strong>) <strong>анықтаңыздар</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "method, option",
+        "html": "<p><strong>method</strong>, <strong>option</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "GET, POST",
+        "html": "<p><strong>GET</strong>, <strong>POST</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "method, action",
+        "html": "<p><strong>method</strong>, <strong>action</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "action, POST",
+        "html": "<p><strong>action</strong>, <strong>POST</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>MySQL</strong> – <strong>ANSI</strong> 92 <strong>стандартындағы</strong> <strong>SQL</strong> <strong>сұраныстарын</strong> <strong>қолданады</strong>. <strong>MYSQL</strong> <strong>мүмкіндіктеріне</strong> <strong>жатпайтын</strong> <strong>нұсқаны</strong> <strong>анықта</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "қарапайым  және  нәтижелі, қауіпсіз  жүйе",
+        "html": "<p><strong>қарапайым</strong> <strong>және</strong> <strong>нәтижелі</strong>, <strong>қауіпсіз</strong> <strong>жүйе</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "командалар  өте  тез  орындалады. MySQL  жылдам  сервер  боп  есептеледі",
+        "html": "<p><strong>командалар</strong> <strong>өте</strong> <strong>тез</strong> <strong>орындалады</strong>. <strong>MySQL</strong> <strong>жылдам</strong> <strong>сервер</strong> <strong>боп</strong> <strong>есептеледі</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Саны  шектеусіз  пайдаланушылар  деректер  базасымен  бір  уақытта  жұмыс  істей  алады",
+        "html": "<p>Саны шектеусіз пайдаланушылар деректер базасымен бір уақытта жұмыс істей алады</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "командалар  баяу  орындалады. MySQL  үлкен, күрделі  деректер  базасының  сервері",
+        "html": "<p><strong>командалар</strong> <strong>баяу</strong> <strong>орындалады</strong>. <strong>MySQL</strong> <strong>үлкен</strong>, <strong>күрделі</strong> <strong>деректер</strong> <strong>базасының</strong> <strong>сервері</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Деректер</strong> <strong>қорына</strong> <strong>қосылу</strong> <strong>үшін</strong> <strong>web</strong>‑<strong>серверге</strong> <strong>оның</strong> <strong>орналасқан</strong> <strong>жерін</strong>, <strong>пайдаланушы</strong> <strong>атын</strong> <strong>және</strong> <strong>құпиясөзін</strong> <strong>хабарлау</strong> <strong>қажет</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "$conn = mysql_connect(\"localhost\", \"root\", \"\")",
+        "html": "<p>$<strong>conn</strong> = <strong>mysql</strong>_<strong>connect</strong>(&quot;<strong>localhost</strong>&quot;, &quot;<strong>root</strong>&quot;, &quot;&quot;)</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "$conn = mysql_query(\"localhost\", \"root\", \"\")",
+        "html": "<p>$<strong>conn</strong> = <strong>mysql</strong>_<strong>query</strong>(&quot;<strong>localhost</strong>&quot;, &quot;<strong>root</strong>&quot;, &quot;&quot;)</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "$conn = mysql_execute(\"localhost\", \"root\", \"\")",
+        "html": "<p>$<strong>conn</strong> = <strong>mysql</strong>_<strong>execute</strong>(&quot;<strong>localhost</strong>&quot;, &quot;<strong>root</strong>&quot;, &quot;&quot;)</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "$conn = sql_query(\"localhost\", \"root\", \"\")",
+        "html": "<p>$<strong>conn</strong> = <strong>sql</strong>_<strong>query</strong>(&quot;<strong>localhost</strong>&quot;, &quot;<strong>root</strong>&quot;, &quot;&quot;)</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Форманың</strong> <strong>параметрі</strong> (<strong>атрибуты</strong>). <strong>Бұл</strong> <strong>деректерді</strong> <strong>жіберетін</strong> <strong>скрипт</strong> <strong>файлының</strong> <strong>жолы</strong> <strong>мен</strong> <strong>аты</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "get",
+        "html": "<p>get</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "post",
+        "html": "<p>post</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "action",
+        "html": "<p>action</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "method",
+        "html": "<p>method</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Форманың</strong> <strong>параметрі</strong> (<strong>атрибуты</strong>). <strong>Форманы</strong> <strong>жіберу</strong> <strong>үшін</strong> <strong>қолданатын</strong> <strong>параметрі</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "submit",
+        "html": "<p>submit</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "action",
+        "html": "<p>action</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "method",
+        "html": "<p>method</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "post",
+        "html": "<p>post</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Барлық</strong> <strong>деректер</strong> <strong>шығарылғаннан</strong> <strong>кейін</strong>, <strong>ДҚБЖ</strong>‑<strong>не</strong> <strong>қосылу</strong> <strong>жабылады</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "mysql_exit($conn);",
+        "html": "<p><strong>mysql</strong>_<strong>exit</strong>($<strong>conn</strong>);</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "?>",
+        "html": "<p>?&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "$>",
+        "html": "<p>$&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "mysql_close($conn);",
+        "html": "<p><strong>mysql</strong>_<strong>close</strong>($<strong>conn</strong>);</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төмендегі</strong> <strong>кодта</strong> <strong>не</strong> <strong>жетіспейді</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "хостнeймі",
+        "html": "<p>хостнeймі</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "поролі",
+        "html": "<p>поролі</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "деректер  қорының  атауы",
+        "html": "<p>деректер қорының атауы</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "пайдаланушының  аты",
+        "html": "<p>пайдаланушының аты</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "test/assets/quizzes/js-php/images/img-a6ce5cd62b1186026ae94aa5371155cc370234df.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Бұл</strong> <strong>код</strong> <strong>деректер</strong> <strong>қорын</strong> <strong>ұсынатын</strong> <strong>нысанды</strong> <strong>жасауға</strong> <strong>мүмкіндік</strong> <strong>береді</strong>, <strong>ал</strong> <strong>егер</strong> <strong>деректер</strong> <strong>қоры</strong> <strong>жоқ</strong> <strong>болса</strong>, <strong>ол</strong> <strong>құрылады</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "db.executeSql(\"ToDo\", \"0.1\", \"A  list  of  to  do  items.\", 200000);",
+        "html": "<p><strong>db</strong>.<strong>executeSql</strong>(&quot;<strong>ToDo</strong>&quot;, &quot;0.1&quot;, &quot;<strong>A</strong> <strong>list</strong> <strong>of</strong> <strong>to</strong> <strong>do</strong> <strong>items</strong>.&quot;, 200000);</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "db = openTable(\"ToDo\", \"0.1\", \"A  list  of  to  do  items.\", 200000);",
+        "html": "<p><strong>db</strong> = <strong>openTable</strong>(&quot;<strong>ToDo</strong>&quot;, &quot;0.1&quot;, &quot;<strong>A</strong> <strong>list</strong> <strong>of</strong> <strong>to</strong> <strong>do</strong> <strong>items</strong>.&quot;, 200000);</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "db.transaction(\"ToDo\", \"0.1\", \"A  list  of  to  do  items.\", 200000);",
+        "html": "<p><strong>db</strong>.<strong>transaction</strong>(&quot;<strong>ToDo</strong>&quot;, &quot;0.1&quot;, &quot;<strong>A</strong> <strong>list</strong> <strong>of</strong> <strong>to</strong> <strong>do</strong> <strong>items</strong>.&quot;, 200000);</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "db = openDatabase(\"ToDo\", \"0.1\", \"A  list  of  to  do  items.\", 200000);",
+        "html": "<p><strong>db</strong> = <strong>openDatabase</strong>(&quot;<strong>ToDo</strong>&quot;, &quot;0.1&quot;, &quot;<strong>A</strong> <strong>list</strong> <strong>of</strong> <strong>to</strong> <strong>do</strong> <strong>items</strong>.&quot;, 200000);</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>– <strong>бұл</strong> <strong>деректер</strong> <strong>қорымен</strong> <strong>динамикалық</strong> <strong>байланысты</strong> <strong>қолдайтын</strong> <strong>және</strong> <strong>мәліметтерді</strong> <strong>қарауға</strong>, <strong>өңдеуге</strong>, <strong>сонымен</strong> <strong>бірге</strong> <strong>базаға</strong> <strong>енгізуге</strong> <strong>мүмкіндік</strong> <strong>беретін</strong> <strong>диалогтық</strong> <strong>web</strong>‑<strong>бет</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Деректер  қоры  бар  web‑бет",
+        "html": "<p><strong>Деректер</strong> <strong>қоры</strong> <strong>бар</strong> <strong>web</strong>‑<strong>бет</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "PHP  сценарийлері",
+        "html": "<p>PHP сценарийлері</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "MySQL",
+        "html": "<p>MySQL</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OpenServer",
+        "html": "<p>OpenServer</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>PHP</strong> <strong>және</strong> <strong>MySQL</strong> <strong>байланыстыру</strong> <strong>үшін</strong>, <strong>яғни</strong> <strong>PHP</strong> <strong>скриптінде</strong> <strong>MySQL</strong> <strong>деректер</strong> <strong>қорынан</strong> <strong>деректерді</strong> <strong>алу</strong> <strong>үшін</strong> <strong>пайдаланатындардан</strong> <strong>артығын</strong> <strong>табыңыз</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "ДҚ‑ға  кіру  үшін  құпиясөз",
+        "html": "<p><strong>ДҚ</strong>‑<strong>ға</strong> <strong>кіру</strong> <strong>үшін</strong> <strong>құпиясөз</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "SQL  командалар",
+        "html": "<p>SQL командалар</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "MySQL  командалар",
+        "html": "<p>MySQL командалар</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "хост – MySQL  деректер  қоры  серверінің  адресі",
+        "html": "<p><strong>хост</strong> – <strong>MySQL</strong> <strong>деректер</strong> <strong>қоры</strong> <strong>серверінің</strong> <strong>адресі</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төмендегі</strong> <strong>кодтың</strong> <strong>анықтамасы</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Егер  қосу  жүргізілмесе, PHP  себебін  сипаттай  отырып, хабарлама  жібереді, ал  PHP  кодын  өңдеу  тоқтатылады",
+        "html": "<p><strong>Егер</strong> <strong>қосу</strong> <strong>жүргізілмесе</strong>, <strong>PHP</strong> <strong>себебін</strong> <strong>сипаттай</strong> <strong>отырып</strong>, <strong>хабарлама</strong> <strong>жібереді</strong>, <strong>ал</strong> <strong>PHP</strong> <strong>кодын</strong> <strong>өңдеу</strong> <strong>тоқтатылады</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "ДҚБЖ  қосылу  сәтті  өтті. Енді  біз  қажетті  деректер  қорын  PHP‑ге  көрсетуіміз  керек",
+        "html": "<p><strong>ДҚБЖ</strong> <strong>қосылу</strong> <strong>сәтті</strong> <strong>өтті</strong>. <strong>Енді</strong> <strong>біз</strong> <strong>қажетті</strong> <strong>деректер</strong> <strong>қорын</strong> <strong>PHP</strong>‑<strong>ге</strong> <strong>көрсетуіміз</strong> <strong>керек</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Деректер  қорына  қосылу  үшін  web‑серверге  оның  орналасқан  жерін, пайдаланушы  атын  және  құпиясөзін  жазу  қажет",
+        "html": "<p><strong>Деректер</strong> <strong>қорына</strong> <strong>қосылу</strong> <strong>үшін</strong> <strong>web</strong>‑<strong>серверге</strong> <strong>оның</strong> <strong>орналасқан</strong> <strong>жерін</strong>, <strong>пайдаланушы</strong> <strong>атын</strong> <strong>және</strong> <strong>құпиясөзін</strong> <strong>жазу</strong> <strong>қажет</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Барлық  деректер  шығарылғаннан  кейін, ДҚБЖ‑не  қосылу  жабылады",
+        "html": "<p><strong>Барлық</strong> <strong>деректер</strong> <strong>шығарылғаннан</strong> <strong>кейін</strong>, <strong>ДҚБЖ</strong>‑<strong>не</strong> <strong>қосылу</strong> <strong>жабылады</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/js-php/images/img-8b1b02e5c7e9e5527aead95f5109f8670b639858.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>HTML</strong> <strong>тегтерден</strong> <strong>PHP</strong> <strong>коды</strong> <strong>әрқашан</strong> … <strong>символдары</strong> <strong>арқылы</strong> <strong>ажыратып</strong> <strong>отыру</strong> <strong>қажет</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "<$ ... $>",
+        "html": "<p>&lt;$ ... $&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "<@ ... @>",
+        "html": "<p>&lt;@ ... @&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "<? ... ?>",
+        "html": "<p>&lt;? ... ?&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "<!... //>",
+        "html": "<p>&lt;!... //&gt;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төмендегі</strong> <strong>кодтың</strong> <strong>анықтамасы</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Егер  қосу  жүргізілмесе, PHP  себебін  сипаттай  отырып, хабарлама  жібереді, ал  PHP  кодын  өңдеу  тоқтатылады",
+        "html": "<p><strong>Егер</strong> <strong>қосу</strong> <strong>жүргізілмесе</strong>, <strong>PHP</strong> <strong>себебін</strong> <strong>сипаттай</strong> <strong>отырып</strong>, <strong>хабарлама</strong> <strong>жібереді</strong>, <strong>ал</strong> <strong>PHP</strong> <strong>кодын</strong> <strong>өңдеу</strong> <strong>тоқтатылады</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Бұл  жол  ASCII  кодында  ұсыныла  алмайтын  символдармен  берілген  деректерді  серверге  жіберу  үшін  пайдаланылады",
+        "html": "<p>Бұл жол ASCII кодында ұсыныла алмайтын символдармен берілген деректерді серверге жіберу үшін пайдаланылады</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Енді  PHP  синтаксисі  web‑бетте $result  мәндерін  шығару  үшін  қолданылады. While  циклі  деректердің  соңына  жеткенше  жазбаларды  таңдайды",
+        "html": "<p><strong>Енді</strong> <strong>PHP</strong> <strong>синтаксисі</strong> <strong>web</strong>‑<strong>бетте</strong> $<strong>result</strong> <strong>мәндерін</strong> <strong>шығару</strong> <strong>үшін</strong> <strong>қолданылады</strong>. <strong>While</strong> <strong>циклі</strong> <strong>деректердің</strong> <strong>соңына</strong> <strong>жеткенше</strong> <strong>жазбаларды</strong> <strong>таңдайды</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Деректер  қорына  қосылу  үшін  web‑сервер  оны  орналасқан  жерін, пайдаланушы  атын  және  құпиясөзін  анықтау  қажет",
+        "html": "<p><strong>Деректер</strong> <strong>қорына</strong> <strong>қосылу</strong> <strong>үшін</strong> <strong>web</strong>‑<strong>сервер</strong> <strong>оны</strong> <strong>орналасқан</strong> <strong>жерін</strong>, <strong>пайдаланушы</strong> <strong>атын</strong> <strong>және</strong> <strong>құпиясөзін</strong> <strong>анықтау</strong> <strong>қажет</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "test/assets/quizzes/js-php/images/img-9955c2ddd0e70b5816b7bbb1d247bc9afbb88ac8.png",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>PHP</strong>‑<strong>де</strong> <strong>веб</strong>‑<strong>бетке</strong> <strong>мәтінді</strong> <strong>шығару</strong> <strong>үшін</strong> <strong>қолданылатын</strong> <strong>негізгі</strong> <strong>команда</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "echo",
+        "html": "<p>echo</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "printf",
+        "html": "<p>printf</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "display",
+        "html": "<p>display</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "write",
+        "html": "<p>write</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>MySQL</strong> <strong>серверімен</strong> <strong>байланыс</strong> <strong>орнатылғаннан</strong> <strong>кейін</strong>, <strong>қажетті</strong> <strong>деректер</strong> <strong>қорын</strong> <strong>таңдау</strong> <strong>керек</strong>. <strong>Оның</strong> <strong>аргументі</strong> : <strong>деректер</strong> <strong>қорының</strong> <strong>аты</strong>. <strong>Егер</strong> <strong>таңдалған</strong> <strong>деректер</strong> <strong>қоры</strong> <strong>бар</strong> <strong>және</strong> <strong>қолжетімді</strong> <strong>болса</strong>, <strong>функция</strong> <strong>true</strong> <strong>мәнін</strong> <strong>қайтарады</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "mysql_query()",
+        "html": "<p><strong>mysql</strong>_<strong>query</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "mysql_select_db()",
+        "html": "<p><strong>mysql</strong>_<strong>select</strong>_<strong>db</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "mysql_execute()",
+        "html": "<p><strong>mysql</strong>_<strong>execute</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "mysql_connect()",
+        "html": "<p><strong>mysql</strong>_<strong>connect</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Қосу</strong>, <strong>өшіру</strong>, <strong>өзгерту</strong> <strong>және</strong> <strong>деректерді</strong> <strong>таңдау</strong> <strong>үшін</strong> <strong>SQL</strong> <strong>сұраныс</strong> <strong>құрып</strong>, <strong>орындау</strong> <strong>керек</strong>. <strong>Оның</strong> <strong>аргументі</strong> : <strong>сұранысы</strong> <strong>бар</strong> <strong>жол</strong>. <strong>Функция</strong> <strong>сұраныс</strong> <strong>идентификаторын</strong> <strong>қайтарады</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "mysql_execute()",
+        "html": "<p><strong>mysql</strong>_<strong>execute</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "mysql_connect()",
+        "html": "<p><strong>mysql</strong>_<strong>connect</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "mysql_select_db()",
+        "html": "<p><strong>mysql</strong>_<strong>select</strong>_<strong>db</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "mysql_query()",
+        "html": "<p><strong>mysql</strong>_<strong>query</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>PHP</strong> <strong>және</strong> <strong>MySQL</strong> <strong>байланыстыру</strong> <strong>үшін</strong>, <strong>яғни</strong> <strong>PHP</strong> <strong>скриптінде</strong> <strong>MySQL</strong> <strong>деректер</strong> <strong>қорынан</strong> <strong>деректерді</strong> <strong>алу</strong> <strong>үшін</strong> <strong>пайдаланатындардан</strong> <strong>артығын</strong> <strong>табыңыз</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "хост – MySQL  деректер  қоры  серверінің  адресі",
+        "html": "<p><strong>хост</strong> – <strong>MySQL</strong> <strong>деректер</strong> <strong>қоры</strong> <strong>серверінің</strong> <strong>адресі</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "ДҚ‑ға  кіру  үшін  құпиясы",
+        "html": "<p><strong>ДҚ</strong>‑<strong>ға</strong> <strong>кіру</strong> <strong>үшін</strong> <strong>құпиясы</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "деректер  қорының  атауы",
+        "html": "<p>деректер қорының атауы</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "пайдаланушының  аты",
+        "html": "<p>пайдаланушының аты</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>OpenServer</strong> <strong>құрамына</strong> <strong>кіреді</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Nginx + Java + MongoDB",
+        "html": "<p><strong>Nginx</strong> + <strong>Java</strong> + <strong>MongoDB</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "IIS + .NET + SQL  Server",
+        "html": "<p><strong>IIS</strong> + .<strong>NET</strong> + <strong>SQL</strong> <strong>Server</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Apache + PHP + MySQL",
+        "html": "<p><strong>Apache</strong> + <strong>PHP</strong> + <strong>MySQL</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Lighttpd + Python + PostgreSQL",
+        "html": "<p><strong>Lighttpd</strong> + <strong>Python</strong> + <strong>PostgreSQL</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Деректер</strong> <strong>қорының</strong> <strong>серверіне</strong> <strong>қосылу</strong> <strong>үшін</strong> <strong>PHP</strong>‑<strong>де</strong> … <strong>функциясы</strong> <strong>қолданылады</strong>. <strong>Функцияның</strong> <strong>аргументі</strong> : <strong>компьютер</strong> <strong>аты</strong>, <strong>қолданушы</strong> <strong>аты</strong> <strong>және</strong> <strong>құпиясөз</strong>.<strong>Үнсіз</strong> <strong>келісім</strong> <strong>бойынша</strong> <strong>компьютердің</strong> <strong>аты</strong> = <strong>localhost</strong>, <strong>онда</strong> <strong>қолданушы</strong> <strong>аты</strong> <strong>мен</strong> <strong>құпиясөз</strong> <strong>қажет</strong> <strong>болмайды</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "mysql_query()",
+        "html": "<p><strong>mysql</strong>_<strong>query</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "mysql_select_db()",
+        "html": "<p><strong>mysql</strong>_<strong>select</strong>_<strong>db</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "mysql_execute()",
+        "html": "<p><strong>mysql</strong>_<strong>execute</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "mysql_connect()",
+        "html": "<p><strong>mysql</strong>_<strong>connect</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төбедегі</strong> <strong>сұрақтың</strong> <strong>жалғасы</strong>. <strong>Егер</strong> <strong>барлығы</strong> <strong>табысты</strong> <strong>өтсе</strong>, … <strong>және</strong> … <strong>функциялары</strong> <strong>қосылу</strong> <strong>идентификаторын</strong> <strong>қайтарады</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "mysql_connect(), mysqli_connect()",
+        "html": "<p><strong>mysql</strong>_<strong>connect</strong>(), <strong>mysqli</strong>_<strong>connect</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "mysql_connection(), mysql_execute()",
+        "html": "<p><strong>mysql</strong>_<strong>connection</strong>(), <strong>mysql</strong>_<strong>execute</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "mysql_connect(), mysql_pconnect()",
+        "html": "<p><strong>mysql</strong>_<strong>connect</strong>(), <strong>mysql</strong>_<strong>pconnect</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "mysql_query(), mysql_select_db()",
+        "html": "<p><strong>mysql</strong>_<strong>query</strong>(), <strong>mysql</strong>_<strong>select</strong>_<strong>db</strong>()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Төмендегі</strong> <strong>кодта</strong> <strong>не</strong> <strong>жетіспейді</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "name",
+        "html": "<p>name</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "hosting",
+        "html": "<p>hosting</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "post",
+        "html": "<p>post</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "port",
+        "html": "<p>port</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "JS+PHP",
+    "questionType": "MultipleChoice"
+  }
+]

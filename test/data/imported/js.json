@@ -1,0 +1,3802 @@
+[
+  {
+    "question": "<p>Программа немесе программа файлының сценарийі болып табылады, ол пайдаланушы программа интерфейсін қолдана отырып, кейбір тапсырмаларды орындауды автоматтандырады.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Скрипт",
+        "html": "<p>Скрипт</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Спрайт",
+        "html": "<p>Спрайт</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Код",
+        "html": "<p>Код</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Сцена",
+        "html": "<p>Сцена</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Құжатты жүктеу кезінде немесе кейінірек орындалуы мүмкін клиенттік сценарийлерді қамтитын HTML түзету тілі.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Скрипт",
+        "html": "<p>Скрипт</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Спрайт",
+        "html": "<p>Спрайт</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Код",
+        "html": "<p>Код</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Сцена",
+        "html": "<p>Сцена</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Кіріктірілген интерпретацияланатын программалау тілі.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Javascript",
+        "html": "<p>Javascript</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Java",
+        "html": "<p>Java</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Python",
+        "html": "<p>Python</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "PHP",
+        "html": "<p>PHP</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Нысанды бағытталған, императивті және функционалды стильдерді қабылдай алатын мультипарадигмалық программалау тілі.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Javascript",
+        "html": "<p>Javascript</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Java",
+        "html": "<p>Java</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Python",
+        "html": "<p>Python</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "PHP",
+        "html": "<p>PHP</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Javascript программасын ойлап тапқан ғалым</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Брендан  Айк",
+        "html": "<p>Брендан Айк</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Стив  Джобс",
+        "html": "<p>Стив Джобс</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Блез  Паскаль",
+        "html": "<p>Блез Паскаль</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Джон  Маккарти",
+        "html": "<p>Джон Маккарти</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Javascript файлының кеңейтілімі</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": ".js",
+        "html": "<p>.js</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": ".ls",
+        "html": "<p>.ls</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": ".doc",
+        "html": "<p>.doc</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": ".html",
+        "html": "<p>.html</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Жаңа жолға көшу үшін қолданылатын Javascript функциясы</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "document.writeln()",
+        "html": "<p>document.writeln()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "document.write()",
+        "html": "<p>document.write()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "alert",
+        "html": "<p>alert</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "document.readln()",
+        "html": "<p>document.readln()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Javascript-те хабарламамен модальді (диалогтық) терезені шығарып, пайдаланушының ОК батырмасын басқанын күту үшін қолданылатын функция</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "alert()",
+        "html": "<p>alert()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "promt()",
+        "html": "<p>promt()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "alarm()",
+        "html": "<p>alarm()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "confirm()",
+        "html": "<p>confirm()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Екі батырмадан тұратын question сұрақ қойылған терезесін шығару үшін қолданылатын функция</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "confirm()",
+        "html": "<p>confirm()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "alarm()",
+        "html": "<p>alarm()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "alert()",
+        "html": "<p>alert()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "promt()",
+        "html": "<p>promt()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>HTML құжатқа Java Script кірістіру үшін қолданылатын скрипт</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "<script>...</script>",
+        "html": "<p>&lt;script&gt;...&lt;/script&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "<head>...</head>",
+        "html": "<p>&lt;head&gt;...&lt;/head&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "<html>...</html>",
+        "html": "<p>&lt;html&gt;...&lt;/html&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "<script>...<script>",
+        "html": "<p>&lt;script&gt;...&lt;script&gt;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Пішінді тазалауға арналған функция</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnReset",
+        "html": "<p>OnReset</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnSelect",
+        "html": "<p>OnSelect</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnClick",
+        "html": "<p>OnClick</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnLoad",
+        "html": "<p>OnLoad</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Браузер HTML құжатын ашуды аяқтайтын функция</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnLoad",
+        "html": "<p>OnLoad</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnClick",
+        "html": "<p>OnClick</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnSelect",
+        "html": "<p>OnSelect</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnReset",
+        "html": "<p>OnReset</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Пішіндегі деректерді web-серверге жіберу үшін қолданылатын функция</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnSubmit",
+        "html": "<p>OnSubmit</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnClick",
+        "html": "<p>OnClick</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnSelect",
+        "html": "<p>OnSelect</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnReset",
+        "html": "<p>OnReset</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Пайдаланушы элементті тінтуірмен бір рет шертуге арналған функция</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnClick",
+        "html": "<p>OnClick</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnSelect",
+        "html": "<p>OnSelect</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnReset",
+        "html": "<p>OnReset</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnSubmit",
+        "html": "<p>OnSubmit</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Браузер HTML құжатын ашуды аяқтайды</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnLoad",
+        "html": "<p>OnLoad</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnFocus",
+        "html": "<p>OnFocus</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnClick",
+        "html": "<p>OnClick</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnSelect",
+        "html": "<p>OnSelect</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Пайдаланушы элементті тінтуірмен бір шертеді</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnClick",
+        "html": "<p>OnClick</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnKeyPress",
+        "html": "<p>OnKeyPress</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnDblClick",
+        "html": "<p>OnDblClick</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnSubmit",
+        "html": "<p>OnSubmit</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Пайдаланушы элементті тінтуірмен екі шертеді.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnDblClick",
+        "html": "<p>OnDblClick</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnLoad",
+        "html": "<p>OnLoad</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnFocus",
+        "html": "<p>OnFocus</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnReset",
+        "html": "<p>OnReset</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Пайдаланушы тінтуірдің үстіне алып барады.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnMouseDown",
+        "html": "<p>OnMouseDown</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnKeyDown",
+        "html": "<p>OnKeyDown</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnSubmit",
+        "html": "<p>OnSubmit</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnMouseOver",
+        "html": "<p>OnMouseOver</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Пайдаланушы тінтуірді элемент бойымен жылжытады</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnMouseOver",
+        "html": "<p>OnMouseOver</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnKeyPress",
+        "html": "<p>OnKeyPress</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnSubmit",
+        "html": "<p>OnSubmit</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnClick",
+        "html": "<p>OnClick</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Пайдаланушы тінтуірді элементтен алып кетеді.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnMouseOut",
+        "html": "<p>OnMouseOut</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnReset",
+        "html": "<p>OnReset</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnMouseOver",
+        "html": "<p>OnMouseOver</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnBlur",
+        "html": "<p>OnBlur</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Элемент енгізу фокусын алады</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnFocus",
+        "html": "<p>OnFocus</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnKeyUp",
+        "html": "<p>OnKeyUp</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnLoad",
+        "html": "<p>OnLoad</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnBlur",
+        "html": "<p>OnBlur</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Элемент енгізу фокусын жоғалтады</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnBlur",
+        "html": "<p>OnBlur</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnKeyDown",
+        "html": "<p>OnKeyDown</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnSelect",
+        "html": "<p>OnSelect</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnFocus",
+        "html": "<p>OnFocus</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Пайдаланушы пернені басып, қайта босатады</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnKeyPress",
+        "html": "<p>OnKeyPress</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnLoad",
+        "html": "<p>OnLoad</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnMouseOut",
+        "html": "<p>OnMouseOut</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnKeyDown",
+        "html": "<p>OnKeyDown</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Пайдаланушы пернені элементтің үстінен алып кетеді.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnKeyUp",
+        "html": "<p>OnKeyUp</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnReset",
+        "html": "<p>OnReset</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnMouseOver",
+        "html": "<p>OnMouseOver</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnSubmit",
+        "html": "<p>OnSubmit</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Пайдаланушы пернені элементтің үстіне алып барады</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnKeyDown",
+        "html": "<p>OnKeyDown</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnMouseOut",
+        "html": "<p>OnMouseOut</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnKeyUp",
+        "html": "<p>OnKeyUp</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnBlur",
+        "html": "<p>OnBlur</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Пішіндегі деректер web-серверге жіберіледі</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnSubmit",
+        "html": "<p>OnSubmit</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnSelect",
+        "html": "<p>OnSelect</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnBlur",
+        "html": "<p>OnBlur</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnLoad",
+        "html": "<p>OnLoad</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Пішін тазаланады</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnReset",
+        "html": "<p>OnReset</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnClick",
+        "html": "<p>OnClick</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnSelect",
+        "html": "<p>OnSelect</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnFocus",
+        "html": "<p>OnFocus</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Пайдаланушы мәтін өрісіндегі мәтін жолағын таңдайды</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "OnSelect",
+        "html": "<p>OnSelect</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "OnLoad",
+        "html": "<p>OnLoad</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "OnBlur",
+        "html": "<p>OnBlur</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "OnSubmit",
+        "html": "<p>OnSubmit</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Браузер JavaScript-ті қолдамаған жағдайда мына кодты пайдаланылады</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "noscript",
+        "html": "<p>noscript</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "notconnect",
+        "html": "<p>notconnect</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "type",
+        "html": "<p>type</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "consoleerror",
+        "html": "<p>consoleerror</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Консольға мәліметтерді шығаруға арналған</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "console.log",
+        "html": "<p>console.log</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "noscript",
+        "html": "<p>noscript</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "input",
+        "html": "<p>input</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "alt",
+        "html": "<p>alt</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Мәтін енгізу жолды пайда болады</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "<input  type=\"text\">",
+        "html": "<p>&lt;input type=&quot;text&quot;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "<input  type=\"radio\">",
+        "html": "<p>&lt;input type=&quot;radio&quot;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "<input  type=\"button\">",
+        "html": "<p>&lt;input type=&quot;button&quot;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "<input  type=\"submit\">",
+        "html": "<p>&lt;input type=&quot;submit&quot;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Қосқыш анықтайтын өріс пайда болады</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "<input  type=\"radio\">",
+        "html": "<p>&lt;input type=&quot;radio&quot;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "<input  type=\"button\">",
+        "html": "<p>&lt;input type=&quot;button&quot;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "<input  type=\"text\">",
+        "html": "<p>&lt;input type=&quot;text&quot;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "<input  type=\"submit\">",
+        "html": "<p>&lt;input type=&quot;submit&quot;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Жіберу батырмасы пайда болады</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "<input  type=\"submit\">",
+        "html": "<p>&lt;input type=&quot;submit&quot;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "<input  type=\"radio\">",
+        "html": "<p>&lt;input type=&quot;radio&quot;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "<input  type=\"button\">",
+        "html": "<p>&lt;input type=&quot;button&quot;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "<input  type=\"text\">",
+        "html": "<p>&lt;input type=&quot;text&quot;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Қандай скрипт?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "prompt",
+        "html": "<p>prompt</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "var",
+        "html": "<p>var</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "confirm",
+        "html": "<p>confirm</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "alert",
+        "html": "<p>alert</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/js/images/img-494ad54257a9fe91face625950fabd0de2f146a0.png",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Қандай скрипт?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "confrim()",
+        "html": "<p>confrim()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "var",
+        "html": "<p>var</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "alert()",
+        "html": "<p>alert()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "prompt()",
+        "html": "<p>prompt()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/js/images/img-46f63dae257c63bfcbb37f7060eee067f5539fc0.png",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Қандай скрипт?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "alert()",
+        "html": "<p>alert()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "prompt()",
+        "html": "<p>prompt()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "let",
+        "html": "<p>let</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "confirm()",
+        "html": "<p>confirm()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/js/images/img-dc6aaf41f6ff5cd361474d2e8b479cea45fae2bf.png",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>JS -да Батырма жасау</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "<input  type=\"button\">",
+        "html": "<p>&lt;input type=&quot;button&quot;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "<input  type=\"text\">",
+        "html": "<p>&lt;input type=&quot;text&quot;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "<input  type=\"password\">",
+        "html": "<p>&lt;input type=&quot;password&quot;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "<input  type=\"radio\">",
+        "html": "<p>&lt;input type=&quot;radio&quot;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Web-беттердің мәтінінде JavaScript сценарийін орналастыру дескрипторы</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "<script>",
+        "html": "<p>&lt;script&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "h 1. {}",
+        "html": "<p>h 1. {}</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "<noscript>",
+        "html": "<p>&lt;noscript&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "<var>",
+        "html": "<p>&lt;var&gt;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>HTML бетіне сценарийді қосу дескрипторы</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "<script  type=\"text/javascript\"></script>",
+        "html": "<p>&lt;script type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "script  type=\"text/javascript\"><script>",
+        "html": "<p>script type=&quot;text/javascript&quot;&gt;&lt;script&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "<script  type=\"text/javascript\"><script>",
+        "html": "<p>&lt;script type=&quot;text/javascript&quot;&gt;&lt;script&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "<script  type=text/javascript></script>",
+        "html": "<p>&lt;script type=text/javascript&gt;&lt;/script&gt;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>тілі мен нұсқасын анықтау үшін пайдаланылатын атрибут</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "language",
+        "html": "<p>language</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "price",
+        "html": "<p>price</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "confirm",
+        "html": "<p>confirm</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "type",
+        "html": "<p>type</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>language атрибутын алмастырады,ол браузерге дескрипторлар ішінде қандай тіл қолданылғанын көрсетеді</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "type",
+        "html": "<p>type</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "altt",
+        "html": "<p>altt</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "src",
+        "html": "<p>src</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "alert",
+        "html": "<p>alert</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>сценарийі html бетіне бекітілген JavaScript файлының сыртқы URL адресін көрсетеді</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "src",
+        "html": "<p>src</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "var",
+        "html": "<p>var</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "confirm",
+        "html": "<p>confirm</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "alt",
+        "html": "<p>alt</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Экран бетіне ақпаратты шығару үшін қолданылады</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "document.write()",
+        "html": "<p>document.write()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "confirm",
+        "html": "<p>confirm</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "alert",
+        "html": "<p>alert</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "input",
+        "html": "<p>input</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Pre форматтау тегі жаңа жолға көшіру үшін қолданылады</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "document.writeln()",
+        "html": "<p>document.writeln()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "let",
+        "html": "<p>let</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "alert",
+        "html": "<p>alert</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "confirm",
+        "html": "<p>confirm</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Хабарламамен модальді терезені шығарады және пайдаланушыны ОК батырмасын басқанша күтеді</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "alert()",
+        "html": "<p>alert()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "var",
+        "html": "<p>var</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "prompt()",
+        "html": "<p>prompt()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "confirm()",
+        "html": "<p>confirm()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Екі батырмадан тұратын question сұрақ қойылған терезесін шығарады :OK/CANCEL.ОК батырмасын басқанда,true және CANCEL (Esc) ,басқанда false нәтижесі шығады</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Confirm()",
+        "html": "<p>Confirm()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "alert()",
+        "html": "<p>alert()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "let",
+        "html": "<p>let</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "prompt()",
+        "html": "<p>prompt()</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>ол title тақырып атымен,мәтінді енгізу өрісімен,default толтырылған жолмен және OK/CANCEL батырмаларынан тұратын терезені шығарады</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "prompt()",
+        "html": "<p>prompt()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "alert()",
+        "html": "<p>alert()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "confirm()",
+        "html": "<p>confirm()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "var",
+        "html": "<p>var</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Пайдаланушы бірнәрсе енгізіп,ОК батырмасын басу керек немесе CANCEL батырмасын және пернетақтадағы Esc пернесін басу арқылы енгізуді тоқтау керек</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "prompt()",
+        "html": "<p>prompt()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "confirm()",
+        "html": "<p>confirm()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "alert()",
+        "html": "<p>alert()</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "let",
+        "html": "<p>let</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>JavaScript те түсіндірме тегтері</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "«<!--« «// -->»",
+        "html": "<p>«&lt;!--« «// --&gt;»</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "#",
+        "html": "<p>#</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "~<>~",
+        "html": "<p>~&lt;&gt;~</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "{}",
+        "html": "<p>{}</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Айнымалыны жариялау үшін қандай кілт сөз қажет?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "var",
+        "html": "<p>var</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "function",
+        "html": "<p>function</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "js",
+        "html": "<p>js</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "if",
+        "html": "<p>if</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Функция декларациясы қандай кілт сөзден басталады?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "function",
+        "html": "<p>function</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "var",
+        "html": "<p>var</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "fynction",
+        "html": "<p>fynction</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "require",
+        "html": "<p>require</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Нөмір қандай деректер типімен белгіленеді?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "сандық",
+        "html": "<p>сандық</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "жолдық",
+        "html": "<p>жолдық</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "логикалық",
+        "html": "<p>логикалық</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "анықталмаған",
+        "html": "<p>анықталмаған</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Теңдік үшін екі санды қандай белгімен салыстырамыз?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "==",
+        "html": "<p>==</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "=",
+        "html": "<p>=</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "!=",
+        "html": "<p>!=</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "-+",
+        "html": "<p>-+</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Js-те 3&gt; 5 өрнегінің нәтижесі қандай?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "false",
+        "html": "<p>false</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "true",
+        "html": "<p>true</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "no",
+        "html": "<p>no</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "yes",
+        "html": "<p>yes</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>NodeJS платформасында қандай бағдарламалау тілі қолданылады?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Javascript",
+        "html": "<p>Javascript</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "PHP",
+        "html": "<p>PHP</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Python",
+        "html": "<p>Python</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "C#",
+        "html": "<p>C#</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>JavaScript-ті қай бөлімге кіргізуге болады?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "<head> және <body>",
+        "html": "<p>&lt;head&gt; және &lt;body&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "<body>",
+        "html": "<p>&lt;body&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "<head>",
+        "html": "<p>&lt;head&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Дұрыс  жауабы  жоқ",
+        "html": "<p>Дұрыс жауабы жоқ</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Javascript көмегімен «Hello World!» сөзін браузерге қалай көрсетуге болады?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "alert(\"Hello  World\");",
+        "html": "<p>alert(&quot;Hello World&quot;);</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "msg(\"Hello  World\");",
+        "html": "<p>msg(&quot;Hello World&quot;);</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "alertBox(\"Hello  World\")",
+        "html": "<p>alertBox(&quot;Hello World&quot;)</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "msgBox(\"Hello  World\")",
+        "html": "<p>msgBox(&quot;Hello World&quot;)</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>a</strong> = 10, <strong>b</strong> = 5;</p><p><strong>if</strong> (<strong>a</strong> &gt; <strong>b</strong>) {</p><p><strong>console</strong>.<strong>log</strong>(<strong>a</strong> + <strong>b</strong>);</p><p>} <strong>else</strong> {</p><p><strong>console</strong>.<strong>log</strong>(<strong>a</strong> - <strong>b</strong>);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "15",
+        "html": "<p>15</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "5",
+        "html": "<p>5</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "10",
+        "html": "<p>10</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "25",
+        "html": "<p>25</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>x</strong> = 8;</p><p><strong>if</strong> (<strong>x</strong> % 2 === 0) {</p><p><strong>alert</strong>(&quot;<strong>Жұп</strong> <strong>сан</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Тақ</strong> <strong>сан</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Жұп  сан\"",
+        "html": "<p>&quot;<strong>Жұп</strong> <strong>сан</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Тақ  сан\"",
+        "html": "<p>&quot;<strong>Тақ</strong> <strong>сан</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "8",
+        "html": "<p>8</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Қате",
+        "html": "<p>Қате</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>num</strong> = 15;</p><p><strong>if</strong> (<strong>num</strong> &gt; 10 &amp;&amp; <strong>num</strong> &lt; 20) {</p><p><strong>alert</strong>(&quot;<strong>Аралығында</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Сыртында</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Аралығында\"",
+        "html": "<p>&quot;<strong>Аралығында</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Сыртында\"",
+        "html": "<p>&quot;<strong>Сыртында</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "15",
+        "html": "<p>15</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "\"10 және 20 арасында\"",
+        "html": "<p>&quot;10 <strong>және</strong> 20 <strong>арасында</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>a</strong> = 10, <strong>b</strong> = 20;</p><p><strong>if</strong> (<strong>a</strong> &lt; <strong>b</strong>) {</p><p><strong>alert</strong>(<strong>a</strong> * 2);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(<strong>b</strong> * 2);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "20",
+        "html": "<p>20</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "40",
+        "html": "<p>40</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "10",
+        "html": "<p>10</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "30",
+        "html": "<p>30</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>x</strong> = 3, <strong>y</strong> = 4;</p><p><strong>if</strong> (<strong>x</strong> * <strong>y</strong> &gt; 10) {</p><p><strong>alert</strong>(&quot;<strong>Үлкен</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Кіші</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Үлкен\"",
+        "html": "<p>&quot;<strong>Үлкен</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Кіші\"",
+        "html": "<p>&quot;<strong>Кіші</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "12",
+        "html": "<p>12</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "3",
+        "html": "<p>3</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>temp</strong> = 30;</p><p><strong>if</strong> (<strong>temp</strong> &gt; 25) {</p><p><strong>alert</strong>(&quot;<strong>Ыстық</strong>&quot;);</p><p>} <strong>else</strong> <strong>if</strong> (<strong>temp</strong> &gt; 15) {</p><p><strong>alert</strong>(&quot;<strong>Жылы</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Салқын</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Ыстық\"",
+        "html": "<p>&quot;<strong>Ыстық</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Жылы\"",
+        "html": "<p>&quot;<strong>Жылы</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "\"Салқын\"",
+        "html": "<p>&quot;<strong>Салқын</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "30",
+        "html": "<p>30</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>num</strong> = 5;</p><p><strong>if</strong> (<strong>num</strong> === 5) {</p><p><strong>alert</strong>(&quot;<strong>Бес</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Басқа</strong> <strong>сан</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Бес\"",
+        "html": "<p>&quot;<strong>Бес</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Басқа  сан\"",
+        "html": "<p>&quot;<strong>Басқа</strong> <strong>сан</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "5",
+        "html": "<p>5</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Қате",
+        "html": "<p>Қате</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>score</strong> = 85;</p><p><strong>if</strong> (<strong>score</strong> &gt;= 90) {</p><p><strong>alert</strong>(&quot;<strong>Өте</strong> <strong>жақсы</strong>&quot;);</p><p>} <strong>else</strong> <strong>if</strong> (<strong>score</strong> &gt;= 75) {</p><p><strong>alert</strong>(&quot;<strong>Жақсы</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Орташа</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Жақсы\"",
+        "html": "<p>&quot;<strong>Жақсы</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Өте  жақсы\"",
+        "html": "<p>&quot;<strong>Өте</strong> <strong>жақсы</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "\"Орташа\"",
+        "html": "<p>&quot;<strong>Орташа</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "85",
+        "html": "<p>85</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>a</strong> = 12, <strong>b</strong> = 7, <strong>c</strong> = 5;</p><p><strong>if</strong> ((<strong>a</strong> &gt; <strong>b</strong> &amp;&amp; <strong>b</strong> &gt; <strong>c</strong>) || (<strong>a</strong> % <strong>c</strong> === 2)) {</p><p><strong>alert</strong>(<strong>a</strong> + <strong>b</strong> - <strong>c</strong>);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(<strong>a</strong> * <strong>b</strong>);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "14",
+        "html": "<p>14</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "19",
+        "html": "<p>19</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "84",
+        "html": "<p>84</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "7",
+        "html": "<p>7</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>x</strong> = 10, <strong>y</strong> = 5, <strong>z</strong> = 2;</p><p><strong>if</strong> (<strong>x</strong> % <strong>y</strong> === 0 &amp;&amp; <strong>y</strong> % <strong>z</strong> === 1) {</p><p><strong>alert</strong>(&quot;<strong>Шарт</strong> <strong>орындалды</strong>&quot;);</p><p>} <strong>else</strong> <strong>if</strong> (<strong>x</strong> + <strong>y</strong> &lt; 20) {</p><p><strong>alert</strong>(&quot;<strong>Екінші</strong> <strong>шарт</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Үшінші</strong> <strong>шарт</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Шарт  орындалды\"",
+        "html": "<p>&quot;<strong>Шарт</strong> <strong>орындалды</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Екінші  шарт\"",
+        "html": "<p>&quot;<strong>Екінші</strong> <strong>шарт</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "\"Үшінші  шарт\"",
+        "html": "<p>&quot;<strong>Үшінші</strong> <strong>шарт</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Қате",
+        "html": "<p>Қате</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>a</strong> = 5, <strong>b</strong> = 15, <strong>c</strong> = 10;</p><p><strong>if</strong> (<strong>a</strong> + <strong>b</strong> &gt; <strong>c</strong> &amp;&amp; <strong>b</strong> - <strong>c</strong> &lt; <strong>a</strong>) {</p><p><strong>alert</strong>(&quot;<strong>Бірінші</strong> <strong>шарт</strong>&quot;);</p><p>} <strong>else</strong> <strong>if</strong> (<strong>a</strong> * <strong>c</strong> &gt; <strong>b</strong> * <strong>b</strong>) {</p><p><strong>alert</strong>(&quot;<strong>Екінші</strong> <strong>шарт</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Үшінші</strong> <strong>шарт</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Үшінші  шарт\"",
+        "html": "<p>&quot;<strong>Үшінші</strong> <strong>шарт</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Екінші  шарт\"",
+        "html": "<p>&quot;<strong>Екінші</strong> <strong>шарт</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "\"Бірінші  шарт\"",
+        "html": "<p>&quot;<strong>Бірінші</strong> <strong>шарт</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Қате",
+        "html": "<p>Қате</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>age</strong> = 22;</p><p><strong>if</strong> (<strong>age</strong> &gt; 18 &amp;&amp; <strong>age</strong> &lt; 25) {</p><p><strong>alert</strong>(&quot;<strong>Жастар</strong> <strong>санаты</strong>&quot;);</p><p>} <strong>else</strong> <strong>if</strong> (<strong>age</strong> &gt;= 25 &amp;&amp; <strong>age</strong> &lt; 40) {</p><p><strong>alert</strong>(&quot;<strong>Ересектер</strong> <strong>санаты</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Басқа</strong> <strong>санат</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Жастар  санаты\"",
+        "html": "<p>&quot;<strong>Жастар</strong> <strong>санаты</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Ересектер  санаты\"",
+        "html": "<p>&quot;<strong>Ересектер</strong> <strong>санаты</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "\"Басқа  санат\"",
+        "html": "<p>&quot;<strong>Басқа</strong> <strong>санат</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Қате",
+        "html": "<p>Қате</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>JavaScript</strong>-<strong>те</strong> <strong>айнымалыны</strong> <strong>қалай</strong> <strong>дұрыс</strong> <strong>жариялаймыз</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "var  x = 10;",
+        "html": "<p><strong>var</strong> <strong>x</strong> = 10;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "let  x == 10;",
+        "html": "<p><strong>let</strong> <strong>x</strong> == 10;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "variable  x = 10;",
+        "html": "<p><strong>variable</strong> <strong>x</strong> = 10;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "const  x : 10;",
+        "html": "<p><strong>const</strong> <strong>x</strong> : 10;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>console</strong>.<strong>log</strong>(<strong>typeof</strong> 42); <strong>қандай</strong> <strong>нәтиже</strong> <strong>береді</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"number\"",
+        "html": "<p>&quot;<strong>number</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"string\"",
+        "html": "<p>&quot;<strong>string</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "\"boolean\"",
+        "html": "<p>&quot;<strong>boolean</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "\"undefined\"",
+        "html": "<p>&quot;<strong>undefined</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>JavaScript</strong>-<strong>те</strong> <strong>функцияны</strong> <strong>қалай</strong> <strong>жариялаймыз</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "function  myFunction() {}",
+        "html": "<p><strong>function</strong> <strong>myFunction</strong>() {}</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "func  myFunction() {}",
+        "html": "<p><strong>func</strong> <strong>myFunction</strong>() {}</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "myFunction(): function {}",
+        "html": "<p><strong>myFunction</strong>(): <strong>function</strong> {}</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "function = myFunction() {}",
+        "html": "<p><strong>function</strong> = <strong>myFunction</strong>() {}</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>JavaScript</strong>-<strong>те</strong> <strong>шартты</strong> <strong>оператор</strong> <strong>қалай</strong> <strong>жазылады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "if (x > 10) {}",
+        "html": "<p><strong>if</strong> (<strong>x</strong> &gt; 10) {}</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "if (x > 10) then {}",
+        "html": "<p><strong>if</strong> (<strong>x</strong> &gt; 10) <strong>then</strong> {}</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "if  x > 10 {}",
+        "html": "<p><strong>if</strong> <strong>x</strong> &gt; 10 {}</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "if  x > 10 then {}",
+        "html": "<p><strong>if</strong> <strong>x</strong> &gt; 10 <strong>then</strong> {}</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>x</strong> = &quot;5&quot; + 3; <strong>айнымалысының</strong> <strong>мәні</strong> <strong>қандай</strong> <strong>болады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"53\"",
+        "html": "<p>&quot;53&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "8",
+        "html": "<p>8</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "5",
+        "html": "<p>5</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "NaN",
+        "html": "<p>NaN</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>typeof</strong> <strong>undefined</strong> <strong>қандай</strong> <strong>нәтиже</strong> <strong>береді</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"undefined\"",
+        "html": "<p>&quot;<strong>undefined</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"null\"",
+        "html": "<p>&quot;<strong>null</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "\"object\"",
+        "html": "<p>&quot;<strong>object</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "\"string\"",
+        "html": "<p>&quot;<strong>string</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>x</strong>; <strong>console</strong>.<strong>log</strong>(<strong>x</strong>); <strong>не</strong> <strong>шығарады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "undefined",
+        "html": "<p>undefined</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "null",
+        "html": "<p>null</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "0",
+        "html": "<p>0</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "\"\" (бос  жол)",
+        "html": "<p>&quot;&quot; (<strong>бос</strong> <strong>жол</strong>)</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Boolean</strong>(&quot;<strong>false</strong>&quot;) <strong>қандай</strong> <strong>мән</strong> <strong>қайтарады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "true",
+        "html": "<p>true</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "false",
+        "html": "<p>false</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "undefined",
+        "html": "<p>undefined</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "null",
+        "html": "<p>null</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>!!0 <strong>қандай</strong> <strong>мән</strong> <strong>қайтарады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "false",
+        "html": "<p>false</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "true",
+        "html": "<p>true</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "undefined",
+        "html": "<p>undefined</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "null",
+        "html": "<p>null</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>x</strong> = 5; <strong>x</strong> += 2; <strong>кейін</strong> <strong>x</strong> <strong>қандай</strong> <strong>мәнге</strong> <strong>ие</strong> <strong>болады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "7",
+        "html": "<p>7</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "52",
+        "html": "<p>52</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "5",
+        "html": "<p>5</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "3",
+        "html": "<p>3</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>JavaScript</strong>-<strong>те</strong> <strong>тұрақты</strong> (<strong>өзгермейтін</strong>) <strong>айнымалыны</strong> <strong>қалай</strong> <strong>жариялаймыз</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "const  x = 10;",
+        "html": "<p><strong>const</strong> <strong>x</strong> = 10;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "let  x = 10;",
+        "html": "<p><strong>let</strong> <strong>x</strong> = 10;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "var  x = 10;",
+        "html": "<p><strong>var</strong> <strong>x</strong> = 10;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "x = 10;",
+        "html": "<p><strong>x</strong> = 10;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>x</strong> = 10; <strong>x</strong> = &quot;<strong>Hello</strong>&quot;; <strong>кейін</strong> <strong>x</strong> <strong>қандай</strong> <strong>типке</strong> <strong>ие</strong> <strong>болады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "string",
+        "html": "<p>string</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "undefined",
+        "html": "<p>undefined</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "boolean",
+        "html": "<p>boolean</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "number",
+        "html": "<p>number</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Айнымалыны</strong> <strong>қайта</strong> <strong>анықтауға</strong> <strong>болатын</strong>, <strong>бірақ</strong> <strong>өзгертуге</strong> <strong>болатын</strong> <strong>кілт</strong> <strong>сөз</strong> <strong>қандай</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "let",
+        "html": "<p>let</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "const",
+        "html": "<p>const</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "static",
+        "html": "<p>static</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "undefined",
+        "html": "<p>undefined</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>var</strong> <strong>x</strong> = 5; { <strong>var</strong> <strong>x</strong> = 10; } <strong>console</strong>.<strong>log</strong>(<strong>x</strong>); <strong>не</strong> <strong>шығарады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "10",
+        "html": "<p>10</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "5",
+        "html": "<p>5</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "3",
+        "html": "<p>3</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "15",
+        "html": "<p>15</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>prompt</strong> <strong>функциясы</strong> <strong>қандай</strong> <strong>мән</strong> <strong>қайтарады</strong>, <strong>егер</strong> <strong>пайдаланушы</strong> &quot;<strong>Cancel</strong>&quot; <strong>батырмасын</strong> <strong>басса</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "null",
+        "html": "<p>null</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"\" (бос  жол)",
+        "html": "<p>&quot;&quot; (<strong>бос</strong> <strong>жол</strong>)</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "undefined",
+        "html": "<p>undefined</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "false",
+        "html": "<p>false</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>confirm</strong>(&quot;<strong>Do</strong> <strong>you</strong> <strong>agree</strong>?&quot;) <strong>терезесінде</strong> &quot;<strong>OK</strong>&quot; <strong>батырмасын</strong> <strong>бассақ</strong>, <strong>не</strong> <strong>қайтарылады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "true",
+        "html": "<p>true</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "false",
+        "html": "<p>false</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "null",
+        "html": "<p>null</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "undefined",
+        "html": "<p>undefined</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>confirm</strong>(&quot;<strong>Delete</strong> <strong>this</strong> <strong>file</strong>?&quot;) <strong>терезесінде</strong> &quot;<strong>Cancel</strong>&quot; <strong>батырмасын</strong> <strong>бассақ</strong>, <strong>не</strong> <strong>қайтарылады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "false",
+        "html": "<p>false</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "null",
+        "html": "<p>null</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "\"Cancel\"",
+        "html": "<p>&quot;<strong>Cancel</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "undefined",
+        "html": "<p>undefined</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>JavaScript</strong>-<strong>те</strong> <strong>қандай</strong> <strong>оператормен</strong> <strong>шартты</strong> <strong>салыстыруды</strong> <strong>жүргіземіз</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "== немесе ===",
+        "html": "<p>== <strong>немесе</strong> ===</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "=",
+        "html": "<p>=</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "<>",
+        "html": "<p>&lt;&gt;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "!=",
+        "html": "<p>!=</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Қайсысы</strong> <strong>JavaScript</strong>-<strong>те</strong> <strong>дұрыс</strong> <strong>айнымалы</strong> <strong>атауы</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "myVariable",
+        "html": "<p>myVariable</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "1 variable",
+        "html": "<p>1 <strong>variable</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "my-variable",
+        "html": "<p><strong>my</strong>-<strong>variable</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "my@variable",
+        "html": "<p><strong>my</strong>@<strong>variable</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>JavaScript</strong>-<strong>те</strong> <strong>логикалық</strong> «<strong>немесе</strong>» <strong>операторы</strong> <strong>қайсы</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "||",
+        "html": "<p>||</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "&&",
+        "html": "<p>&amp;&amp;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "!",
+        "html": "<p>!</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "=",
+        "html": "<p>=</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>JavaScript</strong>-<strong>те</strong> <strong>айнымалы</strong> <strong>мәнін</strong> <strong>қайтадан</strong> <strong>анықтау</strong> <strong>үшін</strong> <strong>қай</strong> <strong>кілт</strong> <strong>сөздер</strong> <strong>қолданылады</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "var, let, const",
+        "html": "<p><strong>var</strong>, <strong>let</strong>, <strong>const</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "let",
+        "html": "<p>let</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "define",
+        "html": "<p>define</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "declare",
+        "html": "<p>declare</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>a</strong> = 18, <strong>b</strong> = 6;</p><p><strong>if</strong> (<strong>a</strong> % <strong>b</strong> === 0 &amp;&amp; <strong>a</strong> / <strong>b</strong> &gt; 2) {</p><p><strong>alert</strong>(&quot;<strong>Кері</strong> <strong>сан</strong> : &quot; + (<strong>b</strong> / <strong>a</strong>));</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Бөлінбейді</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Кері  сан : 0.3333\"",
+        "html": "<p>&quot;<strong>Кері</strong> <strong>сан</strong> : 0.3333&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Кері  сан : 3",
+        "html": "<p>&quot;<strong>Кері</strong> <strong>сан</strong> : 3</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "\"Бөлінбейді\"",
+        "html": "<p>&quot;<strong>Бөлінбейді</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Қате",
+        "html": "<p>Қате</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>x</strong> = 12, <strong>y</strong> = 4, <strong>z</strong> = 3;</p><p><strong>if</strong> (<strong>x</strong> / <strong>y</strong> === <strong>z</strong> &amp;&amp; <strong>x</strong> % <strong>z</strong> === 0) {</p><p><strong>alert</strong>(&quot;<strong>Теңдік</strong> <strong>орындалды</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Тең</strong> <strong>емес</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Теңдік  орындалды\"",
+        "html": "<p>&quot;<strong>Теңдік</strong> <strong>орындалды</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Тең  емес\"",
+        "html": "<p>&quot;<strong>Тең</strong> <strong>емес</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "12",
+        "html": "<p>12</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "4",
+        "html": "<p>4</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>a</strong> = 14, <strong>b</strong> = 2;</p><p><strong>if</strong> ((<strong>a</strong> * <strong>b</strong>) % 4 === 0) {</p><p><strong>alert</strong>(&quot;<strong>Бөлінеді</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Бөлінбейді</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Бөлінеді\"",
+        "html": "<p>&quot;<strong>Бөлінеді</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Бөлінбейді\"",
+        "html": "<p>&quot;<strong>Бөлінбейді</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "10",
+        "html": "<p>10</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "20",
+        "html": "<p>20</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>num</strong> = 49;</p><p><strong>if</strong> (<strong>Math</strong>.<strong>sqrt</strong>(<strong>num</strong>) % 1 === 0) {</p><p><strong>alert</strong>(&quot;<strong>Толық</strong> <strong>квадрат</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Толық</strong> <strong>емес</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Толық  квадрат\"",
+        "html": "<p>&quot;<strong>Толық</strong> <strong>квадрат</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Қате\"",
+        "html": "<p>&quot;<strong>Қате</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "\"Толық  емес\"",
+        "html": "<p>&quot;<strong>Толық</strong> <strong>емес</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "49",
+        "html": "<p>49</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>x</strong> = 25, <strong>y</strong> = 5;</p><p><strong>if</strong> (<strong>Math</strong>.<strong>sqrt</strong>(<strong>x</strong>) === <strong>y</strong> &amp;&amp; <strong>x</strong> % <strong>y</strong> === 0) {</p><p><strong>alert</strong>(&quot;<strong>Шаршы</strong> <strong>сан</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Жай</strong> <strong>сан</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Шаршы  сан\"",
+        "html": "<p>&quot;<strong>Шаршы</strong> <strong>сан</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Жай  сан\"",
+        "html": "<p>&quot;<strong>Жай</strong> <strong>сан</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "25",
+        "html": "<p>25</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "5",
+        "html": "<p>5</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>a</strong> = 7, <strong>b</strong> = 3;</p><p><strong>if</strong> (<strong>a</strong> % <strong>b</strong> !== 0 || <strong>a</strong> + <strong>b</strong> &gt; 10) {</p><p><strong>alert</strong>(&quot;<strong>Шарт</strong> <strong>орындалды</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Шарт</strong> <strong>орындалмады</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Шарт  орындалды\"",
+        "html": "<p>&quot;<strong>Шарт</strong> <strong>орындалды</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Шарт  орындалмады\"",
+        "html": "<p>&quot;<strong>Шарт</strong> <strong>орындалмады</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "7",
+        "html": "<p>7</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "3",
+        "html": "<p>3</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>temp</strong> = -10, <strong>wind</strong> = 8;</p><p><strong>if</strong> (<strong>temp</strong> &lt; 0 &amp;&amp; <strong>wind</strong> &gt;= 5) {</p><p><strong>alert</strong>(&quot;<strong>Суық</strong> <strong>ауа</strong> <strong>райы</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Жылы</strong> <strong>ауа</strong> <strong>райы</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Суық  ауа  райы\"",
+        "html": "<p>&quot;<strong>Суық</strong> <strong>ауа</strong> <strong>райы</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Жылы  ауа  райы\"",
+        "html": "<p>&quot;<strong>Жылы</strong> <strong>ауа</strong> <strong>райы</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "-10",
+        "html": "<p>-10</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "8",
+        "html": "<p>8</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>year</strong> = 2024;</p><p><strong>if</strong> (<strong>year</strong> % 4 === 0 &amp;&amp; (<strong>year</strong> % 100 !== 0 || <strong>year</strong> % 400 === 0)) {</p><p><strong>alert</strong>(&quot;<strong>Кібісе</strong> <strong>жылы</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Қарапайым</strong> <strong>жыл</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Кібісе  жылы\"",
+        "html": "<p>&quot;<strong>Кібісе</strong> <strong>жылы</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Қарапайым  жыл\"",
+        "html": "<p>&quot;<strong>Қарапайым</strong> <strong>жыл</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "2024",
+        "html": "<p>2024</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "2028",
+        "html": "<p>2028</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>a</strong> = 5, <strong>b</strong> = 15;</p><p><strong>if</strong> (<strong>b</strong> % <strong>a</strong> === 0 &amp;&amp; <strong>a</strong> + <strong>b</strong> &gt; 20) {</p><p><strong>alert</strong>(&quot;<strong>Орындау</strong> <strong>мүмкін</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Мүмкін</strong> <strong>емес</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Мүмкін  емес\"",
+        "html": "<p>&quot;<strong>Мүмкін</strong> <strong>емес</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Орындау  мүмкін\"",
+        "html": "<p>&quot;<strong>Орындау</strong> <strong>мүмкін</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "5",
+        "html": "<p>5</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "15",
+        "html": "<p>15</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>let</strong> <strong>x</strong> = 0, <strong>y</strong> = -5;</p><p><strong>if</strong> (<strong>x</strong> &gt;= 0 &amp;&amp; <strong>y</strong> &lt; 0) {</p><p><strong>alert</strong>(&quot;<strong>Қарама</strong>-<strong>қарсы</strong> <strong>сандар</strong>&quot;);</p><p>} <strong>else</strong> {</p><p><strong>alert</strong>(&quot;<strong>Бірдей</strong> <strong>таңба</strong>&quot;);</p><p>}</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Қарама-қарсы  сандар\"",
+        "html": "<p>&quot;<strong>Қарама</strong>-<strong>қарсы</strong> <strong>сандар</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Бірдей  таңба\"",
+        "html": "<p>&quot;<strong>Бірдей</strong> <strong>таңба</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "0",
+        "html": "<p>0</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "-5",
+        "html": "<p>-5</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "JS",
+    "questionType": "MultipleChoice"
+  }
+]
