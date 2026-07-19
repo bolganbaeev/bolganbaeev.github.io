@@ -1,0 +1,440 @@
+[
+  {
+    "id": 1,
+    "question": "HTML тілінде құжаттың ішкі тақырыбын алты түрлі тәсілмен беруге болатын тегтер:",
+    "options": ["<h1>...</h1>", "<p></p>", "<li></li>", "<table></table>"],
+    "citation": ""
+  },
+  {
+    "id": 2,
+    "question": "Азатжолдың басы және соңы екендігін білдіретін тег:",
+    "options": ["<p></p>", "<br>", "<hr>", "<div></div>"],
+    "citation": ""
+  },
+  {
+    "id": 3,
+    "question": "Құжатқа көлденең сызық сызатын, жұбы жоқ тег:",
+    "options": ["<hr>", "<br>", "<s>", "<u>"],
+    "citation": ""
+  },
+  {
+    "id": 4,
+    "question": "Мәтінді келесі қатарға (жаңа азатжолдан бастамай) көшіретін тег:",
+    "options": ["<br>", "<p>", "<li>", "<div>"],
+    "citation": ""
+  },
+  {
+    "id": 5,
+    "question": "Мәтінді курсивпен (көлбеу) жазу үшін қолданылатын тег:",
+    "options": ["<i></i>", "<b></b>", "<u></u>", "<s></s>"],
+    "citation": ""
+  },
+  {
+    "id": 6,
+    "question": "Жартылай қалыңдатылып жазылған қаріп тегтері:",
+    "options": ["<strong></strong> немесе <b></b>", "<i></i>", "<u></u>", "<center></center>"],
+    "citation": ""
+  },
+  {
+    "id": 7,
+    "question": "Төменгі индексті анықтайтын тег:",
+    "options": ["<sub></sub>", "<sup></sup>", "<dt></dt>", "<dd></dd>"],
+    "citation": ""
+  },
+  {
+    "id": 8,
+    "question": "Жоғарғы индексті анықтайтын тег:",
+    "options": ["<sup></sup>", "<sub></sub>", "<li></li>", "<ul></ul>"],
+    "citation": ""
+  },
+  {
+    "id": 9,
+    "question": "Көпсатылы тізім құрастыратын дескриптор:",
+    "options": ["<dl></dl>", "<ul></ul>", "<ol></ol>", "<li></li>"],
+    "citation": ""
+  },
+  {
+    "id": 10,
+    "question": "Бірінші деңгейлі тізім элементін анықтайтын тег:",
+    "options": ["<dt></dt>", "<dd></dd>", "<li></li>", "<ul></ul>"],
+    "citation": ""
+  },
+  {
+    "id": 11,
+    "question": "Ортасында орналасқан барлық нәрселерді ортаға түзететін тег:",
+    "options": ["<center></center>", "<p></p>", "<b></b>", "<i></i>"],
+    "citation": ""
+  },
+  {
+    "id": 12,
+    "question": "Қаріптің астын сызатын тег:",
+    "options": ["<u></u>", "<s></s>", "<i></i>", "<b></b>"],
+    "citation": ""
+  },
+  {
+    "id": 13,
+    "question": "Қаріптің бетін сызатын тег:",
+    "options": ["<s></s>", "<u></u>", "<i></i>", "<b></b>"],
+    "citation": ""
+  },
+  {
+    "id": 26,
+    "question": "Мәтінді логикалық пішімдеу кезінде қолданылатын тегтер тобы:",
+    "options": ["<strong>, <em>, <del>, <ins>", "<b>, <i>, <s>, <u>", "<sub>, <sup>, <center>", "<h1>, <p>, <br>"],
+    "citation": ""
+  },
+  {
+    "id": 27,
+    "question": "Мәтінді физикалық пішімдеу тегтеріне жатады:",
+    "options": ["<b>, <i>, <s>, <u>", "<strong>, <em>, <del>, <ins>", "<dt>, <dd>, <li>", "<p>, <br>, <hr>"],
+    "citation": ""
+  },
+  {
+    "id": 28,
+    "question": "Абзацты экранның сол жақ шеті бойынша туралайтын атрибут:",
+    "options": ["<p align=\"left\">", "<p align=\"right\">", "<p align=\"center\">", "<p align=\"justify\">"],
+    "citation": ""
+  },
+  {
+    "id": 29,
+    "question": "Абзацты экранның оң жақ шеті бойынша туралайтын атрибут:",
+    "options": ["<p align=\"right\">", "<p align=\"left\">", "<p align=\"center\">", "<p align=\"justify\">"],
+    "citation": ""
+  },
+  {
+    "id": 30,
+    "question": "Мәтінді экранның ені бойынша (екі жақ шетіне де тіреп) туралайтын мән:",
+    "options": ["justify", "center", "left", "right"],
+    "citation": ""
+  },
+  {
+    "id": 31,
+    "question": "Көпсатылы тізімнің екінші деңгейлік элементін анықтайтын және <dl> дескрипторының аралығында жүретін тег:",
+    "options": ["<dd></dd>", "<dt></dt>", "<li></li>", "<ul></ul>"],
+    "citation": ""
+  },
+  {
+    "id": 32,
+    "question": "Мәтіннің астын сызатын физикалық пішімдеу тегі:",
+    "options": ["<u></u>", "<s></s>", "<i></i>", "<b></b>"],
+    "citation": ""
+  },
+  {
+    "id": 33,
+    "question": "Мәтіннің бетін (ортасын) сызатын физикалық пішімдеу тегі:",
+    "options": ["<s></s>", "<u></u>", "<i></i>", "<b></b>"],
+    "citation": ""
+  },
+  {
+    "id": 34,
+    "question": "Тізім элементін логикалық тұрғыдан ерекшелеу үшін <b> тегінің орнына қолданылатын тег:",
+    "options": ["<strong>", "<em>", "<ins>", "<del>"],
+    "citation": ""
+  },
+  {
+    "id": 35,
+    "question": "HTML құжатындағы барлық нәрселерді экранның ортасына түзететін тег:",
+    "options": ["<center></center>", "<p align=\"center\">", "<div></div>", "<h1></h1>"],
+    "citation": ""
+  },
+  {
+    "id": 36,
+    "question": "Құжаттағы мәтінді бейнелейтін негізгі қаріпті анықтайтын дара тег:",
+    "options": ["<basefont>", "<font>", "<body>", "<head>"],
+    "citation": ""
+  },
+  {
+    "id": 37,
+    "question": "<basefont> тегінің қаріпті баптауға арналған атрибуттары:",
+    "options": ["color, size, face", "align, border, width", "src, href, alt", "bgcolor, text, link"],
+    "citation": ""
+  },
+  {
+    "id": 38,
+    "question": "Логикалық пішімдеуде мәтінді көлбеу жазу үшін қолданылатын тег:",
+    "options": ["<em>", "<i>", "<strong>", "<ins>"],
+    "citation": ""
+  },
+  {
+    "id": 39,
+    "question": "Логикалық пішімдеуде мәтінді сызып тастау (өшірілген мәтін) үшін қолданылатын тег:",
+    "options": ["<del>", "<s>", "<u>", "<ins>"],
+    "citation": ""
+  },
+  {
+    "id": 40,
+    "question": "Логикалық пішімдеуде мәтіннің астын сызу үшін қолданылатын тег:",
+    "options": ["<ins>", "<u>", "<strong>", "<del>"],
+    "citation": ""
+  },
+  {
+    "id": 41,
+    "question": "Мәтінді экранның екі жақ шеті бойынша (ені бойынша) туралайтын тег атрибуты:",
+    "options": ["<p align=\"justify\">", "<p align=\"center\">", "<p align=\"left\">", "<p align=\"right\">"],
+    "citation": ""
+  },
+  {
+    "id": 42,
+    "question": "HTML-де құжаттың ішкі тақырыбын беруге болатын ең үлкен деңгейлі тег:",
+    "options": ["<h1>", "<h6>", "<h3>", "<h5>"],
+    "citation": ""
+  },
+  {
+    "id": 43,
+    "question": "HTML-де құжаттың ішкі тақырыбын беруге болатын ең кіші деңгейлі тег:",
+    "options": ["<h6>", "<h1>", "<h4>", "<h2>"],
+    "citation": ""
+  },
+  {
+    "id": 44,
+    "question": "HTML-де келесі қатарға көшу үшін қолданылатын жұбы жоқ (дара) тег:",
+    "options": ["<br>", "<p>", "<li>", "<hr>"],
+    "citation": ""
+  },
+  {
+    "id": 45,
+    "question": "Математикалық дәрежелерді (мысалы, x²) жазу үшін қолданылатын жоғарғы индекс тегі:",
+    "options": ["<sup>", "<sub>", "<s>", "<u>"],
+    "citation": ""
+  },
+  {
+    "id": 46,
+    "question": "Ашылуы <font> және жабылуы </font> тегтері арасында орналасқан мәтінге қандай мүмкіндіктер береді:",
+    "options": ["Қарпінің түсін, өлшемі мен түрін өзгертуге", "Тек мәтінді ортаға түзетеді", "Мәтінді жаңа жолға көшіреді", "Көлденең сызық сызады"],
+    "citation": ""
+  },
+  {
+    "id": 47,
+    "question": "<font> тегінің қаріп өлшемін (1-7 ге дейін) беретін атрибуты:",
+    "options": ["size", "color", "face", "bgcolor"],
+    "citation": ""
+  },
+  {
+    "id": 48,
+    "question": "<font> тегінің қолданыстағы қаріп түрін (кескінін) анықтайтын атрибуты:",
+    "options": ["face", "size", "color", "bgcolor"],
+    "citation": ""
+  },
+  {
+    "id": 49,
+    "question": "<font> тегінің мәтін түсін анықтайтын атрибуты:",
+    "options": ["color", "face", "size", "bgcolor"],
+    "citation": ""
+  },
+  {
+    "id": 50,
+    "question": "<font> тегінің элементтің артқы түсін (фон) анықтайтын атрибуты:",
+    "options": ["bgcolor", "color", "face", "size"],
+    "citation": ""
+  },
+  {
+    "id": 51,
+    "question": "Мәтінді логикалық пішімдеуде жаңадан енгізілген мәтінді (асты сызылған) көрсету үшін қолданылатын тег:",
+    "options": ["<ins>", "<del>", "<em>", "<strong>"],
+    "citation": ""
+  },
+  {
+    "id": 52,
+    "question": "Мәтінді логикалық пішімдеуде ерекшеленген (көлбеу) мәтінді көрсету үшін қолданылатын тег:",
+    "options": ["<em>", "<strong>", "<del>", "<ins>"],
+    "citation": ""
+  },
+  {
+    "id": 53,
+    "question": "Абзацты экранның ортасы бойынша туралайтын толық тег жазылуы:",
+    "options": ["<p align=\"center\">", "<p align=\"left\">", "<p align=\"right\">", "<p align=\"justify\">"],
+    "citation": ""
+  },
+  {
+    "id": 54,
+    "question": "Құжаттағы мәтінді бейнелейтін негізгі қаріпті анықтайтын жұпсыз (дара) тег:",
+    "options": ["<basefont>", "<font>", "<body>", "<html>"],
+    "citation": ""
+  },
+  {
+    "id": 55,
+    "question": "<basefont> тегінің атрибуттарына жатады:",
+    "options": ["color, size, face", "align, width, border", "src, href, alt", "bgcolor, text, link"],
+    "citation": ""
+  },
+  {
+    "id": 56,
+    "question": "HTML-де кесте құру үшін қолданылатын негізгі дескрипторлар:",
+    "options": ["<table>, </table>", "<body>, </body>", "<head>, </head>", "<font>, </font>"],
+    "citation": ""
+  },
+  {
+    "id": 57,
+    "question": "Кестенің тақырыбын анықтайтын тег:",
+    "options": ["<caption></caption>", "<th></th>", "<td></td>", "<tr></tr>"],
+    "citation": ""
+  },
+  {
+    "id": 58,
+    "question": "Кестедегі баған мен қатар тақырыптарын анықтайтын дескриптор:",
+    "options": ["<th></th>", "<td></td>", "<tr></tr>", "<caption></caption>"],
+    "citation": ""
+  },
+  {
+    "id": 59,
+    "question": "Кесте қатарындағы ұяшық мәндерін (деректерін) анықтайтын дескриптор:",
+    "options": ["<td></td>", "<tr></tr>", "<th></th>", "<caption></caption>"],
+    "citation": ""
+  },
+  {
+    "id": 60,
+    "question": "Кестенің қатар санын анықтайтын дескриптор:",
+    "options": ["<tr></tr>", "<td></td>", "<th></th>", "<caption></caption>"],
+    "citation": ""
+  },
+  {
+    "id": 61,
+    "question": "Жол ұяшықтарының фон түсін анықтайтын атрибут:",
+    "options": ["bgcolor", "background", "bordercolor", "align"],
+    "citation": ""
+  },
+  {
+    "id": 62,
+    "question": "Кесте жиегінің енін пиксельдерде орнататын атрибут (мысалы, border=2):",
+    "options": ["border", "width", "height", "align"],
+    "citation": ""
+  },
+  {
+    "id": 63,
+    "question": "Барлық кестенің немесе ұяшықтың енін пиксельдермен немесе пайызбен анықтайтын атрибут:",
+    "options": ["width", "height", "border", "bgcolor"],
+    "citation": ""
+  },
+  {
+    "id": 64,
+    "question": "Жол ұяшықтарының фонын суретпен (URL арқылы) толтыратын атрибут:",
+    "options": ["background", "bgcolor", "bordercolor", "width"],
+    "citation": ""
+  },
+  {
+    "id": 65,
+    "question": "Ұяшық жиегінің түсін өзгертуге арналған атрибут:",
+    "options": ["bordercolor", "bgcolor", "background", "height"],
+    "citation": ""
+  },
+  {
+    "id": 66,
+    "question": "Кесте ұяшығындағы мәнді тік бағытта (top, bottom, baseline) туралауға мүмкіндік беретін атрибут:",
+    "options": ["valign", "align", "rules", "width"],
+    "citation": ""
+  },
+  {
+    "id": 67,
+    "question": "Бір бағанға біріктірілетін бағандар санын анықтайтын атрибут:",
+    "options": ["colspan", "rowspan", "cellpadding", "cellspacing"],
+    "citation": ""
+  },
+  {
+    "id": 68,
+    "question": "Бір қатарға біріктірілетін қатарлар санын анықтайтын атрибут:",
+    "options": ["rowspan", "colspan", "rules", "valign"],
+    "citation": ""
+  },
+  {
+    "id": 69,
+    "question": "Ұяшықтағы мән мен ұяшық шекарасы арасындағы қашықтықты пиксельмен анықтайтын атрибут:",
+    "options": ["cellpadding", "cellspacing", "border", "width"],
+    "citation": ""
+  },
+  {
+    "id": 70,
+    "question": "Пиксель бойынша ұяшықтар арақашықтығын анықтайтын атрибут:",
+    "options": ["cellspacing", "cellpadding", "border", "align"],
+    "citation": ""
+  },
+  {
+    "id": 71,
+    "question": "Браузер терезесінде жолдың бір шетінен екінші шетіне жылжып отыратын «сырғымалы жол» жасайтын тег:",
+    "options": ["<marquee>", "<table>", "<caption>", "<basefont>"],
+    "citation": ""
+  },
+  {
+    "id": 72,
+    "question": "«Сырғымалы жолдың» қайталану санын анықтайтын атрибут:",
+    "options": ["loop", "scrollamount", "scrolldelay", "align"],
+    "citation": ""
+  },
+  {
+    "id": 73,
+    "question": "Жылжудың бір қадамында мәтіннің қанша пиксельге жылжитынын анықтайтын бүтін сан:",
+    "options": ["scrollamount", "scrolldelay", "loop", "width"],
+    "citation": ""
+  },
+  {
+    "id": 74,
+    "question": "Екі сырғудың арасындағы интервалды миллисекундпен көрсететін атрибут:",
+    "options": ["scrolldelay", "scrollamount", "loop", "valign"],
+    "citation": ""
+  },
+  {
+    "id": 75,
+    "question": "Кесте ұяшықтары арасындағы сызықтардың көрінуін (rows, cols, all) реттейтін атрибут:",
+    "options": ["rules", "border", "align", "bgcolor"],
+    "citation": ""
+  },
+  {
+    "id": 76,
+    "question": "«Жүгіртпе жолдың» жылжу бағытын (left, right) немесе кезек-кезек сырғытуды (alternate) анықтайтын атрибут:",
+    "options": ["direction", "align", "behavior", "loop"],
+    "citation": ""
+  },
+  {
+    "id": 77,
+    "question": "loop=\"infinite\" немесе loop=\"-1\" мәндері жүгіртпе жолға қандай әсер береді:",
+    "options": ["Мәтін шексіз қайталанады", "Мәтін 2 рет қайталанады", "Мәтін қозғалысы тоқтайды", "Мәтін өте баяу жылжиды"],
+    "citation": ""
+  },
+  {
+    "id": 78,
+    "question": "Жүгіртпе жолдың жылдамдығы «Орташа» болуы үшін scrollamount мәні қандай аралықта болуы керек:",
+    "options": ["11-15", "1-5", "6-10", "21+"],
+    "citation": ""
+  },
+  {
+    "id": 79,
+    "question": "scrollamount мәні 21-ден жоғары болса, мәтіннің жылжу жылдамдығы қандай болады:",
+    "options": ["Өте жылдам", "Баяу", "Орташа", "Өте баяу"],
+    "citation": ""
+  },
+  {
+    "id": 80,
+    "question": "scrolldelay мәні 201-ден жоғары болса, кідіріс уақыты қалай сипатталады:",
+    "options": ["Өте ұзақ кідіріс", "Қысқа кідіріс", "Орташа кідіріс", "Кідіріссіз"],
+    "citation": ""
+  },
+  {
+    "id": 81,
+    "question": "Жүгіртпе жолдың биіктігін анықтайтын атрибут:",
+    "options": ["height", "width", "align", "bgcolor"],
+    "citation": ""
+  },
+  {
+    "id": 82,
+    "question": "Жүгіртпе жолдың фон түсін анықтау үшін қолданылатын атрибут:",
+    "options": ["bgcolor", "color", "background", "direction"],
+    "citation": ""
+  },
+  {
+    "id": 83,
+    "question": "«Сырғымалы» мәтінді жолдың жоғарғы, ортаңғы немесе төменгі бөлігіне орналастыру параметрі:",
+    "options": ["align (top, middle, bottom)", "direction", "valign", "behavior"],
+    "citation": ""
+  },
+  {
+    "id": 84,
+    "question": "loop=\"0\" атрибуты орнатылған жағдайда жүгіртпе жол қалай жұмыс істейді:",
+    "options": ["Қозғалыс тоқтайды (Тоқтау)", "Шексіз қайталанады", "10 рет қайталанады", "Өте жылдам жылжиды"],
+    "citation": ""
+  },
+  {
+    "id": 85,
+    "question": "Мәтіннің жылжу қадамын пиксельмен анықтайтын атрибут:",
+    "options": ["scrollamount", "scrolldelay", "loop", "direction"],
+    "citation": ""
+  }
+]

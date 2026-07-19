@@ -43,7 +43,9 @@ export default function Anki() {
       try {
         setLoading(true);
         setError(null);
-        const fileUrl = currentDeck.file.startsWith('/') ? currentDeck.file : `/${currentDeck.file}`;
+        const fileUrl = currentDeck.file.startsWith('./') 
+          ? currentDeck.file 
+          : (currentDeck.file.startsWith('/') ? `.${currentDeck.file}` : `./${currentDeck.file}`);
         const response = await fetch(fileUrl);
         if (!response.ok) {
           throw new Error('Deck file could not be loaded');

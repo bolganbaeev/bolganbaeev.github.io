@@ -32,7 +32,7 @@ export default function Blocks() {
     async function loadCatalog() {
       try {
         setLoadingCatalog(true);
-        const response = await fetch('/blocks-data/catalog.json');
+        const response = await fetch('./blocks-data/catalog.json');
         if (response.ok) {
           const data = await response.json();
           if (data && Array.isArray(data.subjects)) {

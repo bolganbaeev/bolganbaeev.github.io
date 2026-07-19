@@ -1,0 +1,4702 @@
+[
+  {
+    "question": "<p><strong>Сәйкестендіріңіз</strong> :</p><p>1.<strong>Қарқаралы</strong>; 2.<strong>Верный</strong>; 3.<strong>Семей</strong>; 4.<strong>Павлодар</strong>;</p><p><strong>А</strong>) <strong>Қарқара</strong>; <strong>В</strong>) <strong>Шар</strong>; <strong>С</strong>) <strong>Тайыншакөл</strong>; <strong>D</strong>) <strong>Қоянды</strong>-<strong>Ботов</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "1-А; 2-С; 3-D; 4-В",
+        "html": "<p>1-<strong>А</strong>; 2-<strong>С</strong>; 3-<strong>D</strong>; 4-<strong>В</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "1-D; 2-А; 3-B; 4-С",
+        "html": "<p>1-<strong>D</strong>; 2-<strong>А</strong>; 3-<strong>B</strong>; 4-<strong>С</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "1-В; 2-А; 3-С; 4-D",
+        "html": "<p>1-<strong>В</strong>; 2-<strong>А</strong>; 3-<strong>С</strong>; 4-<strong>D</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "1-C; 2-B; 3-A; 4-D",
+        "html": "<p>1-<strong>C</strong>; 2-<strong>B</strong>; 3-<strong>A</strong>; 4-<strong>D</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Қазақ АКСР құрылған жыл</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "1921 ж 6 тамыз",
+        "html": "<p>1921 <strong>ж</strong> 6 <strong>тамыз</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "1920 ж 26 тамыз",
+        "html": "<p>1920 <strong>ж</strong> 26 <strong>тамыз</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "1930 ж 30 тамыз",
+        "html": "<p>1930 <strong>ж</strong> 30 <strong>тамыз</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "1925 6 маусым",
+        "html": "<p>1925 6 <strong>маусым</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Шыңғыс ханды қолдаған Керейт ханы</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Торы",
+        "html": "<p>Торы</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Даян",
+        "html": "<p>Даян</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Күшлік",
+        "html": "<p>Күшлік</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Құршақұз",
+        "html": "<p>Құршақұз</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>«<strong>Қазақстан</strong> – 2030» <strong>даму</strong> <strong>стратегиясының</strong> 3-<strong>ші</strong> <strong>басты</strong> <strong>бағыты</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Адамгершілік  пен  құқық",
+        "html": "<p>Адамгершілік пен құқық</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Сыртқы  сауда",
+        "html": "<p>Сыртқы сауда</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Экономикалық  өрлеу",
+        "html": "<p>Экономикалық өрлеу</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Балаларды  қорғау",
+        "html": "<p>Балаларды қорғау</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Сақ</strong>-<strong>Тиграхаудалар</strong> <strong>өмір</strong> <strong>сүрген</strong> <strong>өңір</strong> :</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Батыс  Қазақстанда",
+        "html": "<p>Батыс Қазақстанда</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Солтүстік  Қазақстан  мен  Сарыарқа  етегінде",
+        "html": "<p>Солтүстік Қазақстан мен Сарыарқа етегінде</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Алтай  тауының  етегінде",
+        "html": "<p>Алтай тауының етегінде</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Жетісу  мен  Сырдарияның  орта  ағысы (Тянь-Шань)",
+        "html": "<p><strong>Жетісу</strong> <strong>мен</strong> <strong>Сырдарияның</strong> <strong>орта</strong> <strong>ағысы</strong> (<strong>Тянь</strong>-<strong>Шань</strong>)</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Әскери</strong> <strong>жетістіктері</strong> <strong>үшін</strong> <strong>және</strong> <strong>адал</strong> <strong>еңбегі</strong> <strong>үшін</strong> <strong>берілетін</strong>, <strong>бірақ</strong> <strong>мұра</strong> <strong>болып</strong> <strong>қалмайтын</strong> <strong>мүлік</strong> <strong>түрі</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Құшыр",
+        "html": "<p>Құшыр</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Сойырғал",
+        "html": "<p>Сойырғал</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Інжулік  жерлер",
+        "html": "<p>Інжулік жерлер</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Сый  ақы",
+        "html": "<p>Сый ақы</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Түргеш қағанатының  жазғы ордасы</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Ескі  Гузия",
+        "html": "<p>Ескі Гузия</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Янгикент",
+        "html": "<p>Янгикент</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Суяб",
+        "html": "<p>Суяб</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Күңгіт",
+        "html": "<p>Күңгіт</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>1943 <strong>жылы</strong> <strong>Алматыда</strong> <strong>жарық</strong> <strong>көрген</strong> «<strong>Қазақ</strong> <strong>КСР</strong> <strong>тарихы</strong>» <strong>еңбегінің</strong> <strong>авторы</strong> :</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "С.Асфендияров",
+        "html": "<p><strong>С</strong>.<strong>Асфендияров</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Е.Бекмаханов",
+        "html": "<p><strong>Е</strong>.<strong>Бекмаханов</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "І.Есенберлин",
+        "html": "<p><strong>І</strong>.<strong>Есенберлин</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Қ.Жұмаділов",
+        "html": "<p><strong>Қ</strong>.<strong>Жұмаділов</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>1992 <strong>ж</strong> <strong>Түрксойдың</strong> <strong>негізі</strong> <strong>қаланған</strong> <strong>қала</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Ташкент",
+        "html": "<p>Ташкент</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Астана",
+        "html": "<p>Астана</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Ыстамбұл",
+        "html": "<p>Ыстамбұл</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Алматы",
+        "html": "<p>Алматы</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Ұлы</strong> <strong>Отан</strong> <strong>соғысынан</strong> <strong>кейінгі</strong> <strong>жылдары</strong> «<strong>Шопан</strong> <strong>әні</strong>», «<strong>Сұхбат</strong>» <strong>сияқты</strong> <strong>суреттерді</strong> <strong>дүниеге</strong> <strong>әкелген</strong> <strong>жас</strong> <strong>суретші</strong> :</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "М.Төлебаев",
+        "html": "<p><strong>М</strong>.<strong>Төлебаев</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Қ.Телжанов",
+        "html": "<p><strong>Қ</strong>.<strong>Телжанов</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Ә. Қастеев",
+        "html": "<p><strong>Ә</strong>. <strong>Қастеев</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "М.Кенбаев",
+        "html": "<p><strong>М</strong>.<strong>Кенбаев</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Тарас</strong> <strong>Шавченконың</strong>  <strong>құрметіне</strong> <strong>берілген</strong> <strong>Шевченко</strong> <strong>қаласының</strong> <strong>қазіргі</strong> <strong>атауы</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Қызылорда",
+        "html": "<p>Қызылорда</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Атырау",
+        "html": "<p>Атырау</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Ақтау",
+        "html": "<p>Ақтау</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Маңғыстау",
+        "html": "<p>Маңғыстау</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Фашисттік</strong> <strong>Германияға</strong> <strong>қарсы</strong> <strong>соғыс</strong> <strong>жеңісінің</strong> 20 <strong>жылдығына</strong> <strong>байланысты</strong> 1965 <strong>жылы</strong> 8 <strong>мамырда</strong> <strong>Ленинград</strong> <strong>қаласына</strong> <strong>берілген</strong> <strong>атақ</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "\"Берік  қамал\"",
+        "html": "<p>&quot;<strong>Берік</strong> <strong>қамал</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "\"Қаһарман  қала\"",
+        "html": "<p>&quot;<strong>Қаһарман</strong> <strong>қала</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "\"Батыр  қала\"",
+        "html": "<p>&quot;<strong>Батыр</strong> <strong>қала</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "\"Жауынгер  қала\"",
+        "html": "<p>&quot;<strong>Жауынгер</strong> <strong>қала</strong>&quot;</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Бөгенбай</strong> <strong>батырдың</strong> <strong>өлімін</strong> <strong>Абылай</strong> <strong>ханға</strong> <strong>естірткен</strong> <strong>жырау</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Сыпыра  жырау",
+        "html": "<p>Сыпыра жырау</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Бұқар  жырау",
+        "html": "<p>Бұқар жырау</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Ақтамберді  жырау",
+        "html": "<p>Ақтамберді жырау</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Үмбетей  жырау",
+        "html": "<p>Үмбетей жырау</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>XIX ғасырдағы келеңсіздікті ашып жазған Мұрат Мөңкеұлының шығармасы</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Байлар  пара  жемеңдер",
+        "html": "<p>Байлар пара жемеңдер</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Үш  анық",
+        "html": "<p>Үш анық</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Зар  заман",
+        "html": "<p>Зар заман</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Үш  Қиян",
+        "html": "<p>Үш Қиян</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Қазақстан</strong> <strong>алтын</strong> <strong>және</strong> <strong>алмаз</strong> <strong>қоры</strong> <strong>құрылған</strong> <strong>жыл</strong> :</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "1991 ж",
+        "html": "<p>1991 <strong>ж</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "1992 ж",
+        "html": "<p>1992 <strong>ж</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "1995 ж",
+        "html": "<p>1995 <strong>ж</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "1985 ж",
+        "html": "<p>1985 <strong>ж</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>М</strong>.<strong>Әйтпенов</strong> <strong>негізін</strong> <strong>қалаған</strong> <strong>ұйым</strong> :</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Алаш",
+        "html": "<p>Алаш</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Үш  жүз",
+        "html": "<p>Үш жүз</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Қосшы",
+        "html": "<p>Қосшы</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Жарлы",
+        "html": "<p>Жарлы</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>1982 <strong>ж</strong> <strong>КОКП</strong> <strong>ОК</strong> <strong>пленумында</strong> <strong>қабылданған</strong> <strong>бағдарлама</strong> :</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Кәсіпорындарды  жекешелендіру",
+        "html": "<p>Кәсіпорындарды жекешелендіру</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Кеңшарлар  туралы  бағдарлама",
+        "html": "<p>Кеңшарлар туралы бағдарлама</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Тілдер  туралы",
+        "html": "<p>Тілдер туралы</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Азық  түлік  бағдарламасы",
+        "html": "<p>Азық түлік бағдарламасы</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Патша үкіметң Орта жүз бен Кіші жүзде хандық билікті жою үшін жарғылар шығарды</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "1786-1791 жж",
+        "html": "<p>1786-1791 <strong>жж</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "1886-1891 жж",
+        "html": "<p>1886-1891 <strong>жж</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "1867-1868 жж",
+        "html": "<p>1867-1868 <strong>жж</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "1822-1824 жж",
+        "html": "<p>1822-1824 <strong>жж</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>С</strong>.<strong>Асфендияров</strong> <strong>бітірген</strong> <strong>оқу</strong> <strong>орны</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Петербург  инженерия  институты",
+        "html": "<p>Петербург инженерия институты</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Петербург  заң  факультеті",
+        "html": "<p>Петербург заң факультеті</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Петербург  орман  институты",
+        "html": "<p>Петербург орман институты</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Петербург  әскери  медицина  институты",
+        "html": "<p>Петербург әскери медицина институты</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>2 <strong>Мемлекеттік</strong> <strong>Думада</strong> <strong>Семей</strong> <strong>облысынан</strong> <strong>сайланған</strong> <strong>депутат</strong> :</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Б.Қаратаев",
+        "html": "<p><strong>Б</strong>.<strong>Қаратаев</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Ә.Бөкейханов",
+        "html": "<p><strong>Ә</strong>.<strong>Бөкейханов</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Т.Нұрекенұлы",
+        "html": "<p><strong>Т</strong>.<strong>Нұрекенұлы</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Ш.Қосшығұлұлы",
+        "html": "<p><strong>Ш</strong>.<strong>Қосшығұлұлы</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Қазақстан тарихы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>1-мәтін</p><p><strong>Ала</strong> <strong>жіптей</strong> <strong>шұбалған</strong> <strong>жолмен</strong> <strong>қорапты</strong> <strong>машина</strong> <strong>келеді</strong>. <strong>Өршеленіп</strong> <strong>өрге</strong> <strong>ұмтылады</strong>. <strong>Белестен</strong> <strong>соң</strong> <strong>белес</strong> <strong>артта</strong> <strong>қалып</strong> <strong>жатыр</strong>. <strong>Жатаған</strong> <strong>дөңес</strong>, <strong>жасыл</strong> <strong>бел</strong> <strong>қалды</strong>. <strong>Көбігін</strong> <strong>көкке</strong> <strong>шашқан</strong> <strong>асау</strong> <strong>өзен</strong> <strong>қалды</strong>.</p><p><strong>Кабинада</strong> <strong>екеу</strong> <strong>еді</strong>. <strong>Ересегі</strong> <strong>қаршығадай</strong> <strong>құнтиған</strong> <strong>қағілез</strong> <strong>адам</strong> – <strong>Бөрібай</strong>. <strong>Қасындағысы</strong> – <strong>кенже</strong> <strong>ұлы</strong> <strong>Бекен</strong>. <strong>Құлағы</strong> <strong>қалқиған</strong>, <strong>сары</strong> <strong>бала</strong>. <strong>Биыл</strong> <strong>төртінші</strong> <strong>сыныпты</strong> <strong>бітіріп</strong>, <strong>жайлаудағы</strong> <strong>нағашысына</strong> <strong>келе</strong> <strong>жатыр</strong>. <strong>Аузы</strong> <strong>аңқиып</strong>, <strong>жол</strong> <strong>қызығын</strong> <strong>баққанына</strong> <strong>екі</strong> <strong>сағаттан</strong> <strong>асқан</strong>. <strong>Әлі</strong> <strong>жалығар</strong> <strong>емес</strong>. <strong>Ол</strong> <strong>андағайлап</strong> <strong>келіп</strong> <strong>тұра</strong> <strong>қалғандай</strong> <strong>болатын</strong> <strong>кереге</strong> <strong>тастардан</strong> <strong>да</strong>, <strong>қалың</strong> <strong>нудың</strong> <strong>мүлгіген</strong> <strong>тыныштығынан</strong> <strong>да</strong>, <strong>бұтадан</strong> <strong>бұтаға</strong>, <strong>гүлден</strong> <strong>гүлге</strong> <strong>қонып</strong>, <strong>әудем</strong> <strong>жерге</strong> <strong>дейін</strong> <strong>шығарып</strong> <strong>салатын</strong> <strong>сары</strong> <strong>шымшықтың</strong> <strong>ықыласынан</strong> <strong>да</strong> <strong>әлдебір</strong> <strong>cыp</strong> <strong>түйіп</strong>, <strong>ой</strong> <strong>аңғарғандай</strong>.</p><p>1.      <strong>Үзіндідегі</strong> <strong>жыл</strong> <strong>мезгілі</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Жаз",
+        "html": "<p>Жаз</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Күз",
+        "html": "<p>Күз</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Көктем",
+        "html": "<p>Көктем</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Қыс",
+        "html": "<p>Қыс</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Оқу сауаттылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>1-мәтін</p><p><strong>Ала</strong> <strong>жіптей</strong> <strong>шұбалған</strong> <strong>жолмен</strong> <strong>қорапты</strong> <strong>машина</strong> <strong>келеді</strong>. <strong>Өршеленіп</strong> <strong>өрге</strong> <strong>ұмтылады</strong>. <strong>Белестен</strong> <strong>соң</strong> <strong>белес</strong> <strong>артта</strong> <strong>қалып</strong> <strong>жатыр</strong>. <strong>Жатаған</strong> <strong>дөңес</strong>, <strong>жасыл</strong> <strong>бел</strong> <strong>қалды</strong>. <strong>Көбігін</strong> <strong>көкке</strong> <strong>шашқан</strong> <strong>асау</strong> <strong>өзен</strong> <strong>қалды</strong>.</p><p><strong>Кабинада</strong> <strong>екеу</strong> <strong>еді</strong>. <strong>Ересегі</strong> <strong>қаршығадай</strong> <strong>құнтиған</strong> <strong>қағілез</strong> <strong>адам</strong> – <strong>Бөрібай</strong>. <strong>Қасындағысы</strong> – <strong>кенже</strong> <strong>ұлы</strong> <strong>Бекен</strong>. <strong>Құлағы</strong> <strong>қалқиған</strong>, <strong>сары</strong> <strong>бала</strong>. <strong>Биыл</strong> <strong>төртінші</strong> <strong>сыныпты</strong> <strong>бітіріп</strong>, <strong>жайлаудағы</strong> <strong>нағашысына</strong> <strong>келе</strong> <strong>жатыр</strong>. <strong>Аузы</strong> <strong>аңқиып</strong>, <strong>жол</strong> <strong>қызығын</strong> <strong>баққанына</strong> <strong>екі</strong> <strong>сағаттан</strong> <strong>асқан</strong>. <strong>Әлі</strong> <strong>жалығар</strong> <strong>емес</strong>. <strong>Ол</strong> <strong>андағайлап</strong> <strong>келіп</strong> <strong>тұра</strong> <strong>қалғандай</strong> <strong>болатын</strong> <strong>кереге</strong> <strong>тастардан</strong> <strong>да</strong>, <strong>қалың</strong> <strong>нудың</strong> <strong>мүлгіген</strong> <strong>тыныштығынан</strong> <strong>да</strong>, <strong>бұтадан</strong> <strong>бұтаға</strong>, <strong>гүлден</strong> <strong>гүлге</strong> <strong>қонып</strong>, <strong>әудем</strong> <strong>жерге</strong> <strong>дейін</strong> <strong>шығарып</strong> <strong>салатын</strong> <strong>сары</strong> <strong>шымшықтың</strong> <strong>ықыласынан</strong> <strong>да</strong> <strong>әлдебір</strong> <strong>cыp</strong> <strong>түйіп</strong>, <strong>ой</strong> <strong>аңғарғандай</strong>.</p><p>2.  <strong>Жол</strong> <strong>бойы</strong> <strong>Бекенді</strong> <strong>әсеріге</strong> <strong>бөлеген</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Жолдың  тым  ұзақтығы",
+        "html": "<p>Жолдың тым ұзақтығы</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Табиғат  тамашасы",
+        "html": "<p>Табиғат тамашасы</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Нағашысына  барамын  деген",
+        "html": "<p>Нағашысына барамын деген</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Машинаға  алғаш  мінуі",
+        "html": "<p>Машинаға алғаш мінуі</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Оқу сауаттылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>2-мәтін</p><p>«<strong>Отырар</strong> <strong>сазы</strong>» <strong>қазақ</strong> <strong>өнері</strong> <strong>аспанында</strong></p><p>1. <strong>Халқымыздың</strong> <strong>асыл</strong> <strong>перзенті</strong> <strong>Нұрғиса</strong> <strong>Тілендиев</strong> «<strong>Отырар</strong> <strong>сазы</strong>» <strong>деп</strong> <strong>аталатын</strong> <strong>қайталануы</strong>, <strong>теңесері</strong> <strong>сирек</strong> <strong>тұнық</strong> <strong>қайнардың</strong> <strong>көзін</strong> <strong>ашты</strong>. «<strong>Менің</strong> <strong>арманым</strong> – <strong>өмірімізден</strong> <strong>де</strong>, <strong>әдебиетімізден</strong> <strong>де</strong> <strong>бөлшектенбеген</strong> <strong>тұтас</strong> <strong>халқымды</strong> <strong>көру</strong> <strong>және</strong> <strong>оның</strong> <strong>өткенін</strong> <strong>де</strong>, <strong>бүгінін</strong> <strong>де</strong>, <strong>ертеңін</strong> <strong>де</strong> <strong>айқын</strong> <strong>елестету</strong>. <strong>Осы</strong> <strong>ізгі</strong> <strong>ниетпен</strong> «<strong>Отырар</strong> <strong>сазын</strong>» <strong>құрдым</strong>. <strong>Халқымның</strong> <strong>жанын</strong> <strong>ашуға</strong> <strong>талшындым</strong>», – <strong>дейді</strong> <strong>Нұрағаң</strong> <strong>бір</strong> <strong>сөзінде</strong>.</p><p>2. <strong>Нұрағаң</strong> <strong>бұл</strong> <strong>игілікті</strong> <strong>істі</strong> <strong>алғашында</strong> <strong>небәрі</strong> <strong>алты</strong> <strong>музыкант</strong>, <strong>екі</strong> <strong>әншімен</strong> <strong>жүзеге</strong> <strong>асырды</strong>. <strong>Алғашқы</strong> <strong>концертте</strong> <strong>ансамбль</strong> <strong>мүшелерінің</strong> <strong>саны</strong> <strong>он</strong> <strong>жеті</strong> <strong>болды</strong>. 1985 <strong>жылы</strong> <strong>Москваның</strong> <strong>Чайковский</strong> <strong>атындағы</strong> <strong>өнер</strong> <strong>сарайында</strong> <strong>өткен</strong> <strong>ойын</strong> - <strong>сауықта</strong> «<strong>Отырар</strong> <strong>сазының</strong>» <strong>даңқы</strong> <strong>шырқады</strong>, <strong>ол</strong> <strong>оркестр</strong> <strong>дәрежесіне</strong> <strong>бір</strong>-<strong>ақ</strong> <strong>көтерілді</strong>. <strong>Мүшелер</strong> <strong>саны</strong> <strong>алпыстан</strong> <strong>асқан</strong> «<strong>Отырар</strong> <strong>сазы</strong>» 1985 <strong>жылы</strong> <strong>Бүкілодақтық</strong> <strong>жастар</strong> <strong>фестивалінде</strong> <strong>лауреат</strong> <strong>атанды</strong>. <strong>Осы</strong> <strong>жылы</strong> <strong>ол</strong> <strong>Бүкілодақтық</strong> <strong>Ленин</strong> <strong>комсомолының</strong> <strong>сыйлығын</strong> <strong>иеленді</strong>. <strong>Мұның</strong> <strong>алдында</strong> «<strong>Отырар</strong> <strong>сазына</strong>» <strong>Қазақ</strong> <strong>КСР</strong> <strong>мемлекеттік</strong> <strong>сыйлығы</strong> <strong>берілген</strong>. <strong>Қазаққа</strong> <strong>тән</strong> <strong>музыка</strong> <strong>аспаптарының</strong> <strong>көнелері</strong> <strong>мен</strong> <strong>жаңаларын</strong> <strong>үйлесімді</strong> <strong>түрде</strong> <strong>сахнада</strong> «<strong>өз</strong> <strong>тілімен</strong>» <strong>сөйлеткен</strong> «<strong>Отырар</strong> <strong>сазының</strong>» <strong>атақ</strong>-<strong>даңқы</strong> <strong>дүние</strong> <strong>жүзіне</strong> <strong>танылды</strong>.</p><p>3. <strong>Нұрғиса</strong> <strong>оркестрді</strong> <strong>мүлде</strong> <strong>беймәлім</strong> <strong>және</strong> <strong>ұмыт</strong> <strong>қалған</strong> <strong>ұлттық</strong> <strong>музыка</strong> <strong>аспаптарымен</strong> <strong>толықтыруға</strong> <strong>баса</strong> <strong>назар</strong> <strong>аударды</strong>. <strong>Сол</strong> <strong>себепті</strong> <strong>де</strong> <strong>оның</strong> <strong>үні</strong> <strong>сан</strong> <strong>алуан</strong>. «<strong>Отырар</strong> <strong>сазының</strong>» <strong>репертуары</strong> <strong>аса</strong> <strong>бай</strong>. <strong>Онда</strong> <strong>Алтайдан</strong> <strong>Атырауға</strong> <strong>дейінгі</strong> <strong>халық</strong> <strong>ән</strong>-<strong>күйлері</strong> <strong>мен</strong> <strong>саз</strong>-<strong>толғаулары</strong> <strong>мол</strong>. «<strong>Отырар</strong> <strong>сазыңда</strong>» <strong>ежелгі</strong> <strong>ата</strong> <strong>жұртымыздың</strong>, <strong>қазақ</strong> <strong>елінің</strong> <strong>мақтанышына</strong> <strong>айналған</strong> <strong>Нұрғисаның</strong> <strong>авторлық</strong> <strong>әндері</strong> <strong>мен</strong> <strong>күйлері</strong> <strong>де</strong> <strong>жиі</strong> <strong>естіледі</strong>.</p><p>3. <strong>Нұрғиса</strong> <strong>Тілендиевтің</strong> «<strong>Отырар</strong> <strong>сазын</strong>» <strong>құрудағы</strong> <strong>мақсаты</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Қазақ  халқының  бар  болмысын  паш  ету",
+        "html": "<p>Қазақ халқының бар болмысын паш ету</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Жастар  фестиваліне  қатысу",
+        "html": "<p>Жастар фестиваліне қатысу</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Ленин  комсомолының  сыйлығын  алу",
+        "html": "<p>Ленин комсомолының сыйлығын алу</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Халқының  мақтанышына  айналу",
+        "html": "<p>Халқының мақтанышына айналу</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Оқу сауаттылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>2-мәтін</p><p>«<strong>Отырар</strong> <strong>сазы</strong>» <strong>қазақ</strong> <strong>өнері</strong> <strong>аспанында</strong></p><p>1. <strong>Халқымыздың</strong> <strong>асыл</strong> <strong>перзенті</strong> <strong>Нұрғиса</strong> <strong>Тілендиев</strong> «<strong>Отырар</strong> <strong>сазы</strong>» <strong>деп</strong> <strong>аталатын</strong> <strong>қайталануы</strong>, <strong>теңесері</strong> <strong>сирек</strong> <strong>тұнық</strong> <strong>қайнардың</strong> <strong>көзін</strong> <strong>ашты</strong>. «<strong>Менің</strong> <strong>арманым</strong> – <strong>өмірімізден</strong> <strong>де</strong>, <strong>әдебиетімізден</strong> <strong>де</strong> <strong>бөлшектенбеген</strong> <strong>тұтас</strong> <strong>халқымды</strong> <strong>көру</strong> <strong>және</strong> <strong>оның</strong> <strong>өткенін</strong> <strong>де</strong>, <strong>бүгінін</strong> <strong>де</strong>, <strong>ертеңін</strong> <strong>де</strong> <strong>айқын</strong> <strong>елестету</strong>. <strong>Осы</strong> <strong>ізгі</strong> <strong>ниетпен</strong> «<strong>Отырар</strong> <strong>сазын</strong>» <strong>құрдым</strong>. <strong>Халқымның</strong> <strong>жанын</strong> <strong>ашуға</strong> <strong>талшындым</strong>», – <strong>дейді</strong> <strong>Нұрағаң</strong> <strong>бір</strong> <strong>сөзінде</strong>.</p><p>2. <strong>Нұрағаң</strong> <strong>бұл</strong> <strong>игілікті</strong> <strong>істі</strong> <strong>алғашында</strong> <strong>небәрі</strong> <strong>алты</strong> <strong>музыкант</strong>, <strong>екі</strong> <strong>әншімен</strong> <strong>жүзеге</strong> <strong>асырды</strong>. <strong>Алғашқы</strong> <strong>концертте</strong> <strong>ансамбль</strong> <strong>мүшелерінің</strong> <strong>саны</strong> <strong>он</strong> <strong>жеті</strong> <strong>болды</strong>. 1985 <strong>жылы</strong> <strong>Москваның</strong> <strong>Чайковский</strong> <strong>атындағы</strong> <strong>өнер</strong> <strong>сарайында</strong> <strong>өткен</strong> <strong>ойын</strong> - <strong>сауықта</strong> «<strong>Отырар</strong> <strong>сазының</strong>» <strong>даңқы</strong> <strong>шырқады</strong>, <strong>ол</strong> <strong>оркестр</strong> <strong>дәрежесіне</strong> <strong>бір</strong>-<strong>ақ</strong> <strong>көтерілді</strong>. <strong>Мүшелер</strong> <strong>саны</strong> <strong>алпыстан</strong> <strong>асқан</strong> «<strong>Отырар</strong> <strong>сазы</strong>» 1985 <strong>жылы</strong> <strong>Бүкілодақтық</strong> <strong>жастар</strong> <strong>фестивалінде</strong> <strong>лауреат</strong> <strong>атанды</strong>. <strong>Осы</strong> <strong>жылы</strong> <strong>ол</strong> <strong>Бүкілодақтық</strong> <strong>Ленин</strong> <strong>комсомолының</strong> <strong>сыйлығын</strong> <strong>иеленді</strong>. <strong>Мұның</strong> <strong>алдында</strong> «<strong>Отырар</strong> <strong>сазына</strong>» <strong>Қазақ</strong> <strong>КСР</strong> <strong>мемлекеттік</strong> <strong>сыйлығы</strong> <strong>берілген</strong>. <strong>Қазаққа</strong> <strong>тән</strong> <strong>музыка</strong> <strong>аспаптарының</strong> <strong>көнелері</strong> <strong>мен</strong> <strong>жаңаларын</strong> <strong>үйлесімді</strong> <strong>түрде</strong> <strong>сахнада</strong> «<strong>өз</strong> <strong>тілімен</strong>» <strong>сөйлеткен</strong> «<strong>Отырар</strong> <strong>сазының</strong>» <strong>атақ</strong>-<strong>даңқы</strong> <strong>дүние</strong> <strong>жүзіне</strong> <strong>танылды</strong>.</p><p>3. <strong>Нұрғиса</strong> <strong>оркестрді</strong> <strong>мүлде</strong> <strong>беймәлім</strong> <strong>және</strong> <strong>ұмыт</strong> <strong>қалған</strong> <strong>ұлттық</strong> <strong>музыка</strong> <strong>аспаптарымен</strong> <strong>толықтыруға</strong> <strong>баса</strong> <strong>назар</strong> <strong>аударды</strong>. <strong>Сол</strong> <strong>себепті</strong> <strong>де</strong> <strong>оның</strong> <strong>үні</strong> <strong>сан</strong> <strong>алуан</strong>. «<strong>Отырар</strong> <strong>сазының</strong>» <strong>репертуары</strong> <strong>аса</strong> <strong>бай</strong>. <strong>Онда</strong> <strong>Алтайдан</strong> <strong>Атырауға</strong> <strong>дейінгі</strong> <strong>халық</strong> <strong>ән</strong>-<strong>күйлері</strong> <strong>мен</strong> <strong>саз</strong>-<strong>толғаулары</strong> <strong>мол</strong>. «<strong>Отырар</strong> <strong>сазыңда</strong>» <strong>ежелгі</strong> <strong>ата</strong> <strong>жұртымыздың</strong>, <strong>қазақ</strong> <strong>елінің</strong> <strong>мақтанышына</strong> <strong>айналған</strong> <strong>Нұрғисаның</strong> <strong>авторлық</strong> <strong>әндері</strong> <strong>мен</strong> <strong>күйлері</strong> <strong>де</strong> <strong>жиі</strong> <strong>естіледі</strong>.</p><p>4. <strong>Ең</strong> <strong>алғаш</strong> «<strong>Отырар</strong> <strong>сазының</strong>» <strong>қанша</strong> <strong>мүшесі</strong> <strong>болды</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "20",
+        "html": "<p>20</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "8",
+        "html": "<p>8</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "25",
+        "html": "<p>25</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "60",
+        "html": "<p>60</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Оқу сауаттылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>2-мәтін</p><p>«<strong>Отырар</strong> <strong>сазы</strong>» <strong>қазақ</strong> <strong>өнері</strong> <strong>аспанында</strong></p><p>1. <strong>Халқымыздың</strong> <strong>асыл</strong> <strong>перзенті</strong> <strong>Нұрғиса</strong> <strong>Тілендиев</strong> «<strong>Отырар</strong> <strong>сазы</strong>» <strong>деп</strong> <strong>аталатын</strong> <strong>қайталануы</strong>, <strong>теңесері</strong> <strong>сирек</strong> <strong>тұнық</strong> <strong>қайнардың</strong> <strong>көзін</strong> <strong>ашты</strong>. «<strong>Менің</strong> <strong>арманым</strong> – <strong>өмірімізден</strong> <strong>де</strong>, <strong>әдебиетімізден</strong> <strong>де</strong> <strong>бөлшектенбеген</strong> <strong>тұтас</strong> <strong>халқымды</strong> <strong>көру</strong> <strong>және</strong> <strong>оның</strong> <strong>өткенін</strong> <strong>де</strong>, <strong>бүгінін</strong> <strong>де</strong>, <strong>ертеңін</strong> <strong>де</strong> <strong>айқын</strong> <strong>елестету</strong>. <strong>Осы</strong> <strong>ізгі</strong> <strong>ниетпен</strong> «<strong>Отырар</strong> <strong>сазын</strong>» <strong>құрдым</strong>. <strong>Халқымның</strong> <strong>жанын</strong> <strong>ашуға</strong> <strong>талшындым</strong>», – <strong>дейді</strong> <strong>Нұрағаң</strong> <strong>бір</strong> <strong>сөзінде</strong>.</p><p>2. <strong>Нұрағаң</strong> <strong>бұл</strong> <strong>игілікті</strong> <strong>істі</strong> <strong>алғашында</strong> <strong>небәрі</strong> <strong>алты</strong> <strong>музыкант</strong>, <strong>екі</strong> <strong>әншімен</strong> <strong>жүзеге</strong> <strong>асырды</strong>. <strong>Алғашқы</strong> <strong>концертте</strong> <strong>ансамбль</strong> <strong>мүшелерінің</strong> <strong>саны</strong> <strong>он</strong> <strong>жеті</strong> <strong>болды</strong>. 1985 <strong>жылы</strong> <strong>Москваның</strong> <strong>Чайковский</strong> <strong>атындағы</strong> <strong>өнер</strong> <strong>сарайында</strong> <strong>өткен</strong> <strong>ойын</strong> - <strong>сауықта</strong> «<strong>Отырар</strong> <strong>сазының</strong>» <strong>даңқы</strong> <strong>шырқады</strong>, <strong>ол</strong> <strong>оркестр</strong> <strong>дәрежесіне</strong> <strong>бір</strong>-<strong>ақ</strong> <strong>көтерілді</strong>. <strong>Мүшелер</strong> <strong>саны</strong> <strong>алпыстан</strong> <strong>асқан</strong> «<strong>Отырар</strong> <strong>сазы</strong>» 1985 <strong>жылы</strong> <strong>Бүкілодақтық</strong> <strong>жастар</strong> <strong>фестивалінде</strong> <strong>лауреат</strong> <strong>атанды</strong>. <strong>Осы</strong> <strong>жылы</strong> <strong>ол</strong> <strong>Бүкілодақтық</strong> <strong>Ленин</strong> <strong>комсомолының</strong> <strong>сыйлығын</strong> <strong>иеленді</strong>. <strong>Мұның</strong> <strong>алдында</strong> «<strong>Отырар</strong> <strong>сазына</strong>» <strong>Қазақ</strong> <strong>КСР</strong> <strong>мемлекеттік</strong> <strong>сыйлығы</strong> <strong>берілген</strong>. <strong>Қазаққа</strong> <strong>тән</strong> <strong>музыка</strong> <strong>аспаптарының</strong> <strong>көнелері</strong> <strong>мен</strong> <strong>жаңаларын</strong> <strong>үйлесімді</strong> <strong>түрде</strong> <strong>сахнада</strong> «<strong>өз</strong> <strong>тілімен</strong>» <strong>сөйлеткен</strong> «<strong>Отырар</strong> <strong>сазының</strong>» <strong>атақ</strong>-<strong>даңқы</strong> <strong>дүние</strong> <strong>жүзіне</strong> <strong>танылды</strong>.</p><p>3. <strong>Нұрғиса</strong> <strong>оркестрді</strong> <strong>мүлде</strong> <strong>беймәлім</strong> <strong>және</strong> <strong>ұмыт</strong> <strong>қалған</strong> <strong>ұлттық</strong> <strong>музыка</strong> <strong>аспаптарымен</strong> <strong>толықтыруға</strong> <strong>баса</strong> <strong>назар</strong> <strong>аударды</strong>. <strong>Сол</strong> <strong>себепті</strong> <strong>де</strong> <strong>оның</strong> <strong>үні</strong> <strong>сан</strong> <strong>алуан</strong>. «<strong>Отырар</strong> <strong>сазының</strong>» <strong>репертуары</strong> <strong>аса</strong> <strong>бай</strong>. <strong>Онда</strong> <strong>Алтайдан</strong> <strong>Атырауға</strong> <strong>дейінгі</strong> <strong>халық</strong> <strong>ән</strong>-<strong>күйлері</strong> <strong>мен</strong> <strong>саз</strong>-<strong>толғаулары</strong> <strong>мол</strong>. «<strong>Отырар</strong> <strong>сазыңда</strong>» <strong>ежелгі</strong> <strong>ата</strong> <strong>жұртымыздың</strong>, <strong>қазақ</strong> <strong>елінің</strong> <strong>мақтанышына</strong> <strong>айналған</strong> <strong>Нұрғисаның</strong> <strong>авторлық</strong> <strong>әндері</strong> <strong>мен</strong> <strong>күйлері</strong> <strong>де</strong> <strong>жиі</strong> <strong>естіледі</strong>.</p><p>5. «<strong>Отырар</strong> <strong>сазының</strong>» <strong>басты</strong> <strong>ерекшелігі</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Ән-күйлері  мол",
+        "html": "<p><strong>Ән</strong>-<strong>күйлері</strong> <strong>мол</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Ежелгі  ұлттық  аспаптар  бар.",
+        "html": "<p><strong>Ежелгі</strong> <strong>ұлттық</strong> <strong>аспаптар</strong> <strong>бар</strong>.</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Атақ-даңқы  дүние  жүзіне  танылды.",
+        "html": "<p><strong>Атақ</strong>-<strong>даңқы</strong> <strong>дүние</strong> <strong>жүзіне</strong> <strong>танылды</strong>.</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Репертуарлары  өте  бай.",
+        "html": "<p><strong>Репертуарлары</strong> <strong>өте</strong> <strong>бай</strong>.</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Оқу сауаттылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>2-мәтін</p><p>«<strong>Отырар</strong> <strong>сазы</strong>» <strong>қазақ</strong> <strong>өнері</strong> <strong>аспанында</strong></p><p>1. <strong>Халқымыздың</strong> <strong>асыл</strong> <strong>перзенті</strong> <strong>Нұрғиса</strong> <strong>Тілендиев</strong> «<strong>Отырар</strong> <strong>сазы</strong>» <strong>деп</strong> <strong>аталатын</strong> <strong>қайталануы</strong>, <strong>теңесері</strong> <strong>сирек</strong> <strong>тұнық</strong> <strong>қайнардың</strong> <strong>көзін</strong> <strong>ашты</strong>. «<strong>Менің</strong> <strong>арманым</strong> – <strong>өмірімізден</strong> <strong>де</strong>, <strong>әдебиетімізден</strong> <strong>де</strong> <strong>бөлшектенбеген</strong> <strong>тұтас</strong> <strong>халқымды</strong> <strong>көру</strong> <strong>және</strong> <strong>оның</strong> <strong>өткенін</strong> <strong>де</strong>, <strong>бүгінін</strong> <strong>де</strong>, <strong>ертеңін</strong> <strong>де</strong> <strong>айқын</strong> <strong>елестету</strong>. <strong>Осы</strong> <strong>ізгі</strong> <strong>ниетпен</strong> «<strong>Отырар</strong> <strong>сазын</strong>» <strong>құрдым</strong>. <strong>Халқымның</strong> <strong>жанын</strong> <strong>ашуға</strong> <strong>талшындым</strong>», – <strong>дейді</strong> <strong>Нұрағаң</strong> <strong>бір</strong> <strong>сөзінде</strong>.</p><p>2. <strong>Нұрағаң</strong> <strong>бұл</strong> <strong>игілікті</strong> <strong>істі</strong> <strong>алғашында</strong> <strong>небәрі</strong> <strong>алты</strong> <strong>музыкант</strong>, <strong>екі</strong> <strong>әншімен</strong> <strong>жүзеге</strong> <strong>асырды</strong>. <strong>Алғашқы</strong> <strong>концертте</strong> <strong>ансамбль</strong> <strong>мүшелерінің</strong> <strong>саны</strong> <strong>он</strong> <strong>жеті</strong> <strong>болды</strong>. 1985 <strong>жылы</strong> <strong>Москваның</strong> <strong>Чайковский</strong> <strong>атындағы</strong> <strong>өнер</strong> <strong>сарайында</strong> <strong>өткен</strong> <strong>ойын</strong> - <strong>сауықта</strong> «<strong>Отырар</strong> <strong>сазының</strong>» <strong>даңқы</strong> <strong>шырқады</strong>, <strong>ол</strong> <strong>оркестр</strong> <strong>дәрежесіне</strong> <strong>бір</strong>-<strong>ақ</strong> <strong>көтерілді</strong>. <strong>Мүшелер</strong> <strong>саны</strong> <strong>алпыстан</strong> <strong>асқан</strong> «<strong>Отырар</strong> <strong>сазы</strong>» 1985 <strong>жылы</strong> <strong>Бүкілодақтық</strong> <strong>жастар</strong> <strong>фестивалінде</strong> <strong>лауреат</strong> <strong>атанды</strong>. <strong>Осы</strong> <strong>жылы</strong> <strong>ол</strong> <strong>Бүкілодақтық</strong> <strong>Ленин</strong> <strong>комсомолының</strong> <strong>сыйлығын</strong> <strong>иеленді</strong>. <strong>Мұның</strong> <strong>алдында</strong> «<strong>Отырар</strong> <strong>сазына</strong>» <strong>Қазақ</strong> <strong>КСР</strong> <strong>мемлекеттік</strong> <strong>сыйлығы</strong> <strong>берілген</strong>. <strong>Қазаққа</strong> <strong>тән</strong> <strong>музыка</strong> <strong>аспаптарының</strong> <strong>көнелері</strong> <strong>мен</strong> <strong>жаңаларын</strong> <strong>үйлесімді</strong> <strong>түрде</strong> <strong>сахнада</strong> «<strong>өз</strong> <strong>тілімен</strong>» <strong>сөйлеткен</strong> «<strong>Отырар</strong> <strong>сазының</strong>» <strong>атақ</strong>-<strong>даңқы</strong> <strong>дүние</strong> <strong>жүзіне</strong> <strong>танылды</strong>.</p><p>3. <strong>Нұрғиса</strong> <strong>оркестрді</strong> <strong>мүлде</strong> <strong>беймәлім</strong> <strong>және</strong> <strong>ұмыт</strong> <strong>қалған</strong> <strong>ұлттық</strong> <strong>музыка</strong> <strong>аспаптарымен</strong> <strong>толықтыруға</strong> <strong>баса</strong> <strong>назар</strong> <strong>аударды</strong>. <strong>Сол</strong> <strong>себепті</strong> <strong>де</strong> <strong>оның</strong> <strong>үні</strong> <strong>сан</strong> <strong>алуан</strong>. «<strong>Отырар</strong> <strong>сазының</strong>» <strong>репертуары</strong> <strong>аса</strong> <strong>бай</strong>. <strong>Онда</strong> <strong>Алтайдан</strong> <strong>Атырауға</strong> <strong>дейінгі</strong> <strong>халық</strong> <strong>ән</strong>-<strong>күйлері</strong> <strong>мен</strong> <strong>саз</strong>-<strong>толғаулары</strong> <strong>мол</strong>. «<strong>Отырар</strong> <strong>сазыңда</strong>» <strong>ежелгі</strong> <strong>ата</strong> <strong>жұртымыздың</strong>, <strong>қазақ</strong> <strong>елінің</strong> <strong>мақтанышына</strong> <strong>айналған</strong> <strong>Нұрғисаның</strong> <strong>авторлық</strong> <strong>әндері</strong> <strong>мен</strong> <strong>күйлері</strong> <strong>де</strong> <strong>жиі</strong> <strong>естіледі</strong>.</p><p>6. <strong>Екінші</strong> <strong>бөлімнің</strong> <strong>бірінші</strong> <strong>бөлімге</strong> <strong>қатысы</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Ойды  қорытындылайды",
+        "html": "<p>Ойды қорытындылайды</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Ойды  байланыстырады",
+        "html": "<p>Ойды байланыстырады</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Ойды  пайымдайды.",
+        "html": "<p><strong>Ойды</strong> <strong>пайымдайды</strong>.</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Ойды  дамытады",
+        "html": "<p>Ойды дамытады</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Оқу сауаттылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>3-мәтін</p><p>1. «<strong>Көптік</strong> – <strong>құдіреттіліктің</strong> <strong>бір</strong> <strong>белгісі</strong>» <strong>дегенді</strong> <strong>айтқан</strong> <strong>қазақ</strong> <strong>қандай</strong> <strong>шаруаға</strong> <strong>болса</strong> <strong>да</strong>, <strong>жұмыла</strong> <strong>қимылдаудың</strong> <strong>артықшылығын</strong> <strong>пайымдаған</strong>. <strong>Сондай</strong> <strong>істері</strong> <strong>арқылы</strong> <strong>бауырмалдығын</strong>, <strong>ынтымағын</strong>, <strong>бір</strong>-<strong>біріне</strong> <strong>ізет</strong>-<strong>құрметін</strong> <strong>танытып</strong> <strong>отырған</strong>. <strong>Ел</strong> <strong>ішіндегі</strong> <strong>күш</strong>-<strong>қайраты</strong> <strong>жоқ</strong>, <strong>жалғыз</strong> <strong>ілікті</strong> <strong>қарт</strong> <strong>адамдарға</strong> <strong>қамқорлық</strong> <strong>жасау</strong> <strong>арнайы</strong> <strong>ұйымдастырылады</strong>. <strong>Кеудесінде</strong> <strong>жаны</strong> <strong>бар</strong> <strong>қазақ</strong> <strong>қанша</strong> <strong>қалжыраған</strong> <strong>халге</strong> <strong>түссе</strong> <strong>де</strong>, <strong>ары</strong> <strong>мен</strong> <strong>намысын</strong> <strong>жоғары</strong> <strong>ұстайды</strong>. «<strong>Жаным</strong> – <strong>арымның</strong> <strong>садағасы</strong>» <strong>дейтіні</strong> <strong>содан</strong>. <strong>Қандай</strong> <strong>қамқорлық</strong> <strong>жасалса</strong> <strong>да</strong>, <strong>ол</strong> <strong>сол</strong> <strong>адамның</strong> <strong>намысына</strong> <strong>тимеуі</strong> <strong>керек</strong>. <strong>Барлық</strong> <strong>шара</strong> <strong>сол</strong> <strong>негізге</strong> <strong>құрылады</strong>. <strong>Сондай</strong> <strong>шараның</strong> <strong>бір</strong> <strong>түрі</strong> – <strong>асар</strong>. <strong>Жалғыз</strong> <strong>басты</strong> <strong>қарт</strong> <strong>адамдардың</strong> <strong>бітпей</strong> <strong>жатқан</strong> <strong>жұмысына</strong> <strong>ауылдың</strong> <strong>жігіт</strong>-<strong>желеңдері</strong> <strong>жабыла</strong> <strong>қолқабыс</strong> <strong>беріп</strong>, <strong>тез</strong> <strong>тындырып</strong> <strong>тастау</strong> <strong>әдісін</strong> <strong>қазақтар</strong> «<strong>асар</strong>» <strong>деп</strong> <strong>атайды</strong>. <strong>Мұның</strong> <strong>өмірлік</strong>, <strong>қоғамдық</strong> <strong>және</strong> <strong>әлеуметтік</strong> <strong>мәні</strong> <strong>бар</strong>. <strong>Жұмыс</strong> <strong>күші</strong> <strong>кем</strong>, <strong>ісі</strong> <strong>бітпей</strong> <strong>жатқан</strong> <strong>адамдар</strong> <strong>осы</strong> <strong>шараның</strong> <strong>арқасында</strong> <strong>шаруасын</strong> <strong>тындырып</strong> <strong>алады</strong>.</p><p>2. <strong>Асардың</strong> <strong>да</strong> <strong>ел</strong> <strong>қолдаған</strong> <strong>жөн</strong>-<strong>жосығы</strong> <strong>бар</strong>. <strong>Кез</strong> <strong>келген</strong> <strong>кісі</strong> <strong>асар</strong> <strong>салмайды</strong>. <strong>Ел</strong> <strong>назарын</strong> <strong>аударған</strong>, <strong>жұрт</strong> <strong>қолдаған</strong> <strong>сипаты</strong> <strong>сақталады</strong>. <strong>Күші</strong> <strong>мығым</strong>, <strong>қайратты</strong> <strong>жігіттердің</strong> <strong>құрбы</strong>-<strong>құрдастарын</strong> <strong>жәрдемдесуге</strong> <strong>шақыруы</strong> <strong>асарға</strong> <strong>жатпайды</strong>. <strong>Асарды</strong> <strong>үйінде</strong> <strong>қайратты</strong> <strong>кісісі</strong> <strong>жоқ</strong> <strong>не</strong> <strong>науқасқа</strong> <strong>шалдығып</strong> <strong>қалған</strong>, <strong>шаруасының</strong> <strong>науқаны</strong> <strong>өтіп</strong> <strong>бара</strong> <strong>жатқан</strong> <strong>адамдар</strong> <strong>жасайды</strong>. <strong>Ағайын</strong>-<strong>жұрты</strong> <strong>мұны</strong> <strong>қостайды</strong>. <strong>Сөйтсе</strong> <strong>де</strong> <strong>асар</strong> <strong>салушы</strong> <strong>жиналған</strong> <strong>қауымды</strong> <strong>қанағаттандыратындай</strong> <strong>дәрежеде</strong> <strong>дайындалады</strong>. <strong>Жұмыс</strong> <strong>істеушілердің</strong> <strong>қажетіне</strong> <strong>керектіні</strong> <strong>толық</strong> <strong>әзірлейді</strong>.</p><p>3. <strong>Асар</strong> – <strong>қазақ</strong> <strong>арасында</strong> <strong>біріне</strong>-<strong>бірі</strong> <strong>көмек</strong> <strong>көрсететін</strong> <strong>ымыралы</strong> <strong>салт</strong>. <strong>Ағайынын</strong> <strong>разы</strong> <strong>ету</strong> <strong>үшін</strong> <strong>қандай</strong> <strong>қиындық</strong> <strong>болса</strong> <strong>да</strong>, <strong>көптің</strong> <strong>біріккен</strong> <strong>күшімен</strong> <strong>қатар</strong> <strong>тұрып</strong> <strong>жеңудің</strong> <strong>амалы</strong>, <strong>нақты</strong> <strong>шара</strong>.</p><p>7.  <strong>Берілген</strong> <strong>мақал</strong>-<strong>мәтелдердің</strong> <strong>қайсысы</strong> <strong>мәтіннің</strong> 1-<strong>бөлімінің</strong> <strong>мағынасын</strong> <strong>ашып</strong> <strong>тұр</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Қайраты  жоқ  кісінің  берекеті  жок  ісінің.",
+        "html": "<p><strong>Қайраты</strong> <strong>жоқ</strong> <strong>кісінің</strong> <strong>берекеті</strong> <strong>жок</strong> <strong>ісінің</strong>.</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Қолы  қимылдағанның  аузы  қимылдайды.",
+        "html": "<p><strong>Қолы</strong> <strong>қимылдағанның</strong> <strong>аузы</strong> <strong>қимылдайды</strong>.</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Көп  түкірсе – көл.",
+        "html": "<p><strong>Көп</strong> <strong>түкірсе</strong> – <strong>көл</strong>.</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Барымен  базар, жоқты  қайдан  табар?",
+        "html": "<p><strong>Барымен</strong> <strong>базар</strong>, <strong>жоқты</strong> <strong>қайдан</strong> <strong>табар</strong>?</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "Оқу сауаттылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>3-мәтін</p><p>1. «<strong>Көптік</strong> – <strong>құдіреттіліктің</strong> <strong>бір</strong> <strong>белгісі</strong>» <strong>дегенді</strong> <strong>айтқан</strong> <strong>қазақ</strong> <strong>қандай</strong> <strong>шаруаға</strong> <strong>болса</strong> <strong>да</strong>, <strong>жұмыла</strong> <strong>қимылдаудың</strong> <strong>артықшылығын</strong> <strong>пайымдаған</strong>. <strong>Сондай</strong> <strong>істері</strong> <strong>арқылы</strong> <strong>бауырмалдығын</strong>, <strong>ынтымағын</strong>, <strong>бір</strong>-<strong>біріне</strong> <strong>ізет</strong>-<strong>құрметін</strong> <strong>танытып</strong> <strong>отырған</strong>. <strong>Ел</strong> <strong>ішіндегі</strong> <strong>күш</strong>-<strong>қайраты</strong> <strong>жоқ</strong>, <strong>жалғыз</strong> <strong>ілікті</strong> <strong>қарт</strong> <strong>адамдарға</strong> <strong>қамқорлық</strong> <strong>жасау</strong> <strong>арнайы</strong> <strong>ұйымдастырылады</strong>. <strong>Кеудесінде</strong> <strong>жаны</strong> <strong>бар</strong> <strong>қазақ</strong> <strong>қанша</strong> <strong>қалжыраған</strong> <strong>халге</strong> <strong>түссе</strong> <strong>де</strong>, <strong>ары</strong> <strong>мен</strong> <strong>намысын</strong> <strong>жоғары</strong> <strong>ұстайды</strong>. «<strong>Жаным</strong> – <strong>арымның</strong> <strong>садағасы</strong>» <strong>дейтіні</strong> <strong>содан</strong>. <strong>Қандай</strong> <strong>қамқорлық</strong> <strong>жасалса</strong> <strong>да</strong>, <strong>ол</strong> <strong>сол</strong> <strong>адамның</strong> <strong>намысына</strong> <strong>тимеуі</strong> <strong>керек</strong>. <strong>Барлық</strong> <strong>шара</strong> <strong>сол</strong> <strong>негізге</strong> <strong>құрылады</strong>. <strong>Сондай</strong> <strong>шараның</strong> <strong>бір</strong> <strong>түрі</strong> – <strong>асар</strong>. <strong>Жалғыз</strong> <strong>басты</strong> <strong>қарт</strong> <strong>адамдардың</strong> <strong>бітпей</strong> <strong>жатқан</strong> <strong>жұмысына</strong> <strong>ауылдың</strong> <strong>жігіт</strong>-<strong>желеңдері</strong> <strong>жабыла</strong> <strong>қолқабыс</strong> <strong>беріп</strong>, <strong>тез</strong> <strong>тындырып</strong> <strong>тастау</strong> <strong>әдісін</strong> <strong>қазақтар</strong> «<strong>асар</strong>» <strong>деп</strong> <strong>атайды</strong>. <strong>Мұның</strong> <strong>өмірлік</strong>, <strong>қоғамдық</strong> <strong>және</strong> <strong>әлеуметтік</strong> <strong>мәні</strong> <strong>бар</strong>. <strong>Жұмыс</strong> <strong>күші</strong> <strong>кем</strong>, <strong>ісі</strong> <strong>бітпей</strong> <strong>жатқан</strong> <strong>адамдар</strong> <strong>осы</strong> <strong>шараның</strong> <strong>арқасында</strong> <strong>шаруасын</strong> <strong>тындырып</strong> <strong>алады</strong>.</p><p>2. <strong>Асардың</strong> <strong>да</strong> <strong>ел</strong> <strong>қолдаған</strong> <strong>жөн</strong>-<strong>жосығы</strong> <strong>бар</strong>. <strong>Кез</strong> <strong>келген</strong> <strong>кісі</strong> <strong>асар</strong> <strong>салмайды</strong>. <strong>Ел</strong> <strong>назарын</strong> <strong>аударған</strong>, <strong>жұрт</strong> <strong>қолдаған</strong> <strong>сипаты</strong> <strong>сақталады</strong>. <strong>Күші</strong> <strong>мығым</strong>, <strong>қайратты</strong> <strong>жігіттердің</strong> <strong>құрбы</strong>-<strong>құрдастарын</strong> <strong>жәрдемдесуге</strong> <strong>шақыруы</strong> <strong>асарға</strong> <strong>жатпайды</strong>. <strong>Асарды</strong> <strong>үйінде</strong> <strong>қайратты</strong> <strong>кісісі</strong> <strong>жоқ</strong> <strong>не</strong> <strong>науқасқа</strong> <strong>шалдығып</strong> <strong>қалған</strong>, <strong>шаруасының</strong> <strong>науқаны</strong> <strong>өтіп</strong> <strong>бара</strong> <strong>жатқан</strong> <strong>адамдар</strong> <strong>жасайды</strong>. <strong>Ағайын</strong>-<strong>жұрты</strong> <strong>мұны</strong> <strong>қостайды</strong>. <strong>Сөйтсе</strong> <strong>де</strong> <strong>асар</strong> <strong>салушы</strong> <strong>жиналған</strong> <strong>қауымды</strong> <strong>қанағаттандыратындай</strong> <strong>дәрежеде</strong> <strong>дайындалады</strong>. <strong>Жұмыс</strong> <strong>істеушілердің</strong> <strong>қажетіне</strong> <strong>керектіні</strong> <strong>толық</strong> <strong>әзірлейді</strong>.</p><p>3. <strong>Асар</strong> – <strong>қазақ</strong> <strong>арасында</strong> <strong>біріне</strong>-<strong>бірі</strong> <strong>көмек</strong> <strong>көрсететін</strong> <strong>ымыралы</strong> <strong>салт</strong>. <strong>Ағайынын</strong> <strong>разы</strong> <strong>ету</strong> <strong>үшін</strong> <strong>қандай</strong> <strong>қиындық</strong> <strong>болса</strong> <strong>да</strong>, <strong>көптің</strong> <strong>біріккен</strong> <strong>күшімен</strong> <strong>қатар</strong> <strong>тұрып</strong> <strong>жеңудің</strong> <strong>амалы</strong>, <strong>нақты</strong> <strong>шара</strong>.</p><p>8. <strong>Мәтінде</strong> <strong>қозғалатын</strong> <strong>мәселе</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Қамқорлық",
+        "html": "<p>Қамқорлық</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Аяушылық",
+        "html": "<p>Аяушылық</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Шыдамдылық",
+        "html": "<p>Шыдамдылық</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Жолдастық",
+        "html": "<p>Жолдастық</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Оқу сауаттылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>3-мәтін</p><p>1. «<strong>Көптік</strong> – <strong>құдіреттіліктің</strong> <strong>бір</strong> <strong>белгісі</strong>» <strong>дегенді</strong> <strong>айтқан</strong> <strong>қазақ</strong> <strong>қандай</strong> <strong>шаруаға</strong> <strong>болса</strong> <strong>да</strong>, <strong>жұмыла</strong> <strong>қимылдаудың</strong> <strong>артықшылығын</strong> <strong>пайымдаған</strong>. <strong>Сондай</strong> <strong>істері</strong> <strong>арқылы</strong> <strong>бауырмалдығын</strong>, <strong>ынтымағын</strong>, <strong>бір</strong>-<strong>біріне</strong> <strong>ізет</strong>-<strong>құрметін</strong> <strong>танытып</strong> <strong>отырған</strong>. <strong>Ел</strong> <strong>ішіндегі</strong> <strong>күш</strong>-<strong>қайраты</strong> <strong>жоқ</strong>, <strong>жалғыз</strong> <strong>ілікті</strong> <strong>қарт</strong> <strong>адамдарға</strong> <strong>қамқорлық</strong> <strong>жасау</strong> <strong>арнайы</strong> <strong>ұйымдастырылады</strong>. <strong>Кеудесінде</strong> <strong>жаны</strong> <strong>бар</strong> <strong>қазақ</strong> <strong>қанша</strong> <strong>қалжыраған</strong> <strong>халге</strong> <strong>түссе</strong> <strong>де</strong>, <strong>ары</strong> <strong>мен</strong> <strong>намысын</strong> <strong>жоғары</strong> <strong>ұстайды</strong>. «<strong>Жаным</strong> – <strong>арымның</strong> <strong>садағасы</strong>» <strong>дейтіні</strong> <strong>содан</strong>. <strong>Қандай</strong> <strong>қамқорлық</strong> <strong>жасалса</strong> <strong>да</strong>, <strong>ол</strong> <strong>сол</strong> <strong>адамның</strong> <strong>намысына</strong> <strong>тимеуі</strong> <strong>керек</strong>. <strong>Барлық</strong> <strong>шара</strong> <strong>сол</strong> <strong>негізге</strong> <strong>құрылады</strong>. <strong>Сондай</strong> <strong>шараның</strong> <strong>бір</strong> <strong>түрі</strong> – <strong>асар</strong>. <strong>Жалғыз</strong> <strong>басты</strong> <strong>қарт</strong> <strong>адамдардың</strong> <strong>бітпей</strong> <strong>жатқан</strong> <strong>жұмысына</strong> <strong>ауылдың</strong> <strong>жігіт</strong>-<strong>желеңдері</strong> <strong>жабыла</strong> <strong>қолқабыс</strong> <strong>беріп</strong>, <strong>тез</strong> <strong>тындырып</strong> <strong>тастау</strong> <strong>әдісін</strong> <strong>қазақтар</strong> «<strong>асар</strong>» <strong>деп</strong> <strong>атайды</strong>. <strong>Мұның</strong> <strong>өмірлік</strong>, <strong>қоғамдық</strong> <strong>және</strong> <strong>әлеуметтік</strong> <strong>мәні</strong> <strong>бар</strong>. <strong>Жұмыс</strong> <strong>күші</strong> <strong>кем</strong>, <strong>ісі</strong> <strong>бітпей</strong> <strong>жатқан</strong> <strong>адамдар</strong> <strong>осы</strong> <strong>шараның</strong> <strong>арқасында</strong> <strong>шаруасын</strong> <strong>тындырып</strong> <strong>алады</strong>.</p><p>2. <strong>Асардың</strong> <strong>да</strong> <strong>ел</strong> <strong>қолдаған</strong> <strong>жөн</strong>-<strong>жосығы</strong> <strong>бар</strong>. <strong>Кез</strong> <strong>келген</strong> <strong>кісі</strong> <strong>асар</strong> <strong>салмайды</strong>. <strong>Ел</strong> <strong>назарын</strong> <strong>аударған</strong>, <strong>жұрт</strong> <strong>қолдаған</strong> <strong>сипаты</strong> <strong>сақталады</strong>. <strong>Күші</strong> <strong>мығым</strong>, <strong>қайратты</strong> <strong>жігіттердің</strong> <strong>құрбы</strong>-<strong>құрдастарын</strong> <strong>жәрдемдесуге</strong> <strong>шақыруы</strong> <strong>асарға</strong> <strong>жатпайды</strong>. <strong>Асарды</strong> <strong>үйінде</strong> <strong>қайратты</strong> <strong>кісісі</strong> <strong>жоқ</strong> <strong>не</strong> <strong>науқасқа</strong> <strong>шалдығып</strong> <strong>қалған</strong>, <strong>шаруасының</strong> <strong>науқаны</strong> <strong>өтіп</strong> <strong>бара</strong> <strong>жатқан</strong> <strong>адамдар</strong> <strong>жасайды</strong>. <strong>Ағайын</strong>-<strong>жұрты</strong> <strong>мұны</strong> <strong>қостайды</strong>. <strong>Сөйтсе</strong> <strong>де</strong> <strong>асар</strong> <strong>салушы</strong> <strong>жиналған</strong> <strong>қауымды</strong> <strong>қанағаттандыратындай</strong> <strong>дәрежеде</strong> <strong>дайындалады</strong>. <strong>Жұмыс</strong> <strong>істеушілердің</strong> <strong>қажетіне</strong> <strong>керектіні</strong> <strong>толық</strong> <strong>әзірлейді</strong>.</p><p>3. <strong>Асар</strong> – <strong>қазақ</strong> <strong>арасында</strong> <strong>біріне</strong>-<strong>бірі</strong> <strong>көмек</strong> <strong>көрсететін</strong> <strong>ымыралы</strong> <strong>салт</strong>. <strong>Ағайынын</strong> <strong>разы</strong> <strong>ету</strong> <strong>үшін</strong> <strong>қандай</strong> <strong>қиындық</strong> <strong>болса</strong> <strong>да</strong>, <strong>көптің</strong> <strong>біріккен</strong> <strong>күшімен</strong> <strong>қатар</strong> <strong>тұрып</strong> <strong>жеңудің</strong> <strong>амалы</strong>, <strong>нақты</strong> <strong>шара</strong>.</p><p>9. <strong>Мәтін</strong> <strong>бойынша</strong> <strong>асар</strong> <strong>сала</strong> <strong>алмайтын</strong> <strong>адамдар</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Үйінде  ер  адамы  жоқ  қауқарсыз  жандар",
+        "html": "<p>Үйінде ер адамы жоқ қауқарсыз жандар</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Үйінде  қайратты  адамы  жоқ, балалы-шағалы  әйелдер",
+        "html": "<p><strong>Үйінде</strong> <strong>қайратты</strong> <strong>адамы</strong> <strong>жоқ</strong>, <strong>балалы</strong>-<strong>шағалы</strong> <strong>әйелдер</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Жалғыз  басты  қарт  адамдар",
+        "html": "<p>Жалғыз басты қарт адамдар</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Күші  мығым, қайратты  жандар",
+        "html": "<p><strong>Күші</strong> <strong>мығым</strong>, <strong>қайратты</strong> <strong>жандар</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Оқу сауаттылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>3-мәтін</p><p>1. «<strong>Көптік</strong> – <strong>құдіреттіліктің</strong> <strong>бір</strong> <strong>белгісі</strong>» <strong>дегенді</strong> <strong>айтқан</strong> <strong>қазақ</strong> <strong>қандай</strong> <strong>шаруаға</strong> <strong>болса</strong> <strong>да</strong>, <strong>жұмыла</strong> <strong>қимылдаудың</strong> <strong>артықшылығын</strong> <strong>пайымдаған</strong>. <strong>Сондай</strong> <strong>істері</strong> <strong>арқылы</strong> <strong>бауырмалдығын</strong>, <strong>ынтымағын</strong>, <strong>бір</strong>-<strong>біріне</strong> <strong>ізет</strong>-<strong>құрметін</strong> <strong>танытып</strong> <strong>отырған</strong>. <strong>Ел</strong> <strong>ішіндегі</strong> <strong>күш</strong>-<strong>қайраты</strong> <strong>жоқ</strong>, <strong>жалғыз</strong> <strong>ілікті</strong> <strong>қарт</strong> <strong>адамдарға</strong> <strong>қамқорлық</strong> <strong>жасау</strong> <strong>арнайы</strong> <strong>ұйымдастырылады</strong>. <strong>Кеудесінде</strong> <strong>жаны</strong> <strong>бар</strong> <strong>қазақ</strong> <strong>қанша</strong> <strong>қалжыраған</strong> <strong>халге</strong> <strong>түссе</strong> <strong>де</strong>, <strong>ары</strong> <strong>мен</strong> <strong>намысын</strong> <strong>жоғары</strong> <strong>ұстайды</strong>. «<strong>Жаным</strong> – <strong>арымның</strong> <strong>садағасы</strong>» <strong>дейтіні</strong> <strong>содан</strong>. <strong>Қандай</strong> <strong>қамқорлық</strong> <strong>жасалса</strong> <strong>да</strong>, <strong>ол</strong> <strong>сол</strong> <strong>адамның</strong> <strong>намысына</strong> <strong>тимеуі</strong> <strong>керек</strong>. <strong>Барлық</strong> <strong>шара</strong> <strong>сол</strong> <strong>негізге</strong> <strong>құрылады</strong>. <strong>Сондай</strong> <strong>шараның</strong> <strong>бір</strong> <strong>түрі</strong> – <strong>асар</strong>. <strong>Жалғыз</strong> <strong>басты</strong> <strong>қарт</strong> <strong>адамдардың</strong> <strong>бітпей</strong> <strong>жатқан</strong> <strong>жұмысына</strong> <strong>ауылдың</strong> <strong>жігіт</strong>-<strong>желеңдері</strong> <strong>жабыла</strong> <strong>қолқабыс</strong> <strong>беріп</strong>, <strong>тез</strong> <strong>тындырып</strong> <strong>тастау</strong> <strong>әдісін</strong> <strong>қазақтар</strong> «<strong>асар</strong>» <strong>деп</strong> <strong>атайды</strong>. <strong>Мұның</strong> <strong>өмірлік</strong>, <strong>қоғамдық</strong> <strong>және</strong> <strong>әлеуметтік</strong> <strong>мәні</strong> <strong>бар</strong>. <strong>Жұмыс</strong> <strong>күші</strong> <strong>кем</strong>, <strong>ісі</strong> <strong>бітпей</strong> <strong>жатқан</strong> <strong>адамдар</strong> <strong>осы</strong> <strong>шараның</strong> <strong>арқасында</strong> <strong>шаруасын</strong> <strong>тындырып</strong> <strong>алады</strong>.</p><p>2. <strong>Асардың</strong> <strong>да</strong> <strong>ел</strong> <strong>қолдаған</strong> <strong>жөн</strong>-<strong>жосығы</strong> <strong>бар</strong>. <strong>Кез</strong> <strong>келген</strong> <strong>кісі</strong> <strong>асар</strong> <strong>салмайды</strong>. <strong>Ел</strong> <strong>назарын</strong> <strong>аударған</strong>, <strong>жұрт</strong> <strong>қолдаған</strong> <strong>сипаты</strong> <strong>сақталады</strong>. <strong>Күші</strong> <strong>мығым</strong>, <strong>қайратты</strong> <strong>жігіттердің</strong> <strong>құрбы</strong>-<strong>құрдастарын</strong> <strong>жәрдемдесуге</strong> <strong>шақыруы</strong> <strong>асарға</strong> <strong>жатпайды</strong>. <strong>Асарды</strong> <strong>үйінде</strong> <strong>қайратты</strong> <strong>кісісі</strong> <strong>жоқ</strong> <strong>не</strong> <strong>науқасқа</strong> <strong>шалдығып</strong> <strong>қалған</strong>, <strong>шаруасының</strong> <strong>науқаны</strong> <strong>өтіп</strong> <strong>бара</strong> <strong>жатқан</strong> <strong>адамдар</strong> <strong>жасайды</strong>. <strong>Ағайын</strong>-<strong>жұрты</strong> <strong>мұны</strong> <strong>қостайды</strong>. <strong>Сөйтсе</strong> <strong>де</strong> <strong>асар</strong> <strong>салушы</strong> <strong>жиналған</strong> <strong>қауымды</strong> <strong>қанағаттандыратындай</strong> <strong>дәрежеде</strong> <strong>дайындалады</strong>. <strong>Жұмыс</strong> <strong>істеушілердің</strong> <strong>қажетіне</strong> <strong>керектіні</strong> <strong>толық</strong> <strong>әзірлейді</strong>.</p><p>3. <strong>Асар</strong> – <strong>қазақ</strong> <strong>арасында</strong> <strong>біріне</strong>-<strong>бірі</strong> <strong>көмек</strong> <strong>көрсететін</strong> <strong>ымыралы</strong> <strong>салт</strong>. <strong>Ағайынын</strong> <strong>разы</strong> <strong>ету</strong> <strong>үшін</strong> <strong>қандай</strong> <strong>қиындық</strong> <strong>болса</strong> <strong>да</strong>, <strong>көптің</strong> <strong>біріккен</strong> <strong>күшімен</strong> <strong>қатар</strong> <strong>тұрып</strong> <strong>жеңудің</strong> <strong>амалы</strong>, <strong>нақты</strong> <strong>шара</strong>.</p><p>10. <strong>Асар</strong> <strong>сөзіне</strong> <strong>балама</strong> <strong>бола</strong> <strong>алатын</strong> <strong>нұсқа</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Бірлесіп  көмек  беру",
+        "html": "<p>Бірлесіп көмек беру</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Келісімге  келу",
+        "html": "<p>Келісімге келу</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Тіл  табысу",
+        "html": "<p>Тіл табысу</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Жоспарлы  көмек  беру",
+        "html": "<p>Жоспарлы көмек беру</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Оқу сауаттылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>{'tp': 'equation', 'd': {'m': '&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mstyle mathsize=&quot;18px&quot;&gt;&lt;mrow&gt;&lt;mn&gt;23&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mo&gt;&amp;gt;&lt;/mo&gt;&lt;mn&gt;36&lt;/mn&gt;&lt;mo&gt;;&lt;/mo&gt;&lt;mi&gt;&amp;#xa0;&lt;/mi&gt;&lt;mn&gt;34&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mo&gt;&amp;gt;&lt;/mo&gt;&lt;mn&gt;144&lt;/mn&gt;&lt;mo&gt;;&lt;/mo&gt;&lt;mi&gt;&amp;#xa0;&lt;/mi&gt;&lt;mi&gt;&amp;#xa0;&lt;/mi&gt;&lt;mn&gt;42&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mo&gt;&amp;gt;&lt;/mo&gt;&lt;mn&gt;64&lt;/mn&gt;&lt;mo&gt;;&lt;/mo&gt;&lt;mi&gt;&amp;#xa0;&lt;/mi&gt;&lt;mi&gt;&amp;#xa0;&lt;/mi&gt;&lt;mn&gt;54&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mo&gt;&amp;gt;&lt;/mo&gt;&lt;mo&gt;?&lt;/mo&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/math&gt;', 'v': '-9px', 'c': 5066061}}сұрақ белгісінің орнындағы санды табыңыз</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "81",
+        "html": "<p>81</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "900",
+        "html": "<p>900</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "2025",
+        "html": "<p>2025</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "400",
+        "html": "<p>400</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Математика сауатылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Сыныптағы</strong> 30 <strong>оқушының</strong> {'tp': 'equation', 'd': {'m': '&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mstyle mathsize=&quot;18px&quot;&gt;&lt;mrow&gt;&lt;mn&gt;60&lt;/mn&gt;&lt;mo&gt;%&lt;/mo&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/math&gt;', 'v': '-9px', 'c': 5066061}}-<strong>ын</strong> <strong>қыздар</strong> <strong>құрайды</strong>. <strong>Қыздардың</strong> {'tp': 'equation', 'd': {'m': '&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mstyle mathsize=&quot;18px&quot;&gt;&lt;mfrac&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/mfrac&gt;&lt;/mstyle&gt;&lt;/math&gt;', 'v': '-20.200000000000003px', 'c': 5066061}}<strong>і</strong> <strong>үздік</strong> <strong>оқушы</strong> <strong>болса</strong>, <strong>онда</strong> <strong>сол</strong> <strong>үздік</strong> <strong>оқушы</strong> <strong>қыздар</strong> <strong>ұлдардың</strong> <strong>неше</strong> <strong>пайызы</strong> <strong>болатынын</strong> <strong>табыңыз</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "A",
+        "html": "<p>{'tp': 'equation', 'd': {'m': '&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mstyle mathsize=&quot;16px&quot;&gt;&lt;mrow&gt;&lt;mn&gt;60&lt;/mn&gt;&lt;mo&gt;%&lt;/mo&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/math&gt;', 'v': '-8.555555555555557px', 'c': 0}}</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "B",
+        "html": "<p>{'tp': 'equation', 'd': {'m': '&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mstyle mathsize=&quot;16px&quot;&gt;&lt;mrow&gt;&lt;mn&gt;50&lt;/mn&gt;&lt;mo&gt;%&lt;/mo&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/math&gt;', 'v': '-8.555555555555557px', 'c': 0}}</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "C",
+        "html": "<p>{'tp': 'equation', 'd': {'m': '&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mstyle mathsize=&quot;16px&quot;&gt;&lt;mrow&gt;&lt;mn&gt;80&lt;/mn&gt;&lt;mo&gt;%&lt;/mo&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/math&gt;', 'v': '-8.555555555555557px', 'c': 0}}</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "D",
+        "html": "<p>{'tp': 'equation', 'd': {'m': '&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mstyle mathsize=&quot;16px&quot;&gt;&lt;mrow&gt;&lt;mn&gt;75&lt;/mn&gt;&lt;mo&gt;%&lt;/mo&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/math&gt;', 'v': '-8.555555555555557px', 'c': 0}}</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Математика сауатылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Ерлан</strong> 5 <strong>литрлік</strong> 4 <strong>бөшкеге</strong>, 3 <strong>литрлік</strong> 3 <strong>бөшкеге</strong> <strong>және</strong> 2 <strong>литрлік</strong> 5 <strong>бөшкеге</strong> <strong>су</strong> <strong>толтырып</strong> <strong>құйды</strong>. <strong>Ол</strong> <strong>барлығы</strong> <strong>неше</strong> <strong>литр</strong> <strong>су</strong> <strong>құйды</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "39",
+        "html": "<p>39</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "38",
+        "html": "<p>38</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "42",
+        "html": "<p>42</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "40",
+        "html": "<p>40</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Математика сауатылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>1;16;22;18;24;23 <strong>сандар</strong> <strong>қатарының</strong> <strong>медианасын</strong> <strong>тап</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "20",
+        "html": "<p>20</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "19",
+        "html": "<p>19</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "18",
+        "html": "<p>18</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "22",
+        "html": "<p>22</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Математика сауатылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Егістік</strong> <strong>жерді</strong> <strong>бірінші</strong> <strong>тракторшы</strong> 10 <strong>сағатта</strong> ,<strong>екінші</strong> <strong>тракторшы</strong> 15 <strong>сағатта</strong> <strong>жыртып</strong> <strong>бітіреді</strong>. <strong>екеуі</strong> <strong>бірігіп</strong> <strong>жасаса</strong> <strong>онда</strong> <strong>уақытта</strong> <strong>бітеді</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "6 сағ",
+        "html": "<p>6 <strong>сағ</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "7 сағ",
+        "html": "<p>7 <strong>сағ</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "5 сағ",
+        "html": "<p>5 <strong>сағ</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "4 сағ",
+        "html": "<p>4 <strong>сағ</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Математика сауатылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>112 <strong>беттік</strong> <strong>кітапты</strong> <strong>номерлеуге</strong> <strong>неше</strong> <strong>цифр</strong> <strong>керек</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "120",
+        "html": "<p>120</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "228",
+        "html": "<p>228</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "224",
+        "html": "<p>224</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "324",
+        "html": "<p>324</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Математика сауатылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>10-<strong>сыныптың</strong> 11 <strong>оқушысының</strong> <strong>бойларын</strong> <strong>өлшеген</strong> <strong>кезде</strong> <strong>мына</strong> <strong>нәтижелерді</strong> <strong>алдық</strong> : 151; 172; 160; 172; 167; 163; 152; 176; 174; 175; 173(<strong>см</strong>). <strong>Олардың</strong> <strong>бойларының</strong> <strong>медианасын</strong> <strong>табыңыз</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "172",
+        "html": "<p>172</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "171",
+        "html": "<p>171</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "173",
+        "html": "<p>173</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "167",
+        "html": "<p>167</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Математика сауатылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Дене</strong> <strong>шынықтыру</strong> <strong>сабағында</strong> <strong>бір</strong> <strong>топ</strong> <strong>оқушылар</strong> 100 <strong>м</strong> <strong>қашықтыққа</strong> <strong>жүгірлі</strong>. <strong>Әділ</strong>-14,7 <strong>с</strong>,  <strong>Ерлан</strong>-19,3 <strong>с</strong>, <strong>Нұрлан</strong>-15,5 <strong>с</strong>, <strong>Сәуле</strong>-22,4 <strong>с</strong>, <strong>Арай</strong>-16,2 <strong>с</strong>, <strong>Ұлан</strong>-14,1 <strong>с</strong>. <strong>Уақыттың</strong> <strong>өзгеріс</strong> <strong>ауқымы</strong> <strong>табыңыз</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "8,3",
+        "html": "<p>8,3</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "8,1",
+        "html": "<p>8,1</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "7,9",
+        "html": "<p>7,9</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "11,2",
+        "html": "<p>11,2</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Математика сауатылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Натурал</strong> <strong>сандардан</strong> <strong>құралған</strong> <strong>сандық</strong> <strong>қатар</strong> <strong>тоғыз</strong> <strong>саннан</strong> <strong>тұрады</strong>. <strong>Сандық</strong> <strong>қатар</strong> 8 <strong>санынан</strong> <strong>басталып</strong>,<strong>бірдей</strong> <strong>санға</strong> <strong>артады</strong> <strong>және</strong> 64 <strong>санымен</strong> <strong>аяқталады</strong>. <strong>Осы</strong> <strong>сандық</strong> <strong>қатардың</strong> <strong>медианасын</strong> <strong>табыңыз</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "36",
+        "html": "<p>36</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "32",
+        "html": "<p>32</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "40",
+        "html": "<p>40</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "42",
+        "html": "<p>42</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Математика сауатылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Фудбол</strong> <strong>алаңындаңы</strong> <strong>ойыншылардың</strong> <strong>орташа</strong> <strong>жасы</strong> 18 <strong>болды</strong>. <strong>Алаңнан</strong> <strong>бір</strong> <strong>ойыншы</strong> <strong>шығып</strong> <strong>кеткеннен</strong> <strong>кейін</strong> <strong>ойыншылардың</strong> <strong>орташа</strong> <strong>жасы</strong> 17-<strong>ге</strong> <strong>тең</strong> <strong>болды</strong>. <strong>Алаңнан</strong> <strong>шығып</strong> <strong>кеткен</strong> <strong>ойыншының</strong> <strong>жасын</strong> <strong>табыңыз</strong>?</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "28",
+        "html": "<p>28</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "7",
+        "html": "<p>7</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "25",
+        "html": "<p>25</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "19",
+        "html": "<p>19</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Математика сауатылығы",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Ақ сұлама жүйке жүйесі</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "бағанды",
+        "html": "<p>бағанды</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "түтікшелі",
+        "html": "<p>түтікшелі</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "диффузиялы",
+        "html": "<p>диффузиялы</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "түйінді",
+        "html": "<p>түйінді</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Көлденең жолақты бұлшық еттің бірлігі</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "остеоцит",
+        "html": "<p>остеоцит</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "миоцит",
+        "html": "<p>миоцит</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "гепатоцит",
+        "html": "<p>гепатоцит</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "глия",
+        "html": "<p>глия</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Кеңірдектің құрылысын көрсетіңіз</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "шеміршекті",
+        "html": "<p>шеміршекті</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "жартылай  сақиналы  шеміршекті",
+        "html": "<p>жартылай сақиналы шеміршекті</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "түтікті  бұлшықетті",
+        "html": "<p>түтікті бұлшықетті</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "көлденең  жолақты  бұлшықеті",
+        "html": "<p>көлденең жолақты бұлшықеті</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Митоз профазасына тән процестерді көрсетіңіз</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "хромосомалар  экватор  бойына  жинақталады",
+        "html": "<p>хромосомалар экватор бойына жинақталады</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "хромосомалар  шиыршықталады",
+        "html": "<p>хромосомалар шиыршықталады</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "цитокинез  болады",
+        "html": "<p>цитокинез болады</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "хромосомалар  екіге  бөлінеді",
+        "html": "<p>хромосомалар екіге бөлінеді</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Ұрықтың жетілуін зеріттейтін ғылым</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "палентология",
+        "html": "<p>палентология</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "эмбриология",
+        "html": "<p>эмбриология</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "микология",
+        "html": "<p>микология</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "мирмекология",
+        "html": "<p>мирмекология</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>240 <strong>кг</strong> <strong>шөппен</strong> <strong>қоректенетін</strong> <strong>тұяқты</strong> <strong>өзіне</strong> 72 <strong>кг</strong> <strong>салмақ</strong> <strong>қосты</strong>,<strong>осы</strong> <strong>жердегі</strong> <strong>энергия</strong> <strong>алмасу</strong> <strong>тиімділігі</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "12,5%",
+        "html": "<p>12,5%</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "25,5%",
+        "html": "<p>25,5%</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "30%",
+        "html": "<p>30%</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "34%",
+        "html": "<p>34%</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Кондитерлік көмірсу</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "сахароза",
+        "html": "<p>сахароза</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "ксилоза",
+        "html": "<p>ксилоза</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "инулин",
+        "html": "<p>инулин</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "глюкоза",
+        "html": "<p>глюкоза</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Бүйректе тұз жиналуымен туындайтын ауру</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "цистит",
+        "html": "<p>цистит</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "несептас",
+        "html": "<p>несептас</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "нефрит",
+        "html": "<p>нефрит</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "энурез",
+        "html": "<p>энурез</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Балықтың етін қызылға бояйтын каротиноид</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "антациан",
+        "html": "<p>антациан</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "астаксантин",
+        "html": "<p>астаксантин</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "каротин",
+        "html": "<p>каротин</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "ксантофил",
+        "html": "<p>ксантофил</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Сөйлеуге катысатын ми бөлімі</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "самай",
+        "html": "<p>самай</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "ортаңғы  ми",
+        "html": "<p>ортаңғы ми</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "аралық  ми",
+        "html": "<p>аралық ми</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "маңдай",
+        "html": "<p>маңдай</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>тура</strong> <strong>дамитын</strong> <strong>ағза</strong>(<strong>лар</strong>)</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "құрсақаяқты",
+        "html": "<p>құрсақаяқты</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "құрбақа",
+        "html": "<p>құрбақа</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "шегіртке",
+        "html": "<p>шегіртке</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "көбелек",
+        "html": "<p>көбелек</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Дененін айналып козғалу рефлекстері орналаскан ми бөлімі</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "сопақша  ми",
+        "html": "<p>сопақша ми</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "аралық  ми",
+        "html": "<p>аралық ми</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "мишық",
+        "html": "<p>мишық</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "ортаңғы  ми",
+        "html": "<p>ортаңғы ми</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Трипанасомадан алынатын ісікке қарсы препарат</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "круцин",
+        "html": "<p>круцин</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "ботритис",
+        "html": "<p>ботритис</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "анабена",
+        "html": "<p>анабена</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "сплат",
+        "html": "<p>сплат</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Дихе атаумен белгілі цианобактерия</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "триходесмиум",
+        "html": "<p>триходесмиум</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "спирулина",
+        "html": "<p>спирулина</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "анабена",
+        "html": "<p>анабена</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "носток",
+        "html": "<p>носток</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Жолбарыс пен зебрада болатын рең</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "көлегейлену",
+        "html": "<p>көлегейлену</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "бүркеніш",
+        "html": "<p>бүркеніш</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "бөлшектену",
+        "html": "<p>бөлшектену</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "мимкрия",
+        "html": "<p>мимкрия</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Түтікті мембраналардын жинақталуынан түзіледі</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "этилопласт",
+        "html": "<p>этилопласт</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "лейкопласт",
+        "html": "<p>лейкопласт</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "хлоропласт",
+        "html": "<p>хлоропласт</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "аминопласт",
+        "html": "<p>аминопласт</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Қан сияқты ұю қасиеті бар сұйықтық</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "ұлпа  сұйығы",
+        "html": "<p>ұлпа сұйығы</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "лимфа",
+        "html": "<p>лимфа</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "қарын  сөлі",
+        "html": "<p>қарын сөлі</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "буын  сұйықтығы",
+        "html": "<p>буын сұйықтығы</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Ауызда микробты жоятын фермент</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "амилаза",
+        "html": "<p>амилаза</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "дисахаридаза",
+        "html": "<p>дисахаридаза</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "муцин",
+        "html": "<p>муцин</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "лизоцим",
+        "html": "<p>лизоцим</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>фитогормондар өндірілетін ұлпа</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "негізгі",
+        "html": "<p>негізгі</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "тірек",
+        "html": "<p>тірек</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "өткізгіш",
+        "html": "<p>өткізгіш</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "түзуші",
+        "html": "<p>түзуші</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Жүзім шоғырын түзетін бактерия</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "стрептококк",
+        "html": "<p>стрептококк</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "стафилококк",
+        "html": "<p>стафилококк</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "тетракокк",
+        "html": "<p>тетракокк</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "бацилла",
+        "html": "<p>бацилла</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>жасушада  хромосома саны анық көрінетін кезең</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "анафаза",
+        "html": "<p>анафаза</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "телофаза",
+        "html": "<p>телофаза</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "профаза",
+        "html": "<p>профаза</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "метафаза",
+        "html": "<p>метафаза</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>ф и тофтороз ауруынын қоздырғышы</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "саңырауқұлақ",
+        "html": "<p>саңырауқұлақ</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "вирус",
+        "html": "<p>вирус</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "бактерия",
+        "html": "<p>бактерия</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "паразит  жәндәк",
+        "html": "<p>паразит жәндәк</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>И нтерфазанны ң ма ң ызды үдерісі</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "транспирация",
+        "html": "<p>транспирация</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "хромосомалардың   бөлінуі",
+        "html": "<p>хромосомалардың  бөлінуі</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "кариокинез",
+        "html": "<p>кариокинез</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "репликация",
+        "html": "<p>репликация</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Жыныс жасушасының жетілуі</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "спорогенез",
+        "html": "<p>спорогенез</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "гаметогенез",
+        "html": "<p>гаметогенез</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "овогенез",
+        "html": "<p>овогенез</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "сперматогенез",
+        "html": "<p>сперматогенез</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Өрмекші мен жәндіктердің зәр шығару мүшесі</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "жасыл  без",
+        "html": "<p>жасыл без</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "мальпиги",
+        "html": "<p>мальпиги</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "метанефридия",
+        "html": "<p>метанефридия</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "бүйрек",
+        "html": "<p>бүйрек</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Марал</strong> <strong>қанында</strong> <strong>адам</strong> <strong>ағзасына</strong> <strong>қажетті</strong> 25 <strong>түрлі</strong> <strong>микроэлемент</strong> <strong>бар</strong>. <strong>Жүрек</strong>, <strong>қанайналым</strong>, <strong>қан</strong> <strong>қысымы</strong>, <strong>буын</strong>, <strong>сүйек</strong>, <strong>иммундық</strong> <strong>жүйені</strong> <strong>жақсартуда</strong> <strong>марал</strong> <strong>мүйізінен</strong> <strong>алынатын</strong> <strong>қанның</strong> <strong>пайдасы</strong> <strong>өте</strong> <strong>зор</strong>. <strong>Мүйізді</strong> <strong>қайнатып</strong>, <strong>сорпасына</strong> <strong>түссе</strong>, <strong>денедегі</strong> <strong>суықты</strong> <strong>алып</strong> <strong>шығады</strong>. <strong>Сорпа</strong> <strong>буын</strong> <strong>сырқырағанға</strong> <strong>мың</strong> <strong>да</strong> <strong>бір</strong> <strong>ем</strong>. <strong>Марал</strong> <strong>мүйізінен</strong> <strong>денсаулыққа</strong> <strong>өте</strong> <strong>пайдалы</strong> <strong>пантокрин</strong> <strong>дәрісі</strong> <strong>дайындалады</strong>. <strong>Елімізде</strong> <strong>маралдар</strong> <strong>Шығыс</strong> <strong>Қазақстан</strong> <strong>өңірінде</strong> <strong>орналасқан</strong> <strong>қорықта</strong> <strong>мекен</strong> <strong>етеді</strong>.</p><p>Марал жануары тарлған қорық</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "Қаратау",
+        "html": "<p>Қаратау</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Марқакөл",
+        "html": "<p>Марқакөл</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Үстірт",
+        "html": "<p>Үстірт</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Барсакелмес",
+        "html": "<p>Барсакелмес</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "test/assets/quizzes/11ae/images/img-f6acfc503bf41e2b25c6f45dfe6a2761c3e7f538.png",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Марал</strong> <strong>қанында</strong> <strong>адам</strong> <strong>ағзасына</strong> <strong>қажетті</strong> 25 <strong>түрлі</strong> <strong>микроэлемент</strong> <strong>бар</strong>. <strong>Жүрек</strong>, <strong>қанайналым</strong>, <strong>қан</strong> <strong>қысымы</strong>, <strong>буын</strong>, <strong>сүйек</strong>, <strong>иммундық</strong> <strong>жүйені</strong> <strong>жақсартуда</strong> <strong>марал</strong> <strong>мүйізінен</strong> <strong>алынатын</strong> <strong>қанның</strong> <strong>пайдасы</strong> <strong>өте</strong> <strong>зор</strong>. <strong>Мүйізді</strong> <strong>қайнатып</strong>, <strong>сорпасына</strong> <strong>түссе</strong>, <strong>денедегі</strong> <strong>суықты</strong> <strong>алып</strong> <strong>шығады</strong>. <strong>Сорпа</strong> <strong>буын</strong> <strong>сырқырағанға</strong> <strong>мың</strong> <strong>да</strong> <strong>бір</strong> <strong>ем</strong>. <strong>Марал</strong> <strong>мүйізінен</strong> <strong>денсаулыққа</strong> <strong>өте</strong> <strong>пайдалы</strong> <strong>пантокрин</strong> <strong>дәрісі</strong> <strong>дайындалады</strong>. <strong>Елімізде</strong> <strong>маралдар</strong> <strong>Шығыс</strong> <strong>Қазақстан</strong> <strong>өңірінде</strong> <strong>орналасқан</strong> <strong>қорықта</strong> <strong>мекен</strong> <strong>етеді</strong>.</p><p>Марал мүйізінен жасалатын дәрі</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "круцин",
+        "html": "<p>круцин</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "пантокрин",
+        "html": "<p>пантокрин</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "панкреатин",
+        "html": "<p>панкреатин</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "антибиотик",
+        "html": "<p>антибиотик</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "test/assets/quizzes/11ae/images/img-f6acfc503bf41e2b25c6f45dfe6a2761c3e7f538.png",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Марал</strong> <strong>қанында</strong> <strong>адам</strong> <strong>ағзасына</strong> <strong>қажетті</strong> 25 <strong>түрлі</strong> <strong>микроэлемент</strong> <strong>бар</strong>. <strong>Жүрек</strong>, <strong>қанайналым</strong>, <strong>қан</strong> <strong>қысымы</strong>, <strong>буын</strong>, <strong>сүйек</strong>, <strong>иммундық</strong> <strong>жүйені</strong> <strong>жақсартуда</strong> <strong>марал</strong> <strong>мүйізінен</strong> <strong>алынатын</strong> <strong>қанның</strong> <strong>пайдасы</strong> <strong>өте</strong> <strong>зор</strong>. <strong>Мүйізді</strong> <strong>қайнатып</strong>, <strong>сорпасына</strong> <strong>түссе</strong>, <strong>денедегі</strong> <strong>суықты</strong> <strong>алып</strong> <strong>шығады</strong>. <strong>Сорпа</strong> <strong>буын</strong> <strong>сырқырағанға</strong> <strong>мың</strong> <strong>да</strong> <strong>бір</strong> <strong>ем</strong>. <strong>Марал</strong> <strong>мүйізінен</strong> <strong>денсаулыққа</strong> <strong>өте</strong> <strong>пайдалы</strong> <strong>пантокрин</strong> <strong>дәрісі</strong> <strong>дайындалады</strong>. <strong>Елімізде</strong> <strong>маралдар</strong> <strong>Шығыс</strong> <strong>Қазақстан</strong> <strong>өңірінде</strong> <strong>орналасқан</strong> <strong>қорықта</strong> <strong>мекен</strong> <strong>етеді</strong>.</p><p>Марал дәрісі пайдалы</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "ас  қорыту  жүйесіне",
+        "html": "<p>ас қорыту жүйесіне</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "жүрек - қантамыр  жүйесіне",
+        "html": "<p><strong>жүрек</strong> - <strong>қантамыр</strong> <strong>жүйесіне</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "зәр  шығару  жүйесіне",
+        "html": "<p>зәр шығару жүйесіне</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "ағзадағы  бездер  жұмысына",
+        "html": "<p>ағзадағы бездер жұмысына</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "test/assets/quizzes/11ae/images/img-f6acfc503bf41e2b25c6f45dfe6a2761c3e7f538.png",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Марал</strong> <strong>қанында</strong> <strong>адам</strong> <strong>ағзасына</strong> <strong>қажетті</strong> 25 <strong>түрлі</strong> <strong>микроэлемент</strong> <strong>бар</strong>. <strong>Жүрек</strong>, <strong>қанайналым</strong>, <strong>қан</strong> <strong>қысымы</strong>, <strong>буын</strong>, <strong>сүйек</strong>, <strong>иммундық</strong> <strong>жүйені</strong> <strong>жақсартуда</strong> <strong>марал</strong> <strong>мүйізінен</strong> <strong>алынатын</strong> <strong>қанның</strong> <strong>пайдасы</strong> <strong>өте</strong> <strong>зор</strong>. <strong>Мүйізді</strong> <strong>қайнатып</strong>, <strong>сорпасына</strong> <strong>түссе</strong>, <strong>денедегі</strong> <strong>суықты</strong> <strong>алып</strong> <strong>шығады</strong>. <strong>Сорпа</strong> <strong>буын</strong> <strong>сырқырағанға</strong> <strong>мың</strong> <strong>да</strong> <strong>бір</strong> <strong>ем</strong>. <strong>Марал</strong> <strong>мүйізінен</strong> <strong>денсаулыққа</strong> <strong>өте</strong> <strong>пайдалы</strong> <strong>пантокрин</strong> <strong>дәрісі</strong> <strong>дайындалады</strong>. <strong>Елімізде</strong> <strong>маралдар</strong> <strong>Шығыс</strong> <strong>Қазақстан</strong> <strong>өңірінде</strong> <strong>орналасқан</strong> <strong>қорықта</strong> <strong>мекен</strong> <strong>етеді</strong>.</p><p>Маралдың жүрегі қанша қуысты</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "1 қуысты",
+        "html": "<p>1 <strong>қуысты</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "2 қуысты",
+        "html": "<p>2 <strong>қуысты</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "3 қуысты",
+        "html": "<p>3 <strong>қуысты</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "4 қуысты",
+        "html": "<p>4 <strong>қуысты</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "test/assets/quizzes/11ae/images/img-f6acfc503bf41e2b25c6f45dfe6a2761c3e7f538.png",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Марал</strong> <strong>қанында</strong> <strong>адам</strong> <strong>ағзасына</strong> <strong>қажетті</strong> 25 <strong>түрлі</strong> <strong>микроэлемент</strong> <strong>бар</strong>. <strong>Жүрек</strong>, <strong>қанайналым</strong>, <strong>қан</strong> <strong>қысымы</strong>, <strong>буын</strong>, <strong>сүйек</strong>, <strong>иммундық</strong> <strong>жүйені</strong> <strong>жақсартуда</strong> <strong>марал</strong> <strong>мүйізінен</strong> <strong>алынатын</strong> <strong>қанның</strong> <strong>пайдасы</strong> <strong>өте</strong> <strong>зор</strong>. <strong>Мүйізді</strong> <strong>қайнатып</strong>, <strong>сорпасына</strong> <strong>түссе</strong>, <strong>денедегі</strong> <strong>суықты</strong> <strong>алып</strong> <strong>шығады</strong>. <strong>Сорпа</strong> <strong>буын</strong> <strong>сырқырағанға</strong> <strong>мың</strong> <strong>да</strong> <strong>бір</strong> <strong>ем</strong>. <strong>Марал</strong> <strong>мүйізінен</strong> <strong>денсаулыққа</strong> <strong>өте</strong> <strong>пайдалы</strong> <strong>пантокрин</strong> <strong>дәрісі</strong> <strong>дайындалады</strong>. <strong>Елімізде</strong> <strong>маралдар</strong> <strong>Шығыс</strong> <strong>Қазақстан</strong> <strong>өңірінде</strong> <strong>орналасқан</strong> <strong>қорықта</strong> <strong>мекен</strong> <strong>етеді</strong>.</p><p>Маралдың бөліп шығару өнімі</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "аммиак",
+        "html": "<p>аммиак</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "зәр  қышқылы",
+        "html": "<p>зәр қышқылы</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "несепнәр",
+        "html": "<p>несепнәр</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "триметиламиноксид",
+        "html": "<p>триметиламиноксид</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "test/assets/quizzes/11ae/images/img-f6acfc503bf41e2b25c6f45dfe6a2761c3e7f538.png",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Энтодерма кабатынан дамиды</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "тыныс  алу  жүйесі",
+        "html": "<p>тыныс алу жүйесі</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "ас  қорыту  жүйесі",
+        "html": "<p>ас қорыту жүйесі</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "қанайналым  жүйесі",
+        "html": "<p>қанайналым жүйесі</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "жүйке  жүйесі",
+        "html": "<p>жүйке жүйесі</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-e",
+        "text": "зәр  шығару  жүйесі",
+        "html": "<p>зәр шығару жүйесі</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-f",
+        "text": "эндокринді  жүйе",
+        "html": "<p>эндокринді жүйе</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p>жүрегі үш қуысты ағзалар</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "басаяқты  ұлу",
+        "html": "<p>басаяқты ұлу</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "сиыр",
+        "html": "<p>сиыр</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "балық",
+        "html": "<p>балық</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "тауық",
+        "html": "<p>тауық</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-e",
+        "text": "құрбақа",
+        "html": "<p>құрбақа</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-f",
+        "text": "жылан",
+        "html": "<p>жылан</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p>Митохондриянның сыртқы мембранасына оңай өтетін қосылыстар</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "су",
+        "html": "<p>су</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "глюкоза",
+        "html": "<p>глюкоза</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "липидтер",
+        "html": "<p>липидтер</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "электролиттер",
+        "html": "<p>электролиттер</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-e",
+        "text": "сахароза",
+        "html": "<p>сахароза</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-f",
+        "text": "калий",
+        "html": "<p>калий</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p>Шығыс Азия   орталығынан шыққан өсімдіктер</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "тары",
+        "html": "<p>тары</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "соя",
+        "html": "<p>соя</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "қант  қамысы",
+        "html": "<p>қант қамысы</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "бидай",
+        "html": "<p>бидай</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-e",
+        "text": "банан",
+        "html": "<p>банан</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-f",
+        "text": "жүгері",
+        "html": "<p>жүгері</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p>иық белдеуін құрайтын сүйектер</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "бұғана",
+        "html": "<p>бұғана</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "тоқпан  жілік",
+        "html": "<p>тоқпан жілік</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "білек",
+        "html": "<p>білек</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "жауырын",
+        "html": "<p>жауырын</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-e",
+        "text": "мықын",
+        "html": "<p>мықын</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-f",
+        "text": "қасаға",
+        "html": "<p>қасаға</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p>дұрыс сәйкестендіріңіз</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "А-1; В-2.",
+        "html": "<p><strong>А</strong>-1; <strong>В</strong>-2.</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "А-2; В-4",
+        "html": "<p><strong>А</strong>-2; <strong>В</strong>-4</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "А-1; В-3",
+        "html": "<p><strong>А</strong>-1; <strong>В</strong>-3</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "А-3; В-1",
+        "html": "<p><strong>А</strong>-3; <strong>В</strong>-1</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/11ae/images/img-b48b2cc76cfc3a95910d81c0e034a9f9d123a35a.png",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p>Нәруыздардың байланысын сәйкестендірініз</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "А-2; В-4",
+        "html": "<p><strong>А</strong>-2; <strong>В</strong>-4</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "А-1; В-4",
+        "html": "<p><strong>А</strong>-1; <strong>В</strong>-4</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "А-3; В-1",
+        "html": "<p><strong>А</strong>-3; <strong>В</strong>-1</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "А-2; В-3",
+        "html": "<p><strong>А</strong>-2; <strong>В</strong>-3</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/11ae/images/img-00e77f4106798c2eccbadaa298ec29e3c68eef24.png",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p><strong>Выберите</strong> <strong>правильный</strong> <strong>вариант</strong> <strong>ответа</strong> :</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "А-1; В-2",
+        "html": "<p><strong>А</strong>-1; <strong>В</strong>-2</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "А-2; В-3",
+        "html": "<p><strong>А</strong>-2; <strong>В</strong>-3</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "А-2; В-4",
+        "html": "<p><strong>А</strong>-2; <strong>В</strong>-4</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "А-3; В-4",
+        "html": "<p><strong>А</strong>-3; <strong>В</strong>-4</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "test/assets/quizzes/11ae/images/img-7d3d5af4de56b583fc33c39cda0177553b1521fc.png",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p>Менструальдық циклдің негізгі фазаларын сәйкестендірініз</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "А-1; В-4",
+        "html": "<p><strong>А</strong>-1; <strong>В</strong>-4</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "А-2; В-4",
+        "html": "<p><strong>А</strong>-2; <strong>В</strong>-4</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "А-3; В-2",
+        "html": "<p><strong>А</strong>-3; <strong>В</strong>-2</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "А-3; В-4",
+        "html": "<p><strong>А</strong>-3; <strong>В</strong>-4</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "test/assets/quizzes/11ae/images/img-459add014bf70df7b569cbbd8cb25e1279fa1505.png",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p>митохондрия қабаттарын сәйкестендіріңіз</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "А-1; В-4",
+        "html": "<p><strong>А</strong>-1; <strong>В</strong>-4</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "А-2; В-4",
+        "html": "<p><strong>А</strong>-2; <strong>В</strong>-4</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "А-3; В-4",
+        "html": "<p><strong>А</strong>-3; <strong>В</strong>-4</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "А-1; В-3",
+        "html": "<p><strong>А</strong>-1; <strong>В</strong>-3</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/11ae/images/img-e153a26ea2d67bfb6fcd11842c82b2e27a7f15e2.png",
+    "sectionTitle": "Биология",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p><strong>sp</strong> ² <strong>гибридтену</strong> <strong>тән</strong> <strong>емес</strong> <strong>қосылыс</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "C(графит)",
+        "html": "<p><strong>C</strong>(<strong>графит</strong>)</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "NO ₃⁻",
+        "html": "<p><strong>NO</strong> ₃⁻</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "BCl ₃",
+        "html": "<p><strong>BCl</strong> ₃</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "C ₂ H ₆",
+        "html": "<p><strong>C</strong> ₂ <strong>H</strong> ₆</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Негіздік қасиет көрсететін оксидтер</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "CrO, CaO",
+        "html": "<p><strong>CrO</strong>, <strong>CaO</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Al ₂ O ₃, CO ₂",
+        "html": "<p><strong>Al</strong> ₂ <strong>O</strong> ₃, <strong>CO</strong> ₂</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "SO ₃, CrO ₃",
+        "html": "<p><strong>SO</strong> ₃, <strong>CrO</strong> ₃</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Cr ₂ O ₃, SO ₂",
+        "html": "<p><strong>Cr</strong> ₂ <strong>O</strong> ₃, <strong>SO</strong> ₂</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Мырыш калий гидроксидінің сулы ерітіндісімен әрекеттескенде түзілетін өнімдердің бірі</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "ZnO",
+        "html": "<p>ZnO</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "K ₂ ZnO ₂",
+        "html": "<p><strong>K</strong> ₂ <strong>ZnO</strong> ₂</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Zn(OH)₂",
+        "html": "<p><strong>Zn</strong>(<strong>OH</strong>)₂</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "K ₂[Zn(OH)₄]",
+        "html": "<p><strong>K</strong> ₂[<strong>Zn</strong>(<strong>OH</strong>)₄]</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Қосылыстарында ең төмен тотығу дәрежесін көрсететін элемент</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "күміс",
+        "html": "<p>күміс</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "скандий",
+        "html": "<p>скандий</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "темір",
+        "html": "<p>темір</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "титан",
+        "html": "<p>титан</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Массасы</strong> 36,4 <strong>г</strong> <strong>этанол</strong> <strong>мен</strong> <strong>сірке</strong> <strong>қышқылының</strong> <strong>қоспасын</strong> <strong>жаққанда</strong> 32,4 <strong>г</strong> <strong>су</strong> <strong>түзілді</strong>. <strong>Бастапқы</strong> <strong>қоспадағы</strong> <strong>эатнолдың</strong> <strong>массалық</strong> <strong>үлесі</strong> :</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "60,55",
+        "html": "<p>60,55</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "49,45",
+        "html": "<p>49,45</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "39,45",
+        "html": "<p>39,45</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "50,55",
+        "html": "<p>50,55</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Суда еріген де иондарға өте көп мөлшерде диссоциацияланатын заттар қатары</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "H ₂ S, HI",
+        "html": "<p><strong>H</strong> ₂ <strong>S</strong>, <strong>HI</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "HNO ₂, HI",
+        "html": "<p><strong>HNO</strong> ₂, <strong>HI</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "H ₂ SO ₄, HCl",
+        "html": "<p><strong>H</strong> ₂ <strong>SO</strong> ₄, <strong>HCl</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "H ₂ CO ₃, HF",
+        "html": "<p><strong>H</strong> ₂ <strong>CO</strong> ₃, <strong>HF</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>CaC</strong> ₂ → <strong>C</strong> ₂ <strong>H</strong> ₂ → <strong>C</strong> ₆ <strong>H</strong> ₆ → <strong>X</strong> → <strong>C</strong> ₆ <strong>H</strong> ₅ <strong>COOH</strong> <strong>айналымдағы</strong> <strong>белгісіз</strong> <strong>зат</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "хлорбензол",
+        "html": "<p>хлорбензол</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "метилбензол",
+        "html": "<p>метилбензол</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "фенол",
+        "html": "<p>фенол</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "нитробензол",
+        "html": "<p>нитробензол</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Фенол азот қышқылымен әрекеттескенде түзілетін өнім</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "салицил  қышқылы",
+        "html": "<p>салицил қышқылы</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "пикрин  қышқылы",
+        "html": "<p>пикрин қышқылы</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "1,3,5-тринитрофенол",
+        "html": "<p>1,3,5-<strong>тринитрофенол</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "2,4,6-тринитротолуол",
+        "html": "<p>2,4,6-<strong>тринитротолуол</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Натрий</strong> <strong>тетрагидроксоалюминаты</strong> <strong>мен</strong> <strong>калий</strong> (<strong>II</strong>) <strong>гексацианоферратындағы</strong> <strong>кешентүзушінің</strong> <strong>координациялық</strong> <strong>сандары</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "4,6",
+        "html": "<p>4,6</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "6,2",
+        "html": "<p>6,2</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "4,2",
+        "html": "<p>4,2</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "6,8",
+        "html": "<p>6,8</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>N</strong> ₂ → <strong>NH</strong> ₃ → <strong>NO</strong> → <strong>HNO</strong> ₃ → <strong>Cu</strong>(<strong>NO</strong> ₃)₂ <strong>азот</strong> <strong>тотықтырғыш</strong> <strong>қасиет</strong> <strong>көрсететін</strong> <strong>саты</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "2",
+        "html": "<p>2</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "4",
+        "html": "<p>4</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "1",
+        "html": "<p>1</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "3",
+        "html": "<p>3</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Жүйедегі</strong> <strong>қысымды</strong> <strong>төмендетіп</strong>, <strong>температураны</strong> <strong>арттырғанда</strong> <strong>тепе</strong>-<strong>теңдік</strong> <strong>оң</strong> <strong>бағытта</strong> <strong>ығысатын</strong> <strong>үдеріс</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "C(қ) + CO ₂(г) ⟺ 2 CO(г) - Q",
+        "html": "<p><strong>C</strong>(<strong>қ</strong>) + <strong>CO</strong> ₂(<strong>г</strong>) ⟺ 2 <strong>CO</strong>(<strong>г</strong>) - <strong>Q</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "N ₂(г) + O ₂(г) ⟺ 2 NO(г) - Q",
+        "html": "<p><strong>N</strong> ₂(<strong>г</strong>) + <strong>O</strong> ₂(<strong>г</strong>) ⟺ 2 <strong>NO</strong>(<strong>г</strong>) - <strong>Q</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "N ₂(г) + 3 H ₂(г) ⟺ 2 NH ₃(г) + Q",
+        "html": "<p><strong>N</strong> ₂(<strong>г</strong>) + 3 <strong>H</strong> ₂(<strong>г</strong>) ⟺ 2 <strong>NH</strong> ₃(<strong>г</strong>) + <strong>Q</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "C ₂ H ₄(г) + H ₂ O(г) ⟺ C ₂ H ₅ OH(г) + Q",
+        "html": "<p><strong>C</strong> ₂ <strong>H</strong> ₄(<strong>г</strong>) + <strong>H</strong> ₂ <strong>O</strong>(<strong>г</strong>) ⟺ <strong>C</strong> ₂ <strong>H</strong> ₅ <strong>OH</strong>(<strong>г</strong>) + <strong>Q</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Фенолдың гидроксотопқа байланысты химиялық қасиеті</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "натрий  гидроксидімен  әрекеттесуі",
+        "html": "<p>натрий гидроксидімен әрекеттесуі</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "бром  суымен  әрекеттесуі",
+        "html": "<p>бром суымен әрекеттесуі</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "азот  қышқылымен  әрекеттесуі",
+        "html": "<p>азот қышқылымен әрекеттесуі</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "формальдегидпен  әрекеттесуі",
+        "html": "<p>формальдегидпен әрекеттесуі</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>CO</strong> ₂(<strong>г</strong>) + <strong>H</strong> ₂(<strong>г</strong>) ⟺ 2 <strong>CO</strong>(<strong>г</strong>) + <strong>H</strong> ₂ <strong>O</strong> <strong>реакция</strong> <strong>басталғаннан</strong> <strong>кейін</strong> 80 <strong>с</strong> <strong>өткенде</strong> <strong>судың</strong> <strong>молярлық</strong> <strong>концентрациясы</strong> 0,36 <strong>моль</strong>/<strong>л</strong>, <strong>ал</strong> 1 <strong>мин</strong> 45 <strong>секунд</strong> <strong>өткеннен</strong> <strong>кейін</strong> 0,48 <strong>моль</strong>/<strong>л</strong> <strong>болды</strong>. <strong>Реакцияның</strong> <strong>жылдамдығы</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "4,3*10⁻³ моль/л*сек",
+        "html": "<p>4,3*10⁻³ <strong>моль</strong>/<strong>л</strong>*<strong>сек</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "4,8*10⁻³ моль/л*сек",
+        "html": "<p>4,8*10⁻³ <strong>моль</strong>/<strong>л</strong>*<strong>сек</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "4,8*10⁻⁴ моль/л*сек",
+        "html": "<p>4,8*10⁻⁴ <strong>моль</strong>/<strong>л</strong>*<strong>сек</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "4,3*10⁻⁴ моль/л*сек",
+        "html": "<p>4,3*10⁻⁴ <strong>моль</strong>/<strong>л</strong>*<strong>сек</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Белгісіз</strong> <strong>қаныққан</strong> <strong>көмірсутекті</strong> <strong>жаққанда</strong> 61,6 <strong>г</strong> <strong>CO</strong> ₂ <strong>және</strong> 31,5 <strong>г</strong> <strong>H</strong> ₂ <strong>O</strong> <strong>түзілді</strong>. <strong>Алканның</strong> <strong>молекулалық</strong> <strong>формуласы</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "C ₄ H ₁₀",
+        "html": "<p><strong>C</strong> ₄ <strong>H</strong> ₁₀</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "C ₃ H ₈",
+        "html": "<p><strong>C</strong> ₃ <strong>H</strong> ₈</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "CH ₄",
+        "html": "<p><strong>CH</strong> ₄</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "C ₇ H ₁₆",
+        "html": "<p><strong>C</strong> ₇ <strong>H</strong> ₁₆</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Массасы</strong> 80 <strong>г</strong> <strong>суды</strong> (<strong>Cменшікті</strong> = 4,200 <strong>кДж</strong>/<strong>кг</strong>) 100°<strong>C</strong>-<strong>тан</strong> 40°<strong>C</strong>-<strong>ге</strong> <strong>дейін</strong> <strong>салқындатқанда</strong> <strong>бөлініп</strong> <strong>шығатын</strong> <strong>жылу</strong> <strong>мөлшері</strong> (<strong>кДж</strong>)</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "15,12",
+        "html": "<p>15,12</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "20,16",
+        "html": "<p>20,16</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "10,08",
+        "html": "<p>10,08</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "30,24",
+        "html": "<p>30,24</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Массасы</strong> 40 <strong>г</strong> <strong>магний</strong> <strong>мен</strong> <strong>магний</strong> <strong>нитратын</strong> <strong>ауада</strong> <strong>қақтағанда</strong> <strong>оның</strong> <strong>массасы</strong> <strong>өзгермеген</strong>. <strong>Қоспа</strong> <strong>құрамындағы</strong> <strong>магний</strong> <strong>нитратының</strong> <strong>массалық</strong> <strong>үлесі</strong> (%)</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "57,7",
+        "html": "<p>57,7</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "47,7",
+        "html": "<p>47,7</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "37,7",
+        "html": "<p>37,7</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "67,7",
+        "html": "<p>67,7</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>K</strong> ₂ <strong>CO</strong> ₃ <strong>және</strong> <strong>Na</strong> ₂ <strong>S</strong> <strong>тұздары</strong> <strong>тұз</strong> <strong>қышқылымен</strong> <strong>толық</strong> <strong>әрекеттескенде</strong> <strong>түзілген</strong> <strong>газдың</strong> <strong>көлемі</strong> (<strong>қ</strong>.<strong>ж</strong>.) 17,92 <strong>дм</strong> ³ <strong>және</strong> <strong>хлоридтер</strong> <strong>массасы</strong> 104,8 <strong>г</strong>. <strong>Қоспадағы</strong> <strong>натрий</strong> <strong>сульфидінің</strong> <strong>массалық</strong> <strong>үлесі</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "42 %",
+        "html": "<p>42 %</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "58 %",
+        "html": "<p>58 %</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "48 %",
+        "html": "<p>48 %</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "52 %",
+        "html": "<p>52 %</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>400 <strong>л</strong> (<strong>қ</strong>.<strong>ж</strong>.) <strong>метан</strong> <strong>мен</strong> <strong>этилен</strong> <strong>қоспасының</strong> <strong>құрамында</strong> 35 % <strong>этилен</strong> <strong>бар</strong>, <strong>алынған</strong> <strong>полиэтиленнің</strong> <strong>массасы</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "185 г",
+        "html": "<p>185 <strong>г</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "165 г",
+        "html": "<p>165 <strong>г</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "195 г",
+        "html": "<p>195 <strong>г</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "175 г",
+        "html": "<p>175 <strong>г</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>BX</strong> ₃ <strong>молекуласының</strong> <strong>байланысындағы</strong> <strong>гибридтену</strong> <strong>түрі</strong> :</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "sp ² d",
+        "html": "<p><strong>sp</strong> ² <strong>d</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "sp ²",
+        "html": "<p><strong>sp</strong> ²</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "sp ³ d",
+        "html": "<p><strong>sp</strong> ³ <strong>d</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "sp ³",
+        "html": "<p><strong>sp</strong> ³</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Молекулалық кристалл торлы қосылысқа жатпайды</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "HCl, Cl ₂",
+        "html": "<p><strong>HCl</strong>, <strong>Cl</strong> ₂</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "H ₂ O, CO ₂",
+        "html": "<p><strong>H</strong> ₂ <strong>O</strong>, <strong>CO</strong> ₂</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "CO, SO ₂",
+        "html": "<p><strong>CO</strong>, <strong>SO</strong> ₂</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "B, SiO ₂",
+        "html": "<p><strong>B</strong>, <strong>SiO</strong> ₂</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Ацетиленді</strong> <strong>гидрлегенде</strong> 54 <strong>г</strong> <strong>этан</strong> <strong>алынды</strong>. <strong>Этан</strong> <strong>шығымы</strong> 40 % <strong>болса</strong>, <strong>ацетиленнің</strong> <strong>массасын</strong> <strong>табыңдар</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "115 г",
+        "html": "<p>115 <strong>г</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "112 г",
+        "html": "<p>112 <strong>г</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "119 г",
+        "html": "<p>119 <strong>г</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "117 г",
+        "html": "<p>117 <strong>г</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Ерігіші</strong> <strong>ортасы</strong> <strong>pH</strong>=7 <strong>болатын</strong> <strong>тұз</strong> :</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "BaS",
+        "html": "<p>BaS</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "BaCO ₃",
+        "html": "<p><strong>BaCO</strong> ₃</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "BaSO ₄",
+        "html": "<p><strong>BaSO</strong> ₄</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "BaCl ₂",
+        "html": "<p><strong>BaCl</strong> ₂</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Мыс</strong> (<strong>II</strong>) <strong>сульфатының</strong> 500 <strong>г</strong> <strong>ерітіндісін</strong> <strong>сулытып</strong> <strong>қақтағанда</strong> 75 <strong>г</strong> <strong>қатты</strong> <strong>қалдық</strong> <strong>қалды</strong>. <strong>Бастапқы</strong> <strong>тұздың</strong> <strong>массалық</strong> <strong>үлесін</strong> <strong>есептеңдер</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "15 %",
+        "html": "<p>15 %</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "45 %",
+        "html": "<p>45 %</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "25 %",
+        "html": "<p>25 %</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "35 %",
+        "html": "<p>35 %</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Массасы</strong> 7 <strong>г</strong> <strong>мырыш</strong> <strong>тақташасын</strong> 50 <strong>г</strong> <strong>мыс</strong> (<strong>ІІ</strong>) <strong>сульфаты</strong> <strong>ерітіндісіне</strong> <strong>батырғанда</strong> <strong>тақташаның</strong> <strong>массасы</strong> 6.8 <strong>г</strong> <strong>болды</strong>,<strong>соңғы</strong> <strong>ерітіндінің</strong> <strong>массасы</strong> :</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "50.0 г",
+        "html": "<p>50.0 <strong>г</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "49.8 г",
+        "html": "<p>49.8 <strong>г</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "50,2",
+        "html": "<p>50,2</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "48,3",
+        "html": "<p>48,3</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Реакция</strong> <strong>теңдеуіндегі</strong> <strong>оң</strong> <strong>бөлігіндегі</strong> <strong>стехиометриялық</strong> <strong>коэффиценттерінің</strong> <strong>қосын</strong>-</p><p><strong>дысын</strong> <strong>көрсетіңіз</strong> :</p><p>KMnO 4 +16 HCl →Cl 2↑ + KCl +MnCl 2 + H 2 O</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "18",
+        "html": "<p>18</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "17",
+        "html": "<p>17</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "8",
+        "html": "<p>8</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "9",
+        "html": "<p>9</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>B заты күміс нитратымен әрекеттескенде түзілген тұнбаның түсі</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "сары",
+        "html": "<p>сары</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "қара",
+        "html": "<p>қара</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "көк",
+        "html": "<p>көк</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "ақ",
+        "html": "<p>ақ</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "test/assets/quizzes/11ae/images/img-576a62bd2b3ecd4172930d5bc4205e95ff2f0131.png",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>D заттың тән физикалық қасиеттер</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "тұншықтырғыш, улы  газ",
+        "html": "<p><strong>тұншықтырғыш</strong>, <strong>улы</strong> <strong>газ</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "қоңыр  түсті, оңай  буланады",
+        "html": "<p><strong>қоңыр</strong> <strong>түсті</strong>, <strong>оңай</strong> <strong>буланады</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "сары  түсті  сұйық",
+        "html": "<p>сары түсті сұйық</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "қара  сұр  түсті, оңай  сублимацияланады",
+        "html": "<p><strong>қара</strong> <strong>сұр</strong> <strong>түсті</strong>, <strong>оңай</strong> <strong>сублимацияланады</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/11ae/images/img-576a62bd2b3ecd4172930d5bc4205e95ff2f0131.png",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p>Өнеркәсіпте D газын алу үшін қолданылатын заттар</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "NaCl(aq) + H ₂ O → электролиз",
+        "html": "<p><strong>NaCl</strong>(<strong>aq</strong>) + <strong>H</strong> ₂ <strong>O</strong> → <strong>электролиз</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "HCl + KClO ₃ →",
+        "html": "<p><strong>HCl</strong> + <strong>KClO</strong> ₃ →</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "Zn + HCl →",
+        "html": "<p><strong>Zn</strong> + <strong>HCl</strong> →</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "MnO ₂ + HCl →",
+        "html": "<p><strong>MnO</strong> ₂ + <strong>HCl</strong> →</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/11ae/images/img-576a62bd2b3ecd4172930d5bc4205e95ff2f0131.png",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Көлемі</strong> 2,24 <strong>л</strong> <strong>D</strong> <strong>заты</strong> (<strong>қ</strong>.<strong>ж</strong>.) 24,9 <strong>г</strong> <strong>калий</strong> <strong>йодиді</strong> <strong>бар</strong> <strong>ерітіндімен</strong> <strong>әрекеттескенде</strong> <strong>түзілген</strong> <strong>йодтың</strong> <strong>массасы</strong> (<strong>г</strong>)</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "19,05",
+        "html": "<p>19,05</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "25,40",
+        "html": "<p>25,40</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "9,52",
+        "html": "<p>9,52</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "12,70",
+        "html": "<p>12,70</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "test/assets/quizzes/11ae/images/img-576a62bd2b3ecd4172930d5bc4205e95ff2f0131.png",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>Марганец</strong> <strong>диоксидімен</strong> 30 %-<strong>дық</strong> (<strong>тығыздығы</strong> -1,15 <strong>г</strong>/<strong>мл</strong>) 169,28 <strong>мл</strong> <strong>тұз</strong> <strong>қышқылы</strong> <strong>әрекеттескенде</strong> <strong>бөлінген</strong> <strong>D</strong> <strong>заттың</strong> <strong>көлемі</strong> (<strong>қ</strong>.<strong>ж</strong>.)</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "2,24 л",
+        "html": "<p>2,24 <strong>л</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "6,72 л",
+        "html": "<p>6,72 <strong>л</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "8,96 л",
+        "html": "<p>8,96 <strong>л</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "4,48 л",
+        "html": "<p>4,48 <strong>л</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "test/assets/quizzes/11ae/images/img-576a62bd2b3ecd4172930d5bc4205e95ff2f0131.png",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleChoice"
+  },
+  {
+    "question": "<p><strong>A</strong>→ <strong>ацетилен</strong>→<strong>бензол</strong>→<strong>B</strong>→<strong>бензой</strong> <strong>қышқылы</strong> <strong>айналымындағы</strong> <strong>белгісіздерді</strong> <strong>қосылыстарымен</strong> <strong>сәйкестендіріңіз</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "А-1, В-2",
+        "html": "<p><strong>А</strong>-1, <strong>В</strong>-2</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "А-2, В-4",
+        "html": "<p><strong>А</strong>-2, <strong>В</strong>-4</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "А-4, В-1",
+        "html": "<p><strong>А</strong>-4, <strong>В</strong>-1</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "А-3, В-2",
+        "html": "<p><strong>А</strong>-3, <strong>В</strong>-2</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "test/assets/quizzes/11ae/images/img-85e281e531b444106f5d9c37d35c27b6155f5add.png",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p>Нитраттардың айырылу өнімдерін реагенттермен сәйкестендіріңіз</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "А-1, В-2",
+        "html": "<p><strong>А</strong>-1, <strong>В</strong>-2</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "А-2, В-4",
+        "html": "<p><strong>А</strong>-2, <strong>В</strong>-4</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "А-4, В-3",
+        "html": "<p><strong>А</strong>-4, <strong>В</strong>-3</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "А-3, В-2",
+        "html": "<p><strong>А</strong>-3, <strong>В</strong>-2</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "test/assets/quizzes/11ae/images/img-761e7094d46e0a1234a32802620d80ea6ccbba2c.png",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p><strong>Алкиндерді</strong> <strong>құрамындағы</strong> <strong>гибридтенуге</strong> <strong>қатысқан</strong> <strong>p</strong>-<strong>электрондар</strong> <strong>санымен</strong> <strong>сәйкестендіріңіз</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "А-1, В-2",
+        "html": "<p><strong>А</strong>-1, <strong>В</strong>-2</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "А-2, В-4",
+        "html": "<p><strong>А</strong>-2, <strong>В</strong>-4</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "А-4, В-1",
+        "html": "<p><strong>А</strong>-4, <strong>В</strong>-1</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "А-3, В-2",
+        "html": "<p><strong>А</strong>-3, <strong>В</strong>-2</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-c",
+    "image": "test/assets/quizzes/11ae/images/img-40f4952b7f90cb4cfc21282f3a3aa2ea74c8035d.png",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p>Заттар әрекеттесу мөлшерлерінің қатынастарын түзілетін өніммен сәйкестендіріңіз</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "А-1, В-2",
+        "html": "<p><strong>А</strong>-1, <strong>В</strong>-2</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "А-3, В-4",
+        "html": "<p><strong>А</strong>-3, <strong>В</strong>-4</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "А-4, В-1",
+        "html": "<p><strong>А</strong>-4, <strong>В</strong>-1</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "А-3, В-2",
+        "html": "<p><strong>А</strong>-3, <strong>В</strong>-2</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "test/assets/quizzes/11ae/images/img-69ff2fc1c3f6e9f7b20499a638a0054afdd7f301.png",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p>Альдегид және кетондарды сутекпен тотықсыздану өнімдерімен сәйкестендіріңіз</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "А-1, В-2",
+        "html": "<p><strong>А</strong>-1, <strong>В</strong>-2</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "А-2, В-4",
+        "html": "<p><strong>А</strong>-2, <strong>В</strong>-4</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "А-4, В-1",
+        "html": "<p><strong>А</strong>-4, <strong>В</strong>-1</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "А-3, В-2",
+        "html": "<p><strong>А</strong>-3, <strong>В</strong>-2</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "test/assets/quizzes/11ae/images/img-d0e77452a90eb71cc81212290ceb755ee1160b61.png",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p><strong>Бромға</strong> <strong>тән</strong> <strong>қасиет</strong>(<strong>тер</strong>)</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "оңай  буланатын  сұйықтық",
+        "html": "<p>оңай буланатын сұйықтық</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "сары  жасыл  түсті",
+        "html": "<p>сары жасыл түсті</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "буы  күшті  у",
+        "html": "<p>буы күшті у</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "тұншықтырғыш  иісті  улы  газ",
+        "html": "<p>тұншықтырғыш иісті улы газ</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-e",
+        "text": "қоңыр  түсті",
+        "html": "<p>қоңыр түсті</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-f",
+        "text": "оңай  сублимацияланады",
+        "html": "<p>оңай сублимацияланады</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-a",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p><strong>HCl</strong> → <strong>x</strong> ₁ → <strong>Cl</strong> ₂ → <strong>KClO</strong> ₃ → <strong>KCl</strong> → <strong>AgCl</strong> <strong>тізбегіндегі</strong> <strong>x</strong> ₁-<strong>x</strong> ₅ <strong>реактивтер</strong> <strong>және</strong> <strong>жағдайлар</strong> <strong>қатары</strong>.</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "KMnO ₄, KOH(сұйық), HCl",
+        "html": "<p><strong>KMnO</strong> ₄, <strong>KOH</strong>(<strong>сұйық</strong>), <strong>HCl</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "KMnO ₄, KOH(сұйық), KCl",
+        "html": "<p><strong>KMnO</strong> ₄, <strong>KOH</strong>(<strong>сұйық</strong>), <strong>KCl</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "I ₂, KOH(қатты), t°",
+        "html": "<p><strong>I</strong> ₂, <strong>KOH</strong>(<strong>қатты</strong>), <strong>t</strong>°</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "MnO ₂, KOH(ыстық), t°",
+        "html": "<p><strong>MnO</strong> ₂, <strong>KOH</strong>(<strong>ыстық</strong>), <strong>t</strong>°</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-e",
+        "text": "MnO ₂, KOH(қатты), t°",
+        "html": "<p><strong>MnO</strong> ₂, <strong>KOH</strong>(<strong>қатты</strong>), <strong>t</strong>°</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-f",
+        "text": "KMnO ₄, KOH(қатты), KCl",
+        "html": "<p><strong>KMnO</strong> ₄, <strong>KOH</strong>(<strong>қатты</strong>), <strong>KCl</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-d",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p><strong>Электролиз</strong> <strong>кезінде</strong> <strong>суды</strong> <strong>ерітілген</strong> <strong>тек</strong> <strong>металл</strong> <strong>ғана</strong> <strong>тотықсыздайтын</strong> <strong>тұз</strong>(<strong>дар</strong>)</p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "AlCl ₃",
+        "html": "<p><strong>AlCl</strong> ₃</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "Hg(NO ₃)₂",
+        "html": "<p><strong>Hg</strong>(<strong>NO</strong> ₃)₂</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "ZnCl ₂",
+        "html": "<p><strong>ZnCl</strong> ₂</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "Ni(NO ₃)₂",
+        "html": "<p><strong>Ni</strong>(<strong>NO</strong> ₃)₂</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-e",
+        "text": "NaNO ₃",
+        "html": "<p><strong>NaNO</strong> ₃</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-f",
+        "text": "AgNO ₃",
+        "html": "<p><strong>AgNO</strong> ₃</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p><strong>nA</strong> → [-<strong>CH</strong> ₂-<strong>CH</strong>(<strong>CH</strong> ₃)-] <strong>n</strong> <strong>реакция</strong> <strong>түрі</strong>, <strong>түзілген</strong> <strong>өнім</strong> <strong>аты</strong> <strong>және</strong> <strong>A</strong> <strong>заты</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "этилен",
+        "html": "<p>этилен</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "пропилен",
+        "html": "<p>пропилен</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "поликонденсациялану",
+        "html": "<p>поликонденсациялану</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "полимерлену",
+        "html": "<p>полимерлену</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-e",
+        "text": "полиэтилен",
+        "html": "<p>полиэтилен</p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-f",
+        "text": "полипропилен",
+        "html": "<p>полипропилен</p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleResponse"
+  },
+  {
+    "question": "<p><strong>Хром</strong> <strong>калий</strong> <strong>хлоратының</strong> <strong>ерітіндісінің</strong> <strong>бөлікшісімен</strong> <strong>әрекеттескенде</strong> 29,1 <strong>г</strong> <strong>калий</strong> <strong>хроматы</strong> <strong>түзілген</strong> (<strong>шығымы</strong> 60%). <strong>Сілтінің</strong> <strong>зат</strong> <strong>мөлшері</strong> <strong>және</strong> <strong>хромның</strong> <strong>массасы</strong></p>",
+    "useHtml": true,
+    "options": [
+      {
+        "id": "opt-a",
+        "text": "0,13 моль",
+        "html": "<p>0,13 <strong>моль</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-b",
+        "text": "13 г",
+        "html": "<p>13 <strong>г</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-c",
+        "text": "24 г",
+        "html": "<p>24 <strong>г</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-d",
+        "text": "6,5 г",
+        "html": "<p>6,5 <strong>г</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-e",
+        "text": "0,25 моль",
+        "html": "<p>0,25 <strong>моль</strong></p>",
+        "image": "",
+        "useHtml": true
+      },
+      {
+        "id": "opt-f",
+        "text": "0,5 моль",
+        "html": "<p>0,5 <strong>моль</strong></p>",
+        "image": "",
+        "useHtml": true
+      }
+    ],
+    "correct": "opt-b",
+    "image": "",
+    "sectionTitle": "Химия",
+    "questionType": "MultipleResponse"
+  }
+]

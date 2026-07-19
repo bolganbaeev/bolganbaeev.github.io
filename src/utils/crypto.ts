@@ -94,7 +94,7 @@ export async function loadEncryptedUser(secret: string): Promise<DecryptedUser> 
   }
 
   const fileKey = await sha256Hex(normalizedSecret);
-  const response = await fetch(`/users/${fileKey}.json`, { cache: 'no-store' });
+  const response = await fetch(`./users/${fileKey}.json`, { cache: 'no-store' });
   if (!response.ok) {
     throw new Error('User file not found');
   }

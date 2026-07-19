@@ -37,7 +37,7 @@ export default function Ranking({ user }: RankingProps) {
     async function loadRankings() {
       try {
         setLoading(true);
-        const res = await fetch('/users/ranking.json', { cache: 'no-store' });
+        const res = await fetch('./users/ranking.json', { cache: 'no-store' });
         if (res.ok) {
           const list = await res.json();
           setRankingList(list);

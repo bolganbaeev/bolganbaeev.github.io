@@ -65,8 +65,8 @@ export default function TestRunner({ user, topic, mode, questionsCount, onClose,
   const formatImageUrl = (img?: string): string | undefined => {
     if (!img) return undefined;
     const clean = img.replace('test/assets/', '').replace('123/', '');
-    // Usually located in /test/assets/formulas/ or similar
-    return `/test/assets/${clean}`;
+    // Usually located in ./test/assets/formulas/ or similar
+    return `./test/assets/${clean}`;
   };
 
   // 1. Load questions
@@ -82,7 +82,9 @@ export default function TestRunner({ user, topic, mode, questionsCount, onClose,
           rawQuestions = overrideQuestions;
         } else {
           // Adjust file URL for loading
-          const fileUrl = topic.file.startsWith('/') ? topic.file : `/${topic.file}`;
+          const fileUrl = topic.file.startsWith('./') 
+            ? topic.file 
+            : (topic.file.startsWith('/') ? `.${topic.file}` : `./${topic.file}`);
           const response = await fetch(fileUrl);
           if (!response.ok) {
             throw new Error(`Failed to load file: ${response.statusText}`);

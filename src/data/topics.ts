@@ -55,7 +55,7 @@ export const STATIC_TOPICS: Record<string, TopicMeta> = {
 export async function fetchAllTopics(): Promise<TopicMeta[]> {
   const list = Object.values(STATIC_TOPICS);
   try {
-    const res = await fetch('/test/data/catalog.json');
+    const res = await fetch('./test/data/catalog.json');
     if (res.ok) {
       const external: any[] = await res.json();
       external.forEach(item => {
